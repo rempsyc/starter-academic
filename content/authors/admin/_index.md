@@ -70,6 +70,6 @@ user_groups:
 - Visitors
 ---
 
-Nelson Bighetti is a professor of artificial intelligence at the Stanford AI Lab. His research interests include distributed robotics, mobile computing and programmable matter. He leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
+Rémi Thériault obtained his B.A. Psychology and M.Sc. Psychiatry from McGill University, Montréal, Québec. His undergraduate research has principally focused on exploring the mind-body connection through the placebo effect and the malleability of the sense of embodiment. His Master’s research focused on psychological strategies to increase empathy and reduce intergroup prejudice, such as taking others’ perspective using virtual reality technology. His current doctoral research at UQAM explores ways to boost altruism and reduce aggression through loving-kindness meditation. He also currently is a lecturer at the Department of Psychology. Overall, Rémi is passionate about putting social-psychological research to use to increase people’s wellbeing and intrinsic motivation to help one another.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate.
+His research interests center around three themes: (1) self-control and morality, (2) attention and concentration, and (3) wisdom and integrity.
