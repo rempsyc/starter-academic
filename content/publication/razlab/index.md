@@ -3,13 +3,13 @@ abstract:
 authors:
 - Rémi Thériault
 - Amir Raz
-date: "2018-04-29T00:00:00-04:00"
-doi: "10.29390/cjrt-2018-006"
+#date: "2018-04-29T00:00:00-04:00"
+#doi: "10.29390/cjrt-2018-006"
 featured: true
 image:
   caption: ''
   focal_point: "Center"
-links: https://www.cjrt.ca/wp-content/uploads/cjrt-2018-006.pdf
+#links: https://www.cjrt.ca/wp-content/uploads/cjrt-2018-006.pdf
 math: true
 projects:
 publication: 
