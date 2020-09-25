@@ -9,7 +9,7 @@ featured: true
 image:
   caption: ''
   focal_point: "Center"
-links: https://www.cjrt.ca/wp-content/uploads/cjrt-2018-006.pdf
+links: "https://www.cjrt.ca/wp-content/uploads/cjrt-2018-006.pdf"
 math: true
 projects:
 publication: 
