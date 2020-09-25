@@ -97,10 +97,10 @@ address = {street = "100, rue Sherbrooke Ouest", city = "Montréal", region = "Q
 
 # Geographic coordinates
 # To get your coordinates, right-click on Google Maps and choose "What's here?". The coords will show up at the bottom.
-coordinates = {latitude = "37.4275", longitude = "-122.1697"}
+coordinates = {latitude = "45.510838", longitude = "-73.569965"}
 
 # Directions for visitors to locate you.
-directions = "Enter Building 1 and take the stairs to Office 200 on Floor 2"
+directions = "Take the elevator to the 4th floor, turn left, left again, my office will be to your right."
 
 # Office hours
 # A list of your office hours. To remove, set to an empty list `[]`.
