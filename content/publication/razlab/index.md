@@ -3,7 +3,7 @@ abstract:
 authors:
 - Rémi Thériault
 - Amir Raz
-#date: "2018-04-29T00:00:00-04:00"
+date: "2018-04-29T00:00:00-04:00"
 #doi: "10.29390/cjrt-2018-006"
 featured: true
 image:
