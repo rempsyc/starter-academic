@@ -3,13 +3,13 @@ abstract:
 authors:
 - Rémi Thériault
 - Amir Raz
-date: "2020-04-29T00:00:00-04:00"
-doi: ""
+date: "2018-04-29T00:00:00-04:00"
+doi: "10.29390/cjrt-2018-006"
 featured: true
 image:
   caption: ''
   focal_point: "Center"
-links:
+links: https://www.cjrt.ca/wp-content/uploads/cjrt-2018-006.pdf
 math: true
 projects:
 publication: 
@@ -23,7 +23,7 @@ publication_types:
 #  store location, to inform the user of local stores where similar clothing items
 #  can be tried on.
 tags: []
-title: ""
+title: "Patterns of bronchial challenge testing in Canada"
 #url_code: '#'
 #url_dataset: '#'
 #url_pdf: 
