@@ -1,4 +1,4 @@
-+++
+---
 widget: blank
 headless: true
 design:
@@ -11,8 +11,8 @@ item:
     # Choose `center`, `left`, or `right` alignment.
     align: center
 
+---
+
 # RÉMI THÉRIAULT, M.SC.
 
 ## A PhD student's journey to making a difference in the world, one mind at a time
-
-+++
