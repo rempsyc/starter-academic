@@ -13,11 +13,6 @@ title: BLOG
 # Section subtitle
 subtitle: Mostly about R for now
 
-# Section design
-design:
-  # Use a 1-column layout
-  columns: "1"
-
 content:
   # Page type to display. E.g. project.
   page_type: project
@@ -47,8 +42,23 @@ design:
   #   5 = Showcase
   view: 3
   # For Showcase view, flip alternate rows?
-  flip_alt_rows: false
-
+  flip_alt_rows: true
 ---
 
 Add any content to the body of the section here.
+
+![alternative text for search engines](violin.png)
+
+some text
+
+![alternative text for search engines](scatter.png)
+
+some text
+
+![alternative text for search engines](table.png)
+
+some text
+
+![alternative text for search engines](circles_cropped.png)
+
+some text
