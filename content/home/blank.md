@@ -12,7 +12,7 @@ design:
 .container {
   height: 500px;
   position: relative;
-  border: 3px;
+  <! -- border: 3px; -->
 }
 
 .center {
