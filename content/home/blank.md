@@ -11,7 +11,6 @@ design:
 <style>
 .container {
   height: 200px;
-  width: 30000px;
   position: relative;
   <! -- border: 3px; -->
 }
