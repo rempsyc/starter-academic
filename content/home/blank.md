@@ -8,9 +8,9 @@ design:
 
 
 
-<div style="text-align:center; margin: auto"> <h1 style="font-size: 80px"> RÉMI THÉRIAULT, M.SC. </h1> </div>
 
-<div style="text-align:center; font-size: 25px; margin: auto"> A PhD student's journey to making a difference in the world, one mind at a time </div>
+
+
 
 
 
@@ -20,7 +20,6 @@ design:
   position: relative;
   border: 3px solid green;
 }
-
 .center {
   margin: 0;
   position: absolute;
@@ -31,8 +30,16 @@ design:
 }
 </style>
 
+
+
 <div class="container">
   <div class="center">
-    <p>I am vertically and horizontally centered.</p>
+    <div style="text-align:center; margin: auto"> <h1 style="font-size: 80px"> RÉMI THÉRIAULT, M.SC. </h1> </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="center"; style="text-align:center; font-size: 25px; margin: auto">
+    <p> A PhD student's journey to making a difference in the world, one mind at a time </p>
   </div>
 </div>
