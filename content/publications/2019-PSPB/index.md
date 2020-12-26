@@ -31,9 +31,9 @@ tags: []
 title: "Self-Concept Clarity and the Bodily Self: Malleability Across Modalities"
 #url_code: '#'
 #url_dataset: '#'
-#url_pdf: '#'
-#url_poster: '#'
-#url_preprint: '#'
+#url_pdf: "https://journals.sagepub.com/doi/abs/10.1177/0146167219879126"
+#url_poster: "https://journals.sagepub.com/doi/abs/10.1177/0146167219879126"
+#url_preprint: "https://journals.sagepub.com/doi/abs/10.1177/0146167219879126"
 #url_project: '#'
 #url_slides: '#'
 #url_source: '#'
