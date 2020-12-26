@@ -13,5 +13,5 @@ header:
   caption: ""
   image: ""
 
-aliases = ["/publications/"]
+aliases: ["/publications/"]
 ---
