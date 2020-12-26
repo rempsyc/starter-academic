@@ -10,7 +10,7 @@ design:
 
 <style>
 .container {
-  height: 200px;
+  height: 100px;
   position: relative;
   <! -- border: 3px; -->
 }
@@ -24,6 +24,7 @@ design:
   white-space: nowrap;
 }
 </style>
+
 
 
 
