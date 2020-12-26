@@ -15,7 +15,6 @@ design:
   position: relative;
   <! -- border: 3px; -->
 }
-
 .center {
   margin: 0;
   position: absolute;
@@ -23,6 +22,7 @@ design:
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+  white-space: nowrap;
 }
 </style>
 
