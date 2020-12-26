@@ -17,7 +17,13 @@ item:
 
 ## A PhD student's journey to making a difference in the world, one mind at a time
 
-<div style="text-align:center"> RÉMI THÉRIAULT, M.SC.</div>
+<style>
+.myDiv {
+  border: 5px outset red;
+  background-color: lightblue;
+  text-align: center;
+}
+</style>
+<div font-size: 40px; style="text-align:center"> <h2> RÉMI THÉRIAULT, M.SC.</div>
 
-
-<div style="text-align:center"> A PhD student's journey to making a difference in the world, one mind at a time</div>
+<div style="text-align:center"> <h2> A PhD student's journey to making a difference in the world, one mind at a time </h2> </div>
