@@ -19,6 +19,6 @@ item:
 
 
 
-<div font-size: 80px; style="text-align:center"> <h1> RÉMI THÉRIAULT, M.SC. </h1> </div>
+<div style="text-align:center"> <h1 style="font-size: 80px"> RÉMI THÉRIAULT, M.SC. </h1> </div>
 
-<div style="text-align:center"> <h4> A PhD student's journey to making a difference in the world, one mind at a time </h4> </div>
+<div style="text-align:center"> <h5> A PhD student's journey to making a difference in the world, one mind at a time </h5> </div>
