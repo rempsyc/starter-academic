@@ -10,7 +10,7 @@ design:
 
 <style>
 .container {
-  height: 150px;
+  height: 125px;
   position: relative;
   <! -- border: 3px; -->
 }
