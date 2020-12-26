@@ -17,7 +17,7 @@ design:
 .center {
   margin: 0;
   position: absolute;
-  top: 20%;
+  top: 99%;
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
