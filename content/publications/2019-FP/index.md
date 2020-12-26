@@ -10,10 +10,10 @@ image:
   focal_point: "Center"
 links: 
 - name: Full Article
-  url: "https://www.frontiersin.org/articles/10.3389/fpsyg.2019.02814/full"
-  url_pdf: https://www.frontiersin.org/articles/10.3389/fpsyg.2019.02814/full
-  url_poster: 'https://www.frontiersin.org/articles/10.3389/fpsyg.2019.02814/full'
-  url_preprint: 'https://www.frontiersin.org/articles/10.3389/fpsyg.2019.02814/full'
+- url: "https://www.frontiersin.org/articles/10.3389/fpsyg.2019.02814/full"
+- url_pdf: https://www.frontiersin.org/articles/10.3389/fpsyg.2019.02814/full
+- url_poster: 'https://www.frontiersin.org/articles/10.3389/fpsyg.2019.02814/full'
+- url_preprint: 'https://www.frontiersin.org/articles/10.3389/fpsyg.2019.02814/full'
 
 math: true
 projects:
