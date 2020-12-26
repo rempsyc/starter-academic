@@ -18,8 +18,9 @@ design:
 .container {
   height: 200px;
   position: relative;
-  border: 3px solid green;
+  border: 3px;
 }
+
 .center {
   margin: 0;
   position: absolute;
