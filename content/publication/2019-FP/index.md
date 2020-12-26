@@ -17,9 +17,9 @@ image:
 links: 
 - name: Full Article
   url: https://www.frontiersin.org/articles/10.3389/fpsyg.2019.02814/full
-url_pdf: https://www.frontiersin.org/articles/10.3389/fpsyg.2019.02814/full
-url_poster: https://www.frontiersin.org/articles/10.3389/fpsyg.2019.02814/full
-url_preprint: https://www.frontiersin.org/articles/10.3389/fpsyg.2019.02814/full
+# url_pdf:
+# url_poster:
+# url_preprint:
 
 math: true
 projects:
@@ -35,11 +35,11 @@ publication_types:
 #  can be tried on.
 tags: []
 title: "Book Review: Awareness Is Freedom: The Adventure of Psychology and Spirituality"
-#url_code: 'https://www.frontiersin.org/articles/10.3389/fpsyg.2019.02814/full'
-#url_dataset: 'https://www.frontiersin.org/articles/10.3389/fpsyg.2019.02814/full'
-#url_project: "https://www.frontiersin.org/articles/10.3389/fpsyg.2019.02814/full"
-#url_slides: 'https://www.frontiersin.org/articles/10.3389/fpsyg.2019.02814/full'
-#url_source: 'https://www.frontiersin.org/articles/10.3389/fpsyg.2019.02814/full'
-#url_video: 'https://www.frontiersin.org/articles/10.3389/fpsyg.2019.02814/full'
+#url_code:
+#url_dataset:
+#url_project:
+#url_slides:
+#url_source:
+#url_video: 
 ---
 
