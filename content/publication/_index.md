@@ -1,7 +1,7 @@
 ---
 title: Publications
 
-url: "/publications"
+url: "/publications/"
 
 # View.
 #   1 = List
