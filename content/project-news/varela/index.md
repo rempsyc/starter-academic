@@ -1,8 +1,8 @@
 ---
 title: VARELA GRANT
-summary: How to make nice-looking violin plots in R.
+summary: ""
 tags:
-- Visualization
+- Funding
 date: "2020-09-06T00:00:00Z"
 
 # Optional external URL for project (replaces project detail page).
