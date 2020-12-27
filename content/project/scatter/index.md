@@ -2,7 +2,7 @@
 title: NICE SCATTER PLOTS
 summary: How to make nice-looking scatter plots in R.
 tags:
-- Demo
+- Visualization
 date: "2020-09-12T00:00:00Z"
 
 # Optional external URL for project (replaces project detail page).

@@ -2,7 +2,7 @@
 title: EASY RANDOMIZATION
 summary: "How to randomize participants to groups or conditions easily in R! + Bonus: how to make a runsheet with your randomization conditions!"
 tags:
-- Deep Learning
+- Statistics
 date: "2019-10-14T00:00:00Z"
 
 # Optional external URL for project (replaces project detail page).

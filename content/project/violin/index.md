@@ -2,7 +2,7 @@
 title: NICE VIOLIN PLOTS
 summary: How to make nice-looking violin plots in R.
 tags:
-- Deep Learning
+- Visualization
 date: "2020-09-06T00:00:00Z"
 
 # Optional external URL for project (replaces project detail page).
