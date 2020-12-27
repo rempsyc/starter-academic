@@ -1,12 +1,12 @@
 ---
-title: VARELA GRANT
-summary: How to make nice-looking violin plots in R.
+title: A LITTLE COURTESY
+summary: La Presse journalist Isabelle Morin interviews Rémi Thériault, among others, on courtesy in times of COVID-19. "Our vision of the other no longer passes only by its presence in our environment, but by the two-meter radius which surrounds them. Will we be able to rub shoulders with the same pleasure despite the distance?"
 tags:
 - Visualization
-date: "2020-09-06T00:00:00Z"
+date: "2020-05-29T09:00:00Z"
 
 # Optional external URL for project (replaces project detail page).
-external_link: "https://www.mindandlife.org/grant/transforming-habits-from-the-heart-from-good-intentions-to-reliable-prosocial-response/"
+external_link: "https://www.lapresse.ca/societe/2020-05-29/un-peu-de-courtoisie"
 
 image:
   caption: ""
