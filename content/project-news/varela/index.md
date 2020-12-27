@@ -1,8 +1,8 @@
 ---
-title: NICE VIOLIN PLOTS
-summary: How to make nice-looking violin plots in R.
+title: VARELA GRANT
+summary: Secured a Mind & Life Francisco J. Varela Research Grant to study the effects of loving-kindness meditation on prosociality and unconscious cognition.
 tags:
-- Visualization
+- Funding
 date: "2020-09-06T00:00:00Z"
 
 # Optional external URL for project (replaces project detail page).
