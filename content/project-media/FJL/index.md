@@ -1,6 +1,6 @@
 ---
-title: JE PRENDS MA PLACE 2013
-summary: One of the winners of the Je prends ma place competition.
+title: JE PRENDS MA PLACE
+summary: One of the winners of the 2013 Je prends ma place competition.
 tags:
 - Video
 date: "2013-00-00T00:33:00Z"

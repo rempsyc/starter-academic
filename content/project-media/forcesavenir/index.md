@@ -1,6 +1,6 @@
 ---
-title: FORCES AVENIR COLLÉGIAL 2012
-summary: Finalist for the Collegial Forces Avenir competition.
+title: FORCES AVENIR COLLÉGIAL
+summary: Finalist for the 2012 Collegial Forces Avenir competition.
 tags:
 - Video
 date: "2012-00-00T00:33:00Z"
