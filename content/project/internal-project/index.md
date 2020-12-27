@@ -1,6 +1,6 @@
 ---
-title: Internal Project
-summary: An example of using the in-built project page.
+title: OVERLAPPING CIRCLES
+summary: How to overlap interpolated circles based on the Inclusion of the Other in the Self (IOS) scale for measuring self-other merging.
 tags:
 - Deep Learning
 date: "2016-04-27T00:00:00Z"

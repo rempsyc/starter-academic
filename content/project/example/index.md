@@ -1,6 +1,6 @@
 ---
-title: Example Project
-summary: An example of using the in-built project page.
+title: NICE VIOLIN PLOTS
+summary: How to make nice-looking violin plots in R.
 tags:
 - Deep Learning
 date: "2016-04-27T00:00:00Z"
