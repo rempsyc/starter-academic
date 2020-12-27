@@ -1,5 +1,5 @@
 ---
-title: "PANEL: THE ART OF PRESENTING"
+title: COMMUNICATING RESEARCH EFFECTIVELY
 summary: Workshop with the SSHRC's Storytellers Finalists: An Opportunity to Learn about and Practice the Art of Presenting. Organized by the CRIR (Centre for Interdisciplinary Research in Rehabilitation of Greater Montreal).
 tags:
 - Video
