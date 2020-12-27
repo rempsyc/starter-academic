@@ -3,7 +3,7 @@ title: NICE VIOLIN PLOTS
 summary: How to make nice-looking violin plots in R.
 tags:
 - Visualization
-date: "2019-09-06T00:00:00Z"
+date: "2060-09-06T00:00:00Z"
 
 # Optional external URL for project (replaces project detail page).
 external_link: "https://remi-theriault.netlify.app/blog_violin"
