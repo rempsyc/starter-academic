@@ -6,7 +6,7 @@ tags:
 date: "2020-12-25T00:00:00Z"
 
 # Optional external URL for project (replaces project detail page).
-external_link: "https://remi-theriault.netlify.app/blog_ass.html"
+external_link: "https://remi-theriault.netlify.app/blog_ass"
 
 image:
   caption: ""
