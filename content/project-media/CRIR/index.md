@@ -1,12 +1,12 @@
 ---
-title: A LITTLE COURTESY
-summary: La Presse journalist Isabelle Morin interviews Rémi Thériault, among others, on courtesy in times of COVID-19. "Our vision of the other no longer passes only by its presence in our environment, but by the two-meter radius which surrounds them. Will we be able to rub shoulders with the same pleasure despite the distance?"
+title: PANEL: THE ART OF PRESENTING
+summary: Workshop with the SSHRC's Storytellers Finalists: An Opportunity to Learn about and Practice the Art of Presenting. Organized by the CRIR (Centre for Interdisciplinary Research in Rehabilitation of Greater Montreal).
 tags:
-- Press
-date: "2020-05-29T09:00:00Z"
+- Video
+date: "2020-05-13T00:33:00Z"
 
 # Optional external URL for project (replaces project detail page).
-external_link: "https://www.lapresse.ca/societe/2020-05-29/un-peu-de-courtoisie"
+external_link: "https://youtu.be/2ZiQ7OY21fU"
 
 image:
   caption: ""
