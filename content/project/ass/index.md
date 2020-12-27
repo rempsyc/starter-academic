@@ -4,7 +4,6 @@ summary: How to quickly test linear regression assumptions (through visual asses
 tags:
 - Statistics
 date: "2020-12-25T00:00:00Z"
-weight = 50  # Order that this section will appear.
 
 # Optional external URL for project (replaces project detail page).
 external_link: "https://remi-theriault.netlify.app/blog_ass"
