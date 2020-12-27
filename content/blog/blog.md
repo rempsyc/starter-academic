@@ -47,18 +47,4 @@ design:
 
 Add any content to the body of the section here.
 
-![alternative text for search engines](violin.png)
-
-some text
-
-![alternative text for search engines](scatter.png)
-
-some text
-
-![alternative text for search engines](table.png)
-
-some text
-
-![alternative text for search engines](circles_cropped.png)
-
-some text
+{{< gallery album="<album>" >}}
