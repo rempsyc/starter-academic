@@ -1,12 +1,12 @@
 ---
 title: VARELA GRANT
-summary: Secured a Mind & Life Francisco J. Varela Research Grant to study the effects of loving-kindness meditation on prosociality and unconscious cognition.
+summary: How to make nice-looking violin plots in R.
 tags:
-- Funding
+- Visualization
 date: "2020-09-06T00:00:00Z"
 
 # Optional external URL for project (replaces project detail page).
-external_link: "https://remi-theriault.netlify.app/blog_violin"
+external_link: "https://www.mindandlife.org/grant/transforming-habits-from-the-heart-from-good-intentions-to-reliable-prosocial-response/"
 
 image:
   caption: ""
