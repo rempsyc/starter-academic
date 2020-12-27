@@ -8,15 +8,15 @@ date: "2019-10-14T00:00:00Z"
 # Optional external URL for project (replaces project detail page).
 external_link: "https://remi-theriault.netlify.app/blog_randomize.html"
 
-image:
-  caption: Photo by rawpixel on Unsplash
-  focal_point: Smart
+ image:
+  caption: ""
+  focal_point:
 
-links:
-- icon: twitter
-  icon_pack: fab
-  name: Follow
-  url: https://twitter.com/georgecushen
+# links:
+# - icon: twitter
+#   icon_pack: fab
+#  name: Follow
+#  url: https://twitter.com/georgecushen
 url_code: ""
 url_pdf: ""
 url_slides: ""

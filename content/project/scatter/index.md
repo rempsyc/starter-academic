@@ -9,6 +9,6 @@ date: "2020-09-12T00:00:00Z"
 external_link: https://remi-theriault.netlify.app/blog_scatter.html
 
 image:
-  caption: Photo by Toa Heftiba on Unsplash
-  focal_point: Smart
+  caption: ""
+  focal_point:
 ---
