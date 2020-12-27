@@ -1,12 +1,12 @@
 ---
-title: DO YOU HAVE LIMITS?
-summary: "This week, Émanuelle and her guests discuss limits: do you know your limits well? With around the table: Jean-Marie Lapointe, actor, author, speaker and host of the program Face à la rue, as well as Rémi Thériault, doctoral student in social psychology, who works on prosocial behaviour."
+title: ARE YOU ALTRUIST?
+summary: "This week, Émanuelle and her guests discuss the themes of altruism and self-giving. Around the table: Justin Kinsley, creative strategist and author of Le livre du don: Récits et visages, Yvonne Sénéchal, vice-president, philanthropic development, at Vues et Voix, as well as Rémi Thériault, doctoral student, whose thesis is entitled "Transforming Habits of the Heart and Mind: From Good Intentions to a Reliable Prosocial Response"."
 tags:
 - Radio
-date: "2018-12-07T00:33:00Z"
+date: "2018-10-19T00:33:00Z"
 
 # Optional external URL for project (replaces project detail page).
-external_link: "https://canalm.vuesetvoix.com/avez-vous-des-limites/"
+external_link: "https://canalm.vuesetvoix.com/etes-vous-altruiste/"
 
 image:
   caption: ""
