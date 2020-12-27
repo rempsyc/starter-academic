@@ -47,4 +47,4 @@ design:
 
 Add any content to the body of the section here.
 
-{{< gallery album="<album>" >}}
+# {{< gallery album="<album>" >}}
