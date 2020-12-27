@@ -1,12 +1,12 @@
 ---
-title: COMMUNICATING RESEARCH EFFECTIVELY
-summary: sshrc_crsh @mcgill Stortyellers finalist Rémi Thériault gives us one tip for communicating research effectively.‬
+title: REDUCING PREJUDICE AND INCREASING EMPATHY VIA VIRTUAL REALITY
+summary: One of the Top 25 finalists in the Social Sciences and Humanities Research Council’s 2019 Storytellers competition.
 tags:
 - Video
-date: "2020-01-10T00:33:00Z"
+date: "2019-04-11T00:33:00Z"
 
 # Optional external URL for project (replaces project detail page).
-external_link: "https://www.instagram.com/p/B7JIQTYJNsF/"
+external_link: "https://youtu.be/kyb86DFvBxg"
 
 image:
   caption: ""
