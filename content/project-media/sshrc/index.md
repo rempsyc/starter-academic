@@ -1,9 +1,9 @@
 ---
 title: COMMUNICATING RESEARCH EFFECTIVELY
-summary: Workshop with the SSHRC's Storytellers Finalists: An Opportunity to Learn about and Practice the Art of Presenting. Organized by the CRIR (Centre for Interdisciplinary Research in Rehabilitation of Greater Montreal).
+summary: sshrc_crsh @mcgill Stortyellers finalist Rémi Thériault gives us one tip for communicating research effectively.‬
 tags:
 - Video
-date: "2020-05-13T00:33:00Z"
+date: "2020-01-10T00:33:00Z"
 
 # Optional external URL for project (replaces project detail page).
 external_link: "https://youtu.be/2ZiQ7OY21fU"
