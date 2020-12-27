@@ -1,6 +1,6 @@
 ---
-title: Internal Project
-summary: An example of using the in-built project page.
+title: EASY ASSUMPTION TESTING
+summary: How to quickly test linear regression assumptions (through visual assessment of diagnostic plots or objective tests).
 tags:
 - Deep Learning
 date: "2016-04-27T00:00:00Z"
