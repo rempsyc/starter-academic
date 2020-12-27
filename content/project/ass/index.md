@@ -3,7 +3,7 @@ title: EASY ASSUMPTION TESTING
 summary: How to quickly test linear regression assumptions (through visual assessment of diagnostic plots or objective tests).
 tags:
 - Deep Learning
-date: "2016-04-27T00:00:00Z"
+date: "2020-12-25T00:00:00Z"
 
 # Optional external URL for project (replaces project detail page).
 external_link: ""
