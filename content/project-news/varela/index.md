@@ -1,5 +1,5 @@
 ---
-title: VARELA GRANT
+title: Varela Grant
 summary: ""
 tags:
 - Funding
