@@ -21,15 +21,15 @@ social:
     link: https://scholar.google.com/citations?user=NrfwEncAAAAJ
 education:
   courses:   
-  - course: PhD in Artificial Intelligence
-    institution: Stanford University
-    year: 2012
+  - course: PhD in (Social) Psychology
+    institution: Université du Québec à Montréal
+    year: 2024
   - course: MEng in Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    year: 2009
+    institution: McGill University
+    year: 2018
   - course: BSc in Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    year: 2008
+    institution: McGill University
+    year: 2016
 email: ""
 user_groups:
   - Researchers
