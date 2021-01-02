@@ -1,5 +1,5 @@
 ---
-title: EXPLORING BODY OWNERSHIP IN THE RUBBER HAND ILLUSION
+title: Exploring Body Ownership in the Rubber Hand Illusion
 summary: A brief introduction to one of my main research programs.
 tags:
 - Video

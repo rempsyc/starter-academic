@@ -1,5 +1,5 @@
 ---
-title: A LITTLE COURTESY
+title: A Little Courtesy
 summary: La Presse journalist Isabelle Morin interviews Rémi Thériault, among others, on courtesy in times of COVID-19. "Our vision of the other no longer passes only by its presence in our environment, but by the two-meter radius which surrounds them. Will we be able to rub shoulders with the same pleasure despite the distance?"
 tags:
 - Press

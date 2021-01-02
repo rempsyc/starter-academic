@@ -1,5 +1,5 @@
 ---
-title: EXPLORING IDENTITY AND EMPATHY THROUGH THE BODY-SWAP ILLUSION
+title: Exploring Identity And Empathy Through the Body-Swap Illusion
 summary: A brief introduction to another one of my main research programs.
 tags:
 - Video

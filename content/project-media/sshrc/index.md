@@ -1,5 +1,5 @@
 ---
-title: COMMUNICATING RESEARCH EFFECTIVELY
+title: Communicating Research Effectively
 summary: sshrc_crsh @mcgill Stortyellers finalist Rémi Thériault gives us one tip for communicating research effectively.‬
 tags:
 - Video

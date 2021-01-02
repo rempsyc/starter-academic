@@ -1,5 +1,5 @@
 ---
-title: REDUCING PREJUDICE AND INCREASING EMPATHY VIA VIRTUAL REALITY
+title: Reducing Prejudice and Increasing Empathy via Virtual Reality
 summary: One of the Top 25 finalists in the Social Sciences and Humanities Research Council’s 2019 Storytellers competition.
 tags:
 - Video

@@ -1,5 +1,5 @@
 ---
-title: "THE HAPPINESS LEGACY PODCAST - CONVERSATION FT. RÉMI"
+title: "The Happiness Legacy Podcast - Conversation Ft. Rémi"
 summary: In this episode of The Happiness Legacy podcast, we chat with Rémi, a graduate student in psychiatry from McGill University (Montréal). Rémi is passionate about positive psychology and recently became a regional representative of the student-focused division of the International Positive Psychology Association (IPPA). We discuss priorities, motivation, healthy habits and more!
 tags:
 - Radio

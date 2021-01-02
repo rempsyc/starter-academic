@@ -1,5 +1,5 @@
 ---
-title: JE PRENDS MA PLACE
+title: Je prends ma place
 summary: One of the winners of the 2013 Je prends ma place competition.
 tags:
 - Video

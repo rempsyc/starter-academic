@@ -1,5 +1,5 @@
 ---
-title: FORCES AVENIR COLLÉGIAL
+title: Forces Avenir Collégial
 summary: Finalist for the 2012 Collegial Forces Avenir competition.
 tags:
 - Video
