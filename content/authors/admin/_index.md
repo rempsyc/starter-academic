@@ -21,7 +21,7 @@ social:
     link: https://scholar.google.com/citations?user=NrfwEncAAAAJ
 education:
   courses:   
-  - course: PhD in (Social) Psychology
+  - course: PhD in Psychology
     institution: Université du Québec à Montréal
     year: 2024
   - course: MSc in Psychiatry
