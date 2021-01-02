@@ -24,10 +24,10 @@ education:
   - course: PhD in (Social) Psychology
     institution: Université du Québec à Montréal
     year: 2024
-  - course: MEng in Artificial Intelligence
+  - course: MSc in Psychiatry
     institution: McGill University
     year: 2018
-  - course: BSc in Artificial Intelligence
+  - course: BA in Psychology
     institution: McGill University
     year: 2016
 email: ""
