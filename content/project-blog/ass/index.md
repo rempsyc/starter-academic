@@ -1,5 +1,5 @@
 ---
-title: EASY ASSUMPTION TESTING
+title: Easy Assumption Testing
 summary: How to quickly test linear regression assumptions (through visual assessment of diagnostic plots or objective tests).
 tags:
 - Statistics

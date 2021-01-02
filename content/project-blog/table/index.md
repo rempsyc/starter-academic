@@ -1,5 +1,5 @@
 ---
-title: NICE TABLES
+title: Nice Tables
 summary: How to make nice, perfectly formatted APA tables in a blink.
 tags:
 - Statistics

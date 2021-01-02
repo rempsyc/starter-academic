@@ -1,5 +1,5 @@
 ---
-title: NICE SCATTER PLOTS
+title: Nice Scatter Plots
 summary: How to make nice-looking scatter plots in R.
 tags:
 - Visualization

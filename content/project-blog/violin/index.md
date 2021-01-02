@@ -1,5 +1,5 @@
 ---
-title: NICE VIOLIN PLOTS
+title: Nice Violin Plots
 summary: How to make nice-looking violin plots in R.
 tags:
 - Visualization

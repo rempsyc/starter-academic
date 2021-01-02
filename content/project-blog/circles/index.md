@@ -1,5 +1,5 @@
 ---
-title: OVERLAPPING CIRCLES
+title: Overlapping Circles
 summary: How to overlap interpolated circles based on the Inclusion of the Other in the Self (IOS) scale for measuring self-other merging.
 tags:
 - Visualization
