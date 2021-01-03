@@ -21,6 +21,9 @@ social:
   - icon: google-scholar
     icon_pack: ai
     link: https://scholar.google.com/citations?user=NrfwEncAAAAJ
+  - icon: researchgate
+    icon_pack: ai
+    link: https://www.researchgate.net/profile/Remi_Theriault
   - icon: twitter
     icon_pack: fab
     link: https://twitter.com/RemPsyc
