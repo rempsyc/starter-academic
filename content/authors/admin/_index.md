@@ -9,11 +9,11 @@ title: Rémi Thériault
 role: PhD Student (Social Psychology)
 bio: My research interests include social/implicit cognition, altruism, and dreams.
 interests:
-  - implicit attitudes
-  - self-regulation
-  - morality
-  - dreams
-  - body ownership
+  - Implicit attitudes
+  - Self-regulation
+  - Morality
+  - Dreams
+  - Body ownership
 social:
   - icon: envelope
     icon_pack: fas
