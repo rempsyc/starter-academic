@@ -100,7 +100,7 @@ address = {street = "100, rue Sherbrooke Ouest", city = "Montréal", region = "Q
 coordinates = {latitude = "45.510838", longitude = "-73.569965"}
 
 # Directions for visitors to locate you.
-directions = "Take the elevator to the 4th floor, turn left, left again, my office will be to your right."
+directions = "Office 4345 (4th floor), Pavillon Adrien Pinard. Take the elevator to the 4th floor, turn left, left again, my office will be to your right."
 
 # Office hours
 # A list of your office hours. To remove, set to an empty list `[]`.
