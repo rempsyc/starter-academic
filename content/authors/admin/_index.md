@@ -24,6 +24,9 @@ social:
   - icon: researchgate
     icon_pack: ai
     link: https://www.researchgate.net/profile/Remi_Theriault
+  - icon: academia
+    icon_pack: ai
+    link: https://uqam.academia.edu/RemiTheriault
   - icon: twitter
     icon_pack: fab
     link: https://twitter.com/RemPsyc
