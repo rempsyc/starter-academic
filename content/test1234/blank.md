@@ -18,6 +18,7 @@ design:
     -moz-transform: translateX(-50%) translateY(-50%);
     -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
+    text-align:center;
 </style>
 
 <div id="container">
