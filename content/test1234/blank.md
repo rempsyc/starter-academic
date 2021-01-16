@@ -11,7 +11,7 @@ design:
 
 <style>
 #container h1  { font-size: 4em }
-#container h1, #container p   { text-align: center }
+#container p   { text-align: center }
 </style>
 
 <div id="container">
