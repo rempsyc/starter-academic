@@ -15,6 +15,6 @@ design:
 
 <div id="container">
 <h1 style="font-size: calc(100% + 4.5vw)"> RÉMI THÉRIAULT, M.SC. </h1>
-<p style="font-size: calc(100% + 1.5vw)">
+<p style="font-size: calc(100% + 1vw)">
 A PhD student's journey to making a difference in the world, one mind at a time</p>
 </div>
