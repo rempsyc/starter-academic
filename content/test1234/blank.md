@@ -12,7 +12,8 @@ design:
 <style>
 .container {
   top: 100%;
-#container h1, #container p   { text-align: center }
+  text-align: center;
+/* #container h1, #container p   {  } /* 
 </style>
 
 <div id="container">
