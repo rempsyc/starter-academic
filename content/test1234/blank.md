@@ -9,6 +9,7 @@ design:
 
 
 
+<head>
 <style>
 .container {
   height: 125px;
@@ -23,14 +24,18 @@ design:
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-}
-</style>
-
 div.ex2 {
   max-width: 500px;
   margin: auto;
   border: 3px solid #73AD21;
+}    
 }
+</style>
+</head>
+
+
+
+<body>
 
 <div class="container">
 	<div class="center">
@@ -44,9 +49,9 @@ div.ex2 {
 
 
 
-
 <div class="container">
   <div class="center"; style="text-align:center; font-size: calc(100% + 0.5vw); margin: auto">
     <p> A PhD student's journey to making a difference in the world, one mind at a time </p>
   </div>
 </div>
+</body>
