@@ -13,7 +13,7 @@ design:
 .container {
     margin: 0;
     height: 125px;
-    position: absolute;
+    position: relative;
     top: 50%;
     text-align: center;
     /* #container h1, #container p   {  } /* 
