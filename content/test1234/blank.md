@@ -30,7 +30,8 @@ div.test {
 	border: 3px solid #73AD21;
 }
 .full-width {
-	width: 100vw;
+	height: 50vw;
+    width: 100vw;
 	position: relative;
 	left: 50%;
 	right: 50%;
