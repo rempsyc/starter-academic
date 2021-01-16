@@ -49,5 +49,5 @@ design:
   # Spacing
   spacing:
     # Customize the section spacing. Order is top, right, bottom, left.
-    padding: ["50px", "0", "0px", "0"]
+    padding: ["550px", "0", "0px", "0"]
 ---
