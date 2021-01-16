@@ -9,8 +9,8 @@ headless: true
 # Order that this section appears on the page.
 weight: 65
 
-title: Projects
-subtitle: ''
+title: RÉMI THÉRIAULT, M.SC.
+subtitle: A PhD student's journey to making a difference in the world, one mind at a time
 
 content:
   # Page type to display. E.g. project.
@@ -25,16 +25,16 @@ content:
   # To filter by a specific tag, set `tag` to an existing tag name.
   # To remove the toolbar, delete the entire `filter_button` block.
   filter_button:
-  - name: All
-    tag: '*'
-  - name: Deep Learning
-    tag: Deep Learning
-  - name: Other
-    tag: Demo
+#  - name: All
+#    tag: '*'
+#  - name: Deep Learning
+#    tag: Deep Learning
+#  - name: Other
+#    tag: Demo
 
 design:
   # Choose how many columns the section has. Valid values: '1' or '2'.
-  columns: '2'
+  columns: '1'
 
   # Toggle between the various page layout types.
   #   1 = List
