@@ -10,7 +10,7 @@ design:
 .container {
   height: 125px;
   position: relative;
-  <! -- border: 3px; -->
+  <! -- border: 10px; -->
 }
 .center {
   margin: 0;
