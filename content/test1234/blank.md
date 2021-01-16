@@ -11,11 +11,11 @@ design:
 
 <style>
 .container {
-  height: 525px;
-  top: 100%;
-  position: absolute;
-  text-align: center;
-/* #container h1, #container p   {  } /* 
+    height: 125px;
+    position: absolute;
+    top: 100%;
+    text-align: center;
+    /* #container h1, #container p   {  } /* 
 </style>
 
 <div id="container">
