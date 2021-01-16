@@ -9,9 +9,8 @@ design:
 <style>
 .container {
   height: 125px;
-  width: 55000px;
   position: relative;
-  <! -- border: 10px; -->
+  <! -- border: 3px; -->
 }
 .center {
   margin: 0;
@@ -20,6 +19,7 @@ design:
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+  white-space: nowrap;
 }
 </style>
 
