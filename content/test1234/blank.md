@@ -41,7 +41,7 @@ div.test {
 </style></head>
 
 <div class="container">
-  <div class="center"; style="text-align:center; font-size: 1.3em; margin: auto">
+  <div class="center"; style="text-align:center; font-size: calc(100% + 4.5vw); margin: auto">
     <p> A PhD student's journey to making a difference in the world, one mind at a time </p>
   </div>
 </div>
