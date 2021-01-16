@@ -7,21 +7,19 @@ design:
 # This is test1234!!!
 ---
 
-
-
 <style>
-.container {
-    height: 325px;
-    position: absolute;
-    top: 50%;
-    -moz-transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
-    text-align:center;
+    .flex-container {
+        height: 150px;
+        display: flex;
+    }
+    .flex-item {
+        margin: auto;
+    }
 </style>
 
-<div id="container">
-<h1 style="font-size: calc(100% + 4.5vw)"> RÉMI THÉRIAULT, M.SC. </h1>
-<p style="font-size: calc(100% + 0.5vw)">
-A PhD student's journey to making a difference in the world, one mind at a time</p>
+<div class="flex-container">
+  <div class="flex-item">
+      <h1 style="font-size: calc(100% + 4.5vw)"> RÉMI THÉRIAULT, M.SC. </h1>
+      <p style="font-size: calc(100% + 0.5vw)"> A PhD student's journey to making a difference in the world, one mind at a time</p>
+  </div>
 </div>
