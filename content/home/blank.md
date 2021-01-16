@@ -26,7 +26,7 @@ design:
 <div class="container">
 	<div class="center">
 		<div style="text-align:center; margin: auto">
-			<h1 style="font-size: calc(100% + 5vw)"> RÉMI THÉRIAULT, M.SC. </h1>
+			<h1 style="font-size: calc(100% + 4.5vw)"> RÉMI THÉRIAULT, M.SC. </h1>
 		</div>
 	</div>
 </div>
