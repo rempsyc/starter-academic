@@ -11,7 +11,7 @@ design:
     .flex-container {
         height: 150px;
         display: flex;
-        top: 50%;
+        top: 100%;
     }
     .flex-item {
         margin: auto;
