@@ -8,7 +8,6 @@ design:
 
 <style>
     .flex-container {
-        height: 150px;
         display: flex;
     }
     .flex-item {
