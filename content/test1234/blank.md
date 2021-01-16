@@ -16,6 +16,7 @@ design:
     .flex-item {
         padding: 6vw;
         margin: auto;
+        text-align: center;
     }
 </style>
 
