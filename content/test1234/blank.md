@@ -11,10 +11,12 @@ design:
 
 <style>
 .container {
-    margin: 0;
-    position: relative;
+    position: absolute;
     top: 50%;
-    text-align: center;
+    left: 50%;
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
 </style>
 
 <div id="container">
