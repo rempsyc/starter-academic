@@ -19,7 +19,3 @@ design:
 <p>
 A PhD student's journey to making a difference in the world, one mind at a time</p>
 </div>
-
-<div class="full-width"; style="text-align:center; font-size: calc(100% + 0.5vw); margin: auto">
-    <p> A PhD student's journey to making a difference in the world, one mind at a time </p>
-</div>
