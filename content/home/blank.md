@@ -12,7 +12,7 @@ design:
 
 <div class="container">
   <div class="center">
-    <div style="text-align:center; margin: auto"> <h1 style="font-size: 80px"> RÉMI THÉRIAULT, M.SC. </h1> </div>
+    <div style="text-align:center; margin: auto"> <h1 style="font-size: 80px; text-size-adjust: auto"> RÉMI THÉRIAULT, M.SC. </h1> </div>
   </div>
 </div>
 
