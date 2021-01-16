@@ -10,6 +10,8 @@ design:
 
 
 <style>
+.container {
+  top: 100%;
 #container h1, #container p   { text-align: center }
 </style>
 
