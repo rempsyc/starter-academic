@@ -14,6 +14,7 @@ design:
         top: 100%;
     }
     .flex-item {
+        padding: 1em;
         margin: auto;
     }
 </style>
