@@ -14,7 +14,6 @@ design:
 	height: 125px;
 	width: 5500px;
 	position: relative;
-	<! -- border: 10px;	-->
 }
 .center {
 	margin: 0;
