@@ -12,11 +12,9 @@ design:
 <style>
 .container {
     margin: 0;
-    /* height: 125px; /* 
     position: relative;
     top: 50%;
     text-align: center;
-    /* #container h1, #container p   {  } /* 
 </style>
 
 <div id="container">
