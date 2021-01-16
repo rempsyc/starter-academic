@@ -23,8 +23,6 @@ design:
   </div>
 </div>
 
-
-
 <style>
 .container {
   height: 125px;
