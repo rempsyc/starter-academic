@@ -25,14 +25,14 @@ design:
 
 <div class="container">
   <div class="center">
-    <div style="text-align:center; margin: auto"> <h1 style="font-size: 80px"> RÉMI THÉRIAULT, M.SC. </h1> </div>
+    <div style="text-align:center; margin: auto"> <h1 style="font-size: 5em"> RÉMI THÉRIAULT, M.SC. </h1> </div>
   </div>
 </div>
 
 
 
 <div class="container">
-  <div class="center"; style="text-align:center; font-size: 25px; margin: auto">
+  <div class="center"; style="text-align:center; font-size: 1.5em; margin: auto">
     <p> A PhD student's journey to making a difference in the world, one mind at a time </p>
   </div>
 </div>
