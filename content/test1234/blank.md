@@ -40,10 +40,10 @@ div.test {
 }
 </style></head>
 
-<div class="full-width">
-    <div style="text-align:center; margin: auto">
-        <h1 style="font-size: calc(100% + 4.5vw)"> RÉMI THÉRIAULT, M.SC. </h1>
-    </div>
+<div class="container">
+  <div class="center"; style="text-align:center; font-size: 1.3em; margin: auto">
+    <p> A PhD student's journey to making a difference in the world, one mind at a time </p>
+  </div>
 </div>
 
 
