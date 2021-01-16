@@ -12,7 +12,7 @@ design:
 <style>
 .container {
     margin: 0;
-    height: 125px;
+    /* height: 125px; /* 
     position: relative;
     top: 50%;
     text-align: center;
