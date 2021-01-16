@@ -7,36 +7,21 @@ design:
 ---
 
 <style>
-.container {
-  height: 125px;
-  position: relative;
-  <! -- border: 3px; -->
-}
-.center {
-  margin: 0;
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  white-space: nowrap;
-}
+    .flex-container {
+        height: 150px;
+        display: flex;
+        top: 100%;
+    }
+    .flex-item {
+        padding: 6vw;
+        margin: auto;
+        text-align: center;
+    }
 </style>
 
-<div class="container">
-	<div class="center">
-		<div style="text-align:center; margin: auto">
-			<h1 style="font-size: calc(100% + 4.5vw)"> RÉMI THÉRIAULT, M.SC. </h1>
-		</div>
-	</div>
-</div>
-
-
-
-
-
-<div class="container">
-  <div class="center"; style="text-align:center; font-size: calc(100% + 0.5vw); margin: auto">
-    <p> A PhD student's journey to making a difference in the world, one mind at a time </p>
+<div class="flex-container">
+  <div class="flex-item">
+      <h1 style="font-size: calc(100% + 4.5vw)"> RÉMI THÉRIAULT, M.SC. </h1>
+      <p style="font-size: calc(100% + 0.5vw)"> A PhD student's journey to making a difference in the world, one mind at a time</p>
   </div>
 </div>
