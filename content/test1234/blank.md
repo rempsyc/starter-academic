@@ -9,7 +9,7 @@ design:
 
 <style>
     .flex-container {
-        height: 250px;
+        height: 150px;
         display: flex;
         top: 100%;
     }
