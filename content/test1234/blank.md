@@ -26,6 +26,12 @@ design:
 }
 </style>
 
+div.ex2 {
+  max-width: 500px;
+  margin: auto;
+  border: 3px solid #73AD21;
+}
+
 <div class="container">
 	<div class="center">
 		<div style="text-align:center; margin: auto">
@@ -33,6 +39,7 @@ design:
 		</div>
 	</div>
 </div>
+
 
 
 
