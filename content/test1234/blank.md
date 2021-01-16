@@ -11,7 +11,7 @@ design:
 
 <style>
 .container {
-  height: 125px;
+  height: 525px;
   text-align: center;
 /* #container h1, #container p   {  } /* 
 </style>
