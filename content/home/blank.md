@@ -36,7 +36,7 @@ design:
 
 
 <div class="container">
-  <div class="center"; style="text-align:center; font-size: calc(100% + 2vw); margin: auto">
+  <div class="center"; style="text-align:center; font-size: calc(100% + 1vw); margin: auto">
     <p> A PhD student's journey to making a difference in the world, one mind at a time </p>
   </div>
 </div>
