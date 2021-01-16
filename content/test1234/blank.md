@@ -11,6 +11,7 @@ design:
 
 <style>
 .container {
+    margin: 0;
     height: 125px;
     position: absolute;
     top: 50%;
