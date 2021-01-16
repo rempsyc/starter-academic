@@ -9,7 +9,7 @@ design:
 <style>
 .container {
   height: 125px;
-  width: 55000px;
+  width: 5500px;
   position: relative;
   <! -- border: 10px; -->
 }
