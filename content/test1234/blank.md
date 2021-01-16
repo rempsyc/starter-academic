@@ -14,7 +14,7 @@ design:
         top: 100%;
     }
     .flex-item {
-        padding: 3vw;
+        padding: 6vw;
         margin: auto;
     }
 </style>
