@@ -15,5 +15,5 @@ header:
   caption: ""
   image: ""
 
-#aliases: ["/publications/"]
+#aliases: ["/fr/publications/"]
 ---
