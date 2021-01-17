@@ -35,13 +35,13 @@ social:
     link: https://github.com/RemPsyc
 education:
   courses:   
-  - course: PhD en Psychologie
+  - course: Doctorat en Psychologie
     institution: Université du Québec à Montréal
     year: 2024
-  - course: MSc en Psychiatrie
+  - course: Maitrise en Psychiatrie
     institution: Université McGill
     year: 2018
-  - course: BA in Psychologie
+  - course: Baccalauréat en Psychologie
     institution: Université McGill
     year: 2016
 email: ""
