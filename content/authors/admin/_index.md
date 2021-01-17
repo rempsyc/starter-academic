@@ -44,6 +44,9 @@ education:
   - course: BA in Psychology
     institution: McGill University
     year: 2016
+  - course: College degree in Social Science
+    institution: Cégep Édouard-Montpetit
+    year: 2012
 email: ""
 user_groups:
   - Researchers
