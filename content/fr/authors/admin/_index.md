@@ -9,11 +9,11 @@ title: Rémi Thériault
 role: Étudiant au doctorat (Psychologie sociale)
 bio: Mes intérêts de recherche incluent la cognition sociale/implicite, l'altruisme, et les rêves.
 interests:
-  - Attitudes implicit
+  - Attitudes implicites
   - Autorégulation
   - Moralité
   - Rêves
-  - Sentiment d'incarnation du corps
+  - Incarnation du corps
 social:
   - icon: envelope
     icon_pack: fas
