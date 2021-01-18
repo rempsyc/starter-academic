@@ -6,7 +6,7 @@ active = true # Activate this widget? true/false
 weight = 65  # Order that this section will appear.
 
 title = "Blog"
-subtitle = "Mostly about R for now"
+subtitle = "Surtout à propos de R pour l'instant (tutoriels en anglais)"
 
 [content]
   # Page type to display. E.g. project.
