@@ -1,6 +1,7 @@
 ---
-title: "Are You Altruist?"
-summary: "This week, Émanuelle and her guests discuss the themes of altruism and self-giving. Around the table: Justin Kinsley, creative strategist and author of Le livre du don: Récits et visages, Yvonne Sénéchal, vice-president, philanthropic development, at Vues et Voix, as well as Rémi Thériault, doctoral student, whose thesis is entitled 'Transforming Habits of the Heart and Mind: From Good Intentions to a Reliable Prosocial Response'."
+title: "Êtes-vous altruiste?"
+summary: "Cette semaine, Émanuelle et ses invités discutent autour des thèmes de l’altruisme et du don de soi. Autour de la table : Justin Kinsley, stratège créatif et auteur de Le livre du don : Récits et visages, Yvonne Sénéchal, vice-présidente, développement philanthropique, chez Vues et Voix, ainsi que Rémi Thériault, étudiant au doctorat, qui travaille sur une thèse ayant pour titre Transformer les habitudes du cœur et de l’esprit : de bonnes intentions à une réponse prosociale fiable."
+
 tags:
 - Radio
 date: "2018-10-19T00:33:00Z"

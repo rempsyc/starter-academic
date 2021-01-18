@@ -1,6 +1,7 @@
 ---
-title: Living Together During Covid-19
-summary: La Presse journalist Isabelle Morin interviews Rémi Thériault, among others, on our relationship to one another in times of COVID-19. "Have we become more concerned with others or, on the contrary, more suspicious? In solidarity or individualism? La Presse interviewed professionals from different backgrounds to probe their view on the relationship with each other in public space."
+title: Vivre ensemble au temps de la COVID-19
+summary: La journaliste Isabelle Morin interview Rémi Thériault, notamment, sur notre rapport à l'autre en ces temps de COVID-19. « Sommes-nous devenus plus soucieux de l’autre ou, au contraire, plus méfiants? Solidaires ou individualistes? La Presse a interrogé des professionnels issus d’horizons différents afin de sonder leur regard sur le rapport à l’autre dans l’espace public. »
+
 tags:
 - Press
 date: "2020-05-29T06:33:00Z"

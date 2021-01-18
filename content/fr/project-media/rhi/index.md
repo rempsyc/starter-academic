@@ -1,6 +1,6 @@
 ---
-title: Exploring Body Ownership in the Rubber Hand Illusion
-summary: A brief introduction to one of my main research programs.
+title: Explorer le sentiment de propriété de de corps dans l'illusion du bras en caoutchouc
+summary: Une brève introduction à l'un de mes principaux programmes de recherche.
 tags:
 - Video
 date: "2019-11-10T00:33:00Z"

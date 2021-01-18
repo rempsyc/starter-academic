@@ -1,6 +1,6 @@
 ---
-title: Exploring Identity And Empathy Through the Body-Swap Illusion
-summary: A brief introduction to another one of my main research programs.
+title: Explorer l'identité et l'empathie via l'illusion de l'échange de corps
+summary: Une brève introduction à l'un de mes principaux programmes de recherche.
 tags:
 - Video
 date: "2019-12-10T00:33:00Z"

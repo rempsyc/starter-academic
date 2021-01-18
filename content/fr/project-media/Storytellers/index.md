@@ -1,6 +1,7 @@
 ---
-title: Reducing Prejudice and Increasing Empathy via Virtual Reality
-summary: One of the Top 25 finalists in the Social Sciences and Humanities Research Council’s 2019 Storytellers competition.
+title: Réduire les préjugés et augmenter l’empathie via la réalité virtuelle
+summary: L'un des 25 finalistes du concours du Conseil de recherches en sciences humaines « J’ai une histoire à raconter » de 2019.
+
 tags:
 - Video
 date: "2019-04-11T00:33:00Z"

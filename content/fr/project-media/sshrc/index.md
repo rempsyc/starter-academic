@@ -1,6 +1,6 @@
 ---
-title: Communicating Research Effectively
-summary: sshrc_crsh @mcgill Stortyellers finalist Rémi Thériault gives us one tip for communicating research effectively.‬
+title: Bien communiquer sa recherche
+summary: Rémi thériault, finaliste du concours j’ai une histoire à raconter de @mcgillu, nous donne un conseil pour bien communiquer la recherche.
 tags:
 - Video
 date: "2020-01-10T00:33:00Z"

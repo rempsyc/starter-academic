@@ -1,6 +1,6 @@
 ---
 title: Je prends ma place
-summary: One of the winners of the 2013 Je prends ma place competition.
+summary: Un des gagnants du concours je prends ma place 2013.
 tags:
 - Video
 date: "2013-00-00T00:33:00Z"

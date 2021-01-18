@@ -1,6 +1,6 @@
 ---
-title: "Panel: The Art of Presenting"
-summary: "Workshop with the SSHRC's Storytellers Finalists: An Opportunity to Learn about and Practice the Art of Presenting. Organized by the CRIR (Centre for Interdisciplinary Research in Rehabilitation of Greater Montreal)."
+title: "Panel : l'art de la présentation"
+summary: "Atelier avec les finalistes du concours j’ai une histoire à raconter du CRSH : une occasion d’apprendre et pratiquer l’art de la présentation. Organisé par le CRIR (Centre de recherche interdisciplinaire en réadaptation du Montréal métropolitain)."
 tags:
 - Video
 date: "2020-05-13T00:33:00Z"

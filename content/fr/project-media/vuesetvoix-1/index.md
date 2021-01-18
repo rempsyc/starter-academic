@@ -1,6 +1,7 @@
 ---
-title: Do You Have Limits?
-summary: "This week, Émanuelle and her guests discuss limits: do you know your limits well? With around the table: Jean-Marie Lapointe, actor, author, speaker and host of the program Face à la rue, as well as Rémi Thériault, doctoral student in social psychology, who works on prosocial behaviour."
+title: Avez-vous des limites?
+summary: "Cette semaine, Émanuelle et ses invités discutent de limites : connaissez-vous bien vos limites? Avec autour de la table : Jean-Marie Lapointe, comédien, auteur, conférencier et animateur de l’émission Face à la rue, ainsi que Rémi Thériault, doctorant en psychologie sociale, qui travaille sur les comportements pro-sociaux."
+
 tags:
 - Radio
 date: "2018-12-07T00:33:00Z"
