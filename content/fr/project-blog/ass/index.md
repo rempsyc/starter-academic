@@ -1,6 +1,6 @@
 ---
-title: Easy Assumption Testing
-summary: How to quickly test linear regression assumptions (through visual assessment of diagnostic plots or objective tests).
+title: Tests d'assomptions facile
+summary: Comment tester rapidement les hypothèses de régression linéaire (par évaluation visuelle des graphiques diagnostiques ou des tests objectifs).
 tags:
 - Statistics
 date: "2015-12-25T00:00:00Z"

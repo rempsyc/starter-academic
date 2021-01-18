@@ -1,6 +1,6 @@
 ---
-title: Nice Scatter Plots
-summary: How to make nice-looking scatter plots in R.
+title: Jolis nuages de points
+summary: Comment faire de jolis nuages de points dans R.
 tags:
 - Visualization
 date: "2019-09-12T00:00:00Z"

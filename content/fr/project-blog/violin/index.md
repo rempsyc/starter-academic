@@ -1,6 +1,6 @@
 ---
-title: Nice Violin Plots
-summary: How to make nice-looking violin plots in R.
+title: Jolis graphiques en violon
+summary: Comment faire de jolis graphiques en violon dans R.
 tags:
 - Visualization
 date: "2020-09-06T00:00:00Z"

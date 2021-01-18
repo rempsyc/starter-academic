@@ -1,6 +1,6 @@
 ---
-title: Easy Randomization
-summary: "How to randomize participants to groups or conditions easily in R! + Bonus: how to make a runsheet with your randomization conditions!"
+title: Randomisation facile
+summary: "Comment randomiser des participants à des groupes ou conditions facilement dans R! + Bonus : comment faire une feuille de test avec vos conditions de randomisation!"
 tags:
 - Statistics
 date: "2017-10-14T00:00:00Z"

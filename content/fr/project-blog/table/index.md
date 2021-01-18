@@ -1,6 +1,6 @@
 ---
-title: Nice Tables
-summary: How to make nice, perfectly formatted APA tables in a blink.
+title: Jolis tableaux
+summary: Comment créer de jolis tableaux APA parfaitement formatés en un clin d'œil.
 tags:
 - Statistics
 date: "2016-08-21T00:00:00Z"
