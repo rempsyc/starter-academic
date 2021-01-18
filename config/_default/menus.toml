@@ -5,37 +5,37 @@
 
 [[main]]
   name = "Home"
-  url = "en/home"
+  url = "home"
   weight = 10
 
 [[main]]
   name = "Bio"
-  url = "en/bio"
+  url = "bio"
   weight = 20
   
 [[main]]
   name = "Publications"
-  url = "en/publications"
+  url = "publications"
   weight = 30
 
 [[main]]
   name = "News"
-  url = "en/news"
+  url = "news"
   weight = 40
 
 [[main]]
   name = "Media"
-  url = "en/media"
+  url = "media"
   weight = 50
   
 [[main]]
   name = "Blog"
-  url = "en/blog"
+  url = "blog"
   weight = 60
   
  [[main]]
   name = "Contact"
-  url = "en/contact"
+  url = "contact"
   weight = 70
 
 # Link to a PDF of your resume/CV from the menu.
