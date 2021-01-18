@@ -1,8 +1,8 @@
 ---
-title: Varela Grant
+title: Subvention Varela
 summary: ""
 tags:
-- Funding
+- Financement
 date: "2020-09-06T00:00:00Z"
 
 # Optional external URL for project (replaces project detail page).
@@ -30,4 +30,4 @@ url_video: ""
 slides: example
 ---
 
-Secured a Mind & Life Francisco J. Varela Research Grant to study the effects of loving-kindness meditation on prosociality and unconscious cognition.
+Obtention d'une bourse de recherche Francisco J. Varela du Mind & Life Institute pour étudier les effets de la méditation d'amour-bienveillant sur la prosocialité et la cognition inconsciente.
