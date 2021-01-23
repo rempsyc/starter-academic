@@ -8,8 +8,6 @@ weight = 65  # Order that this section will appear.
 title = "Nouvelles"
 subtitle = ""
 
-url = "/fr/nouvelles/"
-
 [content]
   # Page type to display. E.g. project.
   page_type = "project-news"
