@@ -5,7 +5,7 @@ headless = true  # This file represents a page section.
 active = true # Activate this widget? true/false
 weight = 65  # Order that this section will appear.
 
-title = "Blog"
+title = "Tutoriels"
 subtitle = "Surtout à propos de R pour l'instant (tutoriels en anglais)"
 
 [content]
