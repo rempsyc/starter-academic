@@ -10,7 +10,7 @@ subtitle = "Surtout à propos de R pour l'instant (tutoriels en anglais)"
 
 [content]
   # Page type to display. E.g. project.
-  page_type = "project-blog"
+  page_type = "project-tutorials"
   
   # Filter toolbar (optional).
   # Add or remove as many filters (`[[content.filter_button]]` instances) as you like.
