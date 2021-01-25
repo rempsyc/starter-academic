@@ -26,11 +26,11 @@ subtitle = ""
      tag = "*"
   
    [[content.filter_button]]
-     name = "Press"
+     name = "Presse"
      tag = "Press"
   
    [[content.filter_button]]
-     name = "Video"
+     name = "Vidéo"
      tag = "Video"
   
    [[content.filter_button]]

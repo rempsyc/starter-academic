@@ -26,11 +26,11 @@ subtitle = "Surtout à propos de R pour l'instant (tutoriels en anglais)"
      tag = "*"
   
    [[content.filter_button]]
-     name = "Visualization"
+     name = "Visualisation"
      tag = "Visualization"
   
    [[content.filter_button]]
-     name = "Statistics"
+     name = "Statistiques"
      tag = "Statistics"
 
 [design]
