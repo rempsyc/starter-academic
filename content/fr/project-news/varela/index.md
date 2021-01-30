@@ -30,4 +30,4 @@ url_video: ""
 slides: example
 ---
 
-Obtention d'une bourse de recherche Francisco J. Varela du Mind & Life Institute pour étudier les effets de la méditation d'amour-bienveillant sur la prosocialité et la cognition inconsciente.
+Obtention d'une subvention de recherche Francisco J. Varela du Mind & Life Institute pour étudier les effets de la méditation d'amour-bienveillant sur la prosocialité et la cognition inconsciente.
