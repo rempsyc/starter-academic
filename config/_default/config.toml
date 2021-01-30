@@ -16,6 +16,9 @@ baseurl = "/"
 # To display a copyright symbol, type `&copy;`. For current year, type `{year}`.
 copyright = ""
 
+# Disable aliases?
+disableAliases = true
+
 ############################
 ## Advanced options below ##
 ############################
@@ -43,7 +46,7 @@ ignoreFiles = ["\\.ipynb$", ".ipynb_checkpoints$", "\\.Rmd$", "\\.Rmarkdown$", "
   categories = "/category/:slug/"
 
 [outputs]
-  home = [ "HTML", "RSS", "JSON", "WebAppManifest" ]
+  home = [ "HTML", "RSS", "JSON", "WebAppManifest", "redirects" ]
   section = [ "HTML", "RSS" ]
 
 [mediaTypes."application/manifest+json"]
