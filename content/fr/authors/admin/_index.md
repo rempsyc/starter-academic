@@ -2,18 +2,27 @@
 organizations:
   - name: Université du Québec à Montréal
     url: ""
+
 superuser: true
+
+highlight_name: true
+
 authors:
   - admin
+
 title: Rémi Thériault
+
 role: Étudiant au doctorat (Psychologie sociale)
+
 bio: Mes intérêts de recherche incluent la cognition sociale/implicite, l'altruisme, et les rêves.
+
 interests:
   - Attitudes implicites
   - Autorégulation
   - Moralité
   - Rêves
   - Incarnation du corps
+
 social:
   - icon: envelope
     icon_pack: fas
@@ -33,6 +42,7 @@ social:
   - icon: github
     icon_pack: fab
     link: https://github.com/RemPsyc
+
 education:
   courses:   
   - course: Doctorat en Psychologie
@@ -47,7 +57,9 @@ education:
   - course: DEC en sciences humaines
     institution: Cégep Édouard-Montpetit
     year: 2012
+
 email: ""
+
 user_groups:
   - Researchers
   - Visitors
