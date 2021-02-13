@@ -29,7 +29,26 @@
   for = "/*"
   [headers.values]
     Strict-Transport-Security = "max-age=63072000; includeSubDomains; preload"
-    Content-Security-Policy-Report-Only = "default-src 'none'; form-action 'none'; frame-ancestors 'none'; report-uri https://remitheriault.report-uri.com/r/d/csp/wizard"
+    Content-Security-Policy-Report-Only = '''
+      default-src 'self';
+      connect-src 'self' www.google-analytics.com www.netlifystatus.com;
+      font-src cdnjs.cloudflare.com fonts.gstatic.com;
+      frame-src www.google.com disqus.com;
+      img-src 'self' data: maps.googleapis.com maps.gstatic.com a.tile.openstreetmap.org b.tile.openstreetmap.org c.tile.openstreetmap.org cdnjs.cloudflare.com www.google-analytics.com wowchemy.com raw.githubusercontent.com; 
+      manifest-src 'self'; 
+      script-src-attr 'unsafe-inline'; 
+      script-src-elem 'self' 'unsafe-inline' cdnjs.cloudflare.com identity.netlify.com maps.googleapis.com www.googletagmanager.com; 
+      script-src 'unsafe-eval'; 
+      style-src-attr 'unsafe-inline'; 
+      style-src-elem 'self' 'unsafe-inline' cdnjs.cloudflare.com fonts.googleapis.com
+      prefetch-src 'self'; 
+      form-action 'none'; 
+      frame-ancestors 'none';
+      object-src 'none';
+      base-uri 'none';
+      upgrade-insecure-requests;
+      report-uri https://remitheriault.report-uri.com/r/d/csp/reportOnly"
+      report-to default'''
 
 [[redirects]]
   from = "/PratiquesPP_2020"
