@@ -25,6 +25,11 @@
   [headers.values]
     Content-Type = "application/rss+xml"
 
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Strict-Transport-Security = "max-age=63072000; preload"
+
 [[redirects]]
   from = "/PratiquesPP_2020"
   to = "/PratiquesPP_2020.pdf"
