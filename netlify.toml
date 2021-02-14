@@ -47,8 +47,9 @@
       object-src 'none';
       base-uri 'none';
       upgrade-insecure-requests;
-      report-uri https://remitheriault.report-uri.com/r/d/csp/reportOnly"
+      report-uri https://remitheriault.report-uri.com/r/d/csp/enforce"
       report-to default'''
+    Report-To: {"group":"default","max_age":31536000,"endpoints":[{"url":"https://remitheriault.report-uri.com/a/d/g"}],"include_subdomains":true}
 
 [[redirects]]
   from = "/PratiquesPP_2020"
