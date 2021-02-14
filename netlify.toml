@@ -28,7 +28,7 @@
 [[headers]]
   for = "/*"
   [headers.values]
-    Strict-Transport-Security-Report-Only = "max-age=63072000; includeSubDomains; preload"
+    Strict-Transport-Security = "max-age=63072000; includeSubDomains; preload"
     Content-Security-Policy = '''
       default-src 'self';
       connect-src 'self' www.google-analytics.com www.netlifystatus.com;
@@ -47,7 +47,7 @@
       object-src 'none';
       base-uri 'none';
       upgrade-insecure-requests;
-      report-uri https://remitheriault.report-uri.com/r/d/csp/reportOnly"
+      report-uri https://remitheriault.report-uri.com/r/d/csp/enforce"
       report-to default'''
 
 [[redirects]]
