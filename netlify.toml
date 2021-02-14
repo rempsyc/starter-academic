@@ -49,7 +49,6 @@
       upgrade-insecure-requests;
       report-uri https://remitheriault.report-uri.com/r/d/csp/reportOnly"
       report-to default'''
-    NEL: {"report_to":"default","max_age":31536000,"include_subdomains":true}
 
 [[redirects]]
   from = "/PratiquesPP_2020"
