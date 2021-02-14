@@ -29,7 +29,7 @@
   for = "/*"
   [headers.values]
     Strict-Transport-Security = "max-age=63072000; includeSubDomains; preload"
-    Content-Security-Policy-Report-Only = '''
+    Content-Security-Policy = '''
       default-src 'self';
       connect-src 'self' www.google-analytics.com www.netlifystatus.com;
       font-src cdnjs.cloudflare.com fonts.gstatic.com;
