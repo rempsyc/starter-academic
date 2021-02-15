@@ -47,8 +47,7 @@
       object-src 'none';
       base-uri 'none';
       upgrade-insecure-requests;
-      report-uri https://remitheriault.report-uri.com/r/d/csp/wizard"
-      report-to default'''
+      report-uri https://remitheriault.report-uri.com/r/d/csp/wizard"'''
     NEL = '{"report_to":"default","max_age":31536000,"include_subdomains":true}'
     Expect-CT = 'max-age=604800, report-uri="https://remitheriault.report-uri.com/r/d/ct/reportOnly"'
 
