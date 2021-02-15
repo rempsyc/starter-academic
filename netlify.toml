@@ -29,7 +29,7 @@
   for = "/*"
   [headers.values]
     Strict-Transport-Security = "max-age=63072000; includeSubDomains; preload"
-    Content-Security-Policy = '''
+    Content-Security-Policy-Report-Only = '''
       default-src 'self';
       connect-src 'self' www.google-analytics.com www.netlifystatus.com;
       font-src cdnjs.cloudflare.com fonts.gstatic.com;
@@ -47,11 +47,11 @@
       object-src 'none';
       base-uri 'none';
       upgrade-insecure-requests;
-      report-uri https://remitheriault.report-uri.com/r/d/csp/enforce"
+      report-uri https://remitheriault.report-uri.com/r/d/csp/reportOnly"
       report-to default'''
     Report-To = '{"group":"default","max_age":31536000,"endpoints":[{"url":"https://remitheriault.report-uri.com/a/d/g"}],"include_subdomains":true}'
     NEL = '{"report_to":"default","max_age":31536000,"include_subdomains":true}'
-    Expect-CT = 'max-age=604800, report-uri="https://remitheriault.report-uri.com/r/d/ct/enforce"'
+    Expect-CT = 'max-age=604800, report-uri="https://remitheriault.report-uri.com/r/d/ct/reportOnly"'
 
 [[redirects]]
   from = "/PratiquesPP_2020"
