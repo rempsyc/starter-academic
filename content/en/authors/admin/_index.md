@@ -39,9 +39,6 @@ education:
   - course: BA in Psychology
     institution: McGill University
     year: 2016
-  - course: DCS in Social Science
-    institution: Cégep Édouard-Montpetit
-    year: 2012
 
 # Social/Academic Networking
 # For available icons, see: https://sourcethemes.com/academic/docs/page-builder/#icons
