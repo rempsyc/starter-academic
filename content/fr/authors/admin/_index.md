@@ -39,9 +39,6 @@ education:
   - course: Baccalauréat en Psychologie
     institution: Université McGill
     year: 2016
-  - course: DEC en sciences humaines
-    institution: Cégep Édouard-Montpetit
-    year: 2012
 
 # Social/Academic Networking
 # For available icons, see: https://sourcethemes.com/academic/docs/page-builder/#icons
