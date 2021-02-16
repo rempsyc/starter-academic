@@ -29,7 +29,11 @@
   for = "/*"
   [headers.values]
     Strict-Transport-Security = "max-age=63072000; includeSubDomains; preload"
-    Content-Security-Policy-Report-Only = "default-src 'none'; form-action 'none'; frame-ancestors 'none'; report-uri https://remitheriault.report-uri.com/r/d/csp/wizard"
+    Content-Security-Policy-Report-Only = '''
+      default-src 'none'; 
+      form-action 'none'; 
+      frame-ancestors 'none'; 
+      report-uri https://remitheriault.report-uri.com/r/d/csp/wizard'''
 
 [[redirects]]
   from = "/PratiquesPP_2020"
