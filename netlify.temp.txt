@@ -16,7 +16,7 @@ Content-Security-Policy-Report-Only = '''
       object-src 'none';
       base-uri 'none';
       upgrade-insecure-requests;
-      report-uri https://remitheriault.report-uri.com/r/d/csp/wizard"
+      report-uri https://remitheriault.report-uri.com/r/d/csp/wizard
       report-to default'''      
     Report-To = '{"group":"default","max_age":31536000,"endpoints":[{"url":"https://remitheriault.report-uri.com/a/d/g"}],"include_subdomains":true}'
 NEL = '{"report_to":"default","max_age":31536000,"include_subdomains":true}'    
