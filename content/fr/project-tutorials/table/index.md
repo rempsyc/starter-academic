@@ -3,7 +3,7 @@ title: Jolis tableaux
 summary: Comment créer de jolis tableaux APA parfaitement formatés en un clin d'œil.
 tags:
 - Statistics
-date: "2016-08-21T00:00:00Z"
+date: "2021-02-21T00:00:00Z"
 
 # Optional external URL for project (replaces project detail page).
 external_link: "https://remi-theriault.com/blog_table"

@@ -3,7 +3,7 @@ title: Nice Tables
 summary: How to make nice, perfectly formatted APA tables in a blink.
 tags:
 - Statistics
-date: "2016-08-21T00:00:00Z"
+date: "2021-02-21T00:00:00Z"
 
 # Optional external URL for project (replaces project detail page).
 external_link: "https://remi-theriault.com/blog_table"
