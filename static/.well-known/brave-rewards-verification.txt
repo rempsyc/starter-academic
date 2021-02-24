@@ -1,4 +1,0 @@
-This is a Brave Rewards publisher verification file.
-
-Domain: remi-theriault.com
-Token: 92ea5e33572957f11946cee95aab16b899d9982ca63981bb1bc6a87e56006f7f
