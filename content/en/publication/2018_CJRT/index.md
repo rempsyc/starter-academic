@@ -1,8 +1,8 @@
 ---
 title: "Patterns of bronchial challenge testing in Canada"
 
-authors:
-- Rémi Thériault
+authors: 
+- admin
 - Amir Raz
 
 publication_types:
