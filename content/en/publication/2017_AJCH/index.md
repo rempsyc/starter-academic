@@ -5,7 +5,7 @@ authors:
 - Michael Lifshitz
 - Eli O. Sheiner
 - Jay A. Olson
-- admin
+- Rémi Thériault
 - Amir Raz
 
 publication_types:
