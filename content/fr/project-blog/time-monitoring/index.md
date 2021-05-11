@@ -2,7 +2,7 @@
 title: "Gestion de temps : L'importance du monitorage de soi"
 summary: ""
 tags:
-- Psychologie positive
+- Positive Psychology
 date: "2021-03-09T00:00:00Z"
 
 # Optional external URL for project (replaces project detail page).

@@ -2,7 +2,7 @@
 title: Rémi Thériault | Série succès étudiant
 summary: ""
 tags:
-- Psychologie positive
+- Positive Psychology
 date: "2020-00-01T00:00:00Z"
 
 # Optional external URL for project (replaces project detail page).
