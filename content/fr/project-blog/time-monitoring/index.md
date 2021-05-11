@@ -1,8 +1,8 @@
 ---
-title: "Time Management: The Importance of Self-Monitoring"
+title: "Gestion de temps : L'importance du monitorage de soi"
 summary: ""
 tags:
-- Positive Psychology
+- Psychologie positive
 date: "2021-03-09T00:00:00Z"
 
 # Optional external URL for project (replaces project detail page).
@@ -30,4 +30,4 @@ url_video: ""
 slides: example
 ---
 
-Do you sometimes struggle to get things done in time? Do you feel overwhelmed and like you don’t have enough time to do it all? In this blog, I present a powerful technique to up your time management game.
+Avez-vous parfois de la difficulté à terminer vos choses à faire à temps? Vous sentez-vous dépassé et comme si vous n’aviez pas assez de temps pour tout faire? Dans ce blog, je présente une puissante technique pour améliorer votre capacité de gestion de temps.

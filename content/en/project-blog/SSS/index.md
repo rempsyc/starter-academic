@@ -1,12 +1,12 @@
 ---
-title: "Time Management: The Importance of Self-Monitoring"
+title: Rémi Thériault | Student Success Series
 summary: ""
 tags:
 - Positive Psychology
-date: "2021-03-09T00:00:00Z"
+date: "2020-00-01T00:00:00Z"
 
 # Optional external URL for project (replaces project detail page).
-external_link: "https://cppastudents.medium.com/time-management-the-importance-of-self-monitoring-c9dfff241af1"
+external_link: "https://cppastudents.medium.com/student-success-series-with-r%C3%A9mi-th%C3%A9riault-7c15d09b98f"
 
 image:
   caption: ""
@@ -30,4 +30,4 @@ url_video: ""
 slides: example
 ---
 
-Do you sometimes struggle to get things done in time? Do you feel overwhelmed and like you don’t have enough time to do it all? In this blog, I present a powerful technique to up your time management game.
+The Student Success Series features Student Ambassadors from the Canadian Positive Psychology Association. They share what strengths, mindsets, and strategies helped them succeed as students.

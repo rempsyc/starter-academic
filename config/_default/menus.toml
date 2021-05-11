@@ -24,6 +24,11 @@
   weight = 40
 
 [[main]]
+  name = "Blog"
+  url = "blog"
+  weight = 45
+
+[[main]]
   name = "Media"
   url = "media"
   weight = 50
