@@ -1,6 +1,10 @@
 ---
 title: "Book Review: Awareness Is Freedom: The Adventure of Psychology and Spirituality"
 
+# Publication name and optional abbreviated publication name.
+publication: "*Frontiers in Psychology, 10*(2814)"
+#publication_short: 
+
 authors:
 - Rémi Thériault
 

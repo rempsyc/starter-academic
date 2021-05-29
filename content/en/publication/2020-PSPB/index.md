@@ -1,6 +1,10 @@
 ---
 title: "Self-Concept Clarity and the Bodily Self: Malleability Across Modalities"
 
+# Publication name and optional abbreviated publication name.
+publication: "*Personality and Social Psychology Bulletin, 46*(5), 808-820"
+#publication_short: 
+
 authors:
 - Sonia A. Krol
 - Rémi Thériault
