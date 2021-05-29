@@ -1,6 +1,10 @@
 ---
 title: "On Suggestibility and Placebo: A Follow-Up Study"
 
+# Publication name and optional abbreviated publication name.
+publication: "*The American Journal of Clinical Hypnosis, 59*(4), 1-8"
+#publication_short: 
+
 authors:
 - Michael Lifshitz
 - Eli O. Sheiner
@@ -51,9 +55,6 @@ slides: example
 
 math: true
 
-# Publication name and optional abbreviated publication name.
-publication: 
-#publication_short: 
 
 # Summary. An optional shortened abstract.
 # summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum.
