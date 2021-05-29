@@ -1,6 +1,10 @@
 ---
 title: "Patterns of bronchial challenge testing in Canada"
 
+# Publication name and optional abbreviated publication name.
+publication: "*Canadian Journal of Respiratory Therapy*, *54*(2)"
+#publication_short: 
+
 authors: 
 - Rémi Thériault
 - Amir Raz
