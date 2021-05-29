@@ -2,7 +2,7 @@
 title: "Self-Concept Clarity and the Bodily Self: Malleability Across Modalities"
 
 # Publication name and optional abbreviated publication name.
-publication: "*Personality and Social Psychology Bulletin, 46*(5), 808-820"
+publication: "*Personality and Social Psychology Bulletin*, *46*(5), 808-820"
 #publication_short: 
 
 authors:
@@ -54,10 +54,6 @@ abstract: "The self has fascinated scholars for centuries. Although theory sugge
 slides: example
 
 math: true
-
-# Publication name and optional abbreviated publication name.
-publication: 
-#publication_short: 
 
 # Summary. An optional shortened abstract.
 # summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum.

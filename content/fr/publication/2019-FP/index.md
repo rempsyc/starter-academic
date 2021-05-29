@@ -2,7 +2,7 @@
 title: "Book Review: Awareness Is Freedom: The Adventure of Psychology and Spirituality"
 
 # Publication name and optional abbreviated publication name.
-publication: "*Frontiers in Psychology, 10*(2814)"
+publication: "*Frontiers in Psychology*, *10*(2814)"
 #publication_short: 
 
 authors:
@@ -50,10 +50,6 @@ abstract: "In Awareness is Freedom: The Adventure of Psychology and Spirituality
 slides: example
 
 math: true
-
-# Publication name and optional abbreviated publication name.
-publication: 
-#publication_short: 
 
 # Summary. An optional shortened abstract.
 # summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum.
