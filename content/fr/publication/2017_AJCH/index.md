@@ -2,7 +2,7 @@
 title: "On Suggestibility and Placebo: A Follow-Up Study"
 
 # Publication name and optional abbreviated publication name.
-publication: "*The American Journal of Clinical Hypnosis*, *59*(4), 1-8"
+publication: "*The American Journal of Clinical Hypnosis, 59*(4), 1-8"
 #publication_short: 
 
 authors:
