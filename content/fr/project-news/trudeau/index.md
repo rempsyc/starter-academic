@@ -2,7 +2,7 @@
 title: Finaliste Pierre Elliott Trudeau
 summary: ""
 tags:
-- Funding
+- Financement
 date: "2021-03-09T00:00:00Z"
 
 # Optional external URL for project (replaces project detail page).
