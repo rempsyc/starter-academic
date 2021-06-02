@@ -30,4 +30,4 @@ url_video: ""
 slides: example
 ---
 
-Finalist for the Pierre Elliott Trudeau Foundation Scholarship. The Foundation carefully selected 36 finalists out of 102 semi-finalists and 643 applications.
+Finalist for the Pierre Elliott Trudeau Foundation Scholarship. The Foundation carefully selected 36 finalists out of 102 semi-finalists and 643 applications from across Canada.

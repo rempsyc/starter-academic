@@ -30,4 +30,4 @@ url_video: ""
 slides: example
 ---
 
-Finaliste pour la bourse de la Fondation Pierre Elliott Trudeau. La Fondation a soigneusement sélectionné 36 finalistes sur 102 semi-finalistes et 643 candidatures.
+Finaliste pour la bourse de la Fondation Pierre Elliott Trudeau. La Fondation a soigneusement sélectionné 36 finalistes sur 102 semi-finalistes et 643 candidatures de partout au Canada.
