@@ -1,8 +1,8 @@
 ---
-title: "Book Review: Awareness Is Freedom: The Adventure of Psychology and Spirituality"
+title: "Book review: Awareness is freedom: The adventure of psychology and spirituality"
 
 # Publication name and optional abbreviated publication name.
-publication: "*Frontiers in Psychology*, *10*(2814)"
+publication: "*Frontiers in Psychology*, *10*(2814). https://doi.org/10.3389/fpsyg.2019.02814"
 #publication_short: 
 
 authors:

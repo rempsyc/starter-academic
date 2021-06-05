@@ -1,8 +1,8 @@
 ---
-title: "Body Swapping with a Black Person Boosts Empathy: Using Virtual Reality to Embody Another"
+title: "Body swapping with a Black person boosts empathy: Using virtual reality to embody another"
 
 # Publication name and optional abbreviated publication name.
-publication: "*Quarterly Journal of Experimental Psychology*"
+publication: "*Quarterly Journal of Experimental Psychology*. https://doi.org/10.1177/17470218211024826"
 #publication_short: 
 
 authors:
