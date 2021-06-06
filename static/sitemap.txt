@@ -12,3 +12,12 @@ https://remi-theriault.com/blog_scatter
 https://remi-theriault.com/blog_circles
 https://remi-theriault.com/blog_randomize
 https://remi-theriault.com/blog_ass
+
+https://remi-theriault.com/fr/
+https://remi-theriault.com/fr/bio/
+https://remi-theriault.com/fr/publications/
+https://remi-theriault.com/fr/nouvelles/
+https://remi-theriault.com/fr/blog/
+https://remi-theriault.com/fr/media/
+https://remi-theriault.com/fr/tutoriels/
+https://remi-theriault.com/fr/contact/
