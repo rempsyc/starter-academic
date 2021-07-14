@@ -1,6 +1,6 @@
 ---
 title: Jolis tableaux
-summary: Comment créer de jolis tableaux APA parfaitement formatés en un clin d'œil.
+summary: Comment créer de jolis tableaux APA parfaitement formatés pour Microsoft Word en un clin d'œil.
 tags:
 - Statistics
 date: "2021-02-21T00:00:00Z"

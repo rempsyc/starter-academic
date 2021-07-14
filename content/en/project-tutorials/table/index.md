@@ -1,6 +1,6 @@
 ---
 title: Nice Tables
-summary: How to make nice, perfectly formatted APA tables in a blink.
+summary: How to make nice, perfectly formatted APA tables for Microsoft Word in a blink.
 tags:
 - Statistics
 date: "2021-02-21T00:00:00Z"
