@@ -12,7 +12,7 @@
   contentDir = "content/fr"
   [fr.params]
     email = "theriault.remi À courrier.uqam.ca"
-    phone = ""
+    phone = "Quatre-trois-huit 995 7648"
     address = {street = "100, rue Sherbrooke Ouest", city = "Montréal", region = "Québec", postcode = "H2X 3P2", country = "Canada", country_code = "CA"}
     directions = "Bureau 4345 (4e étage), Pavillon Adrien Pinard. Prenez l'ascenseur jusqu'au 4e étage, tournez à gauche, encore à gauche, mon bureau sera à votre droite."
 
