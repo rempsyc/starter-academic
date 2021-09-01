@@ -89,7 +89,7 @@ show_related = {docs = true, page = false, post = true, project = true, publicat
 
 # Enter contact details (optional). To hide a field, clear it to "".
 email = "theriault.remi AT courrier.uqam.ca"
-phone = ""
+phone = "Four-Three-Eight 995 7648"
 
 # Address
 # For country_code, use the 2-letter ISO code (see https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2 )
