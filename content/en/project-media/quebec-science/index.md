@@ -1,13 +1,14 @@
 ---
-title: Un peu de courtoisie
-summary: La journaliste de La Presse Isabelle Morin interview Rémi Thériault, notamment, sur la courtoisie en ces temps de COVID-19. « Notre vision de l’autre ne passe plus uniquement par sa présence dans notre environnement, mais par le rayon de deux mètres qui l’entoure. Pourra-t-on se côtoyer avec le même plaisir malgré la distance? »
+title: In the Shoes of a Black Person Thanks to Virtual Reality
+
+summary: Québec Science journalist Mélissa Guillemette interviews Rémi Thériault on his research on embodiment and body-swapping. "The adage goes that we shouldn't judge someone's life without walking a mile in their shoes."
 
 tags:
 - Press
-date: "2020-05-29T09:00:00Z"
+date: "2021-09-01T09:00:00Z"
 
 # Optional external URL for project (replaces project detail page).
-external_link: "https://www.lapresse.ca/societe/2020-05-29/un-peu-de-courtoisie"
+external_link: "https://www.quebecscience.qc.ca/societe/personne-noire-realite-virtuelle/"
 
 image:
   caption: ""

@@ -1,6 +1,6 @@
 ---
 title: Vivre ensemble au temps de la COVID-19
-summary: La journaliste Isabelle Morin interview Rémi Thériault, notamment, sur notre rapport à l'autre en ces temps de COVID-19. « Sommes-nous devenus plus soucieux de l’autre ou, au contraire, plus méfiants? Solidaires ou individualistes? La Presse a interrogé des professionnels issus d’horizons différents afin de sonder leur regard sur le rapport à l’autre dans l’espace public. »
+summary: La journaliste de La Presse Isabelle Morin interview Rémi Thériault, notamment, sur notre rapport à l'autre en ces temps de COVID-19. « Sommes-nous devenus plus soucieux de l’autre ou, au contraire, plus méfiants? Solidaires ou individualistes? La Presse a interrogé des professionnels issus d’horizons différents afin de sonder leur regard sur le rapport à l’autre dans l’espace public. »
 
 tags:
 - Press
