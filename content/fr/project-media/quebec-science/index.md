@@ -1,5 +1,5 @@
 ---
-title: In the Shoes of a Black Person Thanks to Virtual Reality
+title: Dans la peau d’une personne noire grâce à la réalité virtuelle
 
 summary: La journaliste de Québec Science Mélissa Guillemette interview Rémi Thériault sur ses recherches sur l'incarnation et l'échange de corps. « L’adage dit que nous ne devrions pas juger de la vie de quelqu’un sans avoir marché un mille dans ses souliers. »
 
