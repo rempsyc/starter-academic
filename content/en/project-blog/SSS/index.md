@@ -3,7 +3,7 @@ title: Rémi Thériault | Student Success Series
 summary: ""
 tags:
 - Positive Psychology
-date: "2020-00-01T00:00:00Z"
+date: "2020-09-01T00:00:00Z"
 
 # Optional external URL for project (replaces project detail page).
 external_link: "https://cppastudents.medium.com/student-success-series-with-r%C3%A9mi-th%C3%A9riault-7c15d09b98f"

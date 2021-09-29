@@ -1,12 +1,12 @@
 ---
-title: Rémi Thériault | Série succès étudiant
+title: Are You in Control... of You?
 summary: ""
 tags:
 - Positive Psychology
-date: "2020-09-01T00:00:00Z"
+date: "2020-00-01T00:00:00Z"
 
 # Optional external URL for project (replaces project detail page).
-external_link: "https://cppastudents.medium.com/student-success-series-with-r%C3%A9mi-th%C3%A9riault-7c15d09b98f"
+external_link: "https://medium.com/@psychologie.sociale.uqam/%C3%AAtes-vous-en-contr%C3%B4le-de-vous-f5fbdf81b7eb"
 
 image:
   caption: ""
@@ -30,4 +30,4 @@ url_video: ""
 slides: example
 ---
 
-La Série succès étudiant met en valeur des Ambassadeurs étudiants de l'Association canadienne de psychologie positive. Ils partagent les forces, les mindsets et les stratégies qui les ont aidés à réussir en tant qu'étudiants.
+This blog covers the science of self-control: what it is, how to train it, what to do when you're out of it, as well as its critical role in the expression of prejudice and discriminatory behaviours.
