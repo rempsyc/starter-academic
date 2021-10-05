@@ -63,6 +63,9 @@ social:
   - icon: github
     icon_pack: fab
     link: https://github.com/RemPsyc
+  - icon: coffee
+    icon_pack: fas
+    link: https://www.paypal.com/paypalme/rempsyc
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
 email: ""

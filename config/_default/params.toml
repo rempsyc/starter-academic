@@ -88,7 +88,7 @@ show_related = {docs = true, page = false, post = true, project = true, publicat
 ############################
 
 # Enter contact details (optional). To hide a field, clear it to "".
-email = "theriault.remi AT courrier.uqam.ca"
+email = "theriault.remi at courrier.uqam.ca"
 phone = "Four-Three-Eight 995 7648"
 
 # Address
@@ -124,7 +124,7 @@ directions = "Office 4345 (4th floor), Pavillon Adrien Pinard. Take the elevator
 ############################
 
 # Default image for social sharing and search engines. Place image in `static/media/` folder and specify image name here.
-sharing_image = ""
+sharing_image = "avatar.jpg"
 
 # Twitter username (without @). Used when a visitor shares your site on Twitter.
 twitter = "RemPsyc"
