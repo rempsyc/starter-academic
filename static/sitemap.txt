@@ -6,6 +6,7 @@ https://remi-theriault.com/blog/
 https://remi-theriault.com/media/
 https://remi-theriault.com/tutorials/
 https://remi-theriault.com/contact/
+https://remi-theriault.com/donate/
 https://remi-theriault.com/blog_table
 https://remi-theriault.com/blog_violin
 https://remi-theriault.com/blog_scatter
@@ -21,3 +22,4 @@ https://remi-theriault.com/fr/blog/
 https://remi-theriault.com/fr/media/
 https://remi-theriault.com/fr/tutoriels/
 https://remi-theriault.com/fr/contact/
+https://remi-theriault.com/donnez/

@@ -5,7 +5,7 @@ headless = false  # This file represents a page section.
 active = true  # Activate this widget? true/false
 weight = 10  # Order that this section will appear.
 
-title = "Donate"
+title = "Donnez"
 
 # Hero image (optional). Enter filename of an image in the `static/media/` folder.
 hero_media = "hero-academic.jpg"
@@ -38,7 +38,7 @@ hero_media = "hero-academic.jpg"
 #   Remove a link/note by deleting a cta/note block.
 [cta]
   url = "https://www.paypal.com/paypalme/rempsyc"
-  label = "Donate"
+  label = "Donnez"
   icon_pack = "fas"
   icon = "coffee"
   
@@ -51,4 +51,4 @@ hero_media = "hero-academic.jpg"
 #  label = '<a class="js-github-release" href="https://sourcethemes.com/academic/updates" data-repo="gcushen/hugo-academic">Latest release<!-- V --></a>'
 +++
 
-The PhD journey is a long one. Exceptional perseverance is critical to traverse a road filled with challenges and obstacles, in sometimes suboptimal conditions. But you can help, too. Do you believe in the work I do, enjoy my blogs, use my functions and tutorials, or would just like to help me complete my PhD studies? Consider supporting me and my mission by buying me a coffee (... or a bus pass!). Every donation makes a difference, no matter the amount.
+Le doctorat est une longue aventure. Une persévérance exceptionnelle est essentielle pour traverser une route semée d'embûches et de défis, dans des conditions parfois sous-optimales. Mais vous aussi pouvez aider. Croyez-vous dans le travail que j'accomplis, appréciez-vous mes blogs, utilisez-vous mes fonctions et tutoriels, ou souhaitez-vous simplement m'aider à terminer mes études doctorales? Pensez à me soutenir et à soutenir ma mission en m'achetant un café (… ou une passe d'autobus!). Chaque don fait une différence, peu importe le montant.
