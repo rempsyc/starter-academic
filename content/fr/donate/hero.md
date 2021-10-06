@@ -5,7 +5,7 @@ headless = false  # This file represents a page section.
 active = true  # Activate this widget? true/false
 weight = 10  # Order that this section will appear.
 
-title = "Donnez"
+title = "Soutenez-moi"
 
 # Hero image (optional). Enter filename of an image in the `static/media/` folder.
 hero_media = "hero-academic.jpg"
@@ -38,7 +38,7 @@ hero_media = "hero-academic.jpg"
 #   Remove a link/note by deleting a cta/note block.
 [cta]
   url = "https://www.paypal.com/paypalme/rempsyc"
-  label = "Donnez"
+  label = "Soutenez-moi et ma mission"
   icon_pack = "fas"
   icon = "coffee"
   
