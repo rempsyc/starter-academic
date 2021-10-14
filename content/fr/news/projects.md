@@ -22,7 +22,7 @@ subtitle = ""
   filter_default = 0
   
    [[content.filter_button]]
-     name = "All"
+     name = "Tous"
      tag = "*"
   
    [[content.filter_button]]
