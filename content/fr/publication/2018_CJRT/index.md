@@ -12,6 +12,9 @@ authors:
 publication_types:
 - "2"
 
+# Show publication and sharing statistics? (requires valid doi)
+add_badge: true
+
 featured: true
 
 date: "2018-04-29T00:00:00-04:00"

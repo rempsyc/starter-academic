@@ -83,10 +83,20 @@
     {{end}}
   </div>
 
-  <div class="ml-3">
-    {{ with $item.Params.doi }}
-    <script type="text/javascript" src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script><div class="altmetric-embed" data-badge-type="donut" data-doi="{{ . }}"></div>
-    <span class="__dimensions_badge_embed__" data-doi="{{ . }}" data-style="small_circle" data-hide-zero-citations="true" data-legend="hover-right"></span><script async src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script> {{ end }}
+ <div class="ml-3">
+  {{/* Add Altmetric and Dimension badges instead of featured image? */}}
+  {{ if and $item.Params.add_badge $item.Params.doi }}
+    <div data-badge-popover="left" data-badge-type="donut" data-doi="{{ $item.Params.doi }}" data-condensed="true" class="altmetric-embed"></div>
+    <div class="__dimensions_badge_embed__" data-doi="{{ $item.Params.doi }}" data-legend="hover-left" data-style="small_circle"></div>
+  {{ else }}
+    {{ $resource := ($item.Resources.ByType "image").GetMatch "*featured*" }}
+    {{ with $resource }}
+    {{ $image := .Resize "150x" }}
+    <a href="{{$link}}" {{ $target | safeHTMLAttr }}>
+      <img src="{{ $image.RelPermalink }}" alt="{{ $item.Title }}" loading="lazy">
+    </a>
+    {{end}}
+  {{ end }}
   </div>
 
 </div>

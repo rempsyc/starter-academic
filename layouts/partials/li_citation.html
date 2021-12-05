@@ -1,42 +1,44 @@
-{{ $has_attachments := partial "functions/has_attachments" . }}
+<div class="media stream-item">
+  <div class="pub-list-item">
+    <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
 
-<div class="pub-list-item" style="margin-bottom: 1rem">
-  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+    {{/* APA Style */}}
+    {{ if eq (site.Params.publications.citation_style | default "apa") "apa" }}
 
-  {{/* APA Style */}}
-  {{ if eq (site.Params.publications.citation_style | default "apa") "apa" }}
+      <span class="article-metadata li-cite-author">
+        {{ partial "page_metadata_authors" . }}
+      </span>
+      ({{- .Date.Format "2006" -}}).
+      <a>{{ .Title }}</a>.
+      {{ if .Params.publication_short }}
+        {{- .Params.publication_short | markdownify -}}.
+      {{ else if .Params.publication }}
+        {{- .Params.publication | markdownify -}}.
+      {{ end }}
+      <p>{{ partial "page_links" (dict "page" . "is_list" 1) }}</p>
 
-  <span class="article-metadata li-cite-author">
-    {{ partial "page_metadata_authors" . }}
-  </span>
-  ({{- .Date.Format "2006" -}}).
-  {{ .Title }}</a>.
-  {{ if .Params.publication_short }}
-  {{- .Params.publication_short | markdownify -}}.
-  {{ else if .Params.publication }}
-  {{- .Params.publication | markdownify -}}.
-  {{ end }}
-  <p>{{ partial "page_links" (dict "page" . "is_list" 1) }}</p>
+    {{/* MLA Style */}}
+    {{ else if eq site.Params.publications.citation_style "mla" }}
 
-  {{/* MLA Style */}}
-  {{ else }}
-
-  <span class="article-metadata li-cite-author">
-    {{ partial "page_metadata_authors" . }}.
-  </span>
-  <a href="{{ .RelPermalink }}">{{ .Title }}</a>.
-  {{ if .Params.publication_short }}
-  {{- .Params.publication_short | markdownify -}},
-  {{ else if .Params.publication }}
-  {{- .Params.publication | markdownify -}},
-  {{ end }}
-  {{- .Date.Format "2006" -}}.
-
-  {{ if $has_attachments }}
-  <div class="btn-links">
-    {{ partial "page_links" (dict "page" . "is_list" 1) }}
+      <span class="article-metadata li-cite-author">
+        {{ partial "page_metadata_authors" . }}.
+      </span>
+      <a href="{{ .RelPermalink }}">{{ .Title }}</a>.
+      {{ if .Params.publication_short }}
+        {{- .Params.publication_short | markdownify -}},
+      {{ else if .Params.publication }}
+        {{- .Params.publication | markdownify -}},
+      {{ end }}
+      {{- .Date.Format "2006" -}}.
+      <p>{{ partial "page_links" (dict "page" . "is_list" 1) }}</p>
+    {{ end }}
   </div>
-  {{ end }}
 
+  {{/* Add Almetric and Dimension badges */}}
+  <div class="ml-3">
+  {{ if and .Params.add_badge .Params.doi }}
+    <div data-badge-popover="left" data-badge-type="donut" data-doi="{{ .Params.doi }}" data-condensed="true" class="altmetric-embed"></div>
+    <div class="__dimensions_badge_embed__" data-doi="{{ .Params.doi }}" data-legend="hover-left" data-style="small_circle"></div>
   {{ end }}
+  </div>
 </div>
