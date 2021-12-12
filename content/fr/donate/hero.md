@@ -7,7 +7,7 @@ weight = 10  # Order that this section will appear.
 
 title = "Soutenez-moi"
 
-# Hero image (optional). Enter filename of an image in the `static/media/` folder.
+# Hero image (optional). Enter filename of an image in the `assets/media/` folder.
 hero_media = "hero-academic.jpg"
 
 [design.background]
