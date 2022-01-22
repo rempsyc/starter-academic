@@ -19,7 +19,7 @@ add_badge: true
 
 featured: true
 
-date: "2022-01-25T00:00:00-04:00"
+date: "2022-01-22T00:00:00-04:00"
 
 doi: ""
 
