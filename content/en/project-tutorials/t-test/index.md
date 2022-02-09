@@ -1,5 +1,5 @@
 ---
-title: Nice T-Tests
+title: Easy T-Tests
 summary: How to easily make a bunch of t-tests with effect sizes in a preformatted table.
 tags:
 - Statistics

@@ -1,5 +1,5 @@
 ---
-title: Jolis tests t
+title: Tests t faciles
 summary: Comment facilement faire un tas de tests t avec tailles d'effet dans un tableau préformaté.
 tags:
 - Statistics

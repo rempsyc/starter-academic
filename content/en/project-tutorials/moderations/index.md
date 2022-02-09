@@ -1,5 +1,5 @@
 ---
-title: Nice Moderations
+title: Easy Moderations
 summary: How to easily make a bunch of moderations with simple slopes in a preformatted table.
 tags:
 - Statistics

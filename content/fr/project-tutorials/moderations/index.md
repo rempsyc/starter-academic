@@ -1,5 +1,5 @@
 ---
-title: Jolies modérations
+title: Modérations faciles
 summary: Comment facilement faire un tas de modérations avec pentes simples dans un tableau préformaté.
 tags:
 - Statistics
