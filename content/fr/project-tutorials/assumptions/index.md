@@ -1,5 +1,5 @@
 ---
-title: Tests d'assomptions facile
+title: Tests d'assomptions faciles
 summary: Comment tester rapidement les hypothèses de régression linéaire (par évaluation visuelle des graphiques diagnostiques ou des tests objectifs).
 tags:
 - Statistics
