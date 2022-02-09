@@ -6,7 +6,7 @@ active = true # Activate this widget? true/false
 weight = 65  # Order that this section will appear.
 
 title = "Tutoriels R"
-subtitle = "Introduction de fonctions de convenance pour rendre votre flow de travail plus **rapide** et **facile** que jamais"
+subtitle = "Introductions à des fonctions de convenance pour rendre votre flow de travail plus **rapide** et **facile** que jamais"
 
 [content]
   # Page type to display. E.g. project.
