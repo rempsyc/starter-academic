@@ -23,8 +23,8 @@ doi: "10.3389/fpsyg.2019.02814"
 external_link: "https://www.frontiersin.org/articles/10.3389/fpsyg.2019.02814/full"
 
 links: 
-# - name: Full Article
-#   url: "https://www.frontiersin.org/articles/10.3389/fpsyg.2019.02814/full"
+ - name: PDF
+   url: "https://remi-theriault.com/Thériault_2019.pdf"
 #  - name: Altmetric stats
 #    url: "https://www.altmetric.com/details/74237696"
 

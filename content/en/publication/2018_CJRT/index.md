@@ -24,6 +24,8 @@ doi: "10.29390/cjrt-2018-006"
 external_link: "https://www.cjrt.ca/wp-content/uploads/cjrt-2018-006.pdf"
 
 links: 
+ - name: PDF
+   url: "https://remi-theriault.com/Thériault_&_Raz_2018.pdf"
  - name: Supplemental Material
    url: "https://www.cjrt.ca/wp-content/uploads/wpdmdl695.pdf"
 

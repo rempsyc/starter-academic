@@ -26,6 +26,8 @@ doi: "10.1177/17470218211024826"
 external_link: https://journals.sagepub.com/doi/abs/10.1177/17470218211024826
 
 links: 
+ - name: PDF
+   url: "https://remi-theriault.com/Thériault_et_al_2021.pdf"
  - name: Supplemental Material
    url: "https://journals.sagepub.com/doi/suppl/10.1177/17470218211024826"
  - name: Preregistration

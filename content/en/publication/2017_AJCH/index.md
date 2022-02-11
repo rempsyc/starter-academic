@@ -27,8 +27,8 @@ doi: "10.1080/00029157.2016.1225252"
 external_link: "https://www.tandfonline.com/doi/full/10.1080/00029157.2016.1225252"
 
 links: 
-# - name: Full Article
-#   url: "https://www.tandfonline.com/doi/full/10.1080/00029157.2016.1225252"
+ - name: PDF
+   url: "https://remi-theriault.com/Lifshitz_et_al_2017.pdf"
 #  - name: Altmetric stats
 #    url: "https://www.altmetric.com/details/77332149"
 
