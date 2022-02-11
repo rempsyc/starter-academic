@@ -26,7 +26,7 @@ doi: "10.1177/17470218211024826"
 external_link: https://journals.sagepub.com/doi/abs/10.1177/17470218211024826
 
 links: 
- - name: Supplemental Material
+ - name: Matériel supplémentaire
    url: "https://journals.sagepub.com/doi/suppl/10.1177/17470218211024826"
  - name: Préinscription
    url: "https://osf.io/cws8g"
