@@ -37,8 +37,8 @@
   {{/* Add Altmetric and Dimension badges */}}
   <div class="ml-3">
   {{ if and .Params.add_badge .Params.doi }}
-    <div data-badge-popover="left" data-badge-type="donut" data-doi="{{ .Params.doi }}" data-condensed="true" class="altmetric-embed" data-link-target='_blank'></div>
-    <div class="__dimensions_badge_embed__" data-doi="{{ .Params.doi }}" data-legend="hover-left" data-style="small_circle"></div>
+    <div data-badge-popover="left" data-badge-type="donut" data-doi="{{ .Params.doi }}" data-condensed="true" class="altmetric-embed" data-link-target='_blank' rel="noopener noreferrer"></div>
+    <div class="__dimensions_badge_embed__" data-doi="{{ .Params.doi }}" data-legend="hover-left" data-style="small_circle" rel="noopener noreferrer"></div>
   {{ end }}
   </div>
 </div>
