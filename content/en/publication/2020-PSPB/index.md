@@ -27,8 +27,8 @@ doi: "10.1177/0146167219879126"
 external_link: "https://journals.sagepub.com/doi/abs/10.1177/0146167219879126"
 
 links: 
-# - name: Full Article
-#   url: "https://journals.sagepub.com/doi/abs/10.1177/0146167219879126"
+ - name: Supplemental Material
+   url: "https://journals.sagepub.com/doi/suppl/10.1177/0146167219879126"
 #  - name: Altmetric stats
 #    url: "https://www.altmetric.com/details/69092826"
 
