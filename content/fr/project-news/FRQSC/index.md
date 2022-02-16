@@ -1,12 +1,12 @@
 ---
-title: Finaliste Pierre Elliott Trudeau
+title: Relève étoile Paul-Gérin-Lajoie
 summary: ""
 tags:
 - Honours
-date: "2021-03-09T00:00:00Z"
+date: "2022-01-01T00:00:00Z"
 
 # Optional external URL for project (replaces project detail page).
-external_link: "https://www.fondationtrudeau.ca/activites/nouvelles/le-premier-pas-vers-un-leadership-engage"
+external_link: "https://frq.gouv.qc.ca/histoire-et-rapport/releve-etoile-paul-gerin-lajoie-janvier-2022/"
 
 image:
   caption: ""
@@ -30,4 +30,4 @@ url_video: ""
 slides: example
 ---
 
-Finaliste pour la bourse de la Fondation Pierre Elliott Trudeau. La Fondation a soigneusement sélectionné 36 finalistes sur 102 semi-finalistes et 643 candidatures de partout au Canada.
+Lauréat du concours du meilleur article du Fonds de recherche du Québec – Société et culture (FRQSC) pour l'édition Janvier 2022.

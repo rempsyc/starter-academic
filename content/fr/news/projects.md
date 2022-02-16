@@ -27,7 +27,11 @@ subtitle = ""
   
    [[content.filter_button]]
      name = "Financement"
-     tag = "Financement"
+     tag = "Funding"
+
+   [[content.filter_button]]
+     name = "Honneurs"
+     tag = "Honours"
   
 [design]
   # Choose how many columns the section has. Valid values: 1 or 2.

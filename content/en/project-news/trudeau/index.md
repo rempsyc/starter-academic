@@ -2,7 +2,7 @@
 title: Pierre Elliott Trudeau Finalist
 summary: ""
 tags:
-- Funding
+- Honours
 date: "2021-03-09T00:00:00Z"
 
 # Optional external URL for project (replaces project detail page).
