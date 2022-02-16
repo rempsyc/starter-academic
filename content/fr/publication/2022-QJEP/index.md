@@ -2,7 +2,7 @@
 title: "The Rubber Hand Illusion: Top-down attention modulates embodiment"
 
 # Publication name and optional abbreviated publication name.
-publication: "*Quarterly Journal of Experimental Psychology*. Sous presse. https://doi.org/10.1177/17470218221078858"
+publication: "*Quarterly Journal of Experimental Psychology*. Sous presse. <a href='https://doi.org/10.1177/17470218221078858' target='_blank' rel='noopener noreferrer'>doi.org/10.1177/17470218221078858</a>"
 
 #publication_short: 
 

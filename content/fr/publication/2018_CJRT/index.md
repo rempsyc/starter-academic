@@ -2,7 +2,7 @@
 title: "Patterns of bronchial challenge testing in Canada"
 
 # Publication name and optional abbreviated publication name.
-publication: "*Canadian Journal of Respiratory Therapy*, *54*(2). https://doi.org/10.29390/cjrt-2018-006"
+publication: "*Canadian Journal of Respiratory Therapy*, *54*(2). <a href='https://doi.org/10.29390/cjrt-2018-006' target='_blank' rel='noopener noreferrer'>doi.org/10.29390/cjrt-2018-006</a>"
 #publication_short: 
 
 authors: 

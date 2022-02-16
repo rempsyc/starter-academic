@@ -2,7 +2,7 @@
 title: "Self-concept clarity and the bodily self: Malleability across modalities"
 
 # Publication name and optional abbreviated publication name.
-publication: "*Personality and Social Psychology Bulletin*, *46*(5), 808-820. https://doi.org/10.1177/0146167219879126"
+publication: "*Personality and Social Psychology Bulletin*, *46*(5), 808-820. <a href='https://doi.org/10.1177/0146167219879126' target='_blank' rel='noopener noreferrer'>doi.org/10.1177/0146167219879126</a>"
 #publication_short: 
 
 authors:

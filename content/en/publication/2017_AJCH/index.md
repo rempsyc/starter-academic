@@ -2,7 +2,8 @@
 title: "On suggestibility and placebo: A follow-up study"
 
 # Publication name and optional abbreviated publication name.
-publication: "*The American Journal of Clinical Hypnosis*, *59*(4), 1-8. https://doi.org/10.1080/00029157.2016.1225252"
+publication: "*The American Journal of Clinical Hypnosis*, *59*(4), 1-8. <a href='https://doi.org/10.1080/00029157.2016.1225252' target='_blank' rel='noopener noreferrer'>doi.org/10.1080/00029157.2016.1225252</a>"
+
 #publication_short: 
 
 authors:
