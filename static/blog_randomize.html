@@ -178,39 +178,36 @@ installed <code>devtools</code> yet, install it via
 <h1>Between-Group Design</h1>
 <p>Basic output with default options (3 conditions, 9 participants,
 between-group design):</p>
-<pre><code>*Warning:* running the function below for the first time will install and load the following
-package (if it is not already installed and loaded on your machine): plyr.
-Note: This will run many lines of code on your console and could take a few minutes.</code></pre>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">nice_randomize</span>()</span></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">nice_randomize</span>()</span></code></pre></div>
 <pre><code>##   id Condition
-## 1  1         a
-## 2  2         b
+## 1  1         b
+## 2  2         a
 ## 3  3         c
 ## 4  4         a
 ## 5  5         c
 ## 6  6         b
-## 7  7         b
-## 8  8         a
+## 7  7         a
+## 8  8         b
 ## 9  9         c</code></pre>
 <div id="specify-design-number-of-conditions-number-of-participants-and-names-of-conditions" class="section level3">
 <h3>Specify design, number of conditions, number of participants, and
 names of conditions:</h3>
-<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">nice_randomize</span>(<span class="at">design =</span> <span class="st">&quot;between&quot;</span>, </span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>               <span class="at">Ncondition =</span> <span class="dv">4</span>, </span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>               <span class="at">n =</span> <span class="dv">8</span>, </span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>               <span class="at">condition.names =</span> <span class="fu">c</span>(<span class="st">&quot;BP&quot;</span>,<span class="st">&quot;CX&quot;</span>,<span class="st">&quot;PZ&quot;</span>,<span class="st">&quot;ZL&quot;</span>))</span></code></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">nice_randomize</span>(<span class="at">design =</span> <span class="st">&quot;between&quot;</span>, </span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>               <span class="at">Ncondition =</span> <span class="dv">4</span>, </span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>               <span class="at">n =</span> <span class="dv">8</span>, </span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>               <span class="at">condition.names =</span> <span class="fu">c</span>(<span class="st">&quot;BP&quot;</span>,<span class="st">&quot;CX&quot;</span>,<span class="st">&quot;PZ&quot;</span>,<span class="st">&quot;ZL&quot;</span>))</span></code></pre></div>
 <pre><code>##   id Condition
-## 1  1        ZL
-## 2  2        CX
+## 1  1        PZ
+## 2  2        ZL
 ## 3  3        BP
-## 4  4        PZ
-## 5  5        PZ
+## 4  4        CX
+## 5  5        ZL
 ## 6  6        CX
-## 7  7        ZL
-## 8  8        BP</code></pre>
-<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Warning: sample size needs to be a multiple of your number of groups if using &quot;between&quot;!</span></span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="co"># FYI: condition names stand for popular antidepressants:</span></span>
-<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="co"># BP = Bupropion, CX = Celexa, PZ = Prozac, ZL = Zoloft.</span></span></code></pre></div>
+## 7  7        BP
+## 8  8        PZ</code></pre>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Warning: sample size needs to be a multiple of your number of groups if using &quot;between&quot;!</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="co"># FYI: condition names stand for popular antidepressants:</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="co"># BP = Bupropion, CX = Celexa, PZ = Prozac, ZL = Zoloft.</span></span></code></pre></div>
 <p>Be aware that this function won’t work for between-group designs
 unless your sample size is a multiple of your number of groups (so for 4
 groups, sample size can’t be 5, 6, or 7, but you can have 4, 8, 12,
@@ -223,32 +220,32 @@ some operations won’t be able to be completed otherwise.</p>
 <h1>Within-Group Design</h1>
 <p>Basic output with default options (3 conditions and 9 participants)
 but with within-subject design specified:</p>
-<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">nice_randomize</span>(<span class="at">design =</span> <span class="st">&quot;within&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">nice_randomize</span>(<span class="at">design =</span> <span class="st">&quot;within&quot;</span>)</span></code></pre></div>
 <pre><code>##    id Condition
 ## 1   1         a
-## 2   2         c
+## 2   2         a
 ## 3   3         a
-## 4   4         a
-## 5   5         c
-## 6   6         a
+## 4   4         b
+## 5   5         a
+## 6   6         b
 ## 7   7         c
-## 8   8         b
-## 9   9         b
+## 8   8         c
+## 9   9         a
 ## 10  1         b
-## 11  2         b
+## 11  2         c
 ## 12  3         c
-## 13  4         c
-## 14  5         a
+## 13  4         a
+## 14  5         b
 ## 15  6         c
 ## 16  7         a
-## 17  8         c
-## 18  9         a
+## 17  8         b
+## 18  9         b
 ## 19  1         c
-## 20  2         a
+## 20  2         b
 ## 21  3         b
-## 22  4         b
-## 23  5         b
-## 24  6         b
+## 22  4         c
+## 23  5         c
+## 24  6         a
 ## 25  7         b
 ## 26  8         a
 ## 27  9         c</code></pre>
@@ -257,38 +254,38 @@ but with within-subject design specified:</p>
 names of conditions:</h3>
 <p>Note that you could call your conditions anything (like a, b, c,
 etc.).</p>
-<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">nice_randomize</span>(<span class="at">design =</span> <span class="st">&quot;within&quot;</span>, </span>
-<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>               <span class="at">Ncondition =</span> <span class="dv">4</span>, </span>
-<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>               <span class="at">n =</span> <span class="dv">6</span>, </span>
-<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>               <span class="at">condition.names =</span> <span class="fu">c</span>(<span class="st">&quot;SV&quot;</span>,<span class="st">&quot;AV&quot;</span>,<span class="st">&quot;ST&quot;</span>,<span class="st">&quot;AT&quot;</span>))</span></code></pre></div>
+<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">nice_randomize</span>(<span class="at">design =</span> <span class="st">&quot;within&quot;</span>, </span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>               <span class="at">Ncondition =</span> <span class="dv">4</span>, </span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>               <span class="at">n =</span> <span class="dv">6</span>, </span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>               <span class="at">condition.names =</span> <span class="fu">c</span>(<span class="st">&quot;SV&quot;</span>,<span class="st">&quot;AV&quot;</span>,<span class="st">&quot;ST&quot;</span>,<span class="st">&quot;AT&quot;</span>))</span></code></pre></div>
 <pre><code>##    id Condition
-## 1   1        ST
+## 1   1        AV
 ## 2   2        AV
-## 3   3        AV
-## 4   4        SV
-## 5   5        ST
-## 6   6        SV
-## 7   1        SV
-## 8   2        SV
-## 9   3        SV
+## 3   3        ST
+## 4   4        ST
+## 5   5        AT
+## 6   6        AT
+## 7   1        AT
+## 8   2        ST
+## 9   3        AV
 ## 10  4        AT
-## 11  5        AT
-## 12  6        AT
-## 13  1        AV
-## 14  2        ST
-## 15  3        ST
-## 16  4        ST
-## 17  5        SV
-## 18  6        AV
-## 19  1        AT
-## 20  2        AT
-## 21  3        AT
-## 22  4        AV
-## 23  5        AV
-## 24  6        ST</code></pre>
-<div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co"># FYI: condition names stand for forms of multisensory stimulation:</span></span>
-<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="co"># SV = Synchronous Visual, AV = Asynchronous Visual, </span></span>
-<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a><span class="co"># ST = Synchronous Tactile, AT = Asynchronous Tactile.</span></span></code></pre></div>
+## 11  5        SV
+## 12  6        AV
+## 13  1        ST
+## 14  2        AT
+## 15  3        AT
+## 16  4        AV
+## 17  5        AV
+## 18  6        ST
+## 19  1        SV
+## 20  2        SV
+## 21  3        SV
+## 22  4        SV
+## 23  5        ST
+## 24  6        SV</code></pre>
+<div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># FYI: condition names stand for forms of multisensory stimulation:</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="co"># SV = Synchronous Visual, AV = Asynchronous Visual, </span></span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a><span class="co"># ST = Synchronous Tactile, AT = Asynchronous Tactile.</span></span></code></pre></div>
 </div>
 </div>
 <div id="make-a-quick-runsheet" class="section level1">
@@ -296,37 +293,37 @@ etc.).</p>
 <p>A nice way to make a run sheet quickly (regardless of design) is by
 adding column names in advance with the <code>col.names</code>
 argument:</p>
-<div class="sourceCode" id="cb13"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>nice_randomized_subjects <span class="ot">&lt;-</span> <span class="fu">nice_randomize</span>(<span class="at">design =</span> <span class="st">&quot;within&quot;</span>, </span>
-<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>                                           <span class="at">Ncondition =</span> <span class="dv">4</span>, </span>
-<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>                                           <span class="at">n =</span> <span class="dv">128</span>,</span>
-<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>                                           <span class="at">condition.names =</span> <span class="fu">c</span>(<span class="st">&quot;SV&quot;</span>,<span class="st">&quot;AV&quot;</span>,<span class="st">&quot;ST&quot;</span>,<span class="st">&quot;AT&quot;</span>), </span>
-<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>                                           <span class="at">col.names =</span> <span class="fu">c</span>(<span class="st">&quot;id&quot;</span>, <span class="st">&quot;Condition&quot;</span>, <span class="st">&quot;Date/Time&quot;</span>,</span>
-<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a>                                                         <span class="st">&quot;SONA ID&quot;</span>, <span class="st">&quot;Age/Gd.&quot;</span>, <span class="st">&quot;Handedness&quot;</span>,</span>
-<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a>                                                         <span class="st">&quot;Tester&quot;</span>, <span class="st">&quot;Notes&quot;</span>))</span>
-<span id="cb13-8"><a href="#cb13-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-9"><a href="#cb13-9" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(nice_randomized_subjects)</span></code></pre></div>
+<div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>nice_randomized_subjects <span class="ot">&lt;-</span> <span class="fu">nice_randomize</span>(<span class="at">design =</span> <span class="st">&quot;within&quot;</span>, </span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>                                           <span class="at">Ncondition =</span> <span class="dv">4</span>, </span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>                                           <span class="at">n =</span> <span class="dv">128</span>,</span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>                                           <span class="at">condition.names =</span> <span class="fu">c</span>(<span class="st">&quot;SV&quot;</span>,<span class="st">&quot;AV&quot;</span>,<span class="st">&quot;ST&quot;</span>,<span class="st">&quot;AT&quot;</span>), </span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a>                                           <span class="at">col.names =</span> <span class="fu">c</span>(<span class="st">&quot;id&quot;</span>, <span class="st">&quot;Condition&quot;</span>, <span class="st">&quot;Date/Time&quot;</span>,</span>
+<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a>                                                         <span class="st">&quot;SONA ID&quot;</span>, <span class="st">&quot;Age/Gd.&quot;</span>, <span class="st">&quot;Handedness&quot;</span>,</span>
+<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a>                                                         <span class="st">&quot;Tester&quot;</span>, <span class="st">&quot;Notes&quot;</span>))</span>
+<span id="cb12-8"><a href="#cb12-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-9"><a href="#cb12-9" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(nice_randomized_subjects)</span></code></pre></div>
 <pre><code>##   id Condition Date/Time SONA ID Age/Gd. Handedness Tester Notes
-## 1  1        AT        NA      NA      NA         NA     NA    NA
-## 2  2        SV        NA      NA      NA         NA     NA    NA
-## 3  3        AV        NA      NA      NA         NA     NA    NA
-## 4  4        ST        NA      NA      NA         NA     NA    NA
-## 5  5        AT        NA      NA      NA         NA     NA    NA
-## 6  6        ST        NA      NA      NA         NA     NA    NA</code></pre>
+## 1  1        ST        NA      NA      NA         NA     NA    NA
+## 2  2        ST        NA      NA      NA         NA     NA    NA
+## 3  3        SV        NA      NA      NA         NA     NA    NA
+## 4  4        AT        NA      NA      NA         NA     NA    NA
+## 5  5        SV        NA      NA      NA         NA     NA    NA
+## 6  6        AV        NA      NA      NA         NA     NA    NA</code></pre>
 </div>
 <div id="save-data-frame-as-csv-file" class="section level1">
 <h1>Save data frame as CSV file</h1>
 <p>These steps apply no matter what design you have used. Below, you
 have to specify where you want to save the table as
 <code>.csv</code>.</p>
-<div class="sourceCode" id="cb15"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="fu">write.table</span>(nice_randomized_subjects,  <span class="co"># Save data frame to .csv file for later use</span></span>
-<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>            <span class="at">file =</span> <span class="st">&quot;D:/R treasures/randomization.csv&quot;</span>, <span class="co"># Specify own path</span></span>
-<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>            <span class="at">sep =</span> <span class="st">&#39;,&#39;</span>, <span class="co"># This indicates it&#39;s a CSV (comma separated values) file</span></span>
-<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a>            <span class="at">row.names =</span> <span class="cn">FALSE</span>,</span>
-<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a>            <span class="at">col.names =</span> <span class="cn">TRUE</span>,</span>
-<span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a>            <span class="at">na =</span> <span class="st">&quot;&quot;</span>) <span class="co"># replaces NA&#39;s with empty cells</span></span>
-<span id="cb15-7"><a href="#cb15-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Change the path to where you would like to save it.</span></span>
-<span id="cb15-8"><a href="#cb15-8" aria-hidden="true" tabindex="-1"></a><span class="co"># If you copy-paste your path name, remember to use &quot;R&quot; slashes (&#39;/&#39; rather than &#39;\&#39;).</span></span>
-<span id="cb15-9"><a href="#cb15-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Also remember to specify the .csv extension of the file.</span></span></code></pre></div>
+<div class="sourceCode" id="cb14"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="fu">write.table</span>(nice_randomized_subjects,  <span class="co"># Save data frame to .csv file for later use</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>            <span class="at">file =</span> <span class="st">&quot;D:/R treasures/randomization.csv&quot;</span>, <span class="co"># Specify own path</span></span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>            <span class="at">sep =</span> <span class="st">&#39;,&#39;</span>, <span class="co"># This indicates it&#39;s a CSV (comma separated values) file</span></span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a>            <span class="at">row.names =</span> <span class="cn">FALSE</span>,</span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a>            <span class="at">col.names =</span> <span class="cn">TRUE</span>,</span>
+<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a>            <span class="at">na =</span> <span class="st">&quot;&quot;</span>) <span class="co"># replaces NA&#39;s with empty cells</span></span>
+<span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Change the path to where you would like to save it.</span></span>
+<span id="cb14-8"><a href="#cb14-8" aria-hidden="true" tabindex="-1"></a><span class="co"># If you copy-paste your path name, remember to use &quot;R&quot; slashes (&#39;/&#39; rather than &#39;\&#39;).</span></span>
+<span id="cb14-9"><a href="#cb14-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Also remember to specify the .csv extension of the file.</span></span></code></pre></div>
 </div>
 <div id="export-to-wordpdf" class="section level1">
 <h1>Export to Word/PDF</h1>
