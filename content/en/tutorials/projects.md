@@ -6,7 +6,7 @@ active = true # Activate this widget? true/false
 weight = 65  # Order that this section will appear.
 
 title = "R Tutorials"
-subtitle = "Introducing convenience functions to make your workflow **faster** and **easier** than ever"
+subtitle = "Introducing the rempsyc package: convenience functions to make your workflow **faster** and **easier** than ever"
 
 [content]
   # Page type to display. E.g. project.
