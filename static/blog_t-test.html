@@ -187,7 +187,7 @@ multiple variables easily in R</h1>
 <hr />
 <p><span class="math inline">\(~\)</span></p>
 <blockquote>
-<p><strong><em>Update:</em></strong> This function has moved to my new
+<p><strong><em>Update:</em></strong> This function has migrated to the
 <code>rempsyc</code> package (<a href="https://github.com/rempsyc/rempsyc" class="uri">https://github.com/rempsyc/rempsyc</a>).</p>
 </blockquote>
 <p>This function makes it really easy to get all all your
@@ -218,40 +218,40 @@ installed <code>devtools</code> yet, install it via
 <p><span class="math inline">\(~\)</span></p>
 <div id="make-the-basic-analysis" class="section level3">
 <h3>Make the basic analysis:</h3>
-<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">nice_t_test</span>(<span class="at">response =</span> <span class="st">&quot;mpg&quot;</span>,</span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>            <span class="at">group =</span> <span class="st">&quot;am&quot;</span>,</span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>            <span class="at">data =</span> mtcars)</span></code></pre></div>
-<pre><code>##                   Dependent Variable         t       df           p         d
-## mpg ~ am.estimate                mpg -3.767123 18.33225 0.001373638 -1.477947
-##                    CI_lower  CI_upper
-## mpg ~ am.estimate -2.304209 -0.651685</code></pre>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">nice_t_test</span>(<span class="at">data =</span> mtcars,</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>            <span class="at">response =</span> <span class="st">&quot;mpg&quot;</span>,</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>            <span class="at">group =</span> <span class="st">&quot;am&quot;</span>)</span></code></pre></div>
+<pre><code>##   Dependent Variable         t       df           p         d  CI_lower
+## 1                mpg -3.767123 18.33225 0.001373638 -1.477947 -2.304209
+##    CI_upper
+## 1 -0.651685</code></pre>
 <p>Now the best thing about this function is that you can put all your
 dependent variables of interest in the function call and it will output
 a sweet, pre-formatted table for your convenience.</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">nice_t_test</span>(<span class="at">response =</span> <span class="fu">c</span>(<span class="st">&quot;mpg&quot;</span>, <span class="st">&quot;disp&quot;</span>, <span class="st">&quot;drat&quot;</span>, <span class="st">&quot;wt&quot;</span>, <span class="st">&quot;qsec&quot;</span>, <span class="st">&quot;gear&quot;</span>, <span class="st">&quot;carb&quot;</span>),</span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>            <span class="at">group =</span> <span class="st">&quot;am&quot;</span>,</span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>            <span class="at">data =</span> mtcars) <span class="ot">-&gt;</span> t.test.results</span>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">nice_t_test</span>(<span class="at">data =</span> mtcars,</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>            <span class="at">response =</span> <span class="fu">c</span>(<span class="st">&quot;mpg&quot;</span>, <span class="st">&quot;disp&quot;</span>, <span class="st">&quot;drat&quot;</span>, <span class="st">&quot;wt&quot;</span>, <span class="st">&quot;qsec&quot;</span>, <span class="st">&quot;gear&quot;</span>, <span class="st">&quot;carb&quot;</span>),</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>            <span class="at">group =</span> <span class="st">&quot;am&quot;</span>) <span class="ot">-&gt;</span> t.test.results</span>
 <span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>t.test.results</span></code></pre></div>
-<pre><code>##                    Dependent Variable          t       df            p
-## mpg ~ am.estimate                 mpg -3.7671231 18.33225 1.373638e-03
-## disp ~ am.estimate               disp  4.1977266 29.25845 2.300413e-04
-## drat ~ am.estimate               drat -5.6460883 27.19780 5.266742e-06
-## wt ~ am.estimate                   wt  5.4939049 29.23352 6.272020e-06
-## qsec ~ am.estimate               qsec  1.2878448 25.53421 2.093498e-01
-## gear ~ am.estimate               gear -6.8995488 22.56804 5.461599e-07
-## carb ~ am.estimate               carb -0.2826469 16.58880 7.809439e-01
-##                             d   CI_lower   CI_upper
-## mpg ~ am.estimate  -1.4779471 -2.3042092 -0.6516850
-## disp ~ am.estimate  1.4452210  0.6227403  2.2677018
-## drat ~ am.estimate -2.0030843 -2.8985400 -1.1076285
-## wt ~ am.estimate    1.8924060  1.0127792  2.7720327
-## qsec ~ am.estimate  0.4656285 -0.2790096  1.2102667
-## gear ~ am.estimate -2.5754302 -3.5616444 -1.5892160
-## carb ~ am.estimate -0.1136147 -0.8492761  0.6220468</code></pre>
+<pre><code>##   Dependent Variable          t       df            p          d   CI_lower
+## 1                mpg -3.7671231 18.33225 1.373638e-03 -1.4779471 -2.3042092
+## 2               disp  4.1977266 29.25845 2.300413e-04  1.4452210  0.6227403
+## 3               drat -5.6460883 27.19780 5.266742e-06 -2.0030843 -2.8985400
+## 4                 wt  5.4939049 29.23352 6.272020e-06  1.8924060  1.0127792
+## 5               qsec  1.2878448 25.53421 2.093498e-01  0.4656285 -0.2790096
+## 6               gear -6.8995488 22.56804 5.461599e-07 -2.5754302 -3.5616444
+## 7               carb -0.2826469 16.58880 7.809439e-01 -0.1136147 -0.8492761
+##     CI_upper
+## 1 -0.6516850
+## 2  2.2677018
+## 3 -1.1076285
+## 4  2.7720327
+## 5  1.2102667
+## 6 -1.5892160
+## 7  0.6220468</code></pre>
 <p>If we want it to look nice</p>
 <div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>my_table <span class="ot">&lt;-</span> <span class="fu">nice_table</span>(t.test.results)</span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>my_table</span></code></pre></div>
-<template id="81ecb30d-7a58-4d2e-8181-0994c88471ed"><style>
+<template id="c0bfc197-7d0f-41e8-9cf9-7c3db0e7f872"><style>
 .tabwid table{
   border-spacing:0px !important;
   border-collapse:collapse;
@@ -285,12 +285,12 @@ a sweet, pre-formatted table for your convenience.</p>
 .tabwid table tr {
 background-color: transparent;
 }
-</style><div class="tabwid"><style>.cl-1ca5a1c4{table-layout:auto;width:100%;}.cl-1c8b2916{font-family:'Times New Roman';font-size:12pt;font-weight:normal;font-style:normal;text-decoration:none;color:rgba(0, 0, 0, 1.00);background-color:transparent;}.cl-1c8b2917{font-family:'Times New Roman';font-size:12pt;font-weight:normal;font-style:italic;text-decoration:none;color:rgba(0, 0, 0, 1.00);background-color:transparent;}.cl-1c8b2918{margin:0;text-align:center;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:5pt;padding-top:5pt;padding-left:5pt;padding-right:5pt;line-height: 1;background-color:transparent;}.cl-1c8b9e32{height:39.6pt;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-1c8b9e33{height:39.6pt;background-color:transparent;vertical-align: middle;border-bottom: 0.5pt solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-1c8b9e34{height:39.6pt;background-color:transparent;vertical-align: middle;border-bottom: 0.5pt solid rgba(0, 0, 0, 1.00);border-top: 0.5pt solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}</style><table class="cl-1ca5a1c4">
-<thead><tr><td class="cl-1c8b9e34"><p class="cl-1c8b2918"><span class="cl-1c8b2916">Dependent Variable</span></p></td><td class="cl-1c8b9e34"><p class="cl-1c8b2918"><span class="cl-1c8b2917">t</span></p></td><td class="cl-1c8b9e34"><p class="cl-1c8b2918"><span class="cl-1c8b2917">df</span></p></td><td class="cl-1c8b9e34"><p class="cl-1c8b2918"><span class="cl-1c8b2917">p</span></p></td><td class="cl-1c8b9e34"><p class="cl-1c8b2918"><span class="cl-1c8b2917">d</span></p></td><td class="cl-1c8b9e34"><p class="cl-1c8b2918"><span class="cl-1c8b2916">95% CI</span></p></td></tr></thead><tbody><tr><td class="cl-1c8b9e32"><p class="cl-1c8b2918"><span class="cl-1c8b2916">mpg</span></p></td><td class="cl-1c8b9e32"><p class="cl-1c8b2918"><span class="cl-1c8b2916">-3.77</span></p></td><td class="cl-1c8b9e32"><p class="cl-1c8b2918"><span class="cl-1c8b2916">18</span></p></td><td class="cl-1c8b9e32"><p class="cl-1c8b2918"><span class="cl-1c8b2916">.001</span></p></td><td class="cl-1c8b9e32"><p class="cl-1c8b2918"><span class="cl-1c8b2916">-1.48</span></p></td><td class="cl-1c8b9e32"><p class="cl-1c8b2918"><span class="cl-1c8b2916">[-2.3, -0.65]</span></p></td></tr><tr><td class="cl-1c8b9e32"><p class="cl-1c8b2918"><span class="cl-1c8b2916">disp</span></p></td><td class="cl-1c8b9e32"><p class="cl-1c8b2918"><span class="cl-1c8b2916">4.20</span></p></td><td class="cl-1c8b9e32"><p class="cl-1c8b2918"><span class="cl-1c8b2916">29</span></p></td><td class="cl-1c8b9e32"><p class="cl-1c8b2918"><span class="cl-1c8b2916">&lt; .001</span></p></td><td class="cl-1c8b9e32"><p class="cl-1c8b2918"><span class="cl-1c8b2916">1.45</span></p></td><td class="cl-1c8b9e32"><p class="cl-1c8b2918"><span class="cl-1c8b2916">[0.62, 2.27]</span></p></td></tr><tr><td class="cl-1c8b9e32"><p class="cl-1c8b2918"><span class="cl-1c8b2916">drat</span></p></td><td class="cl-1c8b9e32"><p class="cl-1c8b2918"><span class="cl-1c8b2916">-5.65</span></p></td><td class="cl-1c8b9e32"><p class="cl-1c8b2918"><span class="cl-1c8b2916">27</span></p></td><td class="cl-1c8b9e32"><p class="cl-1c8b2918"><span class="cl-1c8b2916">&lt; .001</span></p></td><td class="cl-1c8b9e32"><p class="cl-1c8b2918"><span class="cl-1c8b2916">-2.00</span></p></td><td class="cl-1c8b9e32"><p class="cl-1c8b2918"><span class="cl-1c8b2916">[-2.9, -1.11]</span></p></td></tr><tr><td class="cl-1c8b9e32"><p class="cl-1c8b2918"><span class="cl-1c8b2916">wt</span></p></td><td class="cl-1c8b9e32"><p class="cl-1c8b2918"><span class="cl-1c8b2916">5.49</span></p></td><td class="cl-1c8b9e32"><p class="cl-1c8b2918"><span class="cl-1c8b2916">29</span></p></td><td class="cl-1c8b9e32"><p class="cl-1c8b2918"><span class="cl-1c8b2916">&lt; .001</span></p></td><td class="cl-1c8b9e32"><p class="cl-1c8b2918"><span class="cl-1c8b2916">1.89</span></p></td><td class="cl-1c8b9e32"><p class="cl-1c8b2918"><span class="cl-1c8b2916">[1.01, 2.77]</span></p></td></tr><tr><td class="cl-1c8b9e32"><p class="cl-1c8b2918"><span class="cl-1c8b2916">qsec</span></p></td><td class="cl-1c8b9e32"><p class="cl-1c8b2918"><span class="cl-1c8b2916">1.29</span></p></td><td class="cl-1c8b9e32"><p class="cl-1c8b2918"><span class="cl-1c8b2916">26</span></p></td><td class="cl-1c8b9e32"><p class="cl-1c8b2918"><span class="cl-1c8b2916">.209</span></p></td><td class="cl-1c8b9e32"><p class="cl-1c8b2918"><span class="cl-1c8b2916">0.47</span></p></td><td class="cl-1c8b9e32"><p class="cl-1c8b2918"><span class="cl-1c8b2916">[-0.28, 1.21]</span></p></td></tr><tr><td class="cl-1c8b9e32"><p class="cl-1c8b2918"><span class="cl-1c8b2916">gear</span></p></td><td class="cl-1c8b9e32"><p class="cl-1c8b2918"><span class="cl-1c8b2916">-6.90</span></p></td><td class="cl-1c8b9e32"><p class="cl-1c8b2918"><span class="cl-1c8b2916">23</span></p></td><td class="cl-1c8b9e32"><p class="cl-1c8b2918"><span class="cl-1c8b2916">&lt; .001</span></p></td><td class="cl-1c8b9e32"><p class="cl-1c8b2918"><span class="cl-1c8b2916">-2.58</span></p></td><td class="cl-1c8b9e32"><p class="cl-1c8b2918"><span class="cl-1c8b2916">[-3.56, -1.59]</span></p></td></tr><tr><td class="cl-1c8b9e33"><p class="cl-1c8b2918"><span class="cl-1c8b2916">carb</span></p></td><td class="cl-1c8b9e33"><p class="cl-1c8b2918"><span class="cl-1c8b2916">-0.28</span></p></td><td class="cl-1c8b9e33"><p class="cl-1c8b2918"><span class="cl-1c8b2916">17</span></p></td><td class="cl-1c8b9e33"><p class="cl-1c8b2918"><span class="cl-1c8b2916">.781</span></p></td><td class="cl-1c8b9e33"><p class="cl-1c8b2918"><span class="cl-1c8b2916">-0.11</span></p></td><td class="cl-1c8b9e33"><p class="cl-1c8b2918"><span class="cl-1c8b2916">[-0.85, 0.62]</span></p></td></tr></tbody></table></div></template>
-<div class="flextable-shadow-host" id="3fbb4ade-97c1-4f7c-a6dc-4797a22892b8"></div>
+</style><div class="tabwid"><style>.cl-465dceb6{table-layout:auto;width:100%;}.cl-4644432e{font-family:'Times New Roman';font-size:12pt;font-weight:normal;font-style:normal;text-decoration:none;color:rgba(0, 0, 0, 1.00);background-color:transparent;}.cl-4644432f{font-family:'Times New Roman';font-size:12pt;font-weight:normal;font-style:italic;text-decoration:none;color:rgba(0, 0, 0, 1.00);background-color:transparent;}.cl-46446a3e{margin:0;text-align:center;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:5pt;padding-top:5pt;padding-left:5pt;padding-right:5pt;line-height: 1;background-color:transparent;}.cl-4644df5a{height:39.6pt;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-4644df5b{height:39.6pt;background-color:transparent;vertical-align: middle;border-bottom: 0.5pt solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-4644df5c{height:39.6pt;background-color:transparent;vertical-align: middle;border-bottom: 0.5pt solid rgba(0, 0, 0, 1.00);border-top: 0.5pt solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}</style><table class="cl-465dceb6">
+<thead><tr><td class="cl-4644df5c"><p class="cl-46446a3e"><span class="cl-4644432e">Dependent Variable</span></p></td><td class="cl-4644df5c"><p class="cl-46446a3e"><span class="cl-4644432f">t</span></p></td><td class="cl-4644df5c"><p class="cl-46446a3e"><span class="cl-4644432f">df</span></p></td><td class="cl-4644df5c"><p class="cl-46446a3e"><span class="cl-4644432f">p</span></p></td><td class="cl-4644df5c"><p class="cl-46446a3e"><span class="cl-4644432f">d</span></p></td><td class="cl-4644df5c"><p class="cl-46446a3e"><span class="cl-4644432e">95% CI</span></p></td></tr></thead><tbody><tr><td class="cl-4644df5a"><p class="cl-46446a3e"><span class="cl-4644432e">mpg</span></p></td><td class="cl-4644df5a"><p class="cl-46446a3e"><span class="cl-4644432e">-3.77</span></p></td><td class="cl-4644df5a"><p class="cl-46446a3e"><span class="cl-4644432e">18</span></p></td><td class="cl-4644df5a"><p class="cl-46446a3e"><span class="cl-4644432e">.001</span></p></td><td class="cl-4644df5a"><p class="cl-46446a3e"><span class="cl-4644432e">-1.48</span></p></td><td class="cl-4644df5a"><p class="cl-46446a3e"><span class="cl-4644432e">[-2.3, -0.65]</span></p></td></tr><tr><td class="cl-4644df5a"><p class="cl-46446a3e"><span class="cl-4644432e">disp</span></p></td><td class="cl-4644df5a"><p class="cl-46446a3e"><span class="cl-4644432e">4.20</span></p></td><td class="cl-4644df5a"><p class="cl-46446a3e"><span class="cl-4644432e">29</span></p></td><td class="cl-4644df5a"><p class="cl-46446a3e"><span class="cl-4644432e">&lt; .001</span></p></td><td class="cl-4644df5a"><p class="cl-46446a3e"><span class="cl-4644432e">1.45</span></p></td><td class="cl-4644df5a"><p class="cl-46446a3e"><span class="cl-4644432e">[0.62, 2.27]</span></p></td></tr><tr><td class="cl-4644df5a"><p class="cl-46446a3e"><span class="cl-4644432e">drat</span></p></td><td class="cl-4644df5a"><p class="cl-46446a3e"><span class="cl-4644432e">-5.65</span></p></td><td class="cl-4644df5a"><p class="cl-46446a3e"><span class="cl-4644432e">27</span></p></td><td class="cl-4644df5a"><p class="cl-46446a3e"><span class="cl-4644432e">&lt; .001</span></p></td><td class="cl-4644df5a"><p class="cl-46446a3e"><span class="cl-4644432e">-2.00</span></p></td><td class="cl-4644df5a"><p class="cl-46446a3e"><span class="cl-4644432e">[-2.9, -1.11]</span></p></td></tr><tr><td class="cl-4644df5a"><p class="cl-46446a3e"><span class="cl-4644432e">wt</span></p></td><td class="cl-4644df5a"><p class="cl-46446a3e"><span class="cl-4644432e">5.49</span></p></td><td class="cl-4644df5a"><p class="cl-46446a3e"><span class="cl-4644432e">29</span></p></td><td class="cl-4644df5a"><p class="cl-46446a3e"><span class="cl-4644432e">&lt; .001</span></p></td><td class="cl-4644df5a"><p class="cl-46446a3e"><span class="cl-4644432e">1.89</span></p></td><td class="cl-4644df5a"><p class="cl-46446a3e"><span class="cl-4644432e">[1.01, 2.77]</span></p></td></tr><tr><td class="cl-4644df5a"><p class="cl-46446a3e"><span class="cl-4644432e">qsec</span></p></td><td class="cl-4644df5a"><p class="cl-46446a3e"><span class="cl-4644432e">1.29</span></p></td><td class="cl-4644df5a"><p class="cl-46446a3e"><span class="cl-4644432e">26</span></p></td><td class="cl-4644df5a"><p class="cl-46446a3e"><span class="cl-4644432e">.209</span></p></td><td class="cl-4644df5a"><p class="cl-46446a3e"><span class="cl-4644432e">0.47</span></p></td><td class="cl-4644df5a"><p class="cl-46446a3e"><span class="cl-4644432e">[-0.28, 1.21]</span></p></td></tr><tr><td class="cl-4644df5a"><p class="cl-46446a3e"><span class="cl-4644432e">gear</span></p></td><td class="cl-4644df5a"><p class="cl-46446a3e"><span class="cl-4644432e">-6.90</span></p></td><td class="cl-4644df5a"><p class="cl-46446a3e"><span class="cl-4644432e">23</span></p></td><td class="cl-4644df5a"><p class="cl-46446a3e"><span class="cl-4644432e">&lt; .001</span></p></td><td class="cl-4644df5a"><p class="cl-46446a3e"><span class="cl-4644432e">-2.58</span></p></td><td class="cl-4644df5a"><p class="cl-46446a3e"><span class="cl-4644432e">[-3.56, -1.59]</span></p></td></tr><tr><td class="cl-4644df5b"><p class="cl-46446a3e"><span class="cl-4644432e">carb</span></p></td><td class="cl-4644df5b"><p class="cl-46446a3e"><span class="cl-4644432e">-0.28</span></p></td><td class="cl-4644df5b"><p class="cl-46446a3e"><span class="cl-4644432e">17</span></p></td><td class="cl-4644df5b"><p class="cl-46446a3e"><span class="cl-4644432e">.781</span></p></td><td class="cl-4644df5b"><p class="cl-46446a3e"><span class="cl-4644432e">-0.11</span></p></td><td class="cl-4644df5b"><p class="cl-46446a3e"><span class="cl-4644432e">[-0.85, 0.62]</span></p></td></tr></tbody></table></div></template>
+<div class="flextable-shadow-host" id="88d6a4e3-3a1e-45eb-805e-08a84046c9c5"></div>
 <script>
-var dest = document.getElementById("3fbb4ade-97c1-4f7c-a6dc-4797a22892b8");
-var template = document.getElementById("81ecb30d-7a58-4d2e-8181-0994c88471ed");
+var dest = document.getElementById("88d6a4e3-3a1e-45eb-805e-08a84046c9c5");
+var template = document.getElementById("c0bfc197-7d0f-41e8-9cf9-7c3db0e7f872");
 var caption = template.content.querySelector("caption");
 if(caption) {
   caption.style.cssText = "display:block;text-align:center;";
@@ -313,14 +313,14 @@ of freedom, and <em>t</em> is the <em>t</em>-value.</p>
 <div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">save_as_docx</span>(my_table, <span class="at">path =</span> <span class="st">&quot;D:/R treasures/t-tests.docx&quot;</span>)</span></code></pre></div>
 <p>The function can be passed some of the regular arguments of the base
 <code>t.test()</code> function. For example:</p>
-<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">nice_t_test</span>(<span class="at">response =</span> <span class="st">&quot;mpg&quot;</span>,</span>
-<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>            <span class="at">group =</span> <span class="st">&quot;am&quot;</span>,</span>
-<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>            <span class="at">data =</span> mtcars,</span>
+<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">nice_t_test</span>(<span class="at">data =</span> mtcars,</span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>            <span class="at">response =</span> <span class="st">&quot;mpg&quot;</span>,</span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>            <span class="at">group =</span> <span class="st">&quot;am&quot;</span>,</span>
 <span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>            <span class="at">alternative =</span> <span class="st">&quot;less&quot;</span>) <span class="co"># to make it one-sided instead of two-sided</span></span></code></pre></div>
-<pre><code>##                   Dependent Variable         t       df            p         d
-## mpg ~ am.estimate                mpg -3.767123 18.33225 0.0006868192 -1.477947
-##                    CI_lower  CI_upper
-## mpg ~ am.estimate -2.304209 -0.651685</code></pre>
+<pre><code>##   Dependent Variable         t       df            p         d  CI_lower
+## 1                mpg -3.767123 18.33225 0.0006868192 -1.477947 -2.304209
+##    CI_upper
+## 1 -0.651685</code></pre>
 <p>And there you go!</p>
 <p><span class="math inline">\(~\)</span></p>
 <p><span class="math inline">\(~\)</span></p>
@@ -338,8 +338,8 @@ my guide! :) <span class="math inline">\(~\)</span></p>
 <p><span class="math inline">\(~\)</span></p>
 <p><span class="math inline">\(~\)</span></p>
 <hr />
-<p><em>Updated 2022-02-26 (moved function to <code>rempsyc</code>
-package)</em></p>
+<p><em>Updated 2022-04-04 (moved data to first argument for pipe
+compatibility)</em></p>
 <p><span class="math inline">\(~\)</span></p>
 <p><span class="math inline">\(~\)</span></p>
 <p><span class="math inline">\(~\)</span></p>
