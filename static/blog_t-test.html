@@ -191,13 +191,11 @@ R</h1>
 <code>rempsyc</code> package (<a href="https://github.com/rempsyc/rempsyc" class="uri">https://github.com/rempsyc/rempsyc</a>).</p>
 </blockquote>
 <p>This function makes it really easy to get all all your
-<em>t</em>-test results in one simple, publication-ready table
-(specifically for independent two-sample <em>t</em>-tests).</p>
+<em>t</em>-test results in one simple, publication-ready table.</p>
 <p>Let’s first load the demo data. This data set comes with base
 <code>R</code> (meaning you have it too and can directly type this
 command into your <code>R</code> console).</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">data</span>(<span class="st">&quot;mtcars&quot;</span>)</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(mtcars)</span></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(mtcars)</span></code></pre></div>
 <pre><code>##                    mpg cyl disp  hp drat    wt  qsec vs am gear carb
 ## Mazda RX4         21.0   6  160 110 3.90 2.620 16.46  0  1    4    4
 ## Mazda RX4 Wag     21.0   6  160 110 3.90 2.875 17.02  0  1    4    4
@@ -220,38 +218,45 @@ installed <code>devtools</code> yet, install it via
 <h3>Make the basic analysis:</h3>
 <div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">nice_t_test</span>(<span class="at">data =</span> mtcars,</span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>            <span class="at">response =</span> <span class="st">&quot;mpg&quot;</span>,</span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>            <span class="at">group =</span> <span class="st">&quot;am&quot;</span>)</span></code></pre></div>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>            <span class="at">group =</span> <span class="st">&quot;am&quot;</span>,</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>            <span class="at">warning =</span> <span class="cn">FALSE</span>)</span></code></pre></div>
 <pre><code>##   Dependent Variable         t       df           p         d  CI_lower
-## 1                mpg -3.767123 18.33225 0.001373638 -1.477947 -2.304209
-##    CI_upper
-## 1 -0.651685</code></pre>
+## 1                mpg -3.767123 18.33225 0.001373638 -1.477947 -2.265973
+##     CI_upper
+## 1 -0.6705686</code></pre>
+<blockquote>
+<p><strong><em>Note:</em></strong> This function relies on the base R
+<code>t.test</code> function, which uses the Welch t-test per default
+(see why here: <a href="https://daniellakens.blogspot.com/2015/01/always-use-welchs-t-test-instead-of.html" class="uri">https://daniellakens.blogspot.com/2015/01/always-use-welchs-t-test-instead-of.html</a>).
+To use the Student t-test, simply add the following argument:
+<code>var.equal = TRUE</code>.</p>
+</blockquote>
 <p>Now the best thing about this function is that you can put all your
 dependent variables of interest in the function call and it will output
 a sweet, pre-formatted table for your convenience.</p>
 <div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">nice_t_test</span>(<span class="at">data =</span> mtcars,</span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>            <span class="at">response =</span> <span class="fu">c</span>(<span class="st">&quot;mpg&quot;</span>, <span class="st">&quot;disp&quot;</span>, <span class="st">&quot;drat&quot;</span>, <span class="st">&quot;wt&quot;</span>, <span class="st">&quot;qsec&quot;</span>, <span class="st">&quot;gear&quot;</span>, <span class="st">&quot;carb&quot;</span>),</span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>            <span class="at">group =</span> <span class="st">&quot;am&quot;</span>) <span class="ot">-&gt;</span> t.test.results</span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>t.test.results</span></code></pre></div>
-<pre><code>##   Dependent Variable          t       df            p          d   CI_lower
-## 1                mpg -3.7671231 18.33225 1.373638e-03 -1.4779471 -2.3042092
-## 2               disp  4.1977266 29.25845 2.300413e-04  1.4452210  0.6227403
-## 3               drat -5.6460883 27.19780 5.266742e-06 -2.0030843 -2.8985400
-## 4                 wt  5.4939049 29.23352 6.272020e-06  1.8924060  1.0127792
-## 5               qsec  1.2878448 25.53421 2.093498e-01  0.4656285 -0.2790096
-## 6               gear -6.8995488 22.56804 5.461599e-07 -2.5754302 -3.5616444
-## 7               carb -0.2826469 16.58880 7.809439e-01 -0.1136147 -0.8492761
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>            <span class="at">response =</span> <span class="fu">names</span>(mtcars)[<span class="dv">1</span><span class="sc">:</span><span class="dv">6</span>],</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>            <span class="at">group =</span> <span class="st">&quot;am&quot;</span>,</span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>            <span class="at">warning =</span> <span class="cn">FALSE</span>) <span class="ot">-&gt;</span> t.test.results</span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>t.test.results</span></code></pre></div>
+<pre><code>##   Dependent Variable         t       df            p          d   CI_lower
+## 1                mpg -3.767123 18.33225 1.373638e-03 -1.4779471 -2.2659731
+## 2                cyl  3.354114 25.85363 2.464713e-03  1.2084550  0.4315896
+## 3               disp  4.197727 29.25845 2.300413e-04  1.4452210  0.6417834
+## 4                 hp  1.266189 18.71541 2.209796e-01  0.4943081 -0.2260466
+## 5               drat -5.646088 27.19780 5.266742e-06 -2.0030843 -2.8592770
+## 6                 wt  5.493905 29.23352 6.272020e-06  1.8924060  1.0300224
 ##     CI_upper
-## 1 -0.6516850
-## 2  2.2677018
-## 3 -1.1076285
-## 4  2.7720327
-## 5  1.2102667
-## 6 -1.5892160
-## 7  0.6220468</code></pre>
+## 1 -0.6705686
+## 2  1.9683146
+## 3  2.2295592
+## 4  1.2066992
+## 5 -1.1245498
+## 6  2.7329218</code></pre>
 <p>If we want it to look nice</p>
-<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>my_table <span class="ot">&lt;-</span> <span class="fu">nice_table</span>(t.test.results)</span>
+<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>my_table <span class="ot">&lt;-</span> <span class="fu">nice_table</span>(t.test.results, <span class="at">width =</span> .<span class="dv">75</span>)</span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>my_table</span></code></pre></div>
-<template id="8476fbc0-65ab-4dca-afd0-089584abb2d2"><style>
+<template id="ee03961c-e199-4088-b170-c7c3d8aa7b3d"><style>
 .tabwid table{
   border-spacing:0px !important;
   border-collapse:collapse;
@@ -285,12 +290,12 @@ a sweet, pre-formatted table for your convenience.</p>
 .tabwid table tr {
 background-color: transparent;
 }
-</style><div class="tabwid"><style>.cl-cbafd752{table-layout:auto;width:100%;}.cl-cb92b668{font-family:'Times New Roman';font-size:12pt;font-weight:normal;font-style:normal;text-decoration:none;color:rgba(0, 0, 0, 1.00);background-color:transparent;}.cl-cb92b669{font-family:'Times New Roman';font-size:12pt;font-weight:normal;font-style:italic;text-decoration:none;color:rgba(0, 0, 0, 1.00);background-color:transparent;}.cl-cb92dd6e{margin:0;text-align:center;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:5pt;padding-top:5pt;padding-left:5pt;padding-right:5pt;line-height: 1;background-color:transparent;}.cl-cb932b7a{height:39.6pt;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-cb932b7b{height:39.6pt;background-color:transparent;vertical-align: middle;border-bottom: 0.5pt solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-cb932b7c{height:39.6pt;background-color:transparent;vertical-align: middle;border-bottom: 0.5pt solid rgba(0, 0, 0, 1.00);border-top: 0.5pt solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}</style><table class="cl-cbafd752">
-<thead><tr><td class="cl-cb932b7c"><p class="cl-cb92dd6e"><span class="cl-cb92b668">Dependent Variable</span></p></td><td class="cl-cb932b7c"><p class="cl-cb92dd6e"><span class="cl-cb92b669">t</span></p></td><td class="cl-cb932b7c"><p class="cl-cb92dd6e"><span class="cl-cb92b669">df</span></p></td><td class="cl-cb932b7c"><p class="cl-cb92dd6e"><span class="cl-cb92b669">p</span></p></td><td class="cl-cb932b7c"><p class="cl-cb92dd6e"><span class="cl-cb92b669">d</span></p></td><td class="cl-cb932b7c"><p class="cl-cb92dd6e"><span class="cl-cb92b668">95% CI</span></p></td></tr></thead><tbody><tr><td class="cl-cb932b7a"><p class="cl-cb92dd6e"><span class="cl-cb92b668">mpg</span></p></td><td class="cl-cb932b7a"><p class="cl-cb92dd6e"><span class="cl-cb92b668">-3.77</span></p></td><td class="cl-cb932b7a"><p class="cl-cb92dd6e"><span class="cl-cb92b668">18</span></p></td><td class="cl-cb932b7a"><p class="cl-cb92dd6e"><span class="cl-cb92b668">.001</span></p></td><td class="cl-cb932b7a"><p class="cl-cb92dd6e"><span class="cl-cb92b668">-1.48</span></p></td><td class="cl-cb932b7a"><p class="cl-cb92dd6e"><span class="cl-cb92b668">[-2.3, -0.65]</span></p></td></tr><tr><td class="cl-cb932b7a"><p class="cl-cb92dd6e"><span class="cl-cb92b668">disp</span></p></td><td class="cl-cb932b7a"><p class="cl-cb92dd6e"><span class="cl-cb92b668">4.20</span></p></td><td class="cl-cb932b7a"><p class="cl-cb92dd6e"><span class="cl-cb92b668">29</span></p></td><td class="cl-cb932b7a"><p class="cl-cb92dd6e"><span class="cl-cb92b668">&lt; .001</span></p></td><td class="cl-cb932b7a"><p class="cl-cb92dd6e"><span class="cl-cb92b668">1.45</span></p></td><td class="cl-cb932b7a"><p class="cl-cb92dd6e"><span class="cl-cb92b668">[0.62, 2.27]</span></p></td></tr><tr><td class="cl-cb932b7a"><p class="cl-cb92dd6e"><span class="cl-cb92b668">drat</span></p></td><td class="cl-cb932b7a"><p class="cl-cb92dd6e"><span class="cl-cb92b668">-5.65</span></p></td><td class="cl-cb932b7a"><p class="cl-cb92dd6e"><span class="cl-cb92b668">27</span></p></td><td class="cl-cb932b7a"><p class="cl-cb92dd6e"><span class="cl-cb92b668">&lt; .001</span></p></td><td class="cl-cb932b7a"><p class="cl-cb92dd6e"><span class="cl-cb92b668">-2.00</span></p></td><td class="cl-cb932b7a"><p class="cl-cb92dd6e"><span class="cl-cb92b668">[-2.9, -1.11]</span></p></td></tr><tr><td class="cl-cb932b7a"><p class="cl-cb92dd6e"><span class="cl-cb92b668">wt</span></p></td><td class="cl-cb932b7a"><p class="cl-cb92dd6e"><span class="cl-cb92b668">5.49</span></p></td><td class="cl-cb932b7a"><p class="cl-cb92dd6e"><span class="cl-cb92b668">29</span></p></td><td class="cl-cb932b7a"><p class="cl-cb92dd6e"><span class="cl-cb92b668">&lt; .001</span></p></td><td class="cl-cb932b7a"><p class="cl-cb92dd6e"><span class="cl-cb92b668">1.89</span></p></td><td class="cl-cb932b7a"><p class="cl-cb92dd6e"><span class="cl-cb92b668">[1.01, 2.77]</span></p></td></tr><tr><td class="cl-cb932b7a"><p class="cl-cb92dd6e"><span class="cl-cb92b668">qsec</span></p></td><td class="cl-cb932b7a"><p class="cl-cb92dd6e"><span class="cl-cb92b668">1.29</span></p></td><td class="cl-cb932b7a"><p class="cl-cb92dd6e"><span class="cl-cb92b668">26</span></p></td><td class="cl-cb932b7a"><p class="cl-cb92dd6e"><span class="cl-cb92b668">.209</span></p></td><td class="cl-cb932b7a"><p class="cl-cb92dd6e"><span class="cl-cb92b668">0.47</span></p></td><td class="cl-cb932b7a"><p class="cl-cb92dd6e"><span class="cl-cb92b668">[-0.28, 1.21]</span></p></td></tr><tr><td class="cl-cb932b7a"><p class="cl-cb92dd6e"><span class="cl-cb92b668">gear</span></p></td><td class="cl-cb932b7a"><p class="cl-cb92dd6e"><span class="cl-cb92b668">-6.90</span></p></td><td class="cl-cb932b7a"><p class="cl-cb92dd6e"><span class="cl-cb92b668">23</span></p></td><td class="cl-cb932b7a"><p class="cl-cb92dd6e"><span class="cl-cb92b668">&lt; .001</span></p></td><td class="cl-cb932b7a"><p class="cl-cb92dd6e"><span class="cl-cb92b668">-2.58</span></p></td><td class="cl-cb932b7a"><p class="cl-cb92dd6e"><span class="cl-cb92b668">[-3.56, -1.59]</span></p></td></tr><tr><td class="cl-cb932b7b"><p class="cl-cb92dd6e"><span class="cl-cb92b668">carb</span></p></td><td class="cl-cb932b7b"><p class="cl-cb92dd6e"><span class="cl-cb92b668">-0.28</span></p></td><td class="cl-cb932b7b"><p class="cl-cb92dd6e"><span class="cl-cb92b668">17</span></p></td><td class="cl-cb932b7b"><p class="cl-cb92dd6e"><span class="cl-cb92b668">.781</span></p></td><td class="cl-cb932b7b"><p class="cl-cb92dd6e"><span class="cl-cb92b668">-0.11</span></p></td><td class="cl-cb932b7b"><p class="cl-cb92dd6e"><span class="cl-cb92b668">[-0.85, 0.62]</span></p></td></tr></tbody></table></div></template>
-<div class="flextable-shadow-host" id="48091297-f778-4f30-95ee-48a6cd26eba7"></div>
+</style><div class="tabwid"><style>.cl-fcbc08fe{table-layout:auto;width:75%;}.cl-fcadb326{font-family:'Times New Roman';font-size:12pt;font-weight:normal;font-style:normal;text-decoration:none;color:rgba(0, 0, 0, 1.00);background-color:transparent;}.cl-fcadb327{font-family:'Times New Roman';font-size:12pt;font-weight:normal;font-style:italic;text-decoration:none;color:rgba(0, 0, 0, 1.00);background-color:transparent;}.cl-fcadda36{margin:0;text-align:center;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:5pt;padding-top:5pt;padding-left:5pt;padding-right:5pt;line-height: 1;background-color:transparent;}.cl-fcae4f52{height:39.6pt;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-fcae4f53{height:39.6pt;background-color:transparent;vertical-align: middle;border-bottom: 0.5pt solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-fcae4f54{height:39.6pt;background-color:transparent;vertical-align: middle;border-bottom: 0.5pt solid rgba(0, 0, 0, 1.00);border-top: 0.5pt solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}</style><table class="cl-fcbc08fe">
+<thead><tr><td class="cl-fcae4f54"><p class="cl-fcadda36"><span class="cl-fcadb326">Dependent Variable</span></p></td><td class="cl-fcae4f54"><p class="cl-fcadda36"><span class="cl-fcadb327">t</span></p></td><td class="cl-fcae4f54"><p class="cl-fcadda36"><span class="cl-fcadb327">df</span></p></td><td class="cl-fcae4f54"><p class="cl-fcadda36"><span class="cl-fcadb327">p</span></p></td><td class="cl-fcae4f54"><p class="cl-fcadda36"><span class="cl-fcadb327">d</span></p></td><td class="cl-fcae4f54"><p class="cl-fcadda36"><span class="cl-fcadb326">95% CI</span></p></td></tr></thead><tbody><tr><td class="cl-fcae4f52"><p class="cl-fcadda36"><span class="cl-fcadb326">mpg</span></p></td><td class="cl-fcae4f52"><p class="cl-fcadda36"><span class="cl-fcadb326">-3.77</span></p></td><td class="cl-fcae4f52"><p class="cl-fcadda36"><span class="cl-fcadb326">18</span></p></td><td class="cl-fcae4f52"><p class="cl-fcadda36"><span class="cl-fcadb326">.001</span></p></td><td class="cl-fcae4f52"><p class="cl-fcadda36"><span class="cl-fcadb326">-1.48</span></p></td><td class="cl-fcae4f52"><p class="cl-fcadda36"><span class="cl-fcadb326">[-2.27, -0.67]</span></p></td></tr><tr><td class="cl-fcae4f52"><p class="cl-fcadda36"><span class="cl-fcadb326">cyl</span></p></td><td class="cl-fcae4f52"><p class="cl-fcadda36"><span class="cl-fcadb326">3.35</span></p></td><td class="cl-fcae4f52"><p class="cl-fcadda36"><span class="cl-fcadb326">26</span></p></td><td class="cl-fcae4f52"><p class="cl-fcadda36"><span class="cl-fcadb326">.002</span></p></td><td class="cl-fcae4f52"><p class="cl-fcadda36"><span class="cl-fcadb326">1.21</span></p></td><td class="cl-fcae4f52"><p class="cl-fcadda36"><span class="cl-fcadb326">[0.43, 1.97]</span></p></td></tr><tr><td class="cl-fcae4f52"><p class="cl-fcadda36"><span class="cl-fcadb326">disp</span></p></td><td class="cl-fcae4f52"><p class="cl-fcadda36"><span class="cl-fcadb326">4.20</span></p></td><td class="cl-fcae4f52"><p class="cl-fcadda36"><span class="cl-fcadb326">29</span></p></td><td class="cl-fcae4f52"><p class="cl-fcadda36"><span class="cl-fcadb326">&lt; .001</span></p></td><td class="cl-fcae4f52"><p class="cl-fcadda36"><span class="cl-fcadb326">1.45</span></p></td><td class="cl-fcae4f52"><p class="cl-fcadda36"><span class="cl-fcadb326">[0.64, 2.23]</span></p></td></tr><tr><td class="cl-fcae4f52"><p class="cl-fcadda36"><span class="cl-fcadb326">hp</span></p></td><td class="cl-fcae4f52"><p class="cl-fcadda36"><span class="cl-fcadb326">1.27</span></p></td><td class="cl-fcae4f52"><p class="cl-fcadda36"><span class="cl-fcadb326">19</span></p></td><td class="cl-fcae4f52"><p class="cl-fcadda36"><span class="cl-fcadb326">.221</span></p></td><td class="cl-fcae4f52"><p class="cl-fcadda36"><span class="cl-fcadb326">0.49</span></p></td><td class="cl-fcae4f52"><p class="cl-fcadda36"><span class="cl-fcadb326">[-0.23, 1.21]</span></p></td></tr><tr><td class="cl-fcae4f52"><p class="cl-fcadda36"><span class="cl-fcadb326">drat</span></p></td><td class="cl-fcae4f52"><p class="cl-fcadda36"><span class="cl-fcadb326">-5.65</span></p></td><td class="cl-fcae4f52"><p class="cl-fcadda36"><span class="cl-fcadb326">27</span></p></td><td class="cl-fcae4f52"><p class="cl-fcadda36"><span class="cl-fcadb326">&lt; .001</span></p></td><td class="cl-fcae4f52"><p class="cl-fcadda36"><span class="cl-fcadb326">-2.00</span></p></td><td class="cl-fcae4f52"><p class="cl-fcadda36"><span class="cl-fcadb326">[-2.86, -1.12]</span></p></td></tr><tr><td class="cl-fcae4f53"><p class="cl-fcadda36"><span class="cl-fcadb326">wt</span></p></td><td class="cl-fcae4f53"><p class="cl-fcadda36"><span class="cl-fcadb326">5.49</span></p></td><td class="cl-fcae4f53"><p class="cl-fcadda36"><span class="cl-fcadb326">29</span></p></td><td class="cl-fcae4f53"><p class="cl-fcadda36"><span class="cl-fcadb326">&lt; .001</span></p></td><td class="cl-fcae4f53"><p class="cl-fcadda36"><span class="cl-fcadb326">1.89</span></p></td><td class="cl-fcae4f53"><p class="cl-fcadda36"><span class="cl-fcadb326">[1.03, 2.73]</span></p></td></tr></tbody></table></div></template>
+<div class="flextable-shadow-host" id="66d6f4da-e8b3-4c65-8321-2a563a932c2c"></div>
 <script>
-var dest = document.getElementById("48091297-f778-4f30-95ee-48a6cd26eba7");
-var template = document.getElementById("8476fbc0-65ab-4dca-afd0-089584abb2d2");
+var dest = document.getElementById("66d6f4da-e8b3-4c65-8321-2a563a932c2c");
+var template = document.getElementById("ee03961c-e199-4088-b170-c7c3d8aa7b3d");
 var caption = template.content.querySelector("caption");
 if(caption) {
   caption.style.cssText = "display:block;text-align:center;";
@@ -309,18 +314,232 @@ and the 95% CI is the confidence interval of the effect size (Cohen’s
 <em>d</em>). <em>p</em> is the <em>p</em>-value, <em>df</em> is degrees
 of freedom, and <em>t</em> is the <em>t</em>-value.</p>
 </blockquote>
+</div>
+<div id="save-table-to-word" class="section level2">
+<h2>Save table to Word</h2>
 <p>Let’s save it to word for use in a publication (optional).</p>
 <div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">save_as_docx</span>(my_table, <span class="at">path =</span> <span class="st">&quot;D:/R treasures/t-tests.docx&quot;</span>)</span></code></pre></div>
+</div>
+<div id="special-cases" class="section level2">
+<h2>Special cases</h2>
 <p>The function can be passed some of the regular arguments of the base
 <code>t.test()</code> function. For example:</p>
-<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">nice_t_test</span>(<span class="at">data =</span> mtcars,</span>
-<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>            <span class="at">response =</span> <span class="st">&quot;mpg&quot;</span>,</span>
-<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>            <span class="at">group =</span> <span class="st">&quot;am&quot;</span>,</span>
-<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>            <span class="at">alternative =</span> <span class="st">&quot;less&quot;</span>) <span class="co"># to make it one-sided instead of two-sided</span></span></code></pre></div>
+<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Student t-test (instead of Welch)</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="fu">nice_t_test</span>(<span class="at">data =</span> mtcars,</span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>            <span class="at">response =</span> <span class="st">&quot;mpg&quot;</span>,</span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>            <span class="at">group =</span> <span class="st">&quot;am&quot;</span>,</span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>            <span class="at">var.equal =</span> <span class="cn">TRUE</span>)</span></code></pre></div>
+<pre><code>## Using Student t-test. 
+##  
+## </code></pre>
+<pre><code>##   Dependent Variable         t df            p         d  CI_lower   CI_upper
+## 1                mpg -4.106127 30 0.0002850207 -1.477947 -2.265973 -0.6705686</code></pre>
+<div class="sourceCode" id="cb13"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># One-sided instead of two-sided</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="fu">nice_t_test</span>(<span class="at">data =</span> mtcars,</span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>            <span class="at">response =</span> <span class="st">&quot;mpg&quot;</span>,</span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>            <span class="at">group =</span> <span class="st">&quot;am&quot;</span>,</span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>            <span class="at">alternative =</span> <span class="st">&quot;less&quot;</span>,</span>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a>            <span class="at">warning =</span> <span class="cn">FALSE</span>)</span></code></pre></div>
 <pre><code>##   Dependent Variable         t       df            p         d  CI_lower
-## 1                mpg -3.767123 18.33225 0.0006868192 -1.477947 -2.304209
-##    CI_upper
-## 1 -0.651685</code></pre>
+## 1                mpg -3.767123 18.33225 0.0006868192 -1.477947 -2.265973
+##     CI_upper
+## 1 -0.6705686</code></pre>
+<div class="sourceCode" id="cb15"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Paired t-test instead of independent samples</span></span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="fu">nice_t_test</span>(<span class="at">data =</span> ToothGrowth,</span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>            <span class="at">response =</span> <span class="st">&quot;len&quot;</span>,</span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a>            <span class="at">group =</span> <span class="st">&quot;supp&quot;</span>,</span>
+<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a>            <span class="at">paired =</span> <span class="cn">TRUE</span>)</span></code></pre></div>
+<pre><code>## Using paired t-test. 
+##  
+## </code></pre>
+<pre><code>##   Dependent Variable        t df           p         d CI_lower CI_upper
+## 1                len 3.302585 29 0.002549842 0.6029668 0.212385  1.00524</code></pre>
+</div>
+<div id="integrations" class="section level2">
+<h2>Integrations</h2>
+<p>There are other ways to do <em>t</em>-tests and format the results
+properly, should you wish—for example through the <code>broom</code> and
+<code>report</code> packages. Examples below.</p>
+<div id="broom-table" class="section level3">
+<h3><code>broom</code> table</h3>
+<div class="sourceCode" id="cb18"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(broom)</span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>model <span class="ot">&lt;-</span> <span class="fu">t.test</span>(mpg <span class="sc">~</span> am, <span class="at">data =</span> mtcars, <span class="at">paired =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>(stats.table <span class="ot">&lt;-</span> <span class="fu">tidy</span>(model, <span class="at">conf.int =</span> <span class="cn">TRUE</span>))</span></code></pre></div>
+<pre><code>## # A tibble: 1 x 10
+##   estimate estimate1 estimate2 statistic p.value parameter conf.low conf.high
+##      &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;   &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;     &lt;dbl&gt;
+## 1    -7.24      17.1      24.4     -3.77 0.00137      18.3    -11.3     -3.21
+## # ... with 2 more variables: method &lt;chr&gt;, alternative &lt;chr&gt;</code></pre>
+<div class="sourceCode" id="cb20"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="fu">nice_table</span>(stats.table, <span class="at">broom =</span> <span class="st">&quot;t.test&quot;</span>)</span></code></pre></div>
+<template id="21e0e3ef-329e-470f-8bc8-7f840458907e"><style>
+.tabwid table{
+  border-spacing:0px !important;
+  border-collapse:collapse;
+  line-height:1;
+  margin-left:auto;
+  margin-right:auto;
+  border-width: 0;
+  display: table;
+  margin-top: 1.275em;
+  margin-bottom: 1.275em;
+  border-color: transparent;
+}
+.tabwid_left table{
+  margin-left:0;
+}
+.tabwid_right table{
+  margin-right:0;
+}
+.tabwid td {
+    padding: 0;
+}
+.tabwid a {
+  text-decoration: none;
+}
+.tabwid thead {
+    background-color: transparent;
+}
+.tabwid tfoot {
+    background-color: transparent;
+}
+.tabwid table tr {
+background-color: transparent;
+}
+</style><div class="tabwid"><style>.cl-fd4c30b4{table-layout:auto;width:100%;}.cl-fd404bbe{font-family:'Times New Roman';font-size:12pt;font-weight:normal;font-style:normal;text-decoration:none;color:rgba(0, 0, 0, 1.00);background-color:transparent;}.cl-fd404bbf{font-family:'Times New Roman';font-size:12pt;font-weight:normal;font-style:italic;text-decoration:none;color:rgba(0, 0, 0, 1.00);background-color:transparent;}.cl-fd4072ce{margin:0;text-align:center;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:5pt;padding-top:5pt;padding-left:5pt;padding-right:5pt;line-height: 1;background-color:transparent;}.cl-fd40c0e4{height:39.6pt;background-color:transparent;vertical-align: middle;border-bottom: 0.5pt solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-fd40c0e5{height:39.6pt;background-color:transparent;vertical-align: middle;border-bottom: 0.5pt solid rgba(0, 0, 0, 1.00);border-top: 0.5pt solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}</style><table class="cl-fd4c30b4">
+<thead><tr><td class="cl-fd40c0e5"><p class="cl-fd4072ce"><span class="cl-fd404bbe">Method</span></p></td><td class="cl-fd40c0e5"><p class="cl-fd4072ce"><span class="cl-fd404bbe">Alternative</span></p></td><td class="cl-fd40c0e5"><p class="cl-fd4072ce"><span class="cl-fd404bbe">Mean 1</span></p></td><td class="cl-fd40c0e5"><p class="cl-fd4072ce"><span class="cl-fd404bbe">Mean 2</span></p></td><td class="cl-fd40c0e5"><p class="cl-fd4072ce"><span class="cl-fd404bbe">M1 - M2</span></p></td><td class="cl-fd40c0e5"><p class="cl-fd4072ce"><span class="cl-fd404bbf">t</span></p></td><td class="cl-fd40c0e5"><p class="cl-fd4072ce"><span class="cl-fd404bbf">df</span></p></td><td class="cl-fd40c0e5"><p class="cl-fd4072ce"><span class="cl-fd404bbf">p</span></p></td><td class="cl-fd40c0e5"><p class="cl-fd4072ce"><span class="cl-fd404bbe">95% CI</span></p></td></tr></thead><tbody><tr><td class="cl-fd40c0e4"><p class="cl-fd4072ce"><span class="cl-fd404bbe">Welch Two Sample t-test</span></p></td><td class="cl-fd40c0e4"><p class="cl-fd4072ce"><span class="cl-fd404bbe">two.sided</span></p></td><td class="cl-fd40c0e4"><p class="cl-fd4072ce"><span class="cl-fd404bbe">17.15</span></p></td><td class="cl-fd40c0e4"><p class="cl-fd4072ce"><span class="cl-fd404bbe">24.39</span></p></td><td class="cl-fd40c0e4"><p class="cl-fd4072ce"><span class="cl-fd404bbe">-7.24</span></p></td><td class="cl-fd40c0e4"><p class="cl-fd4072ce"><span class="cl-fd404bbe">-3.77</span></p></td><td class="cl-fd40c0e4"><p class="cl-fd4072ce"><span class="cl-fd404bbe">18</span></p></td><td class="cl-fd40c0e4"><p class="cl-fd4072ce"><span class="cl-fd404bbe">.001</span></p></td><td class="cl-fd40c0e4"><p class="cl-fd4072ce"><span class="cl-fd404bbe">[-11.28, -3.21]</span></p></td></tr></tbody></table></div></template>
+<div class="flextable-shadow-host" id="c8b925ac-008c-4a2f-8f10-50328c4dd7bc"></div>
+<script>
+var dest = document.getElementById("c8b925ac-008c-4a2f-8f10-50328c4dd7bc");
+var template = document.getElementById("21e0e3ef-329e-470f-8bc8-7f840458907e");
+var caption = template.content.querySelector("caption");
+if(caption) {
+  caption.style.cssText = "display:block;text-align:center;";
+  var newcapt = document.createElement("p");
+  newcapt.appendChild(caption)
+  dest.parentNode.insertBefore(newcapt, dest.previousSibling);
+}
+var fantome = dest.attachShadow({mode: 'open'});
+var templateContent = template.content;
+fantome.appendChild(templateContent);
+</script>
+
+</div>
+<div id="report-table" class="section level3">
+<h3><code>report</code> table</h3>
+<div class="sourceCode" id="cb21"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(report)</span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>(stats.table <span class="ot">&lt;-</span> <span class="fu">as.data.frame</span>(<span class="fu">report</span>(model)))</span></code></pre></div>
+<pre><code>## Parameter | Group | Mean_Group1 | Mean_Group2 | Difference |          95% CI | t(18.33) |     p |                  Method | Alternative |     d |          d  CI
+## ----------------------------------------------------------------------------------------------------------------------------------------------------------------
+## mpg       |    am |       17.15 |       24.39 |      -7.24 | [-11.28, -3.21] |    -3.77 | 0.001 | Welch Two Sample t-test |   two.sided | -1.76 | [-2.82, -0.67]</code></pre>
+<div class="sourceCode" id="cb23"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="fu">nice_table</span>(stats.table, <span class="at">report =</span> <span class="st">&quot;t.test&quot;</span>)</span></code></pre></div>
+<template id="1b67ff7e-4a4b-400e-898a-76d99fd8f638"><style>
+.tabwid table{
+  border-spacing:0px !important;
+  border-collapse:collapse;
+  line-height:1;
+  margin-left:auto;
+  margin-right:auto;
+  border-width: 0;
+  display: table;
+  margin-top: 1.275em;
+  margin-bottom: 1.275em;
+  border-color: transparent;
+}
+.tabwid_left table{
+  margin-left:0;
+}
+.tabwid_right table{
+  margin-right:0;
+}
+.tabwid td {
+    padding: 0;
+}
+.tabwid a {
+  text-decoration: none;
+}
+.tabwid thead {
+    background-color: transparent;
+}
+.tabwid tfoot {
+    background-color: transparent;
+}
+.tabwid table tr {
+background-color: transparent;
+}
+</style><div class="tabwid"><style>.cl-fd951504{table-layout:auto;width:100%;}.cl-fd8add78{font-family:'Times New Roman';font-size:12pt;font-weight:normal;font-style:normal;text-decoration:none;color:rgba(0, 0, 0, 1.00);background-color:transparent;}.cl-fd8add79{font-family:'Times New Roman';font-size:12pt;font-weight:normal;font-style:italic;text-decoration:none;color:rgba(0, 0, 0, 1.00);background-color:transparent;}.cl-fd8add7a{margin:0;text-align:center;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:5pt;padding-top:5pt;padding-left:5pt;padding-right:5pt;line-height: 1;background-color:transparent;}.cl-fd8b2b84{height:39.6pt;background-color:transparent;vertical-align: middle;border-bottom: 0.5pt solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-fd8b2b85{height:39.6pt;background-color:transparent;vertical-align: middle;border-bottom: 0.5pt solid rgba(0, 0, 0, 1.00);border-top: 0.5pt solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}</style><table class="cl-fd951504">
+<thead><tr><td class="cl-fd8b2b85"><p class="cl-fd8add7a"><span class="cl-fd8add78">Method</span></p></td><td class="cl-fd8b2b85"><p class="cl-fd8add7a"><span class="cl-fd8add78">Alternative</span></p></td><td class="cl-fd8b2b85"><p class="cl-fd8add7a"><span class="cl-fd8add78">Parameter</span></p></td><td class="cl-fd8b2b85"><p class="cl-fd8add7a"><span class="cl-fd8add78">Group</span></p></td><td class="cl-fd8b2b85"><p class="cl-fd8add7a"><span class="cl-fd8add78">Mean_Group1</span></p></td><td class="cl-fd8b2b85"><p class="cl-fd8add7a"><span class="cl-fd8add78">Mean_Group2</span></p></td><td class="cl-fd8b2b85"><p class="cl-fd8add7a"><span class="cl-fd8add78">Difference</span></p></td><td class="cl-fd8b2b85"><p class="cl-fd8add7a"><span class="cl-fd8add79">t</span></p></td><td class="cl-fd8b2b85"><p class="cl-fd8add7a"><span class="cl-fd8add78">95% CI (</span><span class="cl-fd8add79">t</span><span class="cl-fd8add78">)</span></p></td><td class="cl-fd8b2b85"><p class="cl-fd8add7a"><span class="cl-fd8add79">df</span></p></td><td class="cl-fd8b2b85"><p class="cl-fd8add7a"><span class="cl-fd8add79">p</span></p></td><td class="cl-fd8b2b85"><p class="cl-fd8add7a"><span class="cl-fd8add79">d</span></p></td><td class="cl-fd8b2b85"><p class="cl-fd8add7a"><span class="cl-fd8add78">95% CI (</span><span class="cl-fd8add79">d</span><span class="cl-fd8add78">)</span></p></td></tr></thead><tbody><tr><td class="cl-fd8b2b84"><p class="cl-fd8add7a"><span class="cl-fd8add78">Welch Two Sample t-test</span></p></td><td class="cl-fd8b2b84"><p class="cl-fd8add7a"><span class="cl-fd8add78">two.sided</span></p></td><td class="cl-fd8b2b84"><p class="cl-fd8add7a"><span class="cl-fd8add78">mpg</span></p></td><td class="cl-fd8b2b84"><p class="cl-fd8add7a"><span class="cl-fd8add78">am</span></p></td><td class="cl-fd8b2b84"><p class="cl-fd8add7a"><span class="cl-fd8add78">17.15</span></p></td><td class="cl-fd8b2b84"><p class="cl-fd8add7a"><span class="cl-fd8add78">24.39</span></p></td><td class="cl-fd8b2b84"><p class="cl-fd8add7a"><span class="cl-fd8add78">-7.24</span></p></td><td class="cl-fd8b2b84"><p class="cl-fd8add7a"><span class="cl-fd8add78">-3.77</span></p></td><td class="cl-fd8b2b84"><p class="cl-fd8add7a"><span class="cl-fd8add78">[-11.28, -3.21]</span></p></td><td class="cl-fd8b2b84"><p class="cl-fd8add7a"><span class="cl-fd8add78">18</span></p></td><td class="cl-fd8b2b84"><p class="cl-fd8add7a"><span class="cl-fd8add78">.001</span></p></td><td class="cl-fd8b2b84"><p class="cl-fd8add7a"><span class="cl-fd8add78">-1.76</span></p></td><td class="cl-fd8b2b84"><p class="cl-fd8add7a"><span class="cl-fd8add78">[-2.82, -0.67]</span></p></td></tr></tbody></table></div></template>
+<div class="flextable-shadow-host" id="680031f0-fb4a-452f-829c-e118a4351507"></div>
+<script>
+var dest = document.getElementById("680031f0-fb4a-452f-829c-e118a4351507");
+var template = document.getElementById("1b67ff7e-4a4b-400e-898a-76d99fd8f638");
+var caption = template.content.querySelector("caption");
+if(caption) {
+  caption.style.cssText = "display:block;text-align:center;";
+  var newcapt = document.createElement("p");
+  newcapt.appendChild(caption)
+  dest.parentNode.insertBefore(newcapt, dest.previousSibling);
+}
+var fantome = dest.attachShadow({mode: 'open'});
+var templateContent = template.content;
+fantome.appendChild(templateContent);
+</script>
+
+<p>The <code>report</code> package provides quite comprehensive tables,
+so one may request an abbreviated table with the <code>short</code>
+argument.</p>
+<div class="sourceCode" id="cb24"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="fu">nice_table</span>(stats.table, <span class="at">report =</span> <span class="st">&quot;t.test&quot;</span>, <span class="at">short =</span> <span class="cn">TRUE</span>, <span class="at">width =</span> <span class="fl">0.50</span>)</span></code></pre></div>
+<template id="00bc7813-6c01-4bfc-8f6f-059d364c1ca7"><style>
+.tabwid table{
+  border-spacing:0px !important;
+  border-collapse:collapse;
+  line-height:1;
+  margin-left:auto;
+  margin-right:auto;
+  border-width: 0;
+  display: table;
+  margin-top: 1.275em;
+  margin-bottom: 1.275em;
+  border-color: transparent;
+}
+.tabwid_left table{
+  margin-left:0;
+}
+.tabwid_right table{
+  margin-right:0;
+}
+.tabwid td {
+    padding: 0;
+}
+.tabwid a {
+  text-decoration: none;
+}
+.tabwid thead {
+    background-color: transparent;
+}
+.tabwid tfoot {
+    background-color: transparent;
+}
+.tabwid table tr {
+background-color: transparent;
+}
+</style><div class="tabwid"><style>.cl-fdcd331c{table-layout:auto;width:50%;}.cl-fdc10010{font-family:'Times New Roman';font-size:12pt;font-weight:normal;font-style:normal;text-decoration:none;color:rgba(0, 0, 0, 1.00);background-color:transparent;}.cl-fdc10011{font-family:'Times New Roman';font-size:12pt;font-weight:normal;font-style:italic;text-decoration:none;color:rgba(0, 0, 0, 1.00);background-color:transparent;}.cl-fdc12716{margin:0;text-align:center;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:5pt;padding-top:5pt;padding-left:5pt;padding-right:5pt;line-height: 1;background-color:transparent;}.cl-fdc14e26{height:39.6pt;background-color:transparent;vertical-align: middle;border-bottom: 0.5pt solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-fdc14e27{height:39.6pt;background-color:transparent;vertical-align: middle;border-bottom: 0.5pt solid rgba(0, 0, 0, 1.00);border-top: 0.5pt solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}</style><table class="cl-fdcd331c">
+<thead><tr><td class="cl-fdc14e27"><p class="cl-fdc12716"><span class="cl-fdc10010">Parameter</span></p></td><td class="cl-fdc14e27"><p class="cl-fdc12716"><span class="cl-fdc10010">Group</span></p></td><td class="cl-fdc14e27"><p class="cl-fdc12716"><span class="cl-fdc10011">t</span></p></td><td class="cl-fdc14e27"><p class="cl-fdc12716"><span class="cl-fdc10011">df</span></p></td><td class="cl-fdc14e27"><p class="cl-fdc12716"><span class="cl-fdc10011">p</span></p></td><td class="cl-fdc14e27"><p class="cl-fdc12716"><span class="cl-fdc10011">d</span></p></td><td class="cl-fdc14e27"><p class="cl-fdc12716"><span class="cl-fdc10010">95% CI (</span><span class="cl-fdc10011">d</span><span class="cl-fdc10010">)</span></p></td></tr></thead><tbody><tr><td class="cl-fdc14e26"><p class="cl-fdc12716"><span class="cl-fdc10010">mpg</span></p></td><td class="cl-fdc14e26"><p class="cl-fdc12716"><span class="cl-fdc10010">am</span></p></td><td class="cl-fdc14e26"><p class="cl-fdc12716"><span class="cl-fdc10010">-3.77</span></p></td><td class="cl-fdc14e26"><p class="cl-fdc12716"><span class="cl-fdc10010">18</span></p></td><td class="cl-fdc14e26"><p class="cl-fdc12716"><span class="cl-fdc10010">.001</span></p></td><td class="cl-fdc14e26"><p class="cl-fdc12716"><span class="cl-fdc10010">-1.76</span></p></td><td class="cl-fdc14e26"><p class="cl-fdc12716"><span class="cl-fdc10010">[-2.82, -0.67]</span></p></td></tr></tbody></table></div></template>
+<div class="flextable-shadow-host" id="c6f3d642-8765-4cab-9d0d-d0bfe66aef62"></div>
+<script>
+var dest = document.getElementById("c6f3d642-8765-4cab-9d0d-d0bfe66aef62");
+var template = document.getElementById("00bc7813-6c01-4bfc-8f6f-059d364c1ca7");
+var caption = template.content.querySelector("caption");
+if(caption) {
+  caption.style.cssText = "display:block;text-align:center;";
+  var newcapt = document.createElement("p");
+  newcapt.appendChild(caption)
+  dest.parentNode.insertBefore(newcapt, dest.previousSibling);
+}
+var fantome = dest.attachShadow({mode: 'open'});
+var templateContent = template.content;
+fantome.appendChild(templateContent);
+</script>
+
 <p>And there you go!</p>
 <p><span class="math inline">\(~\)</span></p>
 <p><span class="math inline">\(~\)</span></p>
@@ -329,23 +548,23 @@ of freedom, and <em>t</em> is the <em>t</em>-value.</p>
 <h3>Thanks for checking in</h3>
 <p>Make sure to check out this page again if you use the code after a
 time or if you encounter errors, as I periodically update or improve the
-code.</p>
-<p>You can always edit the function to suit your purposes, or contact me
-for questions or requests to modify this function at <a href="https://remi-theriault.com/contact" class="uri">https://remi-theriault.com/contact</a>! Thanks for reading
+code. You can always contact me for questions or requests to modify this
+function at <a href="https://remi-theriault.com/contact" class="uri">https://remi-theriault.com/contact</a>! Thanks for reading
 my guide! :) <span class="math inline">\(~\)</span></p>
 <p><span class="math inline">\(~\)</span></p>
 <p><span class="math inline">\(~\)</span></p>
 <p><span class="math inline">\(~\)</span></p>
 <p><span class="math inline">\(~\)</span></p>
 <hr />
-<p><em>Updated 2022-04-04 (moved <code>data</code> to first argument for
-pipe compatibility)</em></p>
+<p><em>Updated 2022-04-20 (added examples for paired t-tests,
+Welch/Student)</em></p>
 <p><span class="math inline">\(~\)</span></p>
 <p><span class="math inline">\(~\)</span></p>
 <p><span class="math inline">\(~\)</span></p>
 <p><span class="math inline">\(~\)</span></p>
 <p><span class="math inline">\(~\)</span></p>
 <p><span class="math inline">\(~\)</span></p>
+</div>
 </div>
 </section>
 
