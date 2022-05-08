@@ -1,10 +1,10 @@
 ---
 title: "Marie Gendron : Altruisme extrême : donner son rein à un inconnu… de son vivant"
 
-summary: La journaliste Émilie Perreault de l'émission L'Avenir nous appartient à Télé-Québec interview Rémi Thériault pour mieux comprendre les réactions mitigées aux gestes d'altruisme. « À 69 ans, Marie Gendron a décidé de donner un rein à un inconnu. Étonnamment, ce geste altruiste lui a valu beaucoup de critiques. »
+summary: La journaliste Émilie Perreault de l'émission L'Avenir nous appartient à Télé-Québec interview Rémi Thériault pour mieux comprendre les réactions mitigées aux gestes d'altruisme. « À 69 ans, Marie Gendron a décidé de donner un rein à un inconnu. Étonnamment, ce geste altruiste lui a valu beaucoup de critiques. »
 
 tags:
-- Press
+- Video
 date: "2022-03-27T09:00:00Z"
 
 # Optional external URL for project (replaces project detail page).
