@@ -1,6 +1,6 @@
 ---
 title: Jolis nuages de points
-summary: Comment faire de jolis nuages de points dans R.
+summary: ""
 tags:
 - Visualization
 date: "2019-09-12T00:00:00Z"
@@ -12,3 +12,5 @@ image:
   caption: ""
   focal_point:
 ---
+
+Comment faire de jolis nuages de points dans R.

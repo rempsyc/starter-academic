@@ -1,6 +1,6 @@
 ---
 title: Nice Scatter Plots
-summary: How to make nice-looking scatter plots in R.
+summary: ""
 tags:
 - Visualization
 date: "2019-09-12T00:00:00Z"
@@ -12,3 +12,5 @@ image:
   caption: ""
   focal_point:
 ---
+
+How to make nice-looking scatter plots in R.
