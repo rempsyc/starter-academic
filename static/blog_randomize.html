@@ -179,15 +179,15 @@ installed <code>devtools</code> yet, install it via
 between-group design):</p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">nice_randomize</span>()</span></code></pre></div>
 <pre><code>##   id Condition
-## 1  1         b
+## 1  1         a
 ## 2  2         c
-## 3  3         a
-## 4  4         c
+## 3  3         b
+## 4  4         a
 ## 5  5         b
-## 6  6         a
-## 7  7         c
+## 6  6         c
+## 7  7         b
 ## 8  8         a
-## 9  9         b</code></pre>
+## 9  9         c</code></pre>
 <div id="specify-design-number-of-conditions-number-of-participants-and-names-of-conditions" class="section level3">
 <h3>Specify design, number of conditions, number of participants, and
 names of conditions:</h3>
@@ -196,13 +196,13 @@ names of conditions:</h3>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>               <span class="at">n =</span> <span class="dv">8</span>, </span>
 <span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>               <span class="at">condition.names =</span> <span class="fu">c</span>(<span class="st">&quot;BP&quot;</span>,<span class="st">&quot;CX&quot;</span>,<span class="st">&quot;PZ&quot;</span>,<span class="st">&quot;ZL&quot;</span>))</span></code></pre></div>
 <pre><code>##   id Condition
-## 1  1        ZL
-## 2  2        CX
-## 3  3        BP
-## 4  4        PZ
-## 5  5        CX
-## 6  6        ZL
-## 7  7        PZ
+## 1  1        BP
+## 2  2        PZ
+## 3  3        ZL
+## 4  4        CX
+## 5  5        ZL
+## 6  6        PZ
+## 7  7        CX
 ## 8  8        BP</code></pre>
 <div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Warning: sample size needs to be a multiple of your number of groups if using &quot;between&quot;!</span></span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="co"># FYI: condition names stand for popular antidepressants:</span></span>
@@ -221,32 +221,32 @@ some operations won’t be able to be completed otherwise.</p>
 but with within-subject design specified:</p>
 <div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">nice_randomize</span>(<span class="at">design =</span> <span class="st">&quot;within&quot;</span>)</span></code></pre></div>
 <pre><code>##    id Condition
-## 1   1         c
-## 2   2         c
-## 3   3         c
-## 4   4         a
-## 5   5         a
-## 6   6         c
-## 7   7         c
-## 8   8         c
-## 9   9         c
-## 10  1         a
-## 11  2         b
-## 12  3         a
-## 13  4         c
-## 14  5         b
-## 15  6         b
-## 16  7         b
-## 17  8         b
-## 18  9         b
-## 19  1         b
-## 20  2         a
-## 21  3         b
-## 22  4         b
-## 23  5         c
-## 24  6         a
-## 25  7         a
-## 26  8         a
+## 1   1         a
+## 2   1         b
+## 3   1         c
+## 4   2         b
+## 5   2         c
+## 6   2         a
+## 7   3         a
+## 8   3         c
+## 9   3         b
+## 10  4         c
+## 11  4         a
+## 12  4         b
+## 13  5         c
+## 14  5         a
+## 15  5         b
+## 16  6         b
+## 17  6         a
+## 18  6         c
+## 19  7         b
+## 20  7         c
+## 21  7         a
+## 22  8         a
+## 23  8         c
+## 24  8         b
+## 25  9         b
+## 26  9         c
 ## 27  9         a</code></pre>
 <div id="specify-design-number-of-conditions-number-of-participants-and-names-of-conditions-1" class="section level3">
 <h3>Specify design, number of conditions, number of participants, and
@@ -258,29 +258,29 @@ etc.).</p>
 <span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>               <span class="at">n =</span> <span class="dv">6</span>, </span>
 <span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>               <span class="at">condition.names =</span> <span class="fu">c</span>(<span class="st">&quot;SV&quot;</span>,<span class="st">&quot;AV&quot;</span>,<span class="st">&quot;ST&quot;</span>,<span class="st">&quot;AT&quot;</span>))</span></code></pre></div>
 <pre><code>##    id Condition
-## 1   1        AV
-## 2   2        ST
-## 3   3        AV
-## 4   4        ST
-## 5   5        AV
-## 6   6        ST
-## 7   1        AT
-## 8   2        AT
+## 1   1        ST
+## 2   1        AT
+## 3   1        AV
+## 4   1        SV
+## 5   2        AV
+## 6   2        AT
+## 7   2        SV
+## 8   2        ST
 ## 9   3        SV
-## 10  4        SV
-## 11  5        ST
-## 12  6        SV
-## 13  1        SV
-## 14  2        SV
-## 15  3        ST
-## 16  4        AV
-## 17  5        AT
-## 18  6        AV
-## 19  1        ST
-## 20  2        AV
-## 21  3        AT
-## 22  4        AT
-## 23  5        SV
+## 10  3        AV
+## 11  3        ST
+## 12  3        AT
+## 13  4        AT
+## 14  4        AV
+## 15  4        SV
+## 16  4        ST
+## 17  5        AV
+## 18  5        AT
+## 19  5        ST
+## 20  5        SV
+## 21  6        SV
+## 22  6        ST
+## 23  6        AV
 ## 24  6        AT</code></pre>
 <div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># FYI: condition names stand for forms of multisensory stimulation:</span></span>
 <span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="co"># SV = Synchronous Visual, AV = Asynchronous Visual, </span></span>
@@ -302,12 +302,12 @@ argument:</p>
 <span id="cb12-8"><a href="#cb12-8" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb12-9"><a href="#cb12-9" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(nice_randomized_subjects)</span></code></pre></div>
 <pre><code>##   id Condition Date/Time SONA ID Age/Gd. Handedness Tester Notes
-## 1  1        SV        NA      NA      NA         NA     NA    NA
-## 2  2        SV        NA      NA      NA         NA     NA    NA
-## 3  3        SV        NA      NA      NA         NA     NA    NA
-## 4  4        AT        NA      NA      NA         NA     NA    NA
-## 5  5        SV        NA      NA      NA         NA     NA    NA
-## 6  6        AT        NA      NA      NA         NA     NA    NA</code></pre>
+## 1  1        AV        NA      NA      NA         NA     NA    NA
+## 2  1        ST        NA      NA      NA         NA     NA    NA
+## 3  1        AT        NA      NA      NA         NA     NA    NA
+## 4  1        SV        NA      NA      NA         NA     NA    NA
+## 5  2        AV        NA      NA      NA         NA     NA    NA
+## 6  2        ST        NA      NA      NA         NA     NA    NA</code></pre>
 </div>
 <div id="save-data-frame-as-csv-file" class="section level1">
 <h1>Save data frame as CSV file</h1>
@@ -420,10 +420,9 @@ not lose it and perhaps reuse it in the future! <span class="math inline">\(~\)<
 <h3>Thanks for checking in</h3>
 <p>Make sure to check out this page again if you use the code after a
 time or if you encounter errors, as I periodically update or improve the
-code.</p>
-<p>You can always edit the function to suit your purposes, or contact me
-for questions or requests to modify this function at <a href="https://remi-theriault.com/contact" class="uri">https://remi-theriault.com/contact</a>! Thanks for reading
-my guide! :) <span class="math inline">\(~\)</span></p>
+code. Feel free to contact me for comments, questions, or requests to
+improve this function at <a href="https://github.com/rempsyc/rempsyc/issues" class="uri">https://github.com/rempsyc/rempsyc/issues</a>.</p>
+<p><span class="math inline">\(~\)</span></p>
 <p><span class="math inline">\(~\)</span></p>
 <p><span class="math inline">\(~\)</span></p>
 <p><span class="math inline">\(~\)</span></p>
