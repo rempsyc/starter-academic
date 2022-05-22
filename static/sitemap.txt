@@ -13,6 +13,9 @@ https://remi-theriault.com/blog_scatter
 https://remi-theriault.com/blog_circles
 https://remi-theriault.com/blog_randomize
 https://remi-theriault.com/blog_assumptions
+https://remi-theriault.com/blog_moderation
+https://remi-theriault.com/blog_t-test
+https://remi-theriault.com/blog_contrasts
 
 https://remi-theriault.com/fr/
 https://remi-theriault.com/fr/bio/
