@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Does loving-kindness meditation increase giving behaviors?</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Rémi Thériault, Romane Masson, Marion Archambault, &amp; Stéphane Dandeneau" />
+    <meta name="date" content="2022-05-23" />
+    <script src="libs/header-attrs-2.13/header-attrs.js"></script>
+    <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
+    <link href="libs/remark-css-0.0.1/default-fonts.css" rel="stylesheet" />
+    <link href="libs/remark-css-0.0.1/hygge.css" rel="stylesheet" />
+    <link href="libs/tabwid-1.0.0/tabwid.css" rel="stylesheet" />
+    <link rel="stylesheet" href="custom.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+.title[
+# Does loving-kindness meditation increase giving behaviors?
+]
+.author[
+### Rémi Thériault, Romane Masson, Marion Archambault, &amp;
+Stéphane Dandeneau
+]
+.institute[
+### Université du Québec à Montréal
+]
+.date[
+### 2022-05-23
+]
+
+---
+
+background-image: url(images/ml-1.jpg)
+background-size: cover
+
+???
+
+Credit: Mind &amp; Life Summer Research Institute 2019
+
+---
+background-image: url(images/med2.jpg)
+background-size: 300px
+background-position: 80% 50%
+
+.pull-left[
+# Introduction
+Many people believe meditation (e.g., loving-kindness) makes people more kind, generous, selfless, less biased
+
+Some research suggests this is correct (e.g., Kang et al., 2014; Galante et al., 2016)
+
+We aimed to test this relative to **donation behaviour**, specifically
+
+In an online RCT study preregistered on [OSF](https://osf.io/gkd8s)
+]
+
+---
+# Method
+
+**Design:** RCT
+
+**Experimental groups (3):**
+- Loving-kindness meditation
+- Reflection
+- Waitlist control
+
+**Duration of activities**: 6 weeks
+
+**Charity task:**
+- Told they can only keep $5 of extra $10
+  - How much they'd like to donate
+- 24 different charities presented
+  - City, province, country, and international levels
+- Donation from 0$ to 10$ for each charity
+
+???
+
+- The meditation group listens to one guided love-loving-kindness meditation per week (~ 30 minutes), in addition to daily meditations (~ 10 minutes).
+- The focus group listens to one podcast per week on the topic of loving-kindness (~ 30 minutes), in addition to daily readings (~ 10 minutes).
+- The passive waiting list control group has no particular activity to do beyond completing the charity task. 
+
+---
+
+# Participants
+
+
+
+
+```r
+# Number of participants
+library(report)
+report_participants(data)
+```
+
+```
+## [1] "90 participants ()"
+```
+
+```r
+# Allocation ratio
+data$Group %&gt;% 
+  report %&gt;% 
+  as.data.frame
+```
+
+```
+## Level      | n_Obs | percentage_Obs
+## -----------------------------------
+## Meditation |    32 |          35.56
+## Discussion |    25 |          27.78
+## Control    |    33 |          36.67
+```
+
+???
+
+Were recruited in student and marketplace Facebook groups, email lists, classified ads, etc.
+
+---
+# Results
+
+
+```r
+library(rempsyc)
+nice_contrasts(response = "Charity", 
+               group = "Group",
+               data = data) %&gt;% 
+  nice_table
+```
+
+
+&lt;template id="352900bf-8c86-4761-a5e4-ef968c23538f"&gt;&lt;style&gt;
+.tabwid table{
+  border-spacing:0px !important;
+  border-collapse:collapse;
+  line-height:1;
+  margin-left:auto;
+  margin-right:auto;
+  border-width: 0;
+  display: table;
+  margin-top: 1.275em;
+  margin-bottom: 1.275em;
+  border-color: transparent;
+}
+.tabwid_left table{
+  margin-left:0;
+}
+.tabwid_right table{
+  margin-right:0;
+}
+.tabwid td {
+    padding: 0;
+}
+.tabwid a {
+  text-decoration: none;
+}
+.tabwid thead {
+    background-color: transparent;
+}
+.tabwid tfoot {
+    background-color: transparent;
+}
+.tabwid table tr {
+background-color: transparent;
+}
+&lt;/style&gt;&lt;div class="tabwid"&gt;&lt;style&gt;.cl-e1997ea6{table-layout:auto;width:100%;}.cl-e17b4d00{font-family:'Times New Roman';font-size:12pt;font-weight:normal;font-style:normal;text-decoration:none;color:rgba(0, 0, 0, 1.00);background-color:transparent;}.cl-e17b4d01{font-family:'Times New Roman';font-size:12pt;font-weight:normal;font-style:italic;text-decoration:none;color:rgba(0, 0, 0, 1.00);background-color:transparent;}.cl-e17b4d02{font-family:'Times New Roman';font-size:7.2pt;font-weight:normal;font-style:normal;text-decoration:none;color:rgba(0, 0, 0, 1.00);background-color:transparent;position: relative;top:3.6pt;}.cl-e17d217a{margin:0;text-align:center;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:5pt;padding-top:5pt;padding-left:5pt;padding-right:5pt;line-height: 1;background-color:transparent;}.cl-e17e0bbc{height:39.6pt;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-e17e0bbd{height:39.6pt;background-color:transparent;vertical-align: middle;border-bottom: 0.5pt solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-e17e0bbe{height:39.6pt;background-color:transparent;vertical-align: middle;border-bottom: 0.5pt solid rgba(0, 0, 0, 1.00);border-top: 0.5pt solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}&lt;/style&gt;&lt;table class='cl-e1997ea6'&gt;&lt;thead&gt;&lt;tr&gt;&lt;td class="cl-e17e0bbe"&gt;&lt;p class="cl-e17d217a"&gt;&lt;span class="cl-e17b4d00"&gt;Dependent Variable&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-e17e0bbe"&gt;&lt;p class="cl-e17d217a"&gt;&lt;span class="cl-e17b4d00"&gt;Comparison&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-e17e0bbe"&gt;&lt;p class="cl-e17d217a"&gt;&lt;span class="cl-e17b4d01"&gt;df&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-e17e0bbe"&gt;&lt;p class="cl-e17d217a"&gt;&lt;span class="cl-e17b4d01"&gt;t&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-e17e0bbe"&gt;&lt;p class="cl-e17d217a"&gt;&lt;span class="cl-e17b4d01"&gt;p&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-e17e0bbe"&gt;&lt;p class="cl-e17d217a"&gt;&lt;span class="cl-e17b4d01"&gt;d&lt;/span&gt;&lt;span class="cl-e17b4d02"&gt;R&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-e17e0bbe"&gt;&lt;p class="cl-e17d217a"&gt;&lt;span class="cl-e17b4d00"&gt;95% CI&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class="cl-e17e0bbc"&gt;&lt;p class="cl-e17d217a"&gt;&lt;span class="cl-e17b4d00"&gt;Charity&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-e17e0bbc"&gt;&lt;p class="cl-e17d217a"&gt;&lt;span class="cl-e17b4d00"&gt;Meditation - Control&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-e17e0bbc"&gt;&lt;p class="cl-e17d217a"&gt;&lt;span class="cl-e17b4d00"&gt;87&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-e17e0bbc"&gt;&lt;p class="cl-e17d217a"&gt;&lt;span class="cl-e17b4d00"&gt;-1.25&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-e17e0bbc"&gt;&lt;p class="cl-e17d217a"&gt;&lt;span class="cl-e17b4d00"&gt;.215&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-e17e0bbc"&gt;&lt;p class="cl-e17d217a"&gt;&lt;span class="cl-e17b4d00"&gt;-0.31&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-e17e0bbc"&gt;&lt;p class="cl-e17d217a"&gt;&lt;span class="cl-e17b4d00"&gt;[-0.76, 0.16]&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class="cl-e17e0bbc"&gt;&lt;p class="cl-e17d217a"&gt;&lt;span class="cl-e17b4d00"&gt;Charity&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-e17e0bbc"&gt;&lt;p class="cl-e17d217a"&gt;&lt;span class="cl-e17b4d00"&gt;Discussion - Control&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-e17e0bbc"&gt;&lt;p class="cl-e17d217a"&gt;&lt;span class="cl-e17b4d00"&gt;87&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-e17e0bbc"&gt;&lt;p class="cl-e17d217a"&gt;&lt;span class="cl-e17b4d00"&gt;-1.44&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-e17e0bbc"&gt;&lt;p class="cl-e17d217a"&gt;&lt;span class="cl-e17b4d00"&gt;.153&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-e17e0bbc"&gt;&lt;p class="cl-e17d217a"&gt;&lt;span class="cl-e17b4d00"&gt;-0.43&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-e17e0bbc"&gt;&lt;p class="cl-e17d217a"&gt;&lt;span class="cl-e17b4d00"&gt;[-1.03, 0.06]&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class="cl-e17e0bbd"&gt;&lt;p class="cl-e17d217a"&gt;&lt;span class="cl-e17b4d00"&gt;Charity&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-e17e0bbd"&gt;&lt;p class="cl-e17d217a"&gt;&lt;span class="cl-e17b4d00"&gt;Meditation - Discussion&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-e17e0bbd"&gt;&lt;p class="cl-e17d217a"&gt;&lt;span class="cl-e17b4d00"&gt;87&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-e17e0bbd"&gt;&lt;p class="cl-e17d217a"&gt;&lt;span class="cl-e17b4d00"&gt;0.27&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-e17e0bbd"&gt;&lt;p class="cl-e17d217a"&gt;&lt;span class="cl-e17b4d00"&gt;.787&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-e17e0bbd"&gt;&lt;p class="cl-e17d217a"&gt;&lt;span class="cl-e17b4d00"&gt;0.11&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-e17e0bbd"&gt;&lt;p class="cl-e17d217a"&gt;&lt;span class="cl-e17b4d00"&gt;[-0.48, 0.79]&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;&lt;/template&gt;
+&lt;div class="flextable-shadow-host" id="4fad22ca-2787-4c65-9a24-f0633bc3e351"&gt;&lt;/div&gt;
+&lt;script&gt;
+var dest = document.getElementById("4fad22ca-2787-4c65-9a24-f0633bc3e351");
+var template = document.getElementById("352900bf-8c86-4761-a5e4-ef968c23538f");
+var caption = template.content.querySelector("caption");
+if(caption) {
+  caption.style.cssText = "display:block;text-align:center;";
+  var newcapt = document.createElement("p");
+  newcapt.appendChild(caption)
+  dest.parentNode.insertBefore(newcapt, dest.previousSibling);
+}
+var fantome = dest.attachShadow({mode: 'open'});
+var templateContent = template.content;
+fantome.appendChild(templateContent);
+&lt;/script&gt;
+
+Nothing significant.
+
+---
+
+class: bottom
+
+
+```r
+library(rempsyc)
+nice_violin(data = data, group = "Group", response = "Charity", 
+            ytitle = "Charity Donation Amount ($)")
+```
+
+.center[![A nice plot.](presentation_files/figure-html/nice_violin1-1.png)]
+
+---
+
+# Discussion (groups don't differ...)
+
+### Speculation:
+- Effect might appear not immediately but only weeks/months later
+- Could be due to the online format 
+  - Active ingredient could be the social contexts in which people practice meditation
+- Could work only on people interested in meditating from the beginning.
+  - Self-selection bias in studies showing an effect?
+  - The word "meditation" was never mentioned here
+- High attrition could play a role too (maybe?)
+- Might make people better but not translate in donation behaviour (for xyz reasons)
+- Or, meditation might not be the panacea it's seen as
+
+
+---
+
+Class: large
+
+# Conclusion
+
+Many people feel meditating on loving-kindness makes them better, more generous
+- Maybe that's not the case
+- Challenges popular feelings about the effects of (loving-kindness) meditation
+
+Several alternative explanations exist for this lack of effect
+
+More research is needed to better understand *under what circumstances* and *for whom* these interventions work
+
+___
+
+If you have an idea or criticism, leave a comment or contact me: https://remi-theriault.com/contact
+
+---
+
+class: center, middle
+
+# Thanks &amp; Acknowledgements
+
+![:col_row 
+&lt;div class="figure" style="text-align: center"&gt;
+&lt;img src="images/rmasson.jpg" alt="Romane Masson" width="70%" /&gt;
+&lt;p class="caption"&gt;Romane Masson&lt;/p&gt;
+&lt;/div&gt;
+, 
+
+&lt;div class="figure" style="text-align: center"&gt;
+&lt;img src="images/sdandeneau.jpg" alt="Stéphane Dandeneau" width="70%" /&gt;
+&lt;p class="caption"&gt;Stéphane Dandeneau&lt;/p&gt;
+&lt;/div&gt;
+, 
+
+&lt;div class="figure" style="text-align: center"&gt;
+&lt;img src="images/marchambault.jpg" alt="Marion Archambault" width="70%" /&gt;
+&lt;p class="caption"&gt;Marion Archambault&lt;/p&gt;
+&lt;/div&gt;
+]
+
+.pull-left[&lt;img src="images/mindandlife.png" style="width: 100%" /&gt;
+]
+
+.pull-right[&lt;img src="images/sshrc_en_png.png" style="width: 100%" /&gt;
+]
+
+Slides created via the R package [**xaringan**](https://github.com/yihui/xaringan).
+
+???
+
+This three-column formatting was hard to pull off. Thanks for Emily Riederer for the solution:
+
+https://emilyriederer.github.io/xaringan_columns/demo.html#1
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script src="cols_macro.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
