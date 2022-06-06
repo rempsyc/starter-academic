@@ -60,3 +60,5 @@ hist(mtcars$mpg)
 
 #' ### Conclusion
 #' Having a new higher-level header ends the tabset mode.
+#'
+#' The script for this template can be dowloaded here: https://remi-theriault.com/scripts/report_template.R
