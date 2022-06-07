@@ -6,7 +6,7 @@ tags:
 date: "2015-02-21T00:00:00Z"
 
 # Optional external URL for project (replaces project detail page).
-external_link: "https://remi-theriault.com/blog_moderation"
+external_link: "https://remi-theriault.com/blog_contrasts"
 
 image:
   caption: ""
