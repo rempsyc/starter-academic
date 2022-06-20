@@ -36,50 +36,14 @@
       report-uri https://remitheriault.report-uri.com/r/d/csp/wizard'''
 
 [[redirects]]
-  from = "/PratiquesPP_2020"
-  to = "/PratiquesPP_2020.pdf"
+  from = "/Theriault_IPPA_2019.pdf"
+  to = "/posters/Theriault_IPPA_2019.pdf"
   status = 301
   force = false
 
 [[redirects]]
-  from = "/Theriault_CPPA_2018"
-  to = "/Theriault_CPPA_2018.pdf"
-  status = 301
-  force = false
-
-[[redirects]]
-  from = "/Theriault_Douglas_2017"
-  to = "/Theriault_Douglas_2017.pdf"
-  status = 301
-  force = false
-
-[[redirects]]
-  from = "/Theriault_et_al_2020_QJEP_PREPRINT"
-  to = "/Theriault_et_al_2020_QJEP_PREPRINT.pdf"
-  status = 301
-  force = false
-
-[[redirects]]
-  from = "/Theriault_et_al_2020b_QJEP_PREPRINT"
-  to = "/Theriault_et_al_2020b_QJEP_PREPRINT.pdf"
-  status = 301
-  force = false
-
-[[redirects]]
-  from = "/Theriault_IPPA_2019"
-  to = "/Theriault_IPPA_2019.pdf"
-  status = 301
-  force = false
-
-[[redirects]]
-  from = "/Theriault_ISH_2018"
-  to = "/Theriault_ISH_2018.pdf"
-  status = 301
-  force = false
-
-[[redirects]]
-  from = "/Theriault_Mind&Life_2019"
-  to = "/Theriault_Mind&Life_2019.pdf"
+  from = "/Theriault_Mind&Life_2019.pdf"
+  to = "/posters/Theriault_Mind&Life_2019.pdf"
   status = 301
   force = false
 
