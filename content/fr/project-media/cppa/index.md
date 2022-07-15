@@ -30,4 +30,4 @@ url_video: ""
 slides: example
 ---
 
-À l'ACPP, nous aimons non seulement voir nos membres s'épanouir, mais aussi les célébrer et tout ce qu'ils accomplissent. Dans notre série spotlight sur les nouveaux membres, nous voulons partager ce qui est possible dans le domaine de la psychologie positive et vous inspirer. Dans cette entrevue, Louisa Jewell, présidente de l'ACPP, s'entretient avec Rémi Thériault, membre de l'ACPP et ambassadeur étudiant.
+À l'ACPP, nous aimons non seulement voir nos membres s'épanouir, mais aussi les célébrer et tout ce qu'ils accomplissent. Dans cette entrevue spotlight sur les membres, Louisa Jewell, présidente de l'ACPP, s'entretient avec Rémi Thériault, membre et ambassadeur étudiant de l'ACPP.

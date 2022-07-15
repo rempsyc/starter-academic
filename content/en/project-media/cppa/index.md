@@ -30,4 +30,4 @@ url_video: ""
 slides: example
 ---
 
-At the CPPA we love not only to see our members flourishing, but also to celebrate them and everything they achieve. In our new member spotlight series we want to share what is possible in the field of positive psychology and inspire you. In this interview, Louisa Jewell, CPPA President, interviews CPPA member and student ambassador Rémi Thériault.
+At the CPPA we love not only to see our members flourishing, but also to celebrate them and everything they achieve. In this member spotlight interview, Louisa Jewell, CPPA President, interviews CPPA member and student ambassador Rémi Thériault.
