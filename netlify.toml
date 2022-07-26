@@ -52,3 +52,9 @@
   to = "/cv.pdf"
   status = 301
   force = false
+
+[[redirects]]
+  from = "/rempsyc"
+  to = "https://rempsyc.remi-theriault.com"
+  status = 301
+  force = false
