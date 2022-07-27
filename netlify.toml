@@ -57,4 +57,58 @@
   from = "/rempsyc"
   to = "https://rempsyc.remi-theriault.com"
   status = 301
-  force = false
+  force = true
+
+[[redirects]]
+  from = "/blog_table"
+  to = "https://rempsyc.remi-theriault.com/articles/table"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blog_violin"
+  to = "https://rempsyc.remi-theriault.com/articles/violin"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blog_scatter"
+  to = "https://rempsyc.remi-theriault.com/articles/scatter"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blog_circles"
+  to = "https://rempsyc.remi-theriault.com/articles/circles"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blog_randomize"
+  to = "https://rempsyc.remi-theriault.com/articles/randomize"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blog_assumptions"
+  to = "https://rempsyc.remi-theriault.com/articles/assumptions"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blog_moderation"
+  to = "https://rempsyc.remi-theriault.com/articles/moderation"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blog_t-test"
+  to = "https://rempsyc.remi-theriault.com/articles/t-test"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blog_contrasts"
+  to = "https://rempsyc.remi-theriault.com/articles/contrasts"
+  status = 301
+  force = true
