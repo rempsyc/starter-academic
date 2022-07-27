@@ -60,55 +60,55 @@
   force = true
 
 [[redirects]]
-  from = "/blog_table"
+  from = "/blog_table.html"
   to = "https://rempsyc.remi-theriault.com/articles/table"
   status = 301
   force = true
 
 [[redirects]]
-  from = "/blog_violin"
+  from = "/blog_violin.html"
   to = "https://rempsyc.remi-theriault.com/articles/violin"
   status = 301
   force = true
 
 [[redirects]]
-  from = "/blog_scatter"
+  from = "/blog_scatter.html"
   to = "https://rempsyc.remi-theriault.com/articles/scatter"
   status = 301
   force = true
 
 [[redirects]]
-  from = "/blog_circles"
+  from = "/blog_circles.html"
   to = "https://rempsyc.remi-theriault.com/articles/circles"
   status = 301
   force = true
 
 [[redirects]]
-  from = "/blog_randomize"
+  from = "/blog_randomize.html"
   to = "https://rempsyc.remi-theriault.com/articles/randomize"
   status = 301
   force = true
 
 [[redirects]]
-  from = "/blog_assumptions"
+  from = "/blog_assumptions.html"
   to = "https://rempsyc.remi-theriault.com/articles/assumptions"
   status = 301
   force = true
 
 [[redirects]]
-  from = "/blog_moderation"
+  from = "/blog_moderation.html"
   to = "https://rempsyc.remi-theriault.com/articles/moderation"
   status = 301
   force = true
 
 [[redirects]]
-  from = "/blog_t-test"
+  from = "/blog_t-test.html"
   to = "https://rempsyc.remi-theriault.com/articles/t-test"
   status = 301
   force = true
 
 [[redirects]]
-  from = "/blog_contrasts"
+  from = "/blog_contrasts.html"
   to = "https://rempsyc.remi-theriault.com/articles/contrasts"
   status = 301
   force = true
