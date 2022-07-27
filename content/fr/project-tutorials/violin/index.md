@@ -6,7 +6,7 @@ tags:
 date: "2020-09-06T00:00:00Z"
 
 # Optional external URL for project (replaces project detail page).
-external_link: "https://remi-theriault.com/blog_violin"
+external_link: "https://rempsyc.remi-theriault.com/articles/violin"
 
 image:
   caption: ""

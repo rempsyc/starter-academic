@@ -6,7 +6,7 @@ tags:
 date: "2015-02-21T00:00:00Z"
 
 # Optional external URL for project (replaces project detail page).
-external_link: "https://remi-theriault.com/blog_t-test"
+external_link: "https://rempsyc.remi-theriault.com/articles/t-test"
 
 image:
   caption: ""
