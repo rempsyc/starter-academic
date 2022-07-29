@@ -26,7 +26,7 @@ featured: true
 
 date: "2022-06-23T00:00:00-04:00"
 
-doi: "https://doi.org/10.1016/j.psfr.2022.06.004"
+doi: "10.1016/j.psfr.2022.06.004"
 
 external_link: 
 
