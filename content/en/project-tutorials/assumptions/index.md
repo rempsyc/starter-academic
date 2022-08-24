@@ -3,6 +3,7 @@ title: Easy Assumption Testing
 summary: ""
 tags:
 - Statistics
+- Visualization
 date: "2015-12-25T00:00:00Z"
 
 # Optional external URL for project (replaces project detail page).

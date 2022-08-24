@@ -6,7 +6,7 @@ active = true # Activate this widget? true/false
 weight = 65  # Order that this section will appear.
 
 title = "Tutoriels R"
-subtitle = "Introduction au package *rempsyc* : des fonctions de convenance pour rendre votre flow de travail plus **rapide** et **facile** \n\n [rempsyc.remi-theriault.com](https://rempsyc.remi-theriault.com)"
+subtitle = "Introduction au package *rempsyc* : des fonctions de convenance pour rendre votre flow de travail plus **rapide** et **facile** \n\n [rempsyc.remi-theriault.com](https://rempsyc.remi-theriault.com) \n\n Et maintenant aussi le package *lavaanExtra* pour la modélisation par équation structurelle \n\n [lavaanExtra.remi-theriault.com](https://lavaanExtra.remi-theriault.com/)"
 
 [content]
   # Page type to display. E.g. project.

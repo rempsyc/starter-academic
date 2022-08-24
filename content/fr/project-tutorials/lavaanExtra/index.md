@@ -1,20 +1,19 @@
 ---
-title: Tests d'assomptions faciles
+title: lavaanExtra
 summary: ""
 tags:
 - Statistics
-- Visualization
-date: "2015-12-25T00:00:00Z"
+date: "2015-02-20T00:00:00Z"
 
 # Optional external URL for project (replaces project detail page).
-external_link: "https://rempsyc.remi-theriault.com/articles/assumptions"
+external_link: "https://lavaanExtra.remi-theriault.com/"
 
 image:
   caption: ""
   focal_point:
 
-links:
-# - icon: twitter
+#links:
+#- icon: twitter
 #  icon_pack: fab
 #  name: Follow
 #  url: https://twitter.com/georgecushen
@@ -31,4 +30,4 @@ url_video: ""
 slides: example
 ---
 
-Comment tester rapidement les hypothèses de régression linéaire (par évaluation visuelle des graphiques diagnostiques ou des tests objectifs).
+Syntaxe vectorielle alternative à lavaan et autres fonctions pratiques.
