@@ -28,9 +28,9 @@ external_link: "https://journals.sagepub.com/doi/abs/10.1177/0146167219879126"
 
 links: 
  - name: PDF
-   url: "https://remi-theriault.com/Krol_et_al_2020.pdf"
+   url: "https://remi-theriault.com/papers/Krol_et_al_2020.pdf"
  - name: Supplemental Material
-   url: "https://remi-theriault.com/Krol_et_al_2020_SOM.pdf"
+   url: "https://remi-theriault.com/papers/Krol_et_al_2020_SOM.pdf"
 #  - name: Altmetric stats
 #    url: "https://www.altmetric.com/details/69092826"
 

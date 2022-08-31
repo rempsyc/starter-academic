@@ -27,9 +27,9 @@ external_link: https://journals.sagepub.com/doi/abs/10.1177/17470218211024826
 
 links: 
  - name: PDF
-   url: "https://remi-theriault.com/Theriault_et_al_2021.pdf"
+   url: "https://remi-theriault.com/papers/Theriault_et_al_2021.pdf"
  - name: Supplemental Material
-   url: "https://remi-theriault.com/Theriault_et_al_2021_SOM.pdf"
+   url: "https://remi-theriault.com/papers/Theriault_et_al_2021_SOM.pdf"
  - name: Preregistration
    url: "https://osf.io/cws8g"
 #  - name: Altmetric stats
