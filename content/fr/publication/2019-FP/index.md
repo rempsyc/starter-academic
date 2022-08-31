@@ -24,7 +24,7 @@ external_link: "https://www.frontiersin.org/articles/10.3389/fpsyg.2019.02814/fu
 
 links: 
  - name: PDF
-   url: "https://remi-theriault.com/papers/Thériault_2019.pdf"
+   url: "https://remi-theriault.com/papers/Theriault_2019.pdf"
 #  - name: Stats Altmetric
 #    url: "https://www.altmetric.com/details/74237696"
 
