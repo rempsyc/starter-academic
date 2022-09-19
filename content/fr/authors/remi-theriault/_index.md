@@ -59,10 +59,10 @@ social:
     link: https://uqam.academia.edu/RemiTheriault
   - icon: twitter
     icon_pack: fab
-    link: https://twitter.com/RemPsyc
+    link: https://twitter.com/rempsyc
   - icon: github
     icon_pack: fab
-    link: https://github.com/RemPsyc
+    link: https://github.com/rempsyc
   - icon: coffee
     icon_pack: fas
     link: https://www.paypal.com/paypalme/rempsyc
