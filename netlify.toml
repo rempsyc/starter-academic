@@ -176,14 +176,20 @@
 
 
 [[redirects]]
-  from = "/Theriault_et_al_2022.pdf"
-  to = "/papers/Theriault_et_al_2022.pdf"
+  from = "/Thériault_2019.pdf"
+  to = "/papers/Theriault_2019.pdf"
   status = 301
   force = false
 
 [[redirects]]
-  from = "/Thériault_2019.pdf"
-  to = "/papers/Theriault_2019.pdf"
+  from = "/ThÃ©riault_et_al_2021.pdf"
+  to = "/papers/Theriault_et_al_2021.pdf"
+  status = 301
+  force = false
+
+[[redirects]]
+  from = "/Theriault_et_al_2022.pdf"
+  to = "/papers/Theriault_et_al_2022.pdf"
   status = 301
   force = false
 
@@ -196,12 +202,6 @@
 [[redirects]]
   from = "/Krol_et_al_2020.pdf"
   to = "/papers/Krol_et_al_2020.pdf"
-  status = 301
-  force = false
-
-[[redirects]]
-  from = "/Thériault_et_al_2021.pdf"
-  to = "/papers/Theriault_et_al_2021.pdf"
   status = 301
   force = false
 
