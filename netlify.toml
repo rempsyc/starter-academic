@@ -182,7 +182,7 @@
   force = false
 
 [[redirects]]
-  from = "/ThÃ©riault_et_al_2021.pdf"
+  from = "/Th%C3%A9riault_et_al_2021.pdf"
   to = "/papers/Theriault_et_al_2021.pdf"
   status = 301
   force = false
