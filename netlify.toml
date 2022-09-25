@@ -176,7 +176,7 @@
 
 
 [[redirects]]
-  from = "/Thériault_2019.pdf"
+  from = "/Th%C3%A9riault_2019.pdf"
   to = "/papers/Theriault_2019.pdf"
   status = 301
   force = false
