@@ -36,18 +36,6 @@
       report-uri https://remitheriault.report-uri.com/r/d/csp/wizard'''
 
 [[redirects]]
-  from = "/Theriault_IPPA_2019.pdf"
-  to = "/posters/Theriault_IPPA_2019.pdf"
-  status = 301
-  force = false
-
-[[redirects]]
-  from = "/Theriault_Mind&Life_2019.pdf"
-  to = "/posters/Theriault_Mind&Life_2019.pdf"
-  status = 301
-  force = false
-
-[[redirects]]
   from = "/cv"
   to = "/cv.pdf"
   status = 301
@@ -169,3 +157,96 @@
   to = "https://rempsyc.remi-theriault.com/articles/contrasts"
   status = 301
   force = true
+
+
+
+
+[[redirects]]
+  from = "/Theriault_IPPA_2019.pdf"
+  to = "/posters/Theriault_IPPA_2019.pdf"
+  status = 301
+  force = false
+
+[[redirects]]
+  from = "/Theriault_Mind&Life_2019.pdf"
+  to = "/posters/Theriault_Mind&Life_2019.pdf"
+  status = 301
+  force = false
+
+
+
+[[redirects]]
+  from = "/Theriault_et_al_2022.pdf"
+  to = "/papers/Theriault_et_al_2022.pdf"
+  status = 301
+  force = false
+
+[[redirects]]
+  from = "/Thériault_2019.pdf"
+  to = "/papers/Thériault_2019.pdf"
+  status = 301
+  force = false
+
+[[redirects]]
+  from = "/Lifshitz_et_al_2017.pdf"
+  to = "/papers/Lifshitz_et_al_2017.pdf"
+  status = 301
+  force = false
+
+[[redirects]]
+  from = "/Krol_et_al_2020.pdf"
+  to = "/papers/Krol_et_al_2020.pdf"
+  status = 301
+  force = false
+
+[[redirects]]
+  from = "/Thériault_et_al_2021.pdf"
+  to = "/papers/Thériault_et_al_2021.pdf"
+  status = 301
+  force = false
+
+[[redirects]]
+  from = "/Krol_et_al_2020_SOM.pdf"
+  to = "/papers/Krol_et_al_2020_SOM.pdf"
+  status = 301
+  force = false
+
+[[redirects]]
+  from = "/Theriault_&_Raz_2018.pdf"
+  to = "/papers/Theriault_&_Raz_2018.pdf"
+  status = 301
+  force = false
+
+[[redirects]]
+  from = "/Theriault_&_Raz_2018_SOM.pdf"
+  to = "/papers/Theriault_&_Raz_2018_SOM.pdf"
+  status = 301
+  force = false
+
+[[redirects]]
+  from = "/Theriault_et_al_2021.pdf"
+  to = "/papers/Theriault_et_al_2021.pdf"
+  status = 301
+  force = false
+
+[[redirects]]
+  from = "/Theriault_et_al_2022_SOM.pdf"
+  to = "/papers/Theriault_et_al_2022_SOM.pdf"
+  status = 301
+  force = false
+
+[[redirects]]
+  from = "/Theriault_et_al_2021_SOM.pdf"
+  to = "/papers/Theriault_et_al_2021_SOM.pdf"
+  status = 301
+  force = false
+
+
+[[redirects]]
+  from = "/Theriault_&_Raz_2018_SOM.pdf"
+  to = "/papers/Theriault_&_Raz_2018_SOM.pdf"
+  status = 301
+  force = false
+
+
+
