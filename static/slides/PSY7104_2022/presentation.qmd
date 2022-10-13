@@ -8,7 +8,7 @@ format:
         theme: solarized
         slide-number: true
         embed-resources: true
-        standalone: true
+        self-contained: true
 editor: source
 css: styles.css
 ---
