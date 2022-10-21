@@ -8,6 +8,17 @@ https://remi-theriault.com/tutorials/
 https://remi-theriault.com/contact/
 https://remi-theriault.com/donate/
 
+https://remi-theriault.com/project-media/
+https://remi-theriault.com/project-media/page/2/
+https://remi-theriault.com/project-blog/sss/
+https://remi-theriault.com/project-tutorials/circles/
+https://remi-theriault.com/project-media/sshrc/
+https://remi-theriault.com/project-media/vuesetvoix-1/
+
+https://remi-theriault.com/tag/positive-psychology/
+https://remi-theriault.com/tag/spirituality/
+https://remi-theriault.com/tag/funding/
+
 https://remi-theriault.com/fr/
 https://remi-theriault.com/fr/bio/
 https://remi-theriault.com/fr/publications/
@@ -17,3 +28,18 @@ https://remi-theriault.com/fr/media/
 https://remi-theriault.com/fr/tutoriels/
 https://remi-theriault.com/fr/contact/
 https://remi-theriault.com/fr/donnez/
+
+https://remi-theriault.com/fr/project-media/page/2/
+https://remi-theriault.com/fr/project-news/varela/
+https://remi-theriault.com/fr/project-media/quebec-science/
+https://remi-theriault.com/fr/project-blog/sss/
+https://remi-theriault.com/fr/project-tutorials/circles/
+https://remi-theriault.com/fr/project-media/sshrc/
+https://remi-theriault.com/fr/project-media/vuesetvoix-1/
+
+https://remi-theriault.com/fr/tag/positive-psychology/
+https://remi-theriault.com/fr/tag/spirituality/
+https://remi-theriault.com/fr/tag/funding/
+
+https://remi-theriault.com/Theriault_IPPA_2019.pdf
+https://remi-theriault.com/work-tracker.xlsx
