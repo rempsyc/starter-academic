@@ -4,7 +4,7 @@ title: Êtes-vous en contrôle… de vous?
 summary: ""
 tags:
 - Positive Psychology
-date: "2020-00-01T00:00:00Z"
+date: "2020-01-01T00:00:00Z"
 
 # Optional external URL for project (replaces project detail page).
 external_link: "https://medium.com/@psychologie.sociale.uqam/%C3%AAtes-vous-en-contr%C3%B4le-de-vous-f5fbdf81b7eb"
