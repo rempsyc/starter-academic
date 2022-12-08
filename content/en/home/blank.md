@@ -25,4 +25,4 @@ design:
   </div>
 </div>
 
-<a rel="me" href="https://mastodon.world/@rempsyc">Mastodon</a>
+<!--<a rel="me" href="https://mastodon.world/@rempsyc">Mastodon</a>-->
