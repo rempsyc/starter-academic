@@ -24,3 +24,5 @@ design:
       <p style="font-size: calc(100% + 0.5vw)"> A PhD student's journey to making a difference in the world, one mind at a time </p>
   </div>
 </div>
+
+<a rel="me" href="https://mastodon.world/@rempsyc">Mastodon</a>
