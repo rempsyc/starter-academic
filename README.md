@@ -15,9 +15,9 @@ Below, you will find detailed instructions about what to do after forking the si
 
 1. First, you will need to [create a fork](https://docs.github.com/en/get-started/quickstart/fork-a-repo) of this repository.
 
-1. Second, you will need to create an account at https://www.netlify.com/, click "Add a new site", "Import an existing project", then choose "GitHub" as provider, then pick the fork you created before.
+1. Second, you will need to create an account at https://www.netlify.com/, click `Add a new site`, `Import an existing project`, then choose `GitHub` as provider, then pick the fork you created before.
 
-1. There! You have your website up and running already! The URL to your new site will look something like this yoursitename.netlify.app. You can change the name of the subdomain (yoursitename, before the .netlify) from the site settings, but if you have your own custom domain name, you [can also change it](https://www.netlify.com/blog/2021/12/20/how-to-add-custom-domains-to-netlify-sites/). Try your new site URL in your browser to confirm it works.
+1. There! You have your website up and running already! The URL to your new site will look something like this `yoursitename.netlify.app`. You can change the name of the subdomain (`yoursitename`, before the `.netlify`) from the Netlify site settings, but if you have your own custom domain name, you [can also change it](https://www.netlify.com/blog/2021/12/20/how-to-add-custom-domains-to-netlify-sites/). Try your new site URL in your browser to confirm it works.
 
 1. Now it's time to make some changes, like changing the name, bio, photo, publications, etc. Exciting!! Note that is is possible to make all changes directly on github.com, but I believe it is easier to see the changes you bring to the website in real-time. Therefore, I recommend that you download [GitHub Desktop](https://desktop.github.com/), log in, and make a local copy of the fork on your computer.
 
@@ -83,7 +83,7 @@ Some tips:
 - For project pages (blog, media, news, tutorials), it works a bit differently. The page has its own folders, but individual elements have their own folder too, usually called "project-media" or something like that.
 - Don't forget to change your author profile in: `starter-academic\content\en\authors`.
 - Redirects can be specified in `starter-academic\netlify.toml`. In that file, please delete the "Strict-Transport-Security" headers paragraph (unless you have your own Report URI account).
-- Google analytics can be specified in `starter-academic\config\_default\params.toml` (please delete my GA ID).
+- Google analytics can be specified in `starter-academic\config\_default\params.toml` (please delete/replace my GA ID).
 - Don't hesitate to ask me questions, or ask on the wonderful Wowchemy discord: https://discord.gg/z8wNYzb
 - Make sure to read the docs first though: https://wowchemy.com/docs/
 
