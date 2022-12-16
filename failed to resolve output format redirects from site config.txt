@@ -1,0 +1,5 @@
+"Error: from config: failed to resolve output format "redirects" from site config"
+
+Fix:
+
+(A) Manually delete Hugo’s default cache folder and re-run Hugo. Hugo’s cache folder defaults to $TMPDIR/hugo_cache/ on Mac/Linux and %TMP%\hugo_cache\ on Windows.
