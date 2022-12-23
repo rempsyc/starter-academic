@@ -5,7 +5,7 @@ This site was built using (and adapting) the Academic Template for [Hugo](https:
 
 # So, you want to fork my site? Go ahead! But read this...
 
-I encourage everyone and anyone to fork (copy) my site if it looks like you would want your own site. Of course, I would request to keep the site footer to acknowledge Wowchemy as the open source website builder, and well, myself as the builder of that particular version of the template!
+I encourage everyone and anyone to fork (copy) my site if it looks like you would want your own site. Of course, I would request to keep the site footer to acknowledge Wowchemy as the open source website builder, and well, myself as the creator of that particular version of the template!
 
 Below, you will find detailed instructions about what to do after forking the site.
 
@@ -68,7 +68,7 @@ Nice! Now is time to have fun. Make sure to change the following:
 
 1. **On the home page: your name and catchy intro sentence.**
     
-    1. For this, edit the following file: `content\en\home\blank.md` (beware, that part was made in custom HTML so could be confusing!).
+    1. For this, edit the following file: `content\en\home\blank.md` (beware, that part was made in custom HTML so could be confusing! However, you don't need to worry about that part if you only change the name and personalized sentence).
 
 1. **On the bio page: Your photo, name, title, university, social media URLs, bio, interests, education, and skills.**
 
@@ -77,6 +77,8 @@ Nice! Now is time to have fun. Make sure to change the following:
     1. Next, within that folder, change the photo called `avatar.jpg` and edit the file called `_index.md`.
 
     1. Next, change the name of the specified author in the following file: `content\en\bio\bio.md`.)
+    
+    1. Next, to change your skills, edit the following file: `content\en\bio\skills.md`.
 
 1. **On the publications page: your publications (duh!)**
 

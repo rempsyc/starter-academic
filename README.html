@@ -444,62 +444,85 @@ that will preview your site:</p>
 sentence.</strong></p>
 <ol style="list-style-type: decimal">
 <li>For this, edit the following file:
-<code>starter-academic\content\en\home\blank.md</code> (beware, that
-part was made in custom HTML so could be confusing!).</li>
+<code>content\en\home\blank.md</code> (beware, that part was made in
+custom HTML so could be confusing! However, you don’t need to worry
+about that part if you only change the name and personalized
+sentence).</li>
 </ol></li>
-<li><p>On the bio page: Your photo, name, title, university, social
-media URLs, bio, interests, education, and skills.</p>
+<li><p><strong>On the bio page: Your photo, name, title, university,
+social media URLs, bio, interests, education, and skills.</strong></p>
 <ol style="list-style-type: decimal">
 <li><p>For this, change the name of the following folder to your name:
-<code>starter-academic\content\en\authors\remi-theriault</code>.</p></li>
+<code>content\en\authors\remi-theriault</code>.</p></li>
 <li><p>Next, within that folder, change the photo called
 <code>avatar.jpg</code> and edit the file called
-<code>_index.md</code>.à</p></li>
+<code>_index.md</code>.</p></li>
 <li><p>Next, change the name of the specified author in the following
-file: <code>starter-academic\content\en\bio\bio.md</code>.)</p></li>
+file: <code>content\en\bio\bio.md</code>.)</p></li>
+<li><p>Next, to change your skills, edit the following file:
+<code>content\en\bio\skills.md</code>.</p></li>
 </ol></li>
-<li><p>On the publications page: your publications (duh!)</p></li>
-<li><p>On the contact page: your email, phone number, address,
-directions, and google maps coordinates. You can delete the picture as
-well.</p></li>
-<li><p>You can delete some sections of the website if they don’t apply
-to you: News, Blog, Media, Tutorials, Donate, etc.</p></li>
-<li><p>There is still things that you don’t see on the site but might
-want to clean anyway (more below).</p></li>
+<li><p><strong>On the publications page: your publications
+(duh!)</strong></p>
+<ol style="list-style-type: decimal">
+<li>For this, edit the individual publication folders in the following
+folder: <code>content\en\publication</code>. You’ll have to edit each
+publication’s <code>index.md</code> file individually.</li>
+</ol></li>
+<li><p><strong>On the contact page: your email, phone number, address,
+google maps coordinates, and directions.</strong></p>
+<ol style="list-style-type: decimal">
+<li><p>For this, edit the following file:
+<code>config\_default\params.toml</code>.</p></li>
+<li><p>To remove the picture of the building, first delete the
+<code>![SU](SU.jpg)</code> line in the
+<code>content\en\contact\contact.md</code> file. Next, you can delete
+the other pictures within that folder to clean things up (unless you
+want to use your own photo of course).</p></li>
+</ol></li>
+<li><p><strong>Change the site menu layout.</strong></p>
+<ol style="list-style-type: decimal">
+<li>For this, edit the following file:
+<code>config\_default\menus.toml</code>.</li>
+</ol></li>
+<li><p><strong>Change the website icon (you will see that when seeing
+your site in Google search results for example)</strong></p>
+<ol style="list-style-type: decimal">
+<li>For this, change the photo located at
+<code>assets\media\icon.png</code>.</li>
+</ol></li>
+<li><p><strong>You can delete some sections of the website if they don’t
+apply to you: News, Blog, Media, Tutorials, Donate, etc.</strong></p>
+<ol style="list-style-type: decimal">
+<li>Those sections are located in <code>content\en</code>.</li>
+</ol></li>
+<li><p><strong>Note that there is still things that you don’t see on the
+site but might want to clean anyway (more below).</strong></p></li>
 </ol>
 <p>Some tips:</p>
 <ul>
-<li>To change your contact information and social media URLs, change the
-file located at
-<code>starter-academic\config\_default\params.toml</code></li>
-<li>To change the website icon, change the photo located at
-<code>starter-academic\assets\media\icon.png</code>.</li>
-<li>To change the menu layout, change the file located at
-<code>starter-academic\config\_default\menus.toml</code></li>
-<li>To host files at the root of your site, place them in
-<code>starter-academic\static</code>. Feel free to delete all of my
-other files there (EXCEPT the admin folder).</li>
-<li>The only other place you need to know about is the one located at
-<code>starter-academic\content</code>. From there, choose your language
-(and you will need to change the files for each language individually
-each time), and you can start making changes to the content of your
-site. Each folder there represents a page on your website. Feel free to
-delete any and all pages that you don’t want. In each of these folders,
-there is a <code>index.mdV</code> file. That’s the file you don’t
-usually want to change. Edit the other file instead.</li>
-<li>For project pages (blog, media, news, tutorials), it works a bit
-differently. The page has its own folders, but individual elements have
-their own folder too, usually called “project-media” or something like
-that.</li>
-<li>Don’t forget to change your author profile in:
-<code>starter-academic\content\en\authors</code>.</li>
-<li>Redirects can be specified in
-<code>starter-academic\netlify.toml</code>. In that file, please delete
-the “Strict-Transport-Security” headers paragraph (unless you have your
-own Report URI account).</li>
+<li>To change the French (or other language) version of the site, you
+will need to repeat those steps in the <code>content\fr</code>
+subfolder.</li>
+<li>Normally, for folders located in the <code>content</code> folder,
+there is a <code>index.md</code> file. That’s the file you don’t usually
+want to change. Edit the other file instead. But for project pages
+(blog, media, news, tutorials), it works a bit differently. The page has
+its own folders, but individual elements have their own folder too,
+usually called “project-media” or something like that, and in those
+cases, you want to edit the <code>index.md</code> file.</li>
+<li>To host files at the root of your site, place them in the
+<code>static</code> folder. Feel free to delete all of my other files
+there (EXCEPT the admin folder, which is needed for administrative
+reasons). You can ignore all other files that we haven’t covered so
+far.</li>
+<li>Redirects can be specified in the root file
+<code>netlify.toml</code>. In that file, please delete the
+“Strict-Transport-Security” headers paragraph (unless you have your own
+Report URI account).</li>
 <li>Google analytics can be specified in
-<code>starter-academic\config\_default\params.toml</code> (please
-delete/replace my GA ID).</li>
+<code>config\_default\params.toml</code> (please delete/replace my GA
+ID).</li>
 <li>Don’t hesitate to ask me questions, or ask on the wonderful Wowchemy
 discord: <a href="https://discord.gg/z8wNYzb" class="uri">https://discord.gg/z8wNYzb</a></li>
 <li>Make sure to read the docs first though: <a href="https://wowchemy.com/docs/" class="uri">https://wowchemy.com/docs/</a></li>
