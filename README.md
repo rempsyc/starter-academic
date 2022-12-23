@@ -5,7 +5,7 @@ This site was built using (and adapting) the Academic Template for [Hugo](https:
 
 # So, you want to fork my site? Go ahead! But read this...
 
-I encourage everyone and anyone to fork (copy) my site if it looks like you would want your own site. Of course, I would request to keep the site footer to acknowledge Wowchemy as the open source website builder, and well, myself as the creator of that particular version of the template!
+I encourage everyone and anyone to fork (copy) my site if it looks like you would want your own site. Of course, I would request to keep the site footer to acknowledge Wowchemy as the open source website builder, and well, myself as the creator of that adaptation of the template!
 
 Below, you will find detailed instructions about what to do after forking the site.
 
