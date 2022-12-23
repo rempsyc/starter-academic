@@ -80,7 +80,7 @@ Nice! Now is time to have fun. Make sure to change the following:
 
 1. **On the publications page: your publications (duh!)**
 
-    1. For this, edit the individual publication folders in the following folder: `content\en\publication`. You'll have to edit each publication's `index.md` individually.
+    1. For this, edit the individual publication folders in the following folder: `content\en\publication`. You'll have to edit each publication's `index.md` file individually.
 
 1. **On the contact page: your email, phone number, address, google maps coordinates, and directions.**
 
@@ -88,8 +88,11 @@ Nice! Now is time to have fun. Make sure to change the following:
     
     1. To remove the picture of the building, first delete the `![SU](SU.jpg)` line in the `content\en\contact\contact.md` file. Next, you can delete the other pictures within that folder to clean things up (unless you want to use your own photo of course).
 
+1. **Change the site menu layout.**
 
-1. **Change the website icon (you will see that when seeing your site in Google search results for example)
+    1. For this, edit the following file: `config\_default\menus.toml`.
+
+1. **Change the website icon (you will see that when seeing your site in Google search results for example)**
 
     1. For this, change the photo located at `assets\media\icon.png`.
 
@@ -102,11 +105,8 @@ Nice! Now is time to have fun. Make sure to change the following:
 Some tips:
 
 - To change the French (or other language) version of the site, you will need to repeat those steps in the `content\fr` subfolder.
-- To change the menu layout, change the file located at `starter-academic\config\_default\menus.toml`
-- To host files at the root of your site, place them in `starter-academic\static`. Feel free to delete all of my other files there (EXCEPT the admin folder).
-- The only other place you need to know about is the one located at `starter-academic\content`. From there, choose your language (and you will need to change the files for each language individually each time), and you can start making changes to the content of your site. Each folder there represents a page on your website. Feel free to delete any and all pages that you don't want. In each of these folders, there is a `index.mdV` file. That's the file you don't usually want to change. Edit the other file instead.
-- For project pages (blog, media, news, tutorials), it works a bit differently. The page has its own folders, but individual elements have their own folder too, usually called "project-media" or something like that.
-- Don't forget to change your author profile in: `starter-academic\content\en\authors`.
+- Normally, for folders located in `starter-academic\content`, there is a `index.md` file. That's the file you don't usually want to change. Edit the other file instead. But for project pages (blog, media, news, tutorials), it works a bit differently. The page has its own folders, but individual elements have their own folder too, usually called "project-media" or something like that.
+- To host files at the root of your site, place them in the `static` folder. Feel free to delete all of my other files there (EXCEPT the admin folder, which is needed for administrative reasons). You can ignore all other files that we haven't covered so far.
 - Redirects can be specified in `starter-academic\netlify.toml`. In that file, please delete the "Strict-Transport-Security" headers paragraph (unless you have your own Report URI account).
 - Google analytics can be specified in `starter-academic\config\_default\params.toml` (please delete/replace my GA ID).
 - Don't hesitate to ask me questions, or ask on the wonderful Wowchemy discord: https://discord.gg/z8wNYzb
