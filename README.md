@@ -42,6 +42,8 @@ iwr -useb get.scoop.sh | iex
 scoop install git go hugo-extended nodejs
 ```
 
+---
+
 Edit: It seems that due to an update in Hugo security policies, it will not work with this version of Wowchemy. So until I update the site with the most recent version of Wowchemy, you will need to install an older version of Hugo by downloading the Hugo version 0.88.1 zip file to your computer from here (`hugo_0.88.1_Windows-64bit.zip
 `): 
 
