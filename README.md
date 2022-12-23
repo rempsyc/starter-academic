@@ -78,20 +78,30 @@ Nice! Now is time to have fun. Make sure to change the following:
 
     1. Next, change the name of the specified author in the following file: `content\en\bio\bio.md`.)
 
-1. On the publications page: your publications (duh!)
+1. **On the publications page: your publications (duh!)**
 
     1. For this, edit the individual publication folders in the following folder: `content\en\publication`. You'll have to edit each publication's `index.md` individually.
 
-1. On the contact page: your email, phone number, address, directions, and google maps coordinates. You can delete the picture as well.
+1. **On the contact page: your email, phone number, address, google maps coordinates, and directions.**
 
-1. You can delete some sections of the website if they don't apply to you: News, Blog, Media, Tutorials, Donate, etc.
+    1. For this, edit the following file: `config\_default\params.toml`.
+    
+    1. To remove the picture of the building, first delete the `![SU](SU.jpg)` line in the `content\en\contact\contact.md` file. Next, you can delete the other pictures within that folder to clean things up (unless you want to use your own photo of course).
 
-1. There is still things that you don't see on the site but might want to clean anyway (more below).
+
+1. **Change the website icon (you will see that when seeing your site in Google search results for example)
+
+    1. For this, change the photo located at `assets\media\icon.png`.
+
+1. **You can delete some sections of the website if they don't apply to you: News, Blog, Media, Tutorials, Donate, etc.**
+
+    1. Those sections are located in `content\en`.
+
+1. **Note that there is still things that you don't see on the site but might want to clean anyway (more below).**
 
 Some tips:
 
-- To change your contact information and social media URLs, change the file located at `starter-academic\config\_default\params.toml`
-- To change the website icon, change the photo located at `starter-academic\assets\media\icon.png`.
+- To change the French (or other language) version of the site, you will need to repeat those steps in the `content\fr` subfolder.
 - To change the menu layout, change the file located at `starter-academic\config\_default\menus.toml`
 - To host files at the root of your site, place them in `starter-academic\static`. Feel free to delete all of my other files there (EXCEPT the admin folder).
 - The only other place you need to know about is the one located at `starter-academic\content`. From there, choose your language (and you will need to change the files for each language individually each time), and you can start making changes to the content of your site. Each folder there represents a page on your website. Feel free to delete any and all pages that you don't want. In each of these folders, there is a `index.mdV` file. That's the file you don't usually want to change. Edit the other file instead.
