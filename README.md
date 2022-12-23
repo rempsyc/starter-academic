@@ -66,10 +66,14 @@ http://localhost:1313/
 
 Nice! Now is time to have fun. Make sure to change the following:
 
-1. **Change the site title and menu layout.**
+1. **The site title and menu layout.**
 
     1. For the site title, edit the following file: `config\_default\config.toml`.
     1. For the menu layout, edit the following file: `config\_default\menus.toml`.
+
+1. **The website icon (you will see that when seeing your site in Google search results for example)**
+
+    1. For this, change the photo located at `assets\media\icon.png`.
 
 1. **On the home page: your name and catchy intro sentence.**
     
@@ -85,19 +89,15 @@ Nice! Now is time to have fun. Make sure to change the following:
     
     1. Next, to change your skills, edit the following file: `content\en\bio\skills.md`.
 
-1. **On the publications page: your publications (duh!)**
-
-    1. For this, edit the individual publication folders in the following folder: `content\en\publication`. You'll have to edit each publication's `index.md` file individually.
-
 1. **On the contact page: your email, phone number, address, google maps coordinates, and directions.**
 
     1. For this, edit the following file: `config\_default\params.toml`.
     
     1. To remove the picture of the building, first delete the `![SU](SU.jpg)` line in the `content\en\contact\contact.md` file. Next, you can delete the other pictures within that folder to clean things up (unless you want to use your own photo of course).
 
-1. **Change the website icon (you will see that when seeing your site in Google search results for example)**
+1. **On the publications page: your publications (duh!)**
 
-    1. For this, change the photo located at `assets\media\icon.png`.
+    1. For this, edit the individual publication folders in the following folder: `content\en\publication`. You'll have to edit each publication's `index.md` file individually.
 
 1. **You can delete some sections of the website if they don't apply to you: News, Blog, Media, Tutorials, Donate, etc.**
 
