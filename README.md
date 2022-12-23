@@ -42,6 +42,17 @@ iwr -useb get.scoop.sh | iex
 scoop install git go hugo-extended nodejs
 ```
 
+Edit: It seems that due to an update in Hugo security policies, it will not work with this version of Wowchemy. So until I update the site with the most recent version of Wowchemy, you will need to install an older version of Hugo by downloading the Hugo version 0.88.1 zip file to your computer from here (`hugo_0.88.1_Windows-64bit.zip
+`): 
+
+https://github.com/gohugoio/hugo/releases/tag/v0.88.1
+
+Then, unzip the files and copy them to the folder below (after deleting the old files in that folder), making sure to replace `YOURUSERNAME` with your actual username:
+
+`C:\Users\YOURUSERNAME\scoop\apps\hugo-extended`
+
+Then it should work! :)
+
 ## Running the live server
 
 So far, so good. Next, in Windows PowerShell, there are two commands you need to kickstart your live website preview. First, you have to change the working directory to where you cloend your fork. This might look like this:
