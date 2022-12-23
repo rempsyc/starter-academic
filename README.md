@@ -105,10 +105,10 @@ Nice! Now is time to have fun. Make sure to change the following:
 Some tips:
 
 - To change the French (or other language) version of the site, you will need to repeat those steps in the `content\fr` subfolder.
-- Normally, for folders located in `starter-academic\content`, there is a `index.md` file. That's the file you don't usually want to change. Edit the other file instead. But for project pages (blog, media, news, tutorials), it works a bit differently. The page has its own folders, but individual elements have their own folder too, usually called "project-media" or something like that.
+- Normally, for folders located in the `content` folder, there is a `index.md` file. That's the file you don't usually want to change. Edit the other file instead. But for project pages (blog, media, news, tutorials), it works a bit differently. The page has its own folders, but individual elements have their own folder too, usually called "project-media" or something like that, and in those cases, you want to edit the `index.md` file.
 - To host files at the root of your site, place them in the `static` folder. Feel free to delete all of my other files there (EXCEPT the admin folder, which is needed for administrative reasons). You can ignore all other files that we haven't covered so far.
-- Redirects can be specified in `starter-academic\netlify.toml`. In that file, please delete the "Strict-Transport-Security" headers paragraph (unless you have your own Report URI account).
-- Google analytics can be specified in `starter-academic\config\_default\params.toml` (please delete/replace my GA ID).
+- Redirects can be specified in the root file `netlify.toml`. In that file, please delete the "Strict-Transport-Security" headers paragraph (unless you have your own Report URI account).
+- Google analytics can be specified in `config\_default\params.toml` (please delete/replace my GA ID).
 - Don't hesitate to ask me questions, or ask on the wonderful Wowchemy discord: https://discord.gg/z8wNYzb
 - Make sure to read the docs first though: https://wowchemy.com/docs/
 
