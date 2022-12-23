@@ -70,6 +70,11 @@ Nice! Now is time to have fun. Make sure to change the following:
     
     1. For this, edit the following file: `content\en\home\blank.md` (beware, that part was made in custom HTML so could be confusing! However, you don't need to worry about that part if you only change the name and personalized sentence).
 
+1. **Change the site title and menu layout.**
+
+    1. For the site title, edit the following file: `config\_default\config.toml`.
+    1. For the menu layout, edit the following file: `config\_default\menus.toml`.
+
 1. **On the bio page: Your photo, name, title, university, social media URLs, bio, interests, education, and skills.**
 
     1. For this, change the name of the following folder to your name: `content\en\authors\remi-theriault`.
@@ -89,10 +94,6 @@ Nice! Now is time to have fun. Make sure to change the following:
     1. For this, edit the following file: `config\_default\params.toml`.
     
     1. To remove the picture of the building, first delete the `![SU](SU.jpg)` line in the `content\en\contact\contact.md` file. Next, you can delete the other pictures within that folder to clean things up (unless you want to use your own photo of course).
-
-1. **Change the site menu layout.**
-
-    1. For this, edit the following file: `config\_default\menus.toml`.
 
 1. **Change the website icon (you will see that when seeing your site in Google search results for example)**
 
