@@ -378,29 +378,36 @@ forking the site.</p>
 <h2>Installing the prerequisites…</h2>
 <ol style="list-style-type: decimal">
 <li><p>First, you will need to <a href="https://docs.github.com/en/get-started/quickstart/fork-a-repo">create
-a fork</a> of this repository.</p></li>
-<li><p>Second, you will need to create an account at <a href="https://www.netlify.com/" class="uri">https://www.netlify.com/</a>, click “Add a new site”,
-“Import an existing project”, then choose “GitHub” as provider, then
-pick the fork you created before.</p></li>
+a fork</a> of this repository. To create a fork, simply click on the
+fork button at the complete top right of the page. You will be asked to
+confirm and you can simply go with the default options and
+name.</p></li>
+<li><p>Second, you will need to create an account at <a href="https://www.netlify.com/" class="uri">https://www.netlify.com/</a>, click
+<code>Add a new site</code>, <code>Import an existing project</code>,
+then choose <code>GitHub</code> as provider, then pick the fork you
+created before. You’ll see a few more screen where you can just go with
+the default options each time (select all repositories, etc.).</p></li>
 <li><p>There! You have your website up and running already! The URL to
-your new site will look something like this yoursitename.netlify.app.
-You can change the name of the subdomain (yoursitename, before the
-.netlify) from the site settings, but if you have your own custom domain
+your new site will look something like this
+<code>yoursitename.netlify.app</code>. You can change the name of the
+subdomain (<code>yoursitename</code>, before the <code>.netlify</code>)
+from the Netlify site settings, but if you have your own custom domain
 name, you <a href="https://www.netlify.com/blog/2021/12/20/how-to-add-custom-domains-to-netlify-sites/">can
 also change it</a>. Try your new site URL in your browser to confirm it
 works.</p></li>
 <li><p>Now it’s time to make some changes, like changing the name, bio,
-photo, publications, etc. Exciting!! Note that is is possible to make
+photo, publications, etc. Exciting!! Note that it is possible to make
 all changes directly on github.com, but I believe it is easier to see
 the changes you bring to the website in real-time. Therefore, I
 recommend that you download <a href="https://desktop.github.com/">GitHub
-Desktop</a>, log in, and make a local copy of the fork on your
-computer.</p></li>
+Desktop</a>, log in, and make a local copy of (i.e., “clone”) the fork
+on your computer. You will be asked “how are you planning to use this
+fork?”” Choose “For my own purposes”.</p></li>
 <li><p>Next, to view the website in real time, you will need to use
 Windows PowerShell. It is already installed with Windows, you just have
 to type the name in the search bar and it will pop up.</p></li>
 <li><p>You will also need to install Hugo extended. <a href="https://wowchemy.com/docs/getting-started/install-hugo-extended/#cms">Detailed
-instructions</a> are available, but in a nutshell:</p></li>
+instructions</a> are available, but essentially:</p></li>
 </ol>
 <blockquote>
 <p>Open the Windows Powershell 5 app, installing it if necessary.</p>
@@ -420,9 +427,9 @@ policy?.</p>
 <h2>Running the live server</h2>
 <p>So far, so good. Next, in Windows PowerShell, there are two commands
 you need to kickstart your live website preview. First, you have to
-change the working directory to your fork. This might look like
-this:</p>
-<pre><code>cd &quot;D:\GitHub\starter-academic&quot;</code></pre>
+change the working directory to where you cloend your fork. This might
+look like this:</p>
+<pre><code>cd &quot;D:\github\starter-academic&quot;</code></pre>
 <p>Second, you have to run the following code to run the hugo server
 that will preview your site:</p>
 <pre><code>hugo server</code></pre>
@@ -432,33 +439,43 @@ that will preview your site:</p>
 <div id="personalizing-your-site" class="section level2">
 <h2>Personalizing your site</h2>
 <p>Nice! Now is time to have fun. Make sure to change the following:</p>
-<ul class="task-list">
-<li><input type="checkbox" disabled></input>On the home page: your name and
-catchy intro sentence (beware, that part was made in custom HTML so
-could be confusing!)</li>
-<li><input type="checkbox" disabled></input>On the bio page: Your photo,
-name, title, university, social media URLs, bio, interests, education,
-and skills.</li>
-<li><input type="checkbox" disabled></input>On the publications page: your
-publications (duh!)</li>
-<li><input type="checkbox" disabled></input>On the contact page: your
-email, phone number, address, directions, and google maps coordinates.
-You can delete the picture as well.</li>
-<li><input type="checkbox" disabled></input>You can delete some sections of
-the website if they don’t apply to you: News, Blog, Media, Tutorials,
-Donate, etc.</li>
-<li><input type="checkbox" disabled></input>There is still things that you
-don’t see on the site but might want to clean anyway (more below).</li>
-</ul>
+<ol style="list-style-type: decimal">
+<li><p><strong>On the home page: your name and catchy intro
+sentence.</strong></p>
+<ol style="list-style-type: decimal">
+<li>For this, edit the following file:
+<code>starter-academic\content\en\home\blank.md</code> (beware, that
+part was made in custom HTML so could be confusing!).</li>
+</ol></li>
+<li><p>On the bio page: Your photo, name, title, university, social
+media URLs, bio, interests, education, and skills.</p>
+<ol style="list-style-type: decimal">
+<li><p>For this, change the name of the following folder to your name:
+<code>starter-academic\content\en\authors\remi-theriault</code>.</p></li>
+<li><p>Next, within that folder, change the photo called
+<code>avatar.jpg</code> and edit the file called
+<code>_index.md</code>.à</p></li>
+<li><p>Next, change the name of the specified author in the following
+file: <code>starter-academic\content\en\bio\bio.md</code>.)</p></li>
+</ol></li>
+<li><p>On the publications page: your publications (duh!)</p></li>
+<li><p>On the contact page: your email, phone number, address,
+directions, and google maps coordinates. You can delete the picture as
+well.</p></li>
+<li><p>You can delete some sections of the website if they don’t apply
+to you: News, Blog, Media, Tutorials, Donate, etc.</p></li>
+<li><p>There is still things that you don’t see on the site but might
+want to clean anyway (more below).</p></li>
+</ol>
 <p>Some tips:</p>
 <ul>
+<li>To change your contact information and social media URLs, change the
+file located at
+<code>starter-academic\config\_default\params.toml</code></li>
 <li>To change the website icon, change the photo located at
 <code>starter-academic\assets\media\icon.png</code>.</li>
 <li>To change the menu layout, change the file located at
 <code>starter-academic\config\_default\menus.toml</code></li>
-<li>To change your contact information and social media URLs, change the
-file located at
-<code>starter-academic\config\_default\params.toml</code></li>
 <li>To host files at the root of your site, place them in
 <code>starter-academic\static</code>. Feel free to delete all of my
 other files there (EXCEPT the admin folder).</li>
@@ -481,8 +498,8 @@ that.</li>
 the “Strict-Transport-Security” headers paragraph (unless you have your
 own Report URI account).</li>
 <li>Google analytics can be specified in
-<code>starter-academic\config\_default\params.toml</code> (please delete
-my GA ID).</li>
+<code>starter-academic\config\_default\params.toml</code> (please
+delete/replace my GA ID).</li>
 <li>Don’t hesitate to ask me questions, or ask on the wonderful Wowchemy
 discord: <a href="https://discord.gg/z8wNYzb" class="uri">https://discord.gg/z8wNYzb</a></li>
 <li>Make sure to read the docs first though: <a href="https://wowchemy.com/docs/" class="uri">https://wowchemy.com/docs/</a></li>
