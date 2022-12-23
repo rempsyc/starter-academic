@@ -66,14 +66,14 @@ http://localhost:1313/
 
 Nice! Now is time to have fun. Make sure to change the following:
 
-1. **On the home page: your name and catchy intro sentence.**
-    
-    1. For this, edit the following file: `content\en\home\blank.md` (beware, that part was made in custom HTML so could be confusing! However, you don't need to worry about that part if you only change the name and personalized sentence).
-
 1. **Change the site title and menu layout.**
 
     1. For the site title, edit the following file: `config\_default\config.toml`.
     1. For the menu layout, edit the following file: `config\_default\menus.toml`.
+
+1. **On the home page: your name and catchy intro sentence.**
+    
+    1. For this, edit the following file: `content\en\home\blank.md` (beware, that part was made in custom HTML so could be confusing! However, you don't need to worry about that part if you only change the name and personalized sentence).
 
 1. **On the bio page: Your photo, name, title, university, social media URLs, bio, interests, education, and skills.**
 
