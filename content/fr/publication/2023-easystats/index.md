@@ -32,7 +32,7 @@ external_link:
 
 links: 
 
-abstract: "*easystats* est une collection de packages R, qui vise à fournir un cadre unificateur et cohérent pour apprivoiser, discipliner et exploiter les statistiques effrayantes de R et leurs modèles embêtants. Cependant, il n'existe pas (encore) de méthode unique "easystats" pour effectuer une analyse de données. Au lieu de cela, commencez par un package et, lorsque vous serez confronté à un nouveau défi, vérifiez s'il existe une réponse easystats dans d'autres packages. Vous découvrirez lentement comment les utiliser ensemble vous facilite la vie. Et, qui sait, vous pourriez même finir par tous les utiliser."
+abstract: "*easystats* est une collection de packages R, qui vise à fournir un cadre unificateur et cohérent pour apprivoiser, discipliner et exploiter les statistiques effrayantes de R et leurs modèles embêtants. Cependant, il n'existe pas (encore) de méthode unique « easystats » pour effectuer une analyse de données. Au lieu de cela, commencez par un package et, lorsque vous serez confronté à un nouveau défi, vérifiez s'il existe une réponse easystats dans d'autres packages. Vous découvrirez lentement comment les utiliser ensemble vous facilite la vie. Et, qui sait, vous pourriez même finir par tous les utiliser."
 
 
 # ####################################################################
