@@ -1,16 +1,16 @@
 ---
-title: "report: From R to your manuscript"
+title: "effectsize: Indices of Effect Size"
 
 # Publication name and optional abbreviated publication name.
-publication: "(R package version 0.5.5.3) [Computer software]. <a href='https://easystats.github.io/report' target='_blank' rel='noopener noreferrer'>easystats.github.io/report</a>"
+publication: "(version du package 0.8.2) [Logiciel]. <a href='https://easystats.github.io/effectsize' target='_blank' rel='noopener noreferrer'>easystats.github.io/effectsize</a>"
 
 #publication_short: 
 
 authors:
 
+- Mattan S. Ben-Shachar
 - Dominique Makowski
 - Daniel Lüdecke
-- Mattan S. Ben-Shachar
 - Indrajeet Patil
 - Brenton M. Wiernik
 - Rémi Thériault
@@ -23,7 +23,7 @@ add_badge: true
 
 featured: true
 
-date: "2022-12-18T00:00:00-04:00"
+date: "2022-12-25T00:00:00-04:00"
 
 doi: ""
 
@@ -31,7 +31,7 @@ external_link:
 
 links: 
 
-abstract: "*report*’s primary goal is to bridge the gap between R’s output and the formatted results contained in your manuscript. It automatically produces reports of models and data frames according to best practices guidelines (e.g., APA’s style), ensuring standardization and quality in results reporting."
+abstract: "L'objectif de ce package est de fournir des utilitaires pour travailler avec des indices de taille d'effet et des paramètres standardisés, permettant le calcul et la conversion d'indices tels que *d* de Cohen, *r*, rapports de cotes, etc."
 
 
 # ####################################################################
@@ -66,13 +66,13 @@ math: true
 
 tags: []
 
-#url_code: 'https://osf.io/t4frx/'
-#url_dataset: 'https://osf.io/t4frx/'
+#url_code: '#'
+#url_dataset: '#'
 #url_pdf: '#'
 #url_poster: '#'
 #url_preprint: '#'
 #url_project: '#'
 #url_slides: '#'
 #url_source: '#'
-#url_video: 'https://vimeo.com/209325612'
+#url_video: '#'
 ---
