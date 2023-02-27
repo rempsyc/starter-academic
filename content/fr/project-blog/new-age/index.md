@@ -1,12 +1,12 @@
 ---
-title: "The SOI, the Big Five Traits of Personality, and Personal Transformation"
+title: "Le mouvement New Age : des associations volontaires, pas des marchés"
 summary: ""
 tags:
-- Positive Psychology
+- Spirituality
 date: "2015-04-09T00:00:00Z"
 
 # Optional external URL for project (replaces project detail page).
-external_link: "https://medium.com/@rempsyc/the-soi-the-big-five-traits-of-personality-and-personal-transformation-49cbb0d5625b"
+external_link: "https://medium.com/@rempsyc/the-new-age-movement-volunteer-associations-not-markets-3f410b376af0"
 
 image:
   caption: ""
@@ -30,4 +30,4 @@ url_video: ""
 slides: example
 ---
 
-Is there such a thing as the ideal personality? Evidence suggests that people that are extraverted, open, agreeable, conscientious, and emotionally stable seem to experience the most positive outcomes.
+Le mouvement New Age est « un mouvement de libération, cherchant à libérer et à renforcer l'expérience privée des réalités spirituelles de l'individu - la liberté vis-à-vis des dogmes et de l'autorité religieux, et l'autonomisation face à la culture intellectuelle dominante ». 

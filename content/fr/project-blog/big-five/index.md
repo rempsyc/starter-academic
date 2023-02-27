@@ -2,7 +2,7 @@
 title: "Le SOI, les cinq grands traits de personnalité et la transformation personnelle"
 summary: ""
 tags:
-- Spirituality
+- Positive Psychology
 date: "2015-04-09T00:00:00Z"
 
 # Optional external URL for project (replaces project detail page).

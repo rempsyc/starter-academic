@@ -1,12 +1,12 @@
 ---
-title: "The SOI, the Big Five Traits of Personality, and Personal Transformation"
+title: "Does Hypnosis Improve Clinical Interventions?"
 summary: ""
 tags:
 - Positive Psychology
-date: "2015-04-09T00:00:00Z"
+date: "2015-12-07T00:00:00Z"
 
 # Optional external URL for project (replaces project detail page).
-external_link: "https://medium.com/@rempsyc/the-soi-the-big-five-traits-of-personality-and-personal-transformation-49cbb0d5625b"
+external_link: "https://medium.com/@rempsyc/does-hypnosis-improve-clinical-interventions-ea51d829ed98"
 
 image:
   caption: ""
@@ -30,4 +30,4 @@ url_video: ""
 slides: example
 ---
 
-Is there such a thing as the ideal personality? Evidence suggests that people that are extraverted, open, agreeable, conscientious, and emotionally stable seem to experience the most positive outcomes.
+Evidence suggests hypnosis can improve a great number of psychotherapeutic and medical interventions, especially when used as an adjunct, but it can also induce false memories.
