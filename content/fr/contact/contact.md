@@ -10,7 +10,7 @@ headless: true
 weight: 130
 
 title: Contact
-subtitle:
+subtitle: "![SU](SU.jpg)"
 
 content:
   # Automatically link email and phone or display as text?
@@ -28,8 +28,6 @@ content:
 design:
   columns: '2'
 ---
-
-![SU](SU.jpg)
 
 > Je reconnais respectueusement que l'UQAM est située sur des terres autochtones non cédées. La Nation Kanien'kehá:ka est reconnue comme la gardienne de ces terres et de ces eaux. Tiohtià:ke/Montréal est historiquement connu comme un lieu de rassemblement pour de nombreuses Premières Nations. Aujourd'hui, il abrite une population diversifiée d'Autochtones et d'autres peuples. Je respecte les liens continus avec le passé, le présent et l'avenir dans nos relations continues avec les peuples autochtones et autres au sein de la communauté montréalaise.
 >
