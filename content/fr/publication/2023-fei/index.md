@@ -2,7 +2,7 @@
 title: "Phi, Fei, Fo, Fum: Effect sizes for categorical data that use the chi-squared statistic"
 
 # Publication name and optional abbreviated publication name.
-publication: "In press at *Mathematics*."
+publication: "In press at *Mathematics*"
 
 #publication_short: 
 
