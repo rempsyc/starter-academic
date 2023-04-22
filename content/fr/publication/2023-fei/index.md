@@ -24,7 +24,7 @@ featured: true
 
 date: "2023-04-20T00:00:00-04:00"
 
-doi: ""
+doi: "10.3390/math11091982"
 
 external_link: # https://psyarxiv.com/xc4g7
 

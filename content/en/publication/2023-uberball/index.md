@@ -22,7 +22,7 @@ featured: true
 
 date: "2022-06-17T00:00:00-04:00"
 
-doi: ""
+doi: "10.31234/osf.io/xc4g7"
 
 external_link: https://psyarxiv.com/xc4g7
 
