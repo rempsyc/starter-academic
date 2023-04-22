@@ -2,7 +2,7 @@
 title: "Phi, Fei, Fo, Fum: Effect sizes for categorical data that use the chi-squared statistic"
 
 # Publication name and optional abbreviated publication name.
-publication: "In press at *Mathematics*"
+publication: "*Mathematics*, *11*(9), 1982. <a href='https://doi.org/10.3390/math11091982' target='_blank' rel='noopener noreferrer'>doi.org/10.3390/math11091982</a>"
 
 #publication_short: 
 
@@ -65,9 +65,9 @@ math: true
 
 tags: []
 
-#url_code: '#'
+url_code: 'https://osf.io/cg64s/'
 #url_dataset: '#'
-#url_pdf: '#'
+url_pdf: 'https://remi-theriault.com/papers/Ben‑Shachar_et_al_2023.pdf'
 #url_poster: '#'
 #url_preprint: '#'
 #url_project: '#'
