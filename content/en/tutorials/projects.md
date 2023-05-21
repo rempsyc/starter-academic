@@ -6,7 +6,7 @@ active = true # Activate this widget? true/false
 weight = 65  # Order that this section will appear.
 
 title = "R Tutorials"
-subtitle = "Introducing the *rempsyc* package: convenience functions to make your workflow **faster** and **easier** than ever \n\n [rempsyc.remi-theriault.com](https://rempsyc.remi-theriault.com) \n\n And now also the *lavaanExtra* package for structural equation modeling \n\n  [lavaanExtra.remi-theriault.com](https://lavaanExtra.remi-theriault.com/)"
+subtitle = "Introducing the *rempsyc* package: convenience functions to make your workflow **faster** and **easier** than ever \n\n [rempsyc.remi-theriault.com](https://rempsyc.remi-theriault.com) \n\n And now also the *lavaanExtra* package for structural equation modeling \n\n  [lavaanExtra.remi-theriault.com](https://lavaanExtra.remi-theriault.com/) \n\n And now also the *easystats* ecosystem for easy statistics \n\n [easystats.github.io/easystats/](https://easystats.github.io/easystats/)"
 
 [content]
   # Page type to display. E.g. project.
