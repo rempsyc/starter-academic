@@ -6,7 +6,8 @@ tags:
 date: "2018-09-21T00:33:00Z"
 
 # Optional external URL for project (replaces project detail page).
-external_link: "https://www.breaker.audio/the-happiness-legacy-changing-the-world-one-student-at-a-time/e/37002354"
+external_link: "https://castbox.fm/episode/Episode-10---Student-conversation-ft.-Re%CC%81mi-id1023069-id89375188"
+# external_link: "https://www.breaker.audio/the-happiness-legacy-changing-the-world-one-student-at-a-time/e/37002354"
 
 image:
   caption: ""
