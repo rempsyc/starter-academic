@@ -1,0 +1,132 @@
+---
+title: '**Priming Mindfulness Project 3**'
+subtitle: Comparison & analysis report
+author: "Rémi Thériault"
+date: "`r format(Sys.Date())`"
+output:
+  fidelius::html_password_protected:
+    password: ""
+    preview: false
+    hint: "There is no password!"
+    bundle: true
+    output_format: 
+      rmarkdown::html_document:
+        theme: cerulean
+        highlight: pygments
+        toc: yes
+        toc_depth: 4
+        toc_float: yes
+        number_sections: no
+        df_print: kable
+        code_folding: show # or: hide
+        code_download: yes
+        anchor_sections:
+          style: symbol
+---
+
+```{r setup, warning=FALSE, message=TRUE, include=FALSE, echo=FALSE}
+fast <- FALSE  # Make this true to skip the chunks
+```
+
+```{r klippy, echo=FALSE, include=TRUE}
+klippy::klippy(position = c('top', 'right'))
+```
+
+# Introduction
+
+This report describes the results of a preregistered study available at: https://osf.io/w46r9.
+
+---
+Note also that this data has been cleaned beforehand. Six datasets were merged (joined) through an inner join—3 Qualtrics surveys and 3 Inquisit tasks—so as to keep only participants who at least participated at each step of the study. Missing data will be imputed later on. Duplicates were addressed with the `rempsyc::best_duplicate` function, which keeps the duplicate with the least amount of missing values, and in case of ties, takes the first occurrence. Three observations were also excluded because they used duplicated IP addresses.
+
+
+# Packages & Data
+
+## Packages
+
+```{r warning=FALSE, message=FALSE, results='asis'}
+library(rempsyc)
+library(dplyr)
+library(interactions)
+library(performance)
+library(see)
+library(report)
+library(datawizard)
+library(bestNormalize)
+library(psych)
+library(visdat)
+library(missForest)
+library(doParallel)
+library(naniar)
+
+summary(report(sessionInfo()))
+
+```
+
+## Data
+
+```{r warning=FALSE, message=TRUE, results='asis'}
+# Read data
+data <- read.table("https://osf.io/c5b7r/?action=download", sep = "\t", header = TRUE)
+
+# Code group variable as factor
+data <- data %>% 
+  mutate(condition_dum = ifelse(condition == "Mindfulness", 1, 0),
+         condition = as.factor(condition))
+# Dummy variable (instead of factor) is required by the `interact_plot()` function...
+
+cat(report_participants(data, threshold = 1))
+
+# Allocation ratio
+report(data$condition)
+
+```
+
+## Preparation
+
+At this stage, we define a list of our relevant variables.
+
+```{r warning=FALSE, message=TRUE, results='asis'}
+# Make list of DVs
+col.list <- c("blastintensity.duration", "KIMS", "BSCS", "BAQ", "SHS", "SHS.mean",
+              "SHS.aggravation", "PANAS_pos", "PANAS_neg", "IAT", "SOPT")
+
+```
+
+# Data cleaning
+
+```{r child=if (fast == FALSE) '0_cleaning.Rmd', eval = TRUE}
+```
+
+# t-tests
+
+```{r child=if (fast == FALSE) '1_t_tests.Rmd', eval = TRUE}
+```
+
+# Moderations (confirmatory)
+
+```{r child=if (fast == FALSE) '2_moderations.Rmd', eval = TRUE}
+```
+
+# Moderations (exploratory)
+
+```{r child=if (fast == FALSE) '3_moderations2.Rmd', eval = TRUE}
+```
+
+# Conclusions
+
+Based on the results, it seems that the predicted interaction between self-control and the priming mindfulness manipulation does not come up. The exploratory analyses including the larger models also did not show the expected effects.
+
+# Full Code
+
+The full script of executive code contained in this document is reproduced here.
+
+```{r full_code, ref.label=knitr::all_labels()[!knitr::all_labels() %in% knitr::all_labels(echo == FALSE)], eval=FALSE}
+```
+
+# Package References
+
+```{r warning=FALSE, message=FALSE, results='asis'}
+report::cite_packages(sessionInfo())
+
+```
