@@ -1,0 +1,876 @@
+---
+title: '**Priming Mindfulness Project 3**'
+subtitle: Comparison & analysis report
+author: "Rémi Thériault"
+date: "`r format(Sys.Date())`"
+output:
+  fidelius::html_password_protected:
+    password: ""
+    preview: false
+    hint: "There is no password!"
+    bundle: true
+    output_format: 
+      rmarkdown::html_document:
+        theme: cerulean
+        highlight: pygments
+        toc: yes
+        toc_depth: 4
+        toc_float: yes
+        number_sections: no
+        df_print: kable
+        code_folding: show # or: hide
+        code_download: yes
+        anchor_sections:
+          style: symbol
+---
+
+```{r setup, warning=FALSE, message=TRUE, include=FALSE, echo=FALSE}
+fast <- FALSE  # Make this true to skip the chunks
+```
+
+```{r klippy, echo=FALSE, include=TRUE}
+klippy::klippy(position = c('top', 'right'))
+```
+
+# Introduction
+
+This report describes the results of a preregistered study available at: https://osf.io/w46r9.
+
+---
+Note also that this data has been cleaned beforehand. Six datasets were merged (joined) through an inner join—3 Qualtrics surveys and 3 Inquisit tasks—so as to keep only participants who at least participated at each step of the study. Missing data will be imputed later on. Duplicates were addressed with the `rempsyc::best_duplicate` function, which keeps the duplicate with the least amount of missing values, and in case of ties, takes the first occurrence. Three observations were also excluded because they used duplicated IP addresses.
+
+
+# Packages & Data
+
+## Packages
+
+```{r warning=FALSE, message=FALSE, results='asis'}
+library(rempsyc)
+library(dplyr)
+library(interactions)
+library(performance)
+library(see)
+library(report)
+library(datawizard)
+library(bestNormalize)
+library(psych)
+library(visdat)
+library(missForest)
+library(doParallel)
+library(naniar)
+
+summary(report(sessionInfo()))
+
+```
+
+## Data
+
+```{r warning=FALSE, message=TRUE, results='asis'}
+# Read data
+data <- read.table("https://osf.io/c5b7r/?action=download", sep = "\t", header = TRUE)
+
+# Code group variable as factor
+data <- data %>% 
+  mutate(condition_dum = ifelse(condition == "Mindfulness", 1, 0),
+         condition = as.factor(condition))
+# Dummy variable (instead of factor) is required by the `interact_plot()` function...
+
+cat(report_participants(data, threshold = 1))
+
+# Allocation ratio
+report(data$condition)
+
+```
+
+## Preparation
+
+At this stage, we define a list of our relevant variables.
+
+```{r warning=FALSE, message=TRUE, results='asis'}
+# Make list of DVs
+col.list <- c("blastintensity.duration", "KIMS", "BSCS", "BAQ", "SHS", "SHS.mean",
+              "SHS.aggravation", "PANAS_pos", "PANAS_neg", "IAT", "SOPT")
+
+```
+
+# Data cleaning
+
+In this section, we are preparing the data for analysis: (a) taking care of preliminary exclusions, (b) checking for and exploring missing values, (d) imputing missing data with `missForest`, (e) computing scale means, and (f) extracting reliability indices for our scales.
+
+## Preliminary exclusions
+
+We know that we only want to keep participants who had at least an 80% success rate in the critical experimental manipulation task. Let's see how many participants have less than an 80% success rate. Those with missing values for variable `manipsuccessleft` will also be excluded since they have not completed the critical experimental manipulation in this study.
+
+```{r}
+data %>% 
+    summarize(success.80 = sum(manipsuccessleft < .80, 
+                               na.rm = TRUE),
+              is.na = sum(is.na(manipsuccessleft)))
+
+```
+
+There's 33 people with success smaller than 80%, let's exclude them.
+
+```{r, results = "asis"}
+data <- data %>% 
+    filter(manipsuccessleft >= .80)
+cat(report_participants(data, threshold = 1))
+
+```
+
+Let's also exclude those who failed 2 or more attention checks (i.e., keep with those with a score of two or more).
+
+```{r, results = "asis"}
+data <- data %>% 
+    mutate(att_check = rowSums(
+      select(., att_check1, att_check2, att_check3)))
+
+data %>% 
+  count(att_check)
+
+```
+
+There's 7 more exclusions here. Two of the participants (NA) have simply not completed the entire last section so are also excluded based on our preregistered criteria.
+
+```{r, results = "asis"}
+data <- data %>% 
+  filter(att_check >= 2)
+
+cat(report_participants(data, threshold = 1))
+
+report(data$condition)
+
+# Check final level of English
+data %>% 
+  count(english_7)
+
+```
+
+## Explore missing data {.tabset}
+
+### Missing items
+
+```{r, warning=FALSE}
+# Check for nice_na
+nice_na(data, scales = c("BSCS", "BAQ", "KIMS", "PANAS", "SHS"))
+
+```
+
+No missing data for our scales of interest, yeah!
+
+### Patterns of missing data
+
+Let's check for patterns of missing data.
+
+```{r, warning=FALSE, out.width="100%"}
+
+# Smaller subset of data for easier inspection
+data %>%
+  select(country.ip:att_check) %>%
+  vis_miss
+
+```
+
+### Little's MCAR test
+
+```{r}
+# Let's use Little's MCAR test to confirm
+# We have to proceed by "scale" because the function can only
+# support 30 variables max at a time
+data %>% 
+  select(BSCS_1:BSCS_7) %>% 
+  mcar_test
+# a p-value of 0 means the test failed because there's no missing values.
+
+data %>% 
+  select(BAQ_1:BAQ_12) %>% 
+  mcar_test
+# a p-value of 0 means the test failed because there's no missing values.
+
+data %>% 
+  select(KIMS_1:KIMS_20) %>% 
+  mcar_test
+# a p-value of 0 means the test failed because there's no missing values.
+
+data %>% 
+  select(KIMS_21:KIMS_39) %>% 
+  mcar_test
+# a p-value of 0 means the test failed because there's no missing values.
+
+data %>% 
+  select(PANAS_1:PANAS_10) %>% 
+  mcar_test
+# a p-value of 0 means the test failed because there's no missing values.
+
+data %>% 
+  select(SHS_1:SHS_21) %>% 
+  mcar_test
+# a p-value of 0 means the test failed because there's no missing values.
+
+```
+
+## Impute missing data {.tabset}
+
+### ...
+
+Here, we impute missing data with the `missForest` package, as it is one of the best imputation methods.
+
+### Imputation
+
+```{r, eval = TRUE}
+
+# Need character variables as factors
+# "Error: Can not handle categorical predictors with more than 53 categories."
+# So we have to temporarily remove IDs also...
+new.data <- data %>% 
+  select(-c(att_check1, att_check2, att_check3, att_check)) %>% 
+  mutate(across(where(is.character), as.factor))
+
+# Parallel processing
+registerDoParallel(cores = 4)
+
+# Variables
+set.seed(100)
+data.imp <- missForest(new.data, verbose = TRUE, parallelize = "variables")
+# Total time is 2 sec (4*0.5) - 4 cores
+
+# Extract imputed dataset
+new.data <- data.imp$ximp
+
+```
+
+There are some variables we don't actually want to impute, like country. We want to keep those NAs in that case. Let's add them back. We also want to add ID back.
+
+```{r, eval = TRUE}
+# Add back the NAs in country, attention checks, etc.
+data <- new.data %>% 
+  mutate(country.ip = data$country.ip,
+         gender = data$gender,
+         att_check1 = data$att_check1, 
+         att_check2 = data$att_check2,
+         att_check3 = data$att_check3,
+         att_check = data$att_check)
+
+```
+
+### Details
+
+Why impute the data? van Ginkel explains,
+
+> Regardless of the missingness mechanism, multiple imputation is always to be preferred over listwise deletion. Under MCAR it is preferred because it results in more statistical power, under MAR it is preferred because besides more power it will give unbiased results whereas listwise deletion may not, and under NMAR it is also the preferred method because it will give less biased results than listwise deletion.
+ 
+van Ginkel, J. R., Linting, M., Rippe, R. C. A., & van der Voort, A. (2020). Rebutting existing misconceptions about multiple imputation as a method for handling missing data. *Journal of Personality Assessment*, *102*(3), 297-308. https://doi.org/10.1080/00223891.2018.1530680
+
+Why `missForest`? It outperforms other imputation methods, including the popular MICE (multiple imputation by chained equations). You also don’t end up with several datasets, which makes it easier for following analyses. Finally, it can be applied to mixed data types (missings in numeric & categorical variables).
+
+Waljee, A. K., Mukherjee, A., Singal, A. G., Zhang, Y., Warren, J., Balis, U., ... & Higgins, P. D. (2013). Comparison of imputation methods for missing laboratory data in medicine. *BMJ open*, *3*(8), e002847. https://doi.org/10.1093/bioinformatics/btr597
+
+Stekhoven, D. J., & Bühlmann, P. (2012). MissForest—non-parametric missing value imputation for mixed-type data. *Bioinformatics*, *28*(1), 112-118. https://doi.org/10.1093/bioinformatics/btr597
+
+## Scale Means {.tabset}
+
+### ...
+
+Now that we have imputed the missing data, we are ready to calculate our scale means.
+
+### Trait Self-Control
+
+```{r}
+# Reverse code BSCS items 2, 4, 6, 7
+data <- data %>% 
+  mutate(across(starts_with("BSCS"), .names = "{col}r"))
+data <- data %>% 
+  mutate(across(c(BSCS_2, BSCS_4, BSCS_6, BSCS_7), ~nice_reverse(.x, 5), .names = "{col}r"))
+
+# Get mean BSCS
+data <- data %>% 
+  mutate(BSCS = rowMeans(select(., BSCS_1r:BSCS_7r)))
+
+```
+
+### Trait Aggression
+
+```{r}
+# Reverse code BAQ item 7
+data <- data %>% 
+  mutate(across(starts_with("BAQ"), .names = "{col}r"))
+
+data <- data %>% 
+  mutate(across(BAQ_7, ~nice_reverse(.x, 7), .names = "{col}r"))
+
+# Get sum of BAQ
+data <- data %>% 
+  mutate(BAQ = rowMeans(select(., BAQ_1r:BAQ_12r)))
+
+```
+
+### Trait Mindfulness
+
+```{r}
+# Reverse code KIMS items 3-4, 8, 11-12, 14, 16, 18, 20, 22, 23-24, 27-28, 31-32, 35-36
+data <- data %>% 
+  mutate(across(starts_with("KIMS"), .names = "{col}r"))
+
+data <- data %>% 
+  mutate(across(all_of(paste0("KIMS_", c(3:4, 8, 11:12, 14, 16, 18, 20,
+                                         22:24, 27:28, 31:32, 35:36))), 
+                ~nice_reverse(.x, 5), .names = "{col}r"))
+
+# Get sum of KIMS
+data <- data %>% 
+  mutate(KIMS = rowMeans(select(., KIMS_1r:KIMS_39r)))
+
+```
+
+### PANAS
+
+```{r}
+# No reverse scoring needed for PANAS.
+data <- data %>% 
+  mutate(PANAS_pos = rowMeans(select(., paste0("PANAS_", seq(1, 10, 2)))),
+         PANAS_neg = rowMeans(select(., paste0("PANAS_", seq(2, 10, 2)))))
+
+```
+
+### State Hostility
+
+```{r}
+# SHS: forgot to add back the two other scales, so no reverse scoring needed.
+
+# Get sum of SHS and subscales
+data <- data %>% 
+  mutate(SHS = rowMeans(select(., SHS_1:SHS_21)),
+         SHS.mean = rowMeans(select(., SHS_1:SHS_14)),
+         SHS.aggravation = rowMeans(select(., SHS_14:SHS_21)))
+
+```
+
+### Intensity * Duration
+
+```{r}
+# Create new variable blastintensity.duration
+data <- data %>% 
+  mutate(blastintensity.duration = blastintensity * blastduration)
+
+```
+
+## Reliability {.tabset}
+
+### ...
+
+Now that we have reversed our items, we can get the alphas for our different scales.
+
+### Trait Self-Control
+
+```{r}
+data %>% 
+  select(BSCS_1r:BSCS_7r) %>% 
+  omega(nfactors = 1)
+
+```
+
+### Trait Aggression
+
+```{r}
+data %>% 
+  select(BAQ_1r:BAQ_12r) %>% 
+  omega(nfactors = 1)
+
+```
+
+### Trait Mindfulness
+
+```{r}
+data %>% 
+  select(KIMS_1r:KIMS_39r) %>% 
+  omega(nfactors = 1)
+
+```
+
+### State Hostility
+
+```{r}
+data %>% 
+  select(SHS_1:SHS_21) %>% 
+  omega(nfactors = 2)
+
+```
+
+### PANAS
+
+```{r}
+# PANAS_pos
+data %>% 
+  select(paste0("PANAS_", seq(1, 10, 2))) %>% 
+  omega(nfactors = 1)
+
+# PANAS_neg
+data %>% 
+  select(paste0("PANAS_", seq(2, 10, 2))) %>% 
+  omega(nfactors = 1)
+
+```
+
+# t-tests
+
+In this section, we will: (a) test assumptions of normality, (b) transform variables violating assumptions, (c) test assumptions of homoscedasticity, (d) identify and winsorize outliers, and (e) conduct the t-tests.
+
+## Normality
+
+```{r normality, message = FALSE, fig.width=12, fig.height=8, out.width="70%"}
+lapply(col.list, function(x) 
+  nice_normality(data, 
+                 variable = x, 
+                 title = x,
+                 group = "condition",
+                 shapiro = TRUE,
+                 histogram = TRUE))
+
+```
+
+Several variables are clearly skewed. Let's apply transformations. But first, let's deal with the working memory task, SOPT (Self-Ordered Pointing Task). It is clearly problematic.
+
+## Transformation
+
+The function below transforms variables according to the best possible transformation (via the `bestNormalize` package), and also standardizes the variables.
+
+```{r transformation grouped}
+predict_bestNormalize <- function(var) {
+  x <- bestNormalize(var, standardize = FALSE, allow_orderNorm = FALSE)
+  print(cur_column())
+  print(x$chosen_transform)
+  cat("\n")
+  predict(x)
+}
+
+set.seed(100)
+data <- data %>% 
+  mutate(across(all_of(col.list), 
+                predict_bestNormalize,
+                .names = "{.col}.t"))
+col.list <- paste0(col.list, ".t")
+
+```
+
+> *Note.* The I(x) transformations above are actually not transformations, but a shorthand function for passing the data "as is". Suggesting the package estimated the various attempted transformations did not improve normality in those cases, so no transformation is used. This only appears when standardize is set to FALSE. When set to TRUE, for those variables, it is actually center_scale(x), suggesting that the data are only CENTERED because they need no transformation (no need to be scaled), only to be centered.
+
+Let's check if normality was corrected.
+
+```{r normality 2, message = FALSE, fig.width=12, fig.height=8, out.width="70%"}
+# Group normality
+lapply(col.list, function(x) 
+  nice_normality(data, 
+                 x, 
+                 "condition",
+                 shapiro = TRUE,
+                 title = x,
+                 histogram = TRUE))
+
+```
+
+Looks rather reasonable now, though not perfect (fortunately t-tests are quite robust against violations of normality).
+
+We can now resume with the next step: checking variance.
+
+## Homoscedasticity
+
+```{r homoscedasticity, fig.width=14, fig.height=21}
+# Plotting variance
+plots(lapply(col.list, function(x) {
+  nice_varplot(data, x, group = "condition")
+  }),
+  n_columns = 3)
+
+```
+
+Variance looks good. No group has four times the variance of any other group. We can now resume with checking outliers.
+
+## Outliers
+
+We check outliers visually with the `plot_outliers` function, which draws red lines at +/- 3 median absolute deviations.
+
+```{r outliers, fig.width=14, fig.height=22, out.width="100%"}
+
+plots(lapply(col.list, function(x) {
+  plot_outliers(data, x, group = "condition", ytitle = x, binwidth = 0.15)
+  }),
+  n_columns = 2)
+
+```
+
+There are some outliers, but nothing unreasonable. Let's still check with the 3 median absolute deviations (MAD) method.
+
+```{r mad}
+data %>% 
+  filter(condition == "Control") %>% 
+  find_mad(col.list, criteria = 3)
+
+data %>% 
+  filter(condition == "Mindfulness") %>% 
+  find_mad(col.list, criteria = 3)
+
+```
+
+There are 49 outliers after our transformations in the control group, and 42 in the mindfulness group. That seems to be due mostly to the extreme positive skew for the negative affect scale of the PANAS.
+
+### Multivariate outliers
+
+For multivariate outliers, it is recommended to use the Minimum Covariance Determinant, a robust version of the Mahalanobis distance (MCD, Leys et al., 2019).
+
+Leys, C., Delacre, M., Mora, Y. L., Lakens, D., & Ley, C. (2019). How to classify, detect, and manage univariate and multivariate outliers, with emphasis on pre-registration. *International Review of Social Psychology*, *32*(1).
+
+```{r multivariate outliers}
+data.na <- na.omit(data[col.list])
+x <- check_outliers(data.na, method = "mcd",
+                    threshold = 200)
+x
+
+plot(x)
+
+```
+
+There are 2 multivariate outliers according to the MCD method using an artificially high threshold. However, we did not mention in the preregistration that we would exclude multivariate outliers, so we will not at this time.
+
+## Winsorization
+
+Visual assessment and the MAD method confirm we have some outlier values. We could ignore them but because they could have disproportionate influence on the models, one recommendation is to winsorize them by bringing the values at 3 SD. Instead of using the standard deviation around the mean, however, we use the absolute deviation around the median, as it is more robust to extreme observations. For a discussion, see:
+
+Leys, C., Klein, O., Bernard, P., & Licata, L. (2013). Detecting outliers: Do not use standard deviation around the mean, use absolute deviation around the median. *Journal of Experimental Social Psychology, 49*(4), 764–766. https://doi.org/10.1016/j.jesp.2013.03.013
+
+```{r winsorization, out.width="100%"}
+# Winsorize variables of interest with MAD
+data <- data %>% 
+  group_by(condition) %>% 
+  mutate(across(all_of(col.list), 
+                winsorize_mad,
+                .names = "{.col}.w")) %>% 
+  ungroup()
+
+col.list <- paste0(col.list, ".w")
+
+```
+
+<!-- Outliers are still present but were brought back within reasonable limits, where applicable. -->
+
+## Standardization
+
+We can now standardize our variables.
+
+```{r}
+data <- data %>%
+  mutate(across(all_of(col.list), standardize, .names = "{col}.s"))
+
+# Update col.list
+col.list <- paste0(col.list, ".s")
+
+```
+
+We are now ready to compare the group condition (Control vs. Mindfulness Priming) across our different variables with the t-tests.
+
+## t-tests
+
+```{r t-tests}
+nice_t_test(data, 
+            response = col.list, 
+            group = "condition") %>% 
+  nice_table(highlight = 0.10, width = .80)
+
+```
+
+> **Interpretation:** There seems to be a preexisting difference in IAT levels: the mindfulness group seems to have higher implicit aggression than the control group.
+
+## Violin plots {.tabset}
+
+### Intensity * Duration
+
+```{r nice_violin3, warning = FALSE, message = FALSE, fig.width=7, fig.height=7, out.width="50%"}
+nice_violin(data, 
+            group = "condition", 
+            response = "blastintensity.duration.t.w.s",
+            comp1 = 1,
+            comp2 = 2,
+            obs = TRUE,
+            has.d = TRUE,
+            d.y = 1)
+
+```
+
+## Means, SD {.tabset}
+
+Let's extract the means and standard deviations for journal reporting.
+
+### Intensity * Duration
+
+```{r group_summary3, error=TRUE}
+data %>% 
+    group_by(condition) %>% 
+    summarize(M = mean(blastintensity.duration),
+              SD = sd(blastintensity.duration),
+              N = n()) %>% 
+  nice_table(width = 0.40)
+
+```
+
+# Moderations (confirmatory)
+
+Let's see if our variables don't interact together with our experimental condition. But first, let's test the models assumptions.
+
+## Assumptions {.tabset}
+
+### Intensity * Duration
+
+```{r mod1, fig.width=8, fig.height=10, out.width="80%"}
+mod1 <- lm(blastintensity.duration.t.w.s ~ condition_dum*BSCS.t.w.s, 
+           data = data, na.action="na.exclude")
+check_model(mod1)
+
+```
+
+### Affect
+
+```{r mod2, fig.width=8, fig.height=10, out.width="80%"}
+mod2 <- lm(PANAS_pos.t.w.s ~ condition_dum*BSCS.t.w.s, 
+           data = data, na.action="na.exclude")
+check_model(mod2)
+
+mod3 <- lm(PANAS_neg.t.w.s ~ condition_dum*BSCS.t.w.s, 
+           data = data, na.action="na.exclude")
+check_model(mod3)
+
+```
+
+### State Hostility
+
+```{r mod4, fig.width=8, fig.height=10, out.width="80%"}
+mod4 <- lm(SHS.t.w.s ~ condition_dum*BSCS.t.w.s, 
+           data = data, na.action="na.exclude")
+check_model(mod4)
+
+mod5 <- lm(SHS.mean.t.w.s ~ condition_dum*BSCS.t.w.s, 
+           data = data, na.action="na.exclude")
+check_model(mod5)
+
+mod6 <- lm(SHS.aggravation.t.w.s ~ condition_dum*BSCS.t.w.s, 
+           data = data, na.action="na.exclude")
+check_model(mod6)
+
+```
+
+##
+
+All the models assumptions look pretty good overall actually, even with all these variables. The lines for linearity and homoscedasticity are a bit skewed but nothing too crazy. Let's now look at the results.
+
+## Moderations {.tabset}
+
+### Intensity * Duration
+
+```{r mod1.table, error=TRUE}
+mod1 %>% 
+  nice_lm() %>% 
+  nice_table(highlight = TRUE)
+
+```
+
+```{r mod3.table.sav, error=TRUE, include=FALSE}
+# Save table for paper
+list(mod1, mod2, mod3, mod4, mod5, mod6) %>% 
+  nice_lm() %>% 
+  mutate(`Dependent Variable` = rep(c(
+    "Aggression", "Positive Affect", "Negative Affect", "State Hostility", 
+    "State Hostility (feeling mean)", "State Hostility (aggravation)"), each = 3),
+         Predictor = text_remove(.data$Predictor, "_dum") %>% 
+           text_remove(".t.w.s")) %>% 
+  nice_table(
+    highlight = TRUE, 
+    title = c("Table 5", "Testing the Condition × Self-Control Interaction"),
+    note = c("Aggression refers to the product of blast intensity and blast duration in the Competitive Reaction Time Task (CRTT). BSCS: trait self-control. There are no significant interactions.",
+    "** p < .01, *** p < .001. Rows with grey shading indicate statistical significance.")) %>% 
+  flextable::save_as_docx(path = "modtable1.docx")
+
+```
+
+### State Hostility
+
+```{r big_mod4.table, error=TRUE}
+list(mod4, mod5, mod6) %>% 
+  nice_lm() %>% 
+  nice_table(highlight = TRUE)
+
+```
+
+### Affect
+
+```{r big_mod5.table, error=TRUE}
+list(mod2, mod3) %>% 
+  nice_lm() %>% 
+  nice_table(highlight = TRUE)
+
+```
+
+##
+
+>**Interpretation:** The condition by trait self-control (brief self-control scale, BSCS) interaction does not come up.
+
+## Interaction plots {.tabset}
+
+Let's plot the main interaction(s).
+
+### Intensity * Duration
+
+```{r mod1.plot, fig.width=5, fig.height=3, out.width="80%"}
+interact_plot(mod1, pred = "condition_dum", modx = "BSCS.t.w.s", 
+              modxvals = NULL, interval = TRUE, x.label = "condition_dum", 
+              pred.labels = c("Control", "Mindfulness"),
+              legend.main = "Trait Self-Control")
+
+```
+
+##
+
+> **Interpretation:** It appears that there are no interactions.
+
+# Moderations (exploratory)
+
+Let's see if our variables don't interact together with our experimental condition. But first, let's test the models assumptions.
+
+## Assumptions {.tabset}
+
+### Intensity * Duration
+
+```{r modx1, fig.width=8, fig.height=10, out.width="80%"}
+mod1 <- lm(blastintensity.duration.t.w.s ~ condition_dum*KIMS.t.w.s +
+             condition_dum*BSCS.t.w.s + condition_dum*BAQ.t.w.s +
+             condition_dum*SOPT.t.w.s + condition_dum*IAT.t.w.s, 
+           data = data, na.action="na.exclude")
+check_model(mod1)
+
+```
+
+### Affect
+
+```{r modx2, fig.width=8, fig.height=10, out.width="80%"}
+mod2 <- lm(PANAS_pos.t.w.s ~ condition_dum*KIMS.t.w.s +
+             condition_dum*BSCS.t.w.s + condition_dum*BAQ.t.w.s +
+             condition_dum*SOPT.t.w.s + condition_dum*IAT.t.w.s,
+           data = data, na.action="na.exclude")
+check_model(mod2)
+
+mod3 <- lm(PANAS_neg.t.w.s ~ condition_dum*KIMS.t.w.s +
+             condition_dum*BSCS.t.w.s + condition_dum*BAQ.t.w.s +
+             condition_dum*SOPT.t.w.s + condition_dum*IAT.t.w.s, 
+           data = data, na.action="na.exclude")
+check_model(mod3)
+
+```
+
+### State Hostility
+
+```{r modx4, fig.width=8, fig.height=10, out.width="80%"}
+mod4 <- lm(SHS.t.w.s ~ condition_dum*KIMS.t.w.s +
+             condition_dum*BSCS.t.w.s + condition_dum*BAQ.t.w.s +
+             condition_dum*SOPT.t.w.s + condition_dum*IAT.t.w.s, 
+           data = data, na.action="na.exclude")
+check_model(mod4)
+
+mod5 <- lm(SHS.mean.t.w.s ~ condition_dum*KIMS.t.w.s +
+             condition_dum*BSCS.t.w.s + condition_dum*BAQ.t.w.s +
+             condition_dum*SOPT.t.w.s + condition_dum*IAT.t.w.s, 
+           data = data, na.action="na.exclude")
+check_model(mod5)
+
+mod6 <- lm(SHS.aggravation.t.w.s ~ condition_dum*KIMS.t.w.s +
+             condition_dum*BSCS.t.w.s + condition_dum*BAQ.t.w.s +
+             condition_dum*SOPT.t.w.s + condition_dum*IAT.t.w.s, 
+           data = data, na.action="na.exclude")
+check_model(mod6)
+
+```
+
+##
+
+All the models assumptions look pretty good overall actually, even with all these variables. The lines for linearity and homoscedasticity are a bit skewed but nothing too crazy. Let's now look at the results.
+
+## Moderations {.tabset}
+
+### Intensity * Duration
+
+```{r modx.table, error=TRUE}
+mod1 %>% 
+  nice_lm() %>% 
+  nice_table(highlight = TRUE)
+
+```
+
+```{r modx1.table.sav, error=TRUE, include=FALSE}
+# Save table for paper
+list(mod1, mod2, mod3, mod4, mod5, mod6) %>% 
+  nice_lm() %>% 
+  mutate(`Dependent Variable` = rep(c(
+    "Aggression", "Positive Affect", "Negative Affect", "State Hostility", 
+    "State Hostility (feeling mean)", "State Hostility (aggravation)"), each = 11),
+         Predictor = text_remove(.data$Predictor, "_dum") %>% 
+           text_remove(".t.w.s")) %>% 
+  nice_table(
+    highlight = TRUE, 
+    title = c("Table 6", "Exploring Other Personality Moderators of Priming Mindfulness"),
+    note = c("Aggression refers to the product of blast intensity and blast duration in the Competitive Reaction Time Task (CRTT). KIMS: trait mindfulness; BSCS: trait self-control; BAQ: trait aggression; SOPT: working memory; IAT: implicit aggression. There are no significant interactions.",
+    "* p < .05, ** p < .01, *** p < .001. Rows with grey shading indicate statistical significance.")) %>% 
+  flextable::save_as_docx(path = "modtable2.docx")
+
+```
+
+### Affect
+
+```{r big_modx2.table, error=TRUE}
+list(mod2, mod3) %>% 
+  nice_lm() %>% 
+  nice_table(highlight = TRUE)
+
+```
+
+### State Hostility
+
+```{r big_modx4.table, error=TRUE}
+list(mod4, mod5, mod6) %>% 
+  nice_lm() %>% 
+  nice_table(highlight = TRUE)
+
+```
+
+##
+
+>**Interpretation:** The condition by trait self-control (brief self-control scale, BSCS) interaction does not come up.
+
+## Interaction plots {.tabset}
+
+Let's plot the interaction of interest.
+
+### Intensity * Duration
+
+```{r modx1.plot, fig.width=5, fig.height=3, out.width="80%"}
+interact_plot(mod1, pred = "condition_dum", modx = "BSCS.t.w.s", 
+              modxvals = NULL, interval = TRUE, x.label = "condition_dum", 
+              pred.labels = c("Control", "Mindfulness"),
+              legend.main = "Trait Self-Control")
+
+```
+
+##
+
+# Conclusions
+
+Based on the results, it seems that the predicted interaction between self-control and the priming mindfulness manipulation does not come up. The exploratory analyses including the larger models also did not show the expected effects.
+
+# Full Code
+
+The full script of executive code contained in this document is reproduced here.
+
+```{r full_code, ref.label=knitr::all_labels()[!knitr::all_labels() %in% knitr::all_labels(echo == FALSE)], eval=FALSE}
+```
+
+# Package References
+
+```{r warning=FALSE, message=FALSE, results='asis'}
+report::cite_packages(sessionInfo())
+
+```
