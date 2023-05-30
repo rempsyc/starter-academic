@@ -21,6 +21,7 @@ bio: My research interests include social/implicit cognition, altruism, and drea
 
 # Interests to show in About widget
 interests:
+  - Empathy
   - Implicit attitudes
   - Self-regulation
   - Morality

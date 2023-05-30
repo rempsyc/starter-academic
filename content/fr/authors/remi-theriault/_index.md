@@ -21,6 +21,7 @@ bio: Mes intérêts de recherche incluent la cognition sociale/implicite, l'altr
 
 # Interests to show in About widget
 interests:
+  - Empathie
   - Attitudes implicites
   - Autorégulation
   - Moralité
