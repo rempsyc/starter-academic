@@ -30,9 +30,9 @@
   [headers.values]
     Strict-Transport-Security = "max-age=63072000; includeSubDomains; preload"
     Content-Security-Policy-Report-Only = '''
-      default-src 'none'; 
-      form-action 'none'; 
-      frame-ancestors 'none'; 
+      default-src 'none';
+      form-action 'none';
+      frame-ancestors 'none';
       report-uri https://remitheriault.report-uri.com/r/d/csp/wizard'''
 
 [[redirects]]
@@ -248,5 +248,8 @@
   status = 301
   force = false
 
-
-
+[[redirects]]
+  from = "/rempsyc_manual.pdf"
+  to = "https://cran.r-project.org/web/packages/rempsyc/rempsyc.pdf"
+  status = 301
+  force = false
