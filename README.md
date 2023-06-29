@@ -44,7 +44,7 @@ scoop install git go hugo-extended nodejs
 
 ## Running the live server
 
-So far, so good. Next, in Windows PowerShell, there are two commands you need to kickstart your live website preview. First, you have to change the working directory to where you cloend your fork. This might look like this:
+So far, so good. Next, in Windows PowerShell, there are two commands you need to kickstart your live website preview. First, you have to change the working directory to where you cloned your fork. This might look like this:
 
 ```
 cd "D:\github\starter-academic"
