@@ -266,7 +266,7 @@ plugins_js  = []
   #   "mapnik": OpenStreetMap (Mapnik)
   #   "mapbox": OpenStreetMap (Mapbox)
   provider = "google"
-  api_key = "" # An API key is necessary for Google but I have specified it on Netlify as a private variable
+  api_key = "" # An API key is necessary for Google but I have specified it on Netlify as a private  variable
   zoom = 15
 
 ############################
