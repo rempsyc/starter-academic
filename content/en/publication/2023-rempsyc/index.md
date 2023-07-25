@@ -2,7 +2,8 @@
 title: "rempsyc: Convenience functions for psychology"
 
 # Publication name and optional abbreviated publication name.
-publication: "(R package version 0.1.0.9) [Computer software]. <a href='https://rempsyc.remi-theriault.com' target='_blank' rel='noopener noreferrer'>rempsyc.remi-theriault.com</a>"
+publication: "*Journal of Open Source Software*, *8*(87), 5466. 
+<a href='https://doi.org/10.21105/joss.05466' target='_blank' rel='noopener noreferrer'>doi.org/10.21105/joss.05466</a>"
 
 #publication_short: 
 
@@ -10,20 +11,22 @@ authors:
 - Rémi Thériault
 
 publication_types:
-- "0"
+- "2"
 
 # Show publication and sharing statistics? (requires valid doi)
 add_badge: true
 
 featured: true
 
-date: "2022-06-22T00:00:00-04:00"
+date: "2023-07-25T00:00:00-04:00"
 
-doi: ""
+doi: "10.21105/joss.05466"
 
 external_link: 
 
-links: 
+links:
+  - name: PDF
+    url: "https://www.theoj.org/joss-papers/joss.05466/10.21105.joss.05466.pdf"
 
 abstract: "R package of convenience functions to make your workflow faster and easier. Easily customizable plots (via *ggplot2*), nice APA tables exportable to Word (via *flextable*), easily run statistical tests or check assumptions, and automatize various other tasks. Mostly geared at researchers in the psychological sciences."
 
@@ -60,7 +63,7 @@ math: true
 
 tags: []
 
-#url_code: 'https://osf.io/t4frx/'
+url_code: 'https://github.com/rempsyc/rempsyc/'
 #url_dataset: 'https://osf.io/t4frx/'
 #url_pdf: '#'
 #url_poster: '#'
