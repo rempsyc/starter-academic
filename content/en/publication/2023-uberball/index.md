@@ -1,5 +1,5 @@
 ---
-title: "Fear of negative evaluation moderates the effect of social inclusion and social feedback on fundamental needs"
+title: "Unmet Expectations: Social Inclusion and the Interaction Between Social Anxiety and Ambiguous or Positive Feedback"
 
 # Publication name and optional abbreviated publication name.
 publication: "*Preprint*. <a href='https://psyarxiv.com/xc4g7' target='_blank' rel='noopener noreferrer'>psyarxiv.com/xc4g7</a>"
