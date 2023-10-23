@@ -1,8 +1,9 @@
 ---
-title: "rempsyc: Convenience functions for psychology"
+title: "lavaanExtra: Convenience functions for package lavaan"
 
 # Publication name and optional abbreviated publication name.
-publication: "(version du package R 0.1.0.9) [Logiciel]. <a href='https://rempsyc.remi-theriault.com' target='_blank' rel='noopener noreferrer'>rempsyc.remi-theriault.com</a>"
+publication: "*Journal of Open Source Software*, *8*(90), 5701. 
+<a href='https://doi.org/10.21105/joss.05701' target='_blank' rel='noopener noreferrer'>doi.org/10.21105/joss.05701</a>"
 
 #publication_short: 
 
@@ -10,22 +11,22 @@ authors:
 - Rémi Thériault
 
 publication_types:
-- "0"
+- "2"
 
 # Show publication and sharing statistics? (requires valid doi)
 add_badge: true
 
 featured: true
 
-date: "2022-06-22T00:00:00-04:00"
+date: "2023-10-11T00:00:00-04:00"
 
-doi: ""
+doi: "10.21105/joss.05701"
 
 external_link: 
 
 links: 
 
-abstract: "Package R de fonctions pratiques pour rendre votre flow de travail plus rapide et plus facile. Graphiques facilement personnalisables (via *ggplot2*), beaux tableaux APA exportables vers Word (via *flextable*), exécutez facilement des tests statistiques ou vérifiez des hypothèses, et automatisez diverses autres tâches. Principalement destiné aux chercheurs en sciences psychologiques."
+abstract: "Offre une syntaxe vectorielle alternative à *lavaan*, ainsi que d'autres fonctions pratiques telles que nommer les chemins et automatiquement définir des liens indirects. Offre également un formatage pratique optimisé pour un workflow de publication et de partage de scripts."
 
 
 # ####################################################################
@@ -60,12 +61,12 @@ math: true
 
 tags: []
 
-#url_code: 'https://osf.io/t4frx/'
+url_code: 'https://github.com/rempsyc/lavaanExtra'
 #url_dataset: 'https://osf.io/t4frx/'
-#url_pdf: '#'
+url_pdf: 'https://www.theoj.org/joss-papers/joss.05701/10.21105.joss.05701.pdf'
 #url_poster: '#'
 #url_preprint: '#'
-#url_project: '#'
+url_project: 'https://lavaanExtra.remi-theriault.com/'
 #url_slides: '#'
 #url_source: '#'
 #url_video: 'https://vimeo.com/209325612'

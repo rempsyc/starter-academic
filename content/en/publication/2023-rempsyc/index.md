@@ -24,10 +24,6 @@ doi: "10.21105/joss.05466"
 
 external_link: 
 
-links:
-  - name: PDF
-    url: "https://www.theoj.org/joss-papers/joss.05466/10.21105.joss.05466.pdf"
-
 abstract: "R package of convenience functions to make your workflow faster and easier. Easily customizable plots (via *ggplot2*), nice APA tables exportable to Word (via *flextable*), easily run statistical tests or check assumptions, and automatize various other tasks. Mostly geared at researchers in the psychological sciences."
 
 
@@ -65,10 +61,10 @@ tags: []
 
 url_code: 'https://github.com/rempsyc/rempsyc/'
 #url_dataset: 'https://osf.io/t4frx/'
-#url_pdf: '#'
+url_pdf: 'https://www.theoj.org/joss-papers/joss.05466/10.21105.joss.05466.pdf'
 #url_poster: '#'
 #url_preprint: '#'
-#url_project: '#'
+url_project: 'https://rempsyc.remi-theriault.com/'
 #url_slides: '#'
 #url_source: '#'
 #url_video: 'https://vimeo.com/209325612'

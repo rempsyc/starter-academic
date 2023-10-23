@@ -1,31 +1,37 @@
 ---
-title: "lavaanExtra: Convenience functions for lavaan"
+title: "Check your outliers! An introduction to identifying statistical outliers in R with easystats"
 
 # Publication name and optional abbreviated publication name.
-publication: "(R package version 0.1.5) [Computer software]. <a href='https://lavaanExtra.remi-theriault.com' target='_blank' rel='noopener noreferrer'>lavaanExtra.remi-theriault.com</a>"
+publication: "*Preprint*. <a href='https://psyarxiv.com/bu6nt' target='_blank' rel='noopener noreferrer'>psyarxiv.com/bu6nt</a>"
 
 #publication_short: 
 
 authors:
+
 - Rémi Thériault
+- Mattan S. Ben-Shachar
+- Indrajeet Patil
+- Daniel Lüdecke
+- Brenton M. Wiernik
+- Dominique Makowski
 
 publication_types:
-- "0"
+- "3"
 
 # Show publication and sharing statistics? (requires valid doi)
 add_badge: true
 
 featured: true
 
-date: "2022-08-22T00:00:00-04:00"
+date: "2023-10-21T00:00:00-04:00"
 
-doi: ""
+doi: "10.31234/osf.io/bu6nt"
 
-external_link: 
+external_link: https://psyarxiv.com/bu6nt
 
 links: 
 
-abstract: "Affords an alternative, vector-based syntax to lavaan, as well as other convenience functions such as naming paths and defining indirect links automatically. Also offers convenience formatting optimized for a publication and script sharing workflow."
+abstract: "Au-delà du défi de se tenir au courant des meilleures pratiques actuelles en matière de diagnostic et de traitement des valeurs aberrantes, une difficulté supplémentaire surgit concernant la mise en œuvre mathématique des méthodes recommandées. Nous fournissons ici un aperçu des recommandations et des meilleures pratiques actuelles et démontrons comment elles peuvent être mises en œuvre facilement et commodément dans le logiciel de calcul statistique R, à l'aide du package *{performance}* de l'écosystème *easystats*. Nous couvrons les méthodes de détection statistique des valeurs aberrantes univariées, multivariées et basées sur un modèle, leur seuil recommandé, la sortie standard et les méthodes de traçage. Nous concluons en passant en revue les différents types théoriques de valeurs aberrantes, la question de savoir s'il faut les exclure ou les winsoriser, et l'importance de la transparence."
 
 
 # ####################################################################
@@ -60,13 +66,13 @@ math: true
 
 tags: []
 
-#url_code: 'https://osf.io/t4frx/'
-#url_dataset: 'https://osf.io/t4frx/'
+#url_code: '#'
+#url_dataset: '#'
 #url_pdf: '#'
 #url_poster: '#'
 #url_preprint: '#'
 #url_project: '#'
 #url_slides: '#'
 #url_source: '#'
-#url_video: 'https://vimeo.com/209325612'
+#url_video: '#'
 ---

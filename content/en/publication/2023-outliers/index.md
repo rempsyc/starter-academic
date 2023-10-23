@@ -1,30 +1,37 @@
 ---
-title: "rempsyc: Convenience functions for psychology"
+title: "Check your outliers! An introduction to identifying statistical outliers in R with easystats"
 
 # Publication name and optional abbreviated publication name.
-publication: "*Journal of Open Source Software*, *8*(87), 5466. 
-<a href='https://doi.org/10.21105/joss.05466' target='_blank' rel='noopener noreferrer'>doi.org/10.21105/joss.05466</a>"
+publication: "*Preprint*. <a href='https://psyarxiv.com/bu6nt' target='_blank' rel='noopener noreferrer'>psyarxiv.com/bu6nt</a>"
 
 #publication_short: 
 
 authors:
+
 - Rémi Thériault
+- Mattan S. Ben-Shachar
+- Indrajeet Patil
+- Daniel Lüdecke
+- Brenton M. Wiernik
+- Dominique Makowski
 
 publication_types:
-- "2"
+- "3"
 
 # Show publication and sharing statistics? (requires valid doi)
 add_badge: true
 
 featured: true
 
-date: "2023-07-25T00:00:00-04:00"
+date: "2023-10-21T00:00:00-04:00"
 
-doi: "10.21105/joss.05466"
+doi: "10.31234/osf.io/bu6nt"
 
-external_link: 
+external_link: https://psyarxiv.com/bu6nt
 
-abstract: "Librairie R de fonctions pratiques pour rendre votre flow de travail plus rapide et plus facile. Graphiques facilement personnalisables (via *ggplot2*), beaux tableaux APA exportables vers Word (via *flextable*), exécutez facilement des tests statistiques ou vérifiez des hypothèses, et automatisez diverses autres tâches. Principalement destiné aux chercheurs en sciences psychologiques."
+links: 
+
+abstract: "Beyond the challenge of keeping up-to-date with current best practices regarding the diagnosis and treatment of outliers, an additional difficulty arises concerning the mathematical implementation of the recommended methods. Here, we provide an overview of current recommendations and best practices and demonstrate how they can easily and conveniently be implemented in the R statistical computing software, using the *{performance}* package of the *easystats* ecosystem. We cover univariate, multivariate, and model-based statistical outlier detection methods, their recommended threshold, standard output, and plotting methods. We conclude by reviewing the different theoretical types of outliers, whether to exclude or winsorize them, and the importance of transparency."
 
 
 # ####################################################################
@@ -59,13 +66,13 @@ math: true
 
 tags: []
 
-url_code: 'https://github.com/rempsyc/rempsyc/'
-#url_dataset: 'https://osf.io/t4frx/'
-url_pdf: 'https://www.theoj.org/joss-papers/joss.05466/10.21105.joss.05466.pdf'
+#url_code: '#'
+#url_dataset: '#'
+#url_pdf: '#'
 #url_poster: '#'
 #url_preprint: '#'
-url_project: 'https://rempsyc.remi-theriault.com/'
+#url_project: '#'
 #url_slides: '#'
 #url_source: '#'
-#url_video: 'https://vimeo.com/209325612'
+#url_video: '#'
 ---

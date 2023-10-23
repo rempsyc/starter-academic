@@ -253,3 +253,27 @@
   to = "https://cran.r-project.org/web/packages/rempsyc/rempsyc.pdf"
   status = 301
   force = false
+
+[[redirects]]
+  from = "/en/publication/2022-lavaanextra/"
+  to = "/en/publication/2023-lavaanextra/"
+  status = 301
+  force = false
+
+[[redirects]]
+  from = "/fr/publication/2022-lavaanextra/"
+  to = "/fr/publication/2023-lavaanextra/"
+  status = 301
+  force = false
+
+[[redirects]]
+  from = "/en/publication/2022-rempsyc/"
+  to = "/en/publication/2023-rempsyc/"
+  status = 301
+  force = false
+
+[[redirects]]
+  from = "/fr/publication/2022-rempsyc/"
+  to = "/fr/publication/2023-rempsyc/"
+  status = 301
+  force = false
