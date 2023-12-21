@@ -34,7 +34,7 @@ links:
  - name: Dataset 1 & 2
    url: "https://osf.io/cqbjy/"
  - name: Supplemental Material 3
-   url: "https://osf.io/cqbjy/"
+   url: "https://osf.io/nzv6y/"
  - name: Code 3
    url: "https://osf.io/nzv6y/"
  - name: Dataset 3
