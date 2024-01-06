@@ -10,9 +10,10 @@ design:
     .flex-container {
         height: 150px;
         display: flex;
+        align-items: center; 
     }
     .flex-item {
-        padding: 6vw;
+        padding-top: 9vw;
         margin: auto;
         text-align: center;
     }
