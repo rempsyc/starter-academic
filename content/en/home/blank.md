@@ -10,7 +10,6 @@ design:
     .flex-container {
         height: 150px;
         display: flex;
-        align-items: center; 
     }
     .flex-item {
         padding-top: 9vw;

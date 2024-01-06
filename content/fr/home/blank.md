@@ -12,7 +12,7 @@ design:
         display: flex;
     }
     .flex-item {
-        padding: 6vw;
+        padding-top: 9vw;
         margin: auto;
         text-align: center;
     }
