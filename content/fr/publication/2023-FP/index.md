@@ -26,6 +26,10 @@ doi: "10.3389/fpsyg.2023.1271773"
 external_link: 
 
 links: 
+ - name: PDF
+   url: "https://remi-theriault.com/papers/Theriault_et_al_2023.pdf"
+ - name: Matériel supplémentaire
+   url: "https://osf.io/cmg3z/"
 
 abstract: "**Introduction :** Cette étude explore l'impact de l'inclusion préférentielle sur la satisfaction des besoins fondamentaux suite à une rétroaction sociale ambigüe ou positive, en considérant l'effet modérateur de l'anxiété sociale.
 
@@ -67,8 +71,8 @@ math: true
 
 tags: []
 
-#url_code: '#'
-#url_dataset: '#'
+url_code: 'https://osf.io/cmg3z/'
+url_dataset: 'https://osf.io/cmg3z/'
 #url_pdf: '#'
 #url_poster: '#'
 #url_preprint: '#'

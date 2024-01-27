@@ -28,7 +28,7 @@ external_link:
 links: 
  - name: PDF
    url: "https://remi-theriault.com/papers/Theriault_et_al_2022.pdf"
- - name: Supplemental Material
+ - name: Matériel supplémentaire
    url: "https://remi-theriault.com/papers/Theriault_et_al_2022_SOM.pdf"
 
 abstract: "L'illusion de la main en caoutchouc (IMC) crée des distorsions de la propriété du corps grâce à l'intégration multimodale d'entrées somatosensorielles et visuelles. Cette illusion repose en grande partie sur des mécanismes ascendants (intégration multisensorielle et perceptive automatique). Cependant, la contribution relative des facteurs descendants, tels que les processus contrôlés impliquant une régulation attentionnelle, reste incertaine. Suite à des travaux antérieurs qui mettent en évidence l'influence putative de la cognition d'ordre supérieur dans l'IMC, nous avons cherché à examiner plus en détail comment les modulations de la charge de la mémoire de travail et des instructions de tâche - deux conditions engageant des processus cognitifs descendants - influencent l'expérience de l'IMC, comme indexé par un certain nombre de dimensions psychométriques. S'appuyant sur une analyse factorielle exploratoire pour évaluer cette phénoménologie au sein de l'IMC, nos résultats confirment l'influence des processus mentaux descendants d'ordre supérieur. Alors que l'instruction de la tâche modulait fortement l'incarnation de la main de caoutchouc, la charge cognitive altérait la dimension affective de l'IMC. Nos résultats corroborent que les processus descendants façonnent la phénoménologie de l'IMC et annoncent de nouvelles façons d'améliorer le contrôle expérimental sur l'IMC."

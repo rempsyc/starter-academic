@@ -30,7 +30,7 @@ links:
    url: "https://remi-theriault.com/papers/Theriault_et_al_2021.pdf"
  - name: Matériel supplémentaire
    url: "https://remi-theriault.com/papers/Theriault_et_al_2021_SOM.pdf"
- - name: Préinscription
+ - name: Préenregistrement
    url: "https://osf.io/cws8g"
 #  - name: Stats Altmetric
 #    url: "https://www.altmetric.com/details/108596790"
