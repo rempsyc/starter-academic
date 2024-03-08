@@ -2,7 +2,7 @@
 title: "Pratiques cliniques inspirées par la recherche en psychologie positive / Clinical practices inspired by research in positive psychology"
 
 # Publication name and optional abbreviated publication name.
-publication: "*Psychologie Française*. Les trois premiers auteurs ont contribué également. <a href='https://doi.org/10.1016/j.psfr.2022.06.004' target='_blank' rel='noopener noreferrer'>doi.org/10.1016/j.psfr.2022.06.004</a>"
+publication: "*Psychologie Française*, *69*(1), 85-94. Les trois premiers auteurs ont contribué également. <a href='https://doi.org/10.1016/j.psfr.2022.06.004' target='_blank' rel='noopener noreferrer'>doi.org/10.1016/j.psfr.2022.06.004</a>"
 
 #publication_short: 
 
