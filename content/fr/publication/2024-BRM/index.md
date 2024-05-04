@@ -16,7 +16,7 @@ authors:
 - Dominique Makowski
 
 publication_types:
-- "3"
+- "2"
 
 # Show publication and sharing statistics? (requires valid doi)
 add_badge: true
