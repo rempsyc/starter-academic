@@ -2,7 +2,7 @@
 title: "Check your outliers! An introduction to identifying statistical outliers in R with easystats"
 
 # Publication name and optional abbreviated publication name.
-publication: "*Behavior Research Methods*, 1-11. <a href='https://doi.org/10.3758/s13428-024-02356-w' target='_blank' rel='noopener noreferrer'>doi.org/10.3758/s13428-024-02356-w</a>"
+publication: "*Behavior Research Methods*, *56*(4), 4162-4172. <a href='https://doi.org/10.3758/s13428-024-02356-w' target='_blank' rel='noopener noreferrer'>doi.org/10.3758/s13428-024-02356-w</a>"
 
 #publication_short: 
 
