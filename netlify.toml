@@ -277,3 +277,9 @@
   to = "/fr/publication/2023-rempsyc/"
   status = 301
   force = false
+
+[[redirects]]
+  from = "/dashboards/busara/"
+  to = "/dashboards/missing_majority/"
+  status = 301
+  force = false
