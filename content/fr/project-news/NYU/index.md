@@ -30,4 +30,4 @@ url_video: ""
 slides: example
 ---
 
-Le Laboratoire d'identité sociale et de moralité accueillera Rémi en tant que chercheur postdoctoral pour travailler avec le Dr Jay Van Bavel sur la réduction de la polarisation et l'augmentation de la prosocialité par la lecture de livres populaires.
+Le Laboratoire d'identité sociale et de moralité à NYU accueillera Rémi en tant que chercheur postdoctoral pour travailler avec le Dr Jay Van Bavel sur la réduction de la polarisation et l'augmentation de la prosocialité par la lecture de livres populaires.

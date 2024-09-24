@@ -30,4 +30,4 @@ url_video: ""
 slides: example
 ---
 
-The Social Identity and Morality Lab will welcome Rémi as a postdoctoral fellow to work with Dr. Jay Van Bavel on reducing polarization and increasing prosociality through reading popular books.
+The Social Identity and Morality Lab at NYU will welcome Rémi as a postdoctoral fellow to work with Dr. Jay Van Bavel on reducing polarization and increasing prosociality through reading popular books.
