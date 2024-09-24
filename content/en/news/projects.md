@@ -32,6 +32,10 @@ subtitle = ""
    [[content.filter_button]]
      name = "Honours"
      tag = "Honours"
+  
+   [[content.filter_button]]
+     name = "Position"
+     tag = "Position"
 
 [design]
   # Choose how many columns the section has. Valid values: 1 or 2.
