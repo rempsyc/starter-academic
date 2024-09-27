@@ -32,7 +32,7 @@ links:
  - name: PDF
    url: "https://remi-theriault.com/papers/Ben‑Shachar_et_al_2023.pdf"
  - name: Podcast
-   url: "https://youtu.be/vOjZInWLaKE"
+   url: "https://youtu.be/qvsgkM-1FOI"
 
 abstract: "In both theoretical and applied research, it is often of interest to assess the strength of an observed association. Existing guidelines also frequently recommend going beyond null-hypothesis significance testing and to report effect sizes and their confidence intervals. As such, measures of effect sizes are increasingly reported, valued, and understood. Beyond their value in shaping the interpretation of the results from a given study, reporting effect sizes is critical for meta-analyses, which rely on their aggregation. We here review the most common effect sizes for analyses of categorical variables that use the χ2 (chi-square) statistic, and introduce a new effect size—פ (Fei, pronounced “fay”). We demonstrate the implementation of these measures and their confidence intervals via the *effectsize* package in the R programming language."
   

@@ -38,8 +38,10 @@ links:
    url: https://easystats.github.io/performance
  - name: Vignette
    url: https://easystats.github.io/performance/articles/check_outliers
-   
-abstract: "Beyond the challenge of keeping up to date with current best practices regarding the diagnosis and treatment of outliers, an additional difficulty arises concerning the mathematical implementation of the recommended methods. Here, we provide an overview of current recommendations and best practices and demonstrate how they can easily and conveniently be implemented in the R statistical computing software, using the *{performance}* package of the *easystats* ecosystem. We cover univariate, multivariate, and model-based statistical outlier detection methods, their recommended threshold, standard output, and plotting methods. We conclude by reviewing the different theoretical types of outliers, whether to exclude or winsorize them, and the importance of transparency. A preprint of this paper is available at: https://doi.org/10.31234/osf.io/bu6nt."
+ - name: Balado
+   url: "https://youtu.be/vOjZInWLaKE"
+
+abstract: "Au-delà du défi de se tenir au courant des meilleures pratiques actuelles concernant le diagnostic et le traitement des valeurs aberrantes, une difficulté supplémentaire se pose concernant la mise en œuvre mathématique des méthodes recommandées. Nous donnons ici un aperçu des recommandations et des meilleures pratiques actuelles et démontrons comment elles peuvent être facilement et commodément mises en œuvre dans le logiciel de calcul statistique R, en utilisant le package *{performance}* de l'écosystème *easystats*. Nous abordons les méthodes de détection des valeurs aberrantes statistiques univariées, multivariées et basées sur un modèle, leur seuil recommandé, la sortie standard et les méthodes de traçage. Nous concluons en passant en revue les différents types théoriques de valeurs aberrantes, la question de savoir s'il faut les exclure ou les winsoriser, et l'importance de la transparence. Une pré-impression de cet article est disponible à l'adresse suivante : https://doi.org/10.31234/osf.io/bu6nt."
 
 
 # ####################################################################
