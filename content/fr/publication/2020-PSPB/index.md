@@ -31,6 +31,8 @@ links:
    url: "https://remi-theriault.com/papers/Krol_et_al_2020.pdf"
  - name: Matériel supplémentaire
    url: "https://remi-theriault.com/papers/Krol_et_al_2020_SOM.pdf"
+ - name: Balado
+   url: "https://youtu.be/UhIK18_Bo9g"
 #  - name: Stats Altmetric
 #    url: "https://www.altmetric.com/details/69092826"
 
