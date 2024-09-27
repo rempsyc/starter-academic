@@ -32,6 +32,8 @@ links:
    url: "https://remi-theriault.com/papers/Theriault_et_al_2021_SOM.pdf"
  - name: Préenregistrement
    url: "https://osf.io/cws8g"
+ - name: Balado
+   url: "https://youtu.be/2qrz6f6PwJ8"
 #  - name: Stats Altmetric
 #    url: "https://www.altmetric.com/details/108596790"
 
