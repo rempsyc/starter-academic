@@ -45,7 +45,9 @@ links:
    url: "https://osf.io/w46r9/"
  - name: Préimpression
    url: "https://doi.org/10.21203/rs.3.rs-3161372/v2"
-   
+ - name: Balado
+   url: "https://youtu.be/ra3VSONsGag"
+
 abstract: "**Objectifs**. Des recherches antérieures montrent qu'un nouveau paradigme expérimental consistant à activer implicitement (« priming ») des concepts associés à la pleine conscience à travers une tâche de phrases brouillées produit des effets sociaux positifs sur la cognition et l'affect. Pourtant, les effets de ce paradigme sur Le comportement social justifie une enquête plus approfondie. Comme plusieurs études associent la pleine conscience à une moindre agressivité, l'agressivité représente un candidat prometteur à étudier dans le paradigme actuel. En outre, la recherche a démontré que les traits de personnalité, tels que la pleine conscience, modèrent l'effet de l'amorçage de la pleine conscience, soulignant l’importance d’identifier des modérateurs potentiels.
 
 **Méthode**. Dans une étude exploratoire 1, nous avons étudié laquelle de plusieurs variables de personnalité était la plus significativement liée à la procédure d'amorçage de la pleine conscience. Dans les études de suivi de confirmation, nous avons tenté de reproduire ces résultats en utilisant la même méthodologie mais en utilisant des échantillons plus grands et seulement quelques mesures d'intérêt (étude 2) ou des mesures supplémentaires (étude 3).

@@ -33,7 +33,7 @@ links:
  - name: Préenregistrement
    url: "https://osf.io/cws8g"
  - name: Balado
-   url: "https://youtu.be/2qrz6f6PwJ8"
+   url: "https://youtu.be/xyPeKJHtwo0"
 #  - name: Stats Altmetric
 #    url: "https://www.altmetric.com/details/108596790"
 
