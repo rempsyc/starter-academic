@@ -30,6 +30,8 @@ links:
    url: "https://remi-theriault.com/papers/Theriault_et_al_2023.pdf"
  - name: Matériel supplémentaire
    url: "https://osf.io/cmg3z/"
+ - name: Balado
+   url: "https://youtu.be/mFVpAUfX-30
 
 abstract: "**Introduction :** Cette étude explore l'impact de l'inclusion préférentielle sur la satisfaction des besoins fondamentaux suite à une rétroaction sociale ambigüe ou positive, en considérant l'effet modérateur de l'anxiété sociale.
 

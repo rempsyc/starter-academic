@@ -30,6 +30,8 @@ links:
    url: "https://remi-theriault.com/papers/Theriault_et_al_2023.pdf"
  - name: Supplemental Material
    url: "https://osf.io/cmg3z/"
+ - name: Podcast
+   url: "https://youtu.be/mFVpAUfX-30"
 
 abstract: "**Introduction:** This study explores the impact of preferential inclusion on fulfilling basic needs following ambiguous or positive social feedback, considering the moderating effect of social anxiety.
 
