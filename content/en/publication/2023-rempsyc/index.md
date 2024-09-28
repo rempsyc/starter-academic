@@ -24,6 +24,10 @@ doi: "10.21105/joss.05466"
 
 external_link: 
 
+links:
+ - name: Podcast
+   url: "https://youtu.be/cBlcQ_8mZNQ"
+
 abstract: "R package of convenience functions to make your workflow faster and easier. Easily customizable plots (via *ggplot2*), nice APA tables exportable to Word (via *flextable*), easily run statistical tests or check assumptions, and automatize various other tasks. Mostly geared at researchers in the psychological sciences."
 
 

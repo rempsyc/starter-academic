@@ -27,6 +27,8 @@ links:
    url: "https://remi-theriault.com/papers/Theriault_2019.pdf"
  - name: Balado
    url: "https://youtu.be/jD0tw7Twrd0"
+ - name: Balado
+   url: "https://youtu.be/jD0tw7Twrd0"
 
 #  - name: Stats Altmetric
 #    url: "https://www.altmetric.com/details/74237696"

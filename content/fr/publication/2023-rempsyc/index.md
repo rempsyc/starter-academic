@@ -24,6 +24,10 @@ doi: "10.21105/joss.05466"
 
 external_link: 
 
+links:
+ - name: Balado
+   url: "https://youtu.be/cBlcQ_8mZNQ"
+
 abstract: "Librairie R de fonctions pratiques pour rendre votre flow de travail plus rapide et plus facile. Graphiques facilement personnalisables (via *ggplot2*), beaux tableaux APA exportables vers Word (via *flextable*), exécutez facilement des tests statistiques ou vérifiez des hypothèses, et automatisez diverses autres tâches. Principalement destiné aux chercheurs en sciences psychologiques."
 
 

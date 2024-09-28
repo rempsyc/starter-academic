@@ -24,7 +24,9 @@ doi: "10.21105/joss.05701"
 
 external_link: 
 
-links: 
+links:
+ - name: Podcast
+   url: "https://youtu.be/umS70xo5JMY"
 
 abstract: "Affords an alternative, vector-based syntax to lavaan, as well as other convenience functions such as naming paths and defining indirect links automatically. Also offers convenience formatting optimized for a publication and script sharing workflow."
 

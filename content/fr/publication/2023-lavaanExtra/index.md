@@ -24,7 +24,9 @@ doi: "10.21105/joss.05701"
 
 external_link: 
 
-links: 
+links:
+ - name: Balado
+   url: "https://youtu.be/umS70xo5JMY"
 
 abstract: "Offre une syntaxe vectorielle alternative à *lavaan*, ainsi que d'autres fonctions pratiques telles que nommer les chemins et automatiquement définir des liens indirects. Offre également un formatage pratique optimisé pour un workflow de publication et de partage de scripts."
 

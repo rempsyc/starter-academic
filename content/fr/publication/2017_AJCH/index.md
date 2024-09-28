@@ -29,6 +29,9 @@ external_link: "https://www.tandfonline.com/doi/full/10.1080/00029157.2016.12252
 links: 
  - name: PDF
    url: "https://remi-theriault.com/papers/Lifshitz_et_al_2017.pdf"
+ - name: Balado
+   url: "https://youtu.be/uzny7qVJplE"
+
 # - name: Stats Altmetric
 #   url: "https://www.altmetric.com/details/77332149"
 
