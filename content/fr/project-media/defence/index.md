@@ -1,12 +1,12 @@
 ---
-title: "Qui étudie les sciences du comportement? Introduction au tableau de bord de la majorité manquante"
+title: "Transformer les habitudes du cœur et de l’esprit : Soutenance doctorale"
 summary: ""
 tags:
-- Press
-date: "2024-08-12T00:00:00Z"
+- Video
+date: "2024-10-07T00:00:00Z"
 
 # Optional external URL for project (replaces project detail page).
-external_link: "https://youtu.be/3H38-k-L7W0"
+external_link: "https://youtu.be/1rg9hF43Dek"
 
 image:
   caption: ""
@@ -30,4 +30,4 @@ url_video: ""
 slides: example
 ---
 
-Patrick Forscher et Rémi Thériault mettent en lumière la sous-représentation des premiers auteurs africains en sciences du comportement, guidés par les données de leur tableau de bord de la majorité manquante.
+Rémi Thériault présente un résumé de ses recherches intitulé « Transformer les habitudes du cœur et de l’esprit : des bonnes intentions à une réponse prosociale fiable » lors de sa soutenance doctorale.

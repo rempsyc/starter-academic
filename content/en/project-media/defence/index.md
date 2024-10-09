@@ -1,12 +1,12 @@
 ---
-title: "Qui étudie les sciences du comportement? Introduction au tableau de bord de la majorité manquante"
+title: "Transforming habits from the mind and heart: Doctoral Defence"
 summary: ""
 tags:
-- Press
-date: "2024-08-12T00:00:00Z"
+- Video
+date: "2024-10-07T00:00:00Z"
 
 # Optional external URL for project (replaces project detail page).
-external_link: "https://youtu.be/3H38-k-L7W0"
+external_link: "https://youtu.be/1rg9hF43Dek"
 
 image:
   caption: ""
@@ -30,4 +30,4 @@ url_video: ""
 slides: example
 ---
 
-Patrick Forscher et Rémi Thériault mettent en lumière la sous-représentation des premiers auteurs africains en sciences du comportement, guidés par les données de leur tableau de bord de la majorité manquante.
+Rémi Thériault presents a summary of his research entitled “Transforming habits from the mind and heart: From good intentions to reliable prosocial response” during his doctoral defence.

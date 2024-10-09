@@ -2,7 +2,7 @@
 title: "Who does behavioral science? Introducing the Missing Majority dashboard"
 summary: ""
 tags:
-- Video
+- Press
 date: "2024-08-12T00:00:00Z"
 
 # Optional external URL for project (replaces project detail page).
