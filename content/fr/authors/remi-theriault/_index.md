@@ -54,7 +54,7 @@ social:
     link: https://www.linkedin.com/in/rempsyc/
   - icon: retweet
     icon_pack: fas
-    link: https://bsky.app/profile/rempsyc.bsky.social
+    link: https://bsky.app/profile/remi-theriault.com
   - icon: twitter
     icon_pack: fab
     link: https://twitter.com/rempsyc
