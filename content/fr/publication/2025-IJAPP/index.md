@@ -28,7 +28,7 @@ external_link:
 
 links: 
  - name: PDF
-   url: "https://remi-theriault.com/papers/Cimon‑Paquet_et_al_202.pdf"
+   url: "https://remi-theriault.com/papers/Cimon‑Paquet_et_al_2025.pdf"
  # - name: Podcast
  #   url: "https://youtu.be/OBYHHZ1TYb8"
 
