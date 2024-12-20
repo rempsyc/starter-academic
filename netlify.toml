@@ -290,7 +290,7 @@
   status = 301
   force = false
 
-ss
+
 [[redirects]]
   from = "/publication/2022-pf/"
   to = "fr/publication/2024-pf/"
