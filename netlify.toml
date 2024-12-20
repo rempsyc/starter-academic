@@ -293,7 +293,7 @@
 
 [[redirects]]
   from = "/publication/2022-pf/"
-  to = "fr/publication/2024-pf/"
+  to = "/publication/2024-pf/"
   status = 301
   force = false
 

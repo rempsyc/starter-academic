@@ -32,7 +32,7 @@ external_link:
 
 links: 
  - name: PDF
-   url: "https://remi-theriault.com/papers/Miglianico_et_al_2022.pdf"
+   url: "https://remi-theriault.com/papers/Miglianico_et_al_2024.pdf"
  - name: Podcast
    url: "https://youtu.be/OBYHHZ1TYb8"
 
