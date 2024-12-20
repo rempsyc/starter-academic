@@ -241,12 +241,18 @@
   status = 301
   force = false
 
-
 [[redirects]]
   from = "/Theriault_&_Raz_2018_SOM.pdf"
   to = "/papers/Theriault_&_Raz_2018_SOM.pdf"
   status = 301
   force = false
+
+[[redirects]]
+  from = "/Miglianico_et_al_2022.pdf"
+  to = "/Miglianico_et_al_2024.pdf"
+  status = 301
+  force = false
+
 
 [[redirects]]
   from = "/rempsyc_manual.pdf"
@@ -281,5 +287,18 @@
 [[redirects]]
   from = "/dashboards/busara/"
   to = "/dashboards/missing_majority/"
+  status = 301
+  force = false
+
+
+[[redirects]]
+  from = "/publication/2022-pf/"
+  to = "fr/publication/2024-pf/"
+  status = 301
+  force = false
+
+[[redirects]]
+  from = "/fr/publication/2022-pf/"
+  to = "/fr/publication/2024-pf/"
   status = 301
   force = false
