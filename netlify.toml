@@ -248,8 +248,8 @@
   force = false
 
 [[redirects]]
-  from = "/Miglianico_et_al_2022.pdf"
-  to = "/Miglianico_et_al_2024.pdf"
+  from = "/papers/Miglianico_et_al_2022.pdf"
+  to = "/papers/Miglianico_et_al_2024.pdf"
   status = 301
   force = false
 
@@ -290,7 +290,7 @@
   status = 301
   force = false
 
-
+ss
 [[redirects]]
   from = "/publication/2022-pf/"
   to = "fr/publication/2024-pf/"
