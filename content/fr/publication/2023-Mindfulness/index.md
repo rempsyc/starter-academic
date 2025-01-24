@@ -2,7 +2,7 @@
 title: "Implicitly activating mindfulness: Does trait self‑control moderate its effect on aggressive behaviour?"
 
 # Publication name and optional abbreviated publication name.
-publication: "*Mindfulness*, 1-17. <a href='https://doi.org/10.1007/s12671-023-02246-w' target='_blank' rel='noopener noreferrer'>doi.org/10.1007/s12671-023-02246-w</a>"
+publication: "*Mindfulness*, 14(12), 2946–2962. <a href='https://doi.org/10.1007/s12671-023-02246-w' target='_blank' rel='noopener noreferrer'>doi.org/10.1007/s12671-023-02246-w</a>"
 
 #publication_short: 
 
