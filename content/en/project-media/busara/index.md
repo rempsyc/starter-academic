@@ -6,7 +6,7 @@ tags:
 date: "2024-08-12T00:00:00Z"
 
 # Optional external URL for project (replaces project detail page).
-external_link: "https://youtu.be/3H38-k-L7W0"
+external_link: "https://busara.global/press-release/intruducing-the-missing-majority-dashboard/"
 
 image:
   caption: ""
