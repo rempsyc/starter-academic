@@ -35,7 +35,7 @@ external_link:
 
 links: 
  - name: PDF
-   url: "https://www.nature.com/articles/s44271-024-00179-1.pdff"
+   url: "https://www.nature.com/articles/s44271-024-00179-1.pdf"
  # - name: Balado
  #   url: "https://youtu.be/O24WCqOnfs8"
 
