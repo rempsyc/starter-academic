@@ -46,7 +46,7 @@ links:
  - name: Preprint
    url: "https://doi.org/10.21203/rs.3.rs-3161372/v2"
  - name: Podcast
-   url: "https://youtu.be/ra3VSONsGag"
+   url: "https://youtu.be/CKgHMOYFdP8"
 
 abstract: "**Objectives**. Previous research shows that a novel experimental paradigm consisting of implicitly activating (“priming”) concepts associated with mindfulness through a scrambled sentence task yields positive social effects on cognition and affect. Yet, the effects of this paradigm on social behaviour warrant further investigation. As several studies link mindfulness to lower aggression, aggression represents a promising candidate to investigate within the current paradigm. Furthermore, research has demonstrated that personality traits—such as trait mindfulness—moderate the effect of the mindfulness prime, highlighting the importance of identifying potential moderators.
 
