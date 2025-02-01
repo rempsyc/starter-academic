@@ -36,8 +36,8 @@ external_link:
 links: 
  - name: PDF
    url: "https://www.nature.com/articles/s44271-024-00179-1.pdf"
- # - name: Balado
- #   url: "https://youtu.be/O24WCqOnfs8"
+ - name: Balado
+   url: "https://youtu.be/8bab8TBnBG0"
 
 abstract: "Le domaine de la psychologie a rapidement transformé ses pratiques scientifiques ouvertes au cours des dernières années. Pourtant, les progrès dans l’intégration des principes de diversité, d’équité et d’inclusion ont été limités. Dans cette perspective, nous soulevons le spectre des pratiques de généralisabilité questionnables et la question du MASKing (Making Assumptions based on Skewed Knowledge), appelant à des pratiques plus responsables dans la généralisation des résultats d’études et la co-auteuration afin de promouvoir l’équité mondiale dans la production de connaissances. Pour favoriser le changement, les chercheurs doivent cibler les quatre composantes clés du processus de recherche : la conception, la communication, la généralisation et l’évaluation. En outre, les facteurs géopolitiques au niveau macro doivent être pris en compte pour évoluer vers une science comportementale robuste et véritablement inclusive, représentant les voix et les expériences du monde majoritaire (c’est-à-dire les pays à revenu faible et intermédiaire)."
 
