@@ -1,5 +1,5 @@
 ---
-title: Société pour l'amélioration de la science psychologique - Prix Mission
+title: Société pour l'amélioration des sciences psychologiques - Prix Mission
 summary: ""
 tags:
 - Honours
@@ -30,4 +30,4 @@ url_video: ""
 slides: example
 ---
 
-Les prix Mission de la Société pour l'amélioration de la science psychologique (SIPS) reconnaissent et sensibilisent à un nombre limité de produits exemplaires qui font avancer la mission de la SIPS. Attribué au projet *easystats*.
+Les prix Mission de la Société pour l'amélioration des sciences psychologiques (SIPS) reconnaissent et sensibilisent à un nombre limité de produits exemplaires qui font avancer la mission de la SIPS. Attribué au projet *easystats*.

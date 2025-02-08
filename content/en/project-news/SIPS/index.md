@@ -1,5 +1,5 @@
 ---
-title: Society for Improving Psychological Science - Mission Award
+title: Society for the Improvement of Psychological Science - Mission Award
 summary: ""
 tags:
 - Honours
@@ -30,4 +30,4 @@ url_video: ""
 slides: example
 ---
 
-The Society for Improving Psychological Science (SIPS) Mission Awards recognize and increase awareness of a limited number of exemplary products that further the SIPS mission. Awarded to the *easystats* project.
+The Society for the Improvement of Psychological Science (SIPS) Mission Awards recognize and increase awareness of a limited number of exemplary products that further the SIPS mission. Awarded to the *easystats* project.
