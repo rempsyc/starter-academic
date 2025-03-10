@@ -88,19 +88,19 @@ show_related = {docs = true, page = false, post = true, project = true, publicat
 ############################
 
 # Enter contact details (optional). To hide a field, clear it to "".
-email = "theriault.remi at courrier.uqam.ca"
-phone = "Four-Three-Eight 995 7648"
+email = "remi.theriault at nyu.edu"
+phone = "Three-Three-Two 400 6781"
 
 # Address
 # For country_code, use the 2-letter ISO code (see https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2 )
-address = {street = "100, rue Sherbrooke Ouest", city = "Montréal", region = "Québec", postcode = "H2X 3P2", country = "Canada", country_code = "CA"}
+address = {street = "6 Washington Place", city = "New York", region = "New York", postcode = "10003", country = "USA", country_code = "US"}
 
 # Geographic coordinates
 # To get your coordinates, right-click on Google Maps and choose "What's here?". The coords will show up at the bottom.
-coordinates = {latitude = "45.510838", longitude = "-73.569965"}
+coordinates = {latitude = "40.72935447774295", longitude = "-73.99440764748589"}
 
 # Directions for visitors to locate you.
-directions = "Office 4345 (4th floor), Pavillon Adrien Pinard. Take the elevator to the 4th floor, turn left, left again, my office will be to your right."
+directions = "Office 535 (5th floor), Meyer Hall. Take the elevator to the 5th floor, turn right, my office will be to your right."
 
 # Office hours
 # A list of your office hours. To remove, set to an empty list `[]`.

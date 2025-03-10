@@ -20,7 +20,7 @@ design:
 
 <div class="flex-container">
   <div class="flex-item">
-      <h1 style="font-size: calc(100% + 4.5vw)"> RÉMI THÉRIAULT, M.SC. </h1>
-      <p style="font-size: calc(100% + 0.5vw)"> A PhD student's journey to making a difference in the world, one mind at a time </p>
+      <h1 style="font-size: calc(100% + 4.5vw)"> RÉMI THÉRIAULT, Ph.D. </h1>
+      <p style="font-size: calc(100% + 0.5vw)"> A Postdoctoral Fellow's journey to making a difference in the world, one mind at a time </p>
   </div>
 </div>

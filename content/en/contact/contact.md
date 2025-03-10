@@ -10,7 +10,7 @@ headless: true
 weight: 130
 
 title: Contact
-subtitle: "![SU](SU.jpg)"
+# subtitle: "![SU](SU.jpg)"
 
 content:
   # Automatically link email and phone or display as text?
@@ -29,6 +29,12 @@ design:
   columns: '2'
 ---
 
-> I respectfully acknowledge that UQAM is located on unceded Indigenous lands. The Kanien’kehá:ka Nation is recognized as the custodians of these lands and waters. Tiohtià:ke/Montréal is historically known as a gathering place for many First Nations. Today, it is home to a diverse population of Indigenous and other peoples. I respect the continued connections with the past, present and future in our ongoing relationships with Indigenous and other peoples within the Montreal community.
+> **Land Acknowledgment**
 > 
-> This Territorial Acknowledgement and resources were created by Concordia University’s Indigenous Directions Leadership Group (2017). To read the entire Territorial Acknowledgement and learn more about why it was written this way, please visit www.concordia.ca/indigenous/resources/territorial-acknowledgement.html.
+> We begin by acknowledging that we are gathered, speaking, and learning on Lenapehoking, the ancestral lands of the Lenape peoples, which settlers call New York City. We do this with humility and gratitude, while recognizing the violence of forced relocation and displacement of the Lenape Peoples with whom this department and university are in an ongoing process of learning. These peoples are known today as the Delaware Nation, in Anadarko Oklahoma; the Delaware Tribe of Indians, in Bartlesville Oklahoma; the Stockbridge-Munsee Community, in Bowler Wisconsin; and the Munsee Delaware Nation, and the Eelūnaapèewii Lahkèewiit, or Delaware Nation at Moraviantown, both in Ontario, Canada.
+> 
+> We acknowledge the need for the recognition of the history of Lenapehoking – a land stolen from, never traded by, the Lenape peoples, who continue to live in New York City and beyond. We acknowledge the systemic and ongoing violence of settler colonialism, and the genocidal violence that resulted in both forced relocation and in physical and psychological trauma perpetrated across generations. We acknowledge in particular that settlers have broken, and continue to break, their treaties with Lenape peoples, beginning with the actions of Henry Hudson and Peter Minuit in first appropriating this land. 
+> 
+> We recognize that reparative action requires long-term maintenance and multigenerational efforts to build relationships with the sovereign nations of the Lenape peoples. We commit to upholding an ongoing and living set of commitments with these nations by working directly with Tribal Governments and Authorized Tribal Representatives to ensure our words and actions are in step with our goals. [[Source]][def]
+
+[def]: https://steinhardt.nyu.edu/departments/media-culture-and-communication/land-acknowledgment

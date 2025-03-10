@@ -51,4 +51,14 @@ hero_media = "hero-academic.jpg"
 #  label = '<a class="js-github-release" href="https://sourcethemes.com/academic/updates" data-repo="gcushen/hugo-academic">Latest release<!-- V --></a>'
 +++
 
-The PhD journey is a long one. Exceptional perseverance is critical to traverse a road filled with challenges and obstacles, in sometimes suboptimal conditions. But you can help, too. Do you believe in the work I do, enjoy my blogs, use my functions and tutorials, or would just like to help me complete my PhD studies? Consider supporting me and my mission by buying me a coffee. Every donation makes a difference, no matter how small.
+Changing the world is no small feat. Research takes perseverance, resilience, and countless hours. But you can help, too. My promise? Strong **open science** and **knowledge translation**:
+
+- 📄 17 scientific papers
+- 📦 8 R packages (>7 million downloads) 
+- 📊 14 R tutorials 
+- 📝 14 blog posts 
+- 🎙 14 media interventions 
+- 🔬 11 peer-reviews of scientific papers 
+<!-- - Co-founder of the Student Ambassador Program of the Canadian Positive Psychology Association -->
+
+And I'm just getting started! If you enjoy my blogs, functions, or tutorials, or simply believe in open, socially impactful science, **consider supporting me and my mission**. Every donation makes a difference, no matter how small.

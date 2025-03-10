@@ -6,18 +6,18 @@ title: Rémi Thériault
 superuser: false
 
 # Role/position/tagline
-role: Étudiant au doctorat (Psychologie sociale)
+role: Chercheur postdoctoral (Psychologie sociale)
 
 # Highlight the author in author lists? (true/false)
 highlight_name: true
 
 # Organizations/Affiliations to show in About widget
 organizations:
-  - name: Université du Québec à Montréal
-    url: ""
+  - name: New York University
+    url: "https://www.centerconflictcooperation.com"
 
 # Short bio (displayed in user profile at end of posts)
-bio: Mes intérêts de recherche incluent la cognition sociale/implicite, l'altruisme, et les rêves.
+bio: Mes intérêts de recherche comprennent les identités sociales, la cognition implicite et la prosocialité.
 
 # Interests to show in About widget
 interests:
@@ -31,6 +31,9 @@ interests:
 # Education to show in About widget
 education:
   courses:   
+  - course: Postdoc en Psychologie
+    institution: New York University
+    year: 2026
   - course: Doctorat en Psychologie
     institution: Université du Québec à Montréal
     year: 2024
@@ -79,7 +82,10 @@ email: ""
 
 ---
 
-Rémi Thériault a obtenu son baccalauréat en psychologie et sa maitrise en psychiatrie de l'Université McGill à Montréal, Québec. Ses recherches de premier cycle se sont principalement concentrées sur l'exploration de la connexion corps-esprit à travers l'effet placébo et la malléabilité du sens d'incarnation du corps. Ses recherches de maîtrise se sont concentrées quant à elles sur des stratégies psychologiques pour augmenter l'empathie et réduire les préjugés intergroupes, telles que prendre le point de vue des autres en utilisant la technologie de réalité virtuelle. Ses recherches doctorales actuelles à l'UQAM explorent comment stimuler l'altruisme et réduire l'agressivité grâce à la méditation d'amour-bienveillant. Globalement, Rémi est passionné par l'idée de mettre la recherche socio-psychologique à profit pour augmenter le bienêtre des gens et leur motivation intrinsèque à s'entraider.
- 
+Rémi Thériault est actuellement chercheur postdoctoral auprès de [Jay Van Bavel][def] au [Centre sur le conflict et la coopération][def2] (anciennement le [Laboratoire sur l'identité sociale et la moralité][def3]) de l’Université de New York. Au cours de la dernière décennie, ses recherches à l’Université McGill et à l’Université du Québec à Montréal ont porté sur le développement et la mise à l’essai d’interventions psychologiques novatrices qui transforment positivement notre perception de soi par rapport aux autres et au monde, comme l’utilisation de la réalité virtuelle et de la formation à l'amour-bienveillant pour stimuler l’empathie et la compassion. Dans le cadre de ses recherches postdoctorales, il tente de réduire la polarisation politique en faisant appel à des identités sociales partagées, cette fois en s’appuyant sur des ouvrages de non-fiction populaires et sur l’intelligence artificielle. Dans l’ensemble, Rémi est passionné par l’utilisation de la recherche socio-psychologique pour accroître le bien-être des gens et leur motivation intrinsèque à s’entraider. Il est également passionné par la science ouverte, la science reproductible, la métascience et la science des données à l'aide de R.
 
-Quatre thèmes de la tradition contemplative Vipassanā façonnent ou influencent généralement ses intérêts de recherche : la moralité (sīla), la présence attentive (samādhi), la sagesse (paññā) et l'amour-bienveillant (mettā).
+Quatre thèmes de la tradition contemplative Vipassanā ont influencé son approche et ses intérêts de recherche : la moralité (sīla), la présence attentive (samādhi), la sagesse (paññā) et l'amour-bienveillant (mettā).
+
+[def]: https://www.jayvanbavel.com/
+[def2]: https://www.centerconflictcooperation.com/people
+[def3]: https://www.jayvanbavel.com/lab

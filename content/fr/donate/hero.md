@@ -51,4 +51,14 @@ hero_media = "hero-academic.jpg"
 #  label = '<a class="js-github-release" href="https://sourcethemes.com/academic/updates" data-repo="gcushen/hugo-academic">Latest release<!-- V --></a>'
 +++
 
-Le doctorat est une longue aventure. Une persévérance exceptionnelle est essentielle pour traverser une route semée d'embûches et de défis, dans des conditions parfois sous-optimales. Mais vous aussi pouvez aider. Croyez-vous dans le travail que j'accomplis, appréciez-vous mes blogs, utilisez-vous mes fonctions et tutoriels, ou souhaitez-vous simplement m'aider à terminer mes études doctorales? Pensez à me soutenir et à soutenir ma mission en m'achetant un café. Chaque don fait une différence, peu importe le montant.
+Changer le monde n'est pas une mince affaire. La recherche demande de la persévérance, de la résilience et d'innombrables heures. Mais vous aussi, vous pouvez aider. Ma promesse? **Science ouverte** et **vulgarisation scientifique** en priorité :
+
+- 📄 17 articles scientifiques
+- 📦 8 modules R (7 millions téléchargements)
+- 📊 14 tutoriels R
+- 📝 14 articles de blog
+- 🎙 14 interventions médiatiques
+- 🔬 11 évaluations par les pairs d'articles
+<!-- - Cofondateur du programme d'ambassadeurs étudiants de l'Association canadienne de psychologie positive -->
+
+Et je ne fais que commencer! Si vous appréciez mes blogs, mes fonctions, ou mes tutoriels, ou si vous croyez simplement en une science ouverte et socialement utile, **pensez à me soutenir et à soutenir ma mission**. Chaque don fait une différence, peu importe le montant.

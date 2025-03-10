@@ -6,18 +6,18 @@ title: Rémi Thériault
 superuser: true
 
 # Role/position/tagline
-role: PhD Student (Social Psychology)
+role: Postdoctoral Fellow (Social Psychology)
 
 # Highlight the author in author lists? (true/false)
 highlight_name: true
 
 # Organizations/Affiliations to show in About widget
 organizations:
-  - name: Université du Québec à Montréal
-    url: ""
+  - name: New York University
+    url: "https://www.centerconflictcooperation.com"
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include social/implicit cognition, altruism, and dreams.
+bio: My research interests include social identities, implicit cognition, and prosociality.
 
 # Interests to show in About widget
 interests:
@@ -31,6 +31,9 @@ interests:
 # Education to show in About widget
 education:
   courses:   
+  - course: Postdoc in Psychology
+    institution: New York University
+    year: 2026
   - course: PhD in Psychology
     institution: Université du Québec à Montréal
     year: 2024
@@ -50,7 +53,7 @@ education:
 social:
   - icon: envelope
     icon_pack: fas
-    link: mailto:theriault.remi@courrier.uqam.ca
+    link: mailto:remi.theriault@nyu.edu
   - icon: linkedin
     icon_pack: fab
     link: https://www.linkedin.com/in/rempsyc/
@@ -81,6 +84,11 @@ email: ""
 
 ---
 
-Rémi Thériault obtained his BA Psychology and MSc Psychiatry from McGill University, Montréal, Québec. His undergraduate research has principally focused on exploring the mind-body connection through the placebo effect and the malleability of the sense of embodiment. His Master’s research focused on psychological strategies to increase empathy and reduce intergroup prejudice, such as taking others’ perspective using virtual reality technology. His current doctoral research at UQAM explores ways to boost altruism and reduce aggression through loving-kindness meditation. Overall, Rémi is passionate about putting social-psychological research to use to increase people’s well-being and intrinsic motivation to help one another.
+Rémi Thériault is currently a Postdoctoral Fellow working with [Jay Van Bavel][def] at the [Center for Conflict and Cooperation][def2] (formerly the [Social Identity & Morality Lab][def3]) at New York University. Over the past decade, his research at McGill University and the University of Quebec in Montreal has focused on developing and testing innovative psychological interventions that positively transform our sense of self in relation to others and the world—such as using virtual reality and loving-kindness training to boost empathy and compassion. In his postdoctoral research, he attempts to reduce political polarization by appealing to shared social identities, this time leveraging popular non-fiction books and artificial intelligence. Overall, Rémi is passionate about putting social-psychological research to use to increase people’s well-being and intrinsic motivation to help one another. He is also passionate about open science, reproducible science, metascience, and data science using R.
 
-Four themes from the Vipassanā contemplative tradition generally shape or influence his research interests: morality (sīla), mindfulness (samādhi), wisdom (paññā), and loving-kindness (mettā).
+Four themes from the Vipassanā contemplative tradition has influenced his approach and research interests: morality (sīla), mindfulness (samādhi), wisdom (paññā), and loving-kindness (mettā).
+
+
+[def]: https://www.jayvanbavel.com/
+[def2]: https://www.centerconflictcooperation.com/people
+[def3]: https://www.jayvanbavel.com/lab
