@@ -10,7 +10,7 @@ headless: true
 weight: 130
 
 title: Contact
-# subtitle: "![SU](SU.jpg)"
+subtitle: "![Meyer](Meyer.jpg)"
 
 content:
   # Automatically link email and phone or display as text?
