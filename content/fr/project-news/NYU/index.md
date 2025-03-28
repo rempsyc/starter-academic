@@ -1,5 +1,5 @@
 ---
-title: Chercheur postdoctoral entrant 2025
+title: Chercheur postdoctoral 2025
 summary: ""
 tags:
 - Position
@@ -30,4 +30,4 @@ url_video: ""
 slides: example
 ---
 
-Le Laboratoire d'identité sociale et de moralité à NYU accueillera Rémi en tant que chercheur postdoctoral pour travailler avec le Dr Jay Van Bavel sur la réduction de la polarisation et l'augmentation de la prosocialité par la lecture de livres populaires.
+Le Laboratoire d'identité sociale et de moralité (maintenant le Centre sur le conflit et la coopération) à NYU a accueilli Rémi en tant que chercheur postdoctoral pour travailler avec le Dr Jay Van Bavel sur la réduction de la polarisation et l'augmentation de la prosocialité par la lecture de livres populaires.

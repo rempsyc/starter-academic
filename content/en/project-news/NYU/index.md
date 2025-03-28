@@ -1,5 +1,5 @@
 ---
-title: Incoming Postdoctoral Fellow 2025
+title: Postdoctoral Fellow 2025
 summary: ""
 tags:
 - Position
@@ -30,4 +30,4 @@ url_video: ""
 slides: example
 ---
 
-The Social Identity and Morality Lab at NYU will welcome Rémi as a postdoctoral fellow to work with Dr. Jay Van Bavel on reducing polarization and increasing prosociality through reading popular books.
+The Social Identity and Morality Lab (now the Center for Conflict and Cooperation) at NYU welcomed Rémi as a postdoctoral fellow to work with Dr. Jay Van Bavel on reducing polarization and increasing prosociality through reading popular books.
