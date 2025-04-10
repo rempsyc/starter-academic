@@ -39,8 +39,11 @@ iwr -useb get.scoop.sh | iex
 > Install Hugo and its dependencies:
 
 ```
-scoop install git go hugo-extended nodejs
+scoop install git go nodejs
+scoop install hugo-extended@0.110.0
 ```
+
+Note: The most recent version of Hugo is incompatible with this version of Wowchemy (which has moved to Hugo Blox), but Hugo version 110.0 is confirmed to be functional, it is recommended to install this version.
 
 ## Running the live server
 
