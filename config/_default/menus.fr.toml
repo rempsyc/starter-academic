@@ -38,19 +38,19 @@
   url = "tutoriels"
   weight = 60
   
+# Link to a PDF of your resume/CV from the menu.
+# To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
+ [[main]]
+    name = "CV"
+    url = "../cv.pdf"
+    weight = 70
+    
  [[main]]
   name = "Contact"
   url = "contact"
-  weight = 70
+  weight = 80
   
  [[main]]
   name = "Donnez"
   url = "donnez"
-  weight = 80
-
-# Link to a PDF of your resume/CV from the menu.
-# To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
-# [[main]]
-#    name = "CV"
-#    url = "CV.pdf"
-#    weight = 80
+  weight = 90
