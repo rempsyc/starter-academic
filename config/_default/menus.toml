@@ -44,6 +44,7 @@
     name = "CV"
     url = "cv.pdf"
     weight = 70
+    target = "_blank"
     
  [[main]]
   name = "Contact"
