@@ -1,12 +1,12 @@
 ---
-title: Society for the Improvement of Psychological Science - Mission Award
+title: Société pour l'amélioration des sciences psychologiques - Prix de félicitations
 summary: ""
 tags:
 - Honours
-date: "2023-06-04T00:00:00Z"
+date: "2025-07-21T00:00:00Z"
 
 # Optional external URL for project (replaces project detail page).
-external_link: "https://improvingpsych.org/2023/08/22/sips-2023-awards-announced/"
+external_link: "https://improvingpsych.org/2025/07/"
 
 image:
   caption: ""
@@ -30,4 +30,4 @@ url_video: ""
 slides: example
 ---
 
-The Society for the Improvement of Psychological Science (SIPS) Mission Awards recognize and increase awareness of a limited number of exemplary products that further the SIPS mission. Awarded to the *easystats* project.
+Les Prix de félicitations du SIPS permettent de reconnaître les projets qui ne sont généralement pas officiellement reconnues par les sociétés professionnelles. Décerné à Ghai, Thériault et al. (2025).
