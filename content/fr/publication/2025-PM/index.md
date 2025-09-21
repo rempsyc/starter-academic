@@ -31,8 +31,8 @@ external_link:
 links:
  - name: PDF
    url: "papers/Heyman_et_al_2025.pdf"
- # - name: Podcast
-   # url: "https://youtu.be/OBYHHZ1TYb8"
+ - name: Balado
+   url: "https://youtu.be/hGcOol5PLiY"
 
 abstract: "Lors du traitement et de l'analyse de données empiriques, les chercheuses et chercheurs sont régulièrement confronté.es à des choix qui peuvent paraître arbitraires (par exemple, comment définir et gérer les valeurs aberrantes). Se concentrer exclusivement sur une option particulière et mener une analyse unique peut avoir une utilité limitée. Autrement dit, on reste incertain quant à la généralisabilité des résultats, car aucune voie alternative plausible n'a été explorée. Une analyse multivers offre une solution à ce problème en explorant les différents choix relatifs au traitement des données et/ou à la construction de modèles, et en examinant leur impact sur la conclusion d'une étude. Cependant, même si les analyses multivers sont sans doute moins sujettes aux biais que l'approche classique à voie unique, il est toujours possible d'ajouter ou d'omettre des voies de manière sélective. Pour résoudre ce problème, nous présentons une nouvelle approche, plus raisonnée, pour mener des analyses multivers par financement participatif. Cette approche est détaillée dans un tutoriel étape par étape pour faciliter sa mise en œuvre. Nous fournissons également une illustration élaborée présentant le projet Semantic Priming Across Many Languages, démontrant ainsi sa faisabilité et sa capacité à accroître l'objectivité et la transparence."
 
