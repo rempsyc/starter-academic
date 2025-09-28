@@ -31,6 +31,8 @@ external_link:
 links:
  - name: PDF
    url: "papers/Heyman_et_al_2025.pdf"
+ - name: Préimprimé
+   url: "https://osf.io/fjhv5"
  - name: Balado
    url: "https://youtu.be/hGcOol5PLiY"
 
@@ -69,8 +71,8 @@ math: true
 
 tags: []
 
-#url_code: '#'
-#url_dataset: '#'
+url_code: 'https://osf.io/dvcj2/'
+url_dataset: 'https://osf.io/6qrmc/'
 #url_pdf: '#'
 #url_poster: '#'
 #url_preprint: '#'

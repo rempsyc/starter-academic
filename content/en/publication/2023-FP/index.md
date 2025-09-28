@@ -30,6 +30,8 @@ links:
    url: "https://remi-theriault.com/papers/Theriault_et_al_2023.pdf"
  - name: Supplemental Material
    url: "https://osf.io/cmg3z/"
+ - name: Preprint
+   url: "https://doi.org/10.31234/osf.io/xc4g7"
  - name: Podcast
    url: "https://youtu.be/mFVpAUfX-30"
 
