@@ -302,3 +302,21 @@
   to = "/fr/publication/2024-pf/"
   status = 301
   force = false
+
+[[redirects]]
+  from = "preprints/makowski_et_al_2023.pdf"
+  to = "preprints/makowski_et_al_report.pdf"
+  status = 301
+  force = false
+
+[[redirects]]
+  from = "preprints/theriault_et_al_2023.pdf"
+  to = "https://doi.org/10.31234/osf.io/bu6nt"
+  status = 301
+  force = false
+
+[[redirects]]
+  from = "preprints/theriault_et_al_2022_uberball.pdf"
+  to = "https://doi.org/10.31234/osf.io/xc4g7"
+  status = 301
+  force = false
