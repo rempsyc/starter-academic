@@ -62,7 +62,7 @@ social:
     link: https://bsky.app/profile/remi-theriault.com
   - icon: twitter
     icon_pack: fab
-    link: https://twitter.com/rempsyc
+    link: https://twitter.com/RemiTPsyc
   # - icon: researchgate
   #   icon_pack: ai
   #   link: https://www.researchgate.net/profile/Remi_Theriault
