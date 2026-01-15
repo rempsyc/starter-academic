@@ -26,12 +26,16 @@ subtitle = ""
      tag = "*"
   
    [[content.filter_button]]
-     name = "Positive Psychology"
-     tag = "Positive Psychology"
+     name = "Psychology"
+     tag = "Psychology"
   
    [[content.filter_button]]
      name = "Spirituality"
      tag = "Spirituality"
+     
+   [[content.filter_button]]
+    name = "Philosophy"
+    tag = "Philosophy"
      
    #[[content.filter_button]]
    #  name = "Statistics"

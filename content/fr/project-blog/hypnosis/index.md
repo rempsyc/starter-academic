@@ -2,7 +2,7 @@
 title: "L'hypnose améliore-t-elle les interventions cliniques?"
 summary: ""
 tags:
-- Positive Psychology
+- Psychology
 date: "2015-12-07T00:00:00Z"
 
 # Optional external URL for project (replaces project detail page).

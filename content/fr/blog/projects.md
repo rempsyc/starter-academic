@@ -26,15 +26,19 @@ subtitle = ""
      tag = "*"
   
    [[content.filter_button]]
-     name = "Psychologie positive"
-     tag = "Positive Psychology"
+     name = "Psychologie"
+     tag = "Psychology"
 
    [[content.filter_button]]
      name = "Spiritualité"
      tag = "Spirituality"
      
+   [[content.filter_button]]
+    name = "Philosophie"
+    tag = "Philosophy"
+     
    #[[content.filter_button]]
-   #  name = "Statistics"
+   #  name = "Statistiques"
    #  tag = "Statistics"
 
 [design]

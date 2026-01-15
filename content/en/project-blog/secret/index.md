@@ -2,7 +2,7 @@
 title: "Critically Assessing the Motivational Framework of Rhonda Byrne’s *The Secret*"
 summary: ""
 tags:
-- Positive Psychology
+- Psychology
 date: "2014-11-27T00:00:00Z"
 
 # Optional external URL for project (replaces project detail page).

@@ -3,7 +3,7 @@ title: Êtes-vous en contrôle… de vous?
 
 summary: ""
 tags:
-- Positive Psychology
+- Psychology
 date: "2020-01-01T00:00:00Z"
 
 # Optional external URL for project (replaces project detail page).

@@ -1,12 +1,12 @@
 ---
-title: "The SOI, the Big Five Traits of Personality, and Personal Transformation"
+title: "Intuitions About Intuition: Deep Listening, Mind Sensations, and the Cocktail Party Effect"
 summary: ""
 tags:
-- Psychology
-date: "2015-04-09T00:00:00Z"
+- Philosophy
+date: "2026-01-03T00:00:00Z"
 
 # Optional external URL for project (replaces project detail page).
-external_link: "https://medium.com/@rempsyc/the-soi-the-big-five-traits-of-personality-and-personal-transformation-49cbb0d5625b"
+external_link: "https://insights.remi-theriault.com/posts/intuition/"
 
 image:
   caption: ""
@@ -30,4 +30,4 @@ url_video: ""
 slides: example
 ---
 
-Is there such a thing as the ideal personality? Evidence suggests that people that are extraverted, open, agreeable, conscientious, and emotionally stable seem to experience the most positive outcomes.
+Reflections on deep listening, the integrated self, and the nature of intuition.
