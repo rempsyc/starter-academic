@@ -32,7 +32,7 @@ external_link:
 links: 
  - name: PDF
    url: "papers/Buchanan_et_al_2025.pdf"
- - name: Preprint
+ - name: Préimpression
    url: "https://doi.org/10.31219/osf.io/q4fjy"
  - name: Balado
    url: "https://youtu.be/0RxIUwZlmzM"

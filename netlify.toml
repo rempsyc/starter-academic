@@ -36,6 +36,12 @@
       report-uri https://remitheriault.report-uri.com/r/d/csp/wizard'''
 
 [[redirects]]
+  from = "/papers"
+  to = "/publications"
+  status = 301
+  force = false
+
+[[redirects]]
   from = "/cv"
   to = "/cv.pdf"
   status = 301

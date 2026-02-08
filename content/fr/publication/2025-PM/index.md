@@ -31,7 +31,7 @@ external_link:
 links:
  - name: PDF
    url: "papers/Heyman_et_al_2025.pdf"
- - name: Préimprimé
+ - name: Préimpression
    url: "https://osf.io/fjhv5"
  - name: Balado
    url: "https://youtu.be/hGcOol5PLiY"
