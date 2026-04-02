@@ -2,7 +2,7 @@
 title: "L’importance de la science ouverte en recherche en psychologie [The importance of open science in psychology research]"
 
 # Publication name and optional abbreviated publication name.
-publication: "Accepted in *Fragments : Revue de psychologie*. Preprint: <a href='https://doi.org/10.31234/osf.io/758dx' target='_blank' rel='noopener noreferrer'>doi.org/10.31234/osf.io/758dx</a>"
+publication: "*Fragments : Revue de psychologie*. Preprint: <a href='https://doi.org/10.31234/osf.io/758dx' target='_blank' rel='noopener noreferrer'>doi.org/10.31234/osf.io/758dx</a>"
 
 #publication_short: 
 
@@ -11,14 +11,14 @@ authors:
 - Rémi Thériault
 
 publication_types:
-- "3"
+- "2"
 
 # Show publication and sharing statistics? (requires valid doi)
 add_badge: true
 
 featured: true
 
-date: "2024-03-26T00:00:00-04:00"
+date: "2025-09-01T00:00:00-04:00"
 
 doi: "10.31234/osf.io/758dx"
 
