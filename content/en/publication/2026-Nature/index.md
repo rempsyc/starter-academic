@@ -33,7 +33,7 @@ links:
  - name: PDF
    url: "https://remi-theriault.com/papers/Brodeur_et_al_2026.pdf"
  - name: Preprint
-   url: "https://econpapers.repec.org/RePEc:zbw:i4rdps:107"
+   url: "https://ideas.repec.org/p/zbw/i4rdps/287.html"
  - name: Supplemental Material
    url: "https://static-content.springer.com/esm/art%3A10.1038%2Fs41586-026-10251-x/MediaObjects/41586_2026_10251_MOESM1_ESM.pdf"
  - name: Preregistration
