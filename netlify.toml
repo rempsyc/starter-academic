@@ -34,15 +34,16 @@
     #
     # Loaded resources by origin (full site scan 2026-04-16):
     #   Scripts: cdnjs.cloudflare.com, cdn.jsdelivr.net (MathJax), d1bxh8uas1mnw7.cloudfront.net (Altmetric),
-    #            badge.dimensions.ai, www.googletagmanager.com (GTM), identity.netlify.com, maps.googleapis.com
-    #   Styles:  cdnjs.cloudflare.com, fonts.googleapis.com (+ inline from Altmetric/Dimensions badges)
+    #            badge.dimensions.ai, www.googletagmanager.com (GTM), www.google-analytics.com (GA via GTM),
+    #            embed.altmetric.com (badge runtime JS), identity.netlify.com, maps.googleapis.com
+    #   Styles:  cdnjs.cloudflare.com, fonts.googleapis.com, badge.dimensions.ai (badge.css)
     #   Fonts:   cdnjs.cloudflare.com, fonts.gstatic.com
     #   Images:  maps tiles, GA pixel, Altmetric badges, Dimensions badges
     #   Frames:  Altmetric detail popups, GTM noscript, Google Maps
     Content-Security-Policy-Report-Only = '''
       default-src 'none';
-      script-src 'self' 'unsafe-inline' 'unsafe-eval' cdnjs.cloudflare.com cdn.jsdelivr.net www.googletagmanager.com d1bxh8uas1mnw7.cloudfront.net badge.dimensions.ai identity.netlify.com maps.googleapis.com;
-      style-src 'self' 'unsafe-inline' cdnjs.cloudflare.com fonts.googleapis.com;
+      script-src 'self' 'unsafe-inline' 'unsafe-eval' cdnjs.cloudflare.com cdn.jsdelivr.net www.googletagmanager.com www.google-analytics.com d1bxh8uas1mnw7.cloudfront.net badge.dimensions.ai embed.altmetric.com identity.netlify.com maps.googleapis.com;
+      style-src 'self' 'unsafe-inline' cdnjs.cloudflare.com fonts.googleapis.com badge.dimensions.ai;
       img-src 'self' data: maps.googleapis.com maps.gstatic.com *.tile.openstreetmap.org cdnjs.cloudflare.com www.googletagmanager.com www.google-analytics.com d1bxh8uas1mnw7.cloudfront.net *.altmetric.com badge.dimensions.ai;
       font-src 'self' cdnjs.cloudflare.com fonts.gstatic.com data:;
       connect-src 'self' www.google-analytics.com *.analytics.google.com www.googletagmanager.com cdn.jsdelivr.net;
