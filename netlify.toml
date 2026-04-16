@@ -41,12 +41,12 @@
     #   Images:  maps tiles, GA pixel, Altmetric badges, Dimensions badges
     #   Frames:  Altmetric detail popups, GTM noscript, Google Maps
     Content-Security-Policy-Report-Only = '''
-      default-src 'none';
-      script-src 'self' 'unsafe-inline' 'unsafe-eval' cdnjs.cloudflare.com cdn.jsdelivr.net www.googletagmanager.com www.google-analytics.com d1bxh8uas1mnw7.cloudfront.net badge.dimensions.ai embed.altmetric.com identity.netlify.com maps.googleapis.com;
-      style-src 'self' 'unsafe-inline' cdnjs.cloudflare.com fonts.googleapis.com badge.dimensions.ai;
+      default-src 'self';
+      script-src 'self' 'unsafe-inline' 'unsafe-eval' cdnjs.cloudflare.com cdn.jsdelivr.net www.googletagmanager.com www.google-analytics.com d1bxh8uas1mnw7.cloudfront.net badge.dimensions.ai embed.altmetric.com api.altmetric.com identity.netlify.com maps.googleapis.com;
+      style-src 'self' 'unsafe-inline' cdnjs.cloudflare.com fonts.googleapis.com badge.dimensions.ai embed.altmetric.com;
       img-src 'self' data: maps.googleapis.com maps.gstatic.com *.tile.openstreetmap.org cdnjs.cloudflare.com www.googletagmanager.com www.google-analytics.com d1bxh8uas1mnw7.cloudfront.net *.altmetric.com badge.dimensions.ai;
       font-src 'self' cdnjs.cloudflare.com fonts.gstatic.com data:;
-      connect-src 'self' www.google-analytics.com *.analytics.google.com www.googletagmanager.com cdn.jsdelivr.net;
+      connect-src 'self' www.google-analytics.com analytics.google.com *.analytics.google.com www.googletagmanager.com cdn.jsdelivr.net maps.googleapis.com badge.dimensions.ai metrics-api.dimensions.ai;
       frame-src www.google.com www.googletagmanager.com d1bxh8uas1mnw7.cloudfront.net *.altmetric.com;
       manifest-src 'self';
       form-action 'none';
