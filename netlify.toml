@@ -45,7 +45,7 @@
       style-src 'self' 'unsafe-inline' cdnjs.cloudflare.com fonts.googleapis.com badge.dimensions.ai embed.altmetric.com;
       img-src 'self' data: maps.googleapis.com maps.gstatic.com *.tile.openstreetmap.org cdnjs.cloudflare.com www.googletagmanager.com www.google-analytics.com d1bxh8uas1mnw7.cloudfront.net *.altmetric.com badge.dimensions.ai;
       font-src 'self' cdnjs.cloudflare.com fonts.gstatic.com data:;
-      connect-src 'self' www.google-analytics.com analytics.google.com *.analytics.google.com www.googletagmanager.com cdn.jsdelivr.net maps.googleapis.com badge.dimensions.ai metrics-api.dimensions.ai;
+      connect-src 'self' www.google-analytics.com analytics.google.com *.analytics.google.com www.googletagmanager.com cdn.jsdelivr.net maps.googleapis.com badge.dimensions.ai metrics-api.dimensions.ai identity.netlify.com cdnjs.cloudflare.com;
       frame-src www.google.com www.googletagmanager.com d1bxh8uas1mnw7.cloudfront.net *.altmetric.com;
       manifest-src 'self';
       form-action 'none';
