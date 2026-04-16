@@ -5,3 +5,26 @@
 .btn-toolbar {
   justify-content: center;
 }
+
+/*************************************************
+ *  Home Hero Widget
+ **************************************************/
+
+.home-hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 30vh;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.home-hero h1 {
+  font-size: clamp(1.8rem, calc(1rem + 4.5vw), 4.5rem);
+  margin-bottom: 0.5rem;
+}
+
+.home-hero p {
+  font-size: clamp(1rem, calc(0.9rem + 0.5vw), 1.4rem);
+  margin-bottom: 0;
+}
