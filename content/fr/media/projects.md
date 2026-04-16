@@ -51,6 +51,8 @@ subtitle = ""
   # For Showcase view, flip alternate rows?
   flip_alt_rows = true
 
+# --- Unused/optional fields below ---
+
 [design.background]
   # Apply a background color, gradient, or image.
   #   Uncomment (by removing `#`) an option to apply it.
@@ -69,13 +71,14 @@ subtitle = ""
   # image_darken = 0.6  # Darken the image? Range 0-1 where 0 is transparent and 1 is opaque.
 
   # Text color (true=light or false=dark).
-  # text_color_light = true  
-  
+  # text_color_light = true
+
 [advanced]
  # Custom CSS. 
  css_style = ""
  
  # CSS class.
  css_class = ""
+
 +++
 

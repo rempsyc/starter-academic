@@ -1,25 +1,16 @@
 ---
 title: "Time Management: The Importance of Self-Monitoring"
-summary: ""
+
 tags:
 - Psychology
+
 date: "2021-03-09T00:00:00Z"
 
 # Optional external URL for project (replaces project detail page).
+
 external_link: "https://cppastudents.medium.com/time-management-the-importance-of-self-monitoring-c9dfff241af1"
 
-image:
-  caption: ""
-  focal_point:
 
-#links:
-#- icon: twitter
-#  icon_pack: fab
-#  name: Follow
-#  url: https://twitter.com/georgecushen
-url_code: ""
-url_pdf: ""
-url_slides: ""
 url_video: ""
 
 # Slides (optional).
@@ -27,7 +18,32 @@ url_video: ""
 #   Simply enter your slide deck's filename without extension.
 #   E.g. `slides = "example-slides"` references `content/slides/example-slides.md`.
 #   Otherwise, set `slides = ""`.
+
+
+# --- Unused/optional fields below ---
+
+summary: ""
+
+image:
+  caption: ""
+  focal_point:
+
+
+#links:
+#- icon: twitter
+
+#  icon_pack: fab
+
+#  name: Follow
+
+#  url: https://twitter.com/georgecushen
+
+url_code: ""
+
+url_pdf: ""
+
+url_slides: ""
+
 slides: example
 ---
-
 Do you sometimes struggle to get things done in time? Do you feel overwhelmed and like you don’t have enough time to do it all? In this blog, I present a powerful technique to up your time management game.
