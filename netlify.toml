@@ -25,6 +25,63 @@
   [headers.values]
     Content-Type = "application/rss+xml"
 
+# Prevent indexing of low-value auto-generated taxonomy/author pages
+[[headers]]
+  for = "/author/*"
+  [headers.values]
+    X-Robots-Tag = "noindex"
+
+[[headers]]
+  for = "/fr/author/*"
+  [headers.values]
+    X-Robots-Tag = "noindex"
+
+[[headers]]
+  for = "/authors/*"
+  [headers.values]
+    X-Robots-Tag = "noindex"
+
+[[headers]]
+  for = "/fr/authors/*"
+  [headers.values]
+    X-Robots-Tag = "noindex"
+
+[[headers]]
+  for = "/tags/*"
+  [headers.values]
+    X-Robots-Tag = "noindex"
+
+[[headers]]
+  for = "/fr/tags/*"
+  [headers.values]
+    X-Robots-Tag = "noindex"
+
+[[headers]]
+  for = "/categories/*"
+  [headers.values]
+    X-Robots-Tag = "noindex"
+
+[[headers]]
+  for = "/fr/categories/*"
+  [headers.values]
+    X-Robots-Tag = "noindex"
+
+[[headers]]
+  for = "/publication_types/*"
+  [headers.values]
+    X-Robots-Tag = "noindex"
+
+[[headers]]
+  for = "/fr/publication_types/*"
+  [headers.values]
+    X-Robots-Tag = "noindex"
+
+# Prevent indexing of RSS feeds
+[[headers]]
+  for = "*.xml"
+  [headers.values]
+    X-Robots-Tag = "noindex"
+
 [[headers]]
   for = "/*"
   [headers.values]
@@ -56,7 +113,7 @@
 
 [[redirects]]
   from = "/papers"
-  to = "/publications"
+  to = "/publications/"
   status = 301
   force = false
 
@@ -287,7 +344,7 @@
 
 [[redirects]]
   from = "/en/publication/2022-lavaanextra/"
-  to = "/en/publication/2023-lavaanextra/"
+  to = "/publication/2023-lavaanextra/"
   status = 301
   force = false
 
@@ -299,7 +356,7 @@
 
 [[redirects]]
   from = "/en/publication/2022-rempsyc/"
-  to = "/en/publication/2023-rempsyc/"
+  to = "/publication/2023-rempsyc/"
   status = 301
   force = false
 
