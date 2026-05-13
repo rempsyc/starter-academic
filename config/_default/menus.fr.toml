@@ -19,6 +19,11 @@
   weight = 30
 
 [[main]]
+  name = "Garden"
+  url = "https://rempsyc.github.io/research-ideas/"
+  weight = 35
+
+[[main]]
   name = "Blog"
   url = "blog"
   weight = 45

@@ -86,6 +86,8 @@ email: ""
 
 Rémi Thériault is currently a Postdoctoral Fellow working with [Jay Van Bavel][def] at the [Center for Conflict and Cooperation][def2] (formerly the Social Identity & Morality Lab) at New York University. Over the past decade, his research at McGill University and the University of Quebec in Montreal has focused on developing and testing innovative psychological interventions that positively transform our sense of self in relation to others and the world—such as using virtual reality and loving-kindness training to boost empathy and compassion. In his postdoctoral research, he attempts to reduce political polarization by appealing to shared social identities, this time leveraging popular non-fiction books and artificial intelligence. Overall, Rémi is passionate about putting social-psychological research to use to increase people’s well-being and intrinsic motivation to help one another. He is also passionate about open science, reproducible science, metascience, and data science using R.
 
+Rémi also maintains a public [Research Garden](https://rempsyc.github.io/research-ideas/): a curated archive of research ideas, ongoing projects, essays, and conceptual maps.
+
 Four themes from the Vipassanā contemplative tradition has influenced his approach and research interests: morality (sīla), mindfulness (samādhi), wisdom (paññā), and loving-kindness (mettā).
 
 
