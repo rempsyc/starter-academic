@@ -11,7 +11,7 @@ authors:
 - Abel Brodeur
 - Derek Mikola
 - Nikolai Cook
-- Many...authors
+- Plusieurs...auteurs
 - Rémi Thériault
 - et al
 

@@ -10,7 +10,7 @@ authors:
 - Tom Heyman
 - Ekaterina Pronizius
 - Savannah C. Lewis
-- Many...authors
+- Plusieurs...auteurs
 - Rémi Thériault
 - et al
 
