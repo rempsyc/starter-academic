@@ -6,15 +6,15 @@ title: Rémi Thériault
 superuser: true
 
 # Role/position/tagline
-role: Postdoctoral Fellow (Social Psychology)
+role: Assistant Professor (Psychology)
 
 # Highlight the author in author lists? (true/false)
 highlight_name: true
 
 # Organizations/Affiliations to show in About widget
 organizations:
-  - name: New York University
-    url: "https://as.nyu.edu/psychology/people/faculty.remi-theriault.html"
+  - name: University of Quebec in Rimouski
+    url: "https://www.uqar.ca/professeurs/theriault-remi/"
 
 # Short bio (displayed in user profile at end of posts)
 bio: My research interests include social identities, implicit cognition, and prosociality.
@@ -53,7 +53,7 @@ education:
 social:
   - icon: envelope
     icon_pack: fas
-    link: mailto:remi.theriault@nyu.edu
+    link: mailto:remi_theriault@uqar.ca
   - icon: linkedin
     icon_pack: fab
     link: https://www.linkedin.com/in/rempsyc/
@@ -84,7 +84,7 @@ email: ""
 
 ---
 
-Rémi Thériault is currently a Postdoctoral Fellow working with [Jay Van Bavel][def] at the [Center for Conflict and Cooperation][def2] (formerly the Social Identity & Morality Lab) at New York University. Over the past decade, his research at McGill University and the University of Quebec in Montreal has focused on developing and testing innovative psychological interventions that positively transform our sense of self in relation to others and the world—such as using virtual reality and loving-kindness training to boost empathy and compassion. In his postdoctoral research, he attempts to reduce political polarization by appealing to shared social identities, this time leveraging popular non-fiction books and artificial intelligence. Overall, Rémi is passionate about putting social-psychological research to use to increase people’s well-being and intrinsic motivation to help one another. He is also passionate about open science, reproducible science, metascience, and data science using R.
+Rémi Thériault is Assistant Professor of Psychology at the University of Quebec in Rimouski. In the past, his research at McGill University and the University of Quebec in Montreal has focused on developing and testing innovative psychological interventions that positively transform our sense of self in relation to others and the world—such as using virtual reality and loving-kindness training to boost empathy and compassion. In his postdoctoral and current research with [Jay Van Bavel][def] at the [Center for Conflict and Cooperation][def2] (formerly the Social Identity & Morality Lab) at New York University, he attempts to reduce political polarization by appealing to shared social identities, this time leveraging popular non-fiction books and artificial intelligence. Overall, Rémi is passionate about putting social-psychological research to use to increase people’s well-being and intrinsic motivation to help one another. He is also passionate about open science, reproducible science, metascience, and data science using R.
 
 Rémi also maintains a public [Research Garden](https://rempsyc.github.io/research-ideas/): a curated archive of research ideas, ongoing projects, essays, and conceptual maps.
 

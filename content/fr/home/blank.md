@@ -9,6 +9,7 @@ design:
 <div class="home-hero">
   <div>
     <h1>RÉMI THÉRIAULT, Ph.D.</h1>
-    <p>Le parcours d'un postdoc pour faire une différence dans le monde, un esprit à la fois</p>
+    <p>Professeur adjoint de psychologie, Université du Québec à Rimouski (UQAR)</p>
+    <p><em>Contempler l’identité, la prosocialité et notre manière de faire de la science</em></p>
   </div>
 </div>

@@ -6,15 +6,15 @@ title: Rémi Thériault
 superuser: false
 
 # Role/position/tagline
-role: Chercheur postdoctoral (Psychologie sociale)
+role: Professeur adjoint (Psychologie)
 
 # Highlight the author in author lists? (true/false)
 highlight_name: true
 
 # Organizations/Affiliations to show in About widget
 organizations:
-  - name: New York University
-    url: "https://www.centerconflictcooperation.com"
+  - name: Université du Québec à Rimouski
+    url: "https://www.uqar.ca/professeurs/theriault-remi/"
 
 # Short bio (displayed in user profile at end of posts)
 bio: Mes intérêts de recherche comprennent les identités sociales, la cognition implicite et la prosocialité.
@@ -51,7 +51,7 @@ education:
 social:
   - icon: envelope
     icon_pack: fas
-    link: mailto:theriault.remi@courrier.uqam.ca
+    link: mailto:remi_theriault@uqar.ca
   - icon: linkedin
     icon_pack: fab
     link: https://www.linkedin.com/in/rempsyc/
@@ -82,7 +82,7 @@ email: ""
 
 ---
 
-Rémi Thériault est actuellement chercheur postdoctoral auprès de [Jay Van Bavel][def] au [Centre sur le conflict et la coopération][def2] (anciennement le [Laboratoire sur l'identité sociale et la moralité][def3]) de l’Université de New York. Au cours de la dernière décennie, ses recherches à l’Université McGill et à l’Université du Québec à Montréal ont porté sur le développement et la mise à l’essai d’interventions psychologiques novatrices qui transforment positivement notre perception de soi par rapport aux autres et au monde, comme l’utilisation de la réalité virtuelle et de la formation à l'amour-bienveillant pour stimuler l’empathie et la compassion. Dans le cadre de ses recherches postdoctorales, il tente de réduire la polarisation politique en faisant appel à des identités sociales partagées, cette fois en s’appuyant sur des ouvrages de non-fiction populaires et sur l’intelligence artificielle. Dans l’ensemble, Rémi est passionné par l’utilisation de la recherche socio-psychologique pour accroître le bien-être des gens et leur motivation intrinsèque à s’entraider. Il est également passionné par la science ouverte, la science reproductible, la métascience et la science des données à l'aide de R.
+Rémi Thériault est professeur adjoint à l'Université du Québec à Rimouski. Par le passé, ses recherches à l’Université McGill et à l’Université du Québec à Montréal ont porté sur le développement et la mise à l’essai d’interventions psychologiques novatrices qui transforment positivement notre perception de soi par rapport aux autres et au monde, comme l’utilisation de la réalité virtuelle et de la formation à l'amour-bienveillant pour stimuler l’empathie et la compassion. Dans le cadre de ses recherches actuelles et postdoctorales avec [Jay Van Bavel][def] au [Centre sur le conflict et la coopération][def2] (anciennement le [Laboratoire sur l'identité sociale et la moralité][def3]) de l’Université de New York, il tente de réduire la polarisation politique en faisant appel à des identités sociales partagées, cette fois en s’appuyant sur des ouvrages de non-fiction populaires et sur l’intelligence artificielle. Dans l’ensemble, Rémi est passionné par l’utilisation de la recherche socio-psychologique pour accroître le bien-être des gens et leur motivation intrinsèque à s’entraider. Il est également passionné par la science ouverte, la science reproductible, la métascience et la science des données à l'aide de R.
 
 Quatre thèmes de la tradition contemplative Vipassanā ont influencé son approche et ses intérêts de recherche : la moralité (sīla), la présence attentive (samādhi), la sagesse (paññā) et l'amour-bienveillant (mettā).
 
