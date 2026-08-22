@@ -8,3 +8,6 @@ public/
 .Rhistory
 assets/jsconfig.json
 *.json
+
+# Project-local Hugo downloaded by preview.ps1
+.tools/

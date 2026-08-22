@@ -24,6 +24,13 @@
   weight = 75
 
 [[main]]
+  name = "SAGE Lab"
+  url = "https://labosage.com/"
+  weight = 77
+  target = "_blank"
+  rel = "noopener"
+
+[[main]]
   name = "News"
   url = "news"
   weight = 40

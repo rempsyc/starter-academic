@@ -3,63 +3,45 @@
 
 This site was built using (and adapting) the Academic Template for [Hugo](https://github.com/gohugoio/hugo). The Hugo **Academic Resumé Template** empowers you to create your job-winning online resumé and showcase your academic publications. [**Wowchemy**](https://wowchemy.com) makes it easy to create a beautiful website for free. Edit your site in Markdown, Jupyter, or RStudio (via Blogdown), generate it with Hugo, and deploy with GitHub or Netlify. Customize anything on your site with widgets, themes, and language packs.
 
-# So, you want to fork my site? Go ahead! But read this...
+# So, you want to use my site as a template? Go ahead! But read this...
 
-I encourage everyone and anyone to fork (copy) my site if it looks like you would want your own site. Keeping the site acknowledgement footer is encouraged, but not mandatory.
+I encourage anyone to use this site as a starting point for their own academic website. Keeping the site acknowledgement footer is encouraged, but not mandatory.
 
-Below, you will find detailed instructions about what to do after forking the site.
+Below, you will find detailed instructions about what to do after creating your site from the template.
 
-# Instructions for forking this site
+# Instructions for using this template
 
 ## Installing the prerequisites...
 
-1. First, you will need to [create a fork](https://docs.github.com/en/get-started/quickstart/fork-a-repo) of this repository. To create a fork, simply click on the fork button at the complete top right of the page. You will be asked to confirm and you can simply go with the default options and name.
+1. First, select **Use this template** at the top of this repository and choose **Create a new repository**, or open [Create a new repository from this template](https://github.com/rempsyc/starter-academic/generate). Choose an owner and repository name, then create the repository. This gives you a clean, independent copy without inheriting this site’s commit history. Please do not fork this repository: it is maintained as my personal website and does not accept external pull requests or direct contributions.
 
-1. Second, you will need to create an account at https://www.netlify.com/, click `Add a new site`, `Import an existing project`, then choose `GitHub` as provider, then pick the fork you created before. You'll see a few more screen where you can just go with the default options each time (select all repositories, etc.).
+1. Second, you will need to create an account at https://www.netlify.com/, click `Add a new site`, `Import an existing project`, then choose `GitHub` as provider, then pick the repository you created from the template. You'll see a few more screens where you can simply use the default options.
 
 1. There! You have your website up and running already! The URL to your new site will look something like this `yoursitename.netlify.app`. You can change the name of the subdomain (`yoursitename`, before the `.netlify`) from the Netlify site settings, but if you have your own custom domain name, you [can also change it](https://www.netlify.com/blog/2021/12/20/how-to-add-custom-domains-to-netlify-sites/). Try your new site URL in your browser to confirm it works.
 
-1. Now it's time to make some changes, like changing the name, bio, photo, publications, etc. Exciting!! Note that it is possible to make all changes directly on github.com, but I believe it is easier to see the changes you bring to the website in real-time. Therefore, I recommend that you download [GitHub Desktop](https://desktop.github.com/), log in, and make a local copy of (i.e., "clone") the fork on your computer. You will be asked "how are you planning to use this fork?"" Choose "For my own purposes".
+1. Now it's time to make some changes, like changing the name, bio, photo, publications, etc. Exciting!! Note that it is possible to make changes directly on github.com, but it is easier to see them in real time. Therefore, I recommend that you download [GitHub Desktop](https://desktop.github.com/), log in, and make a local copy (a “clone”) of the repository you created from this template.
 
 1. Next, to view the website in real time, you will need to use Windows PowerShell. It is already installed with Windows, you just have to type the name in the search bar and it will pop up.
 
-1. You will also need to install Hugo extended. [Detailed instructions](https://wowchemy.com/docs/getting-started/install-hugo-extended/#cms) are available, but essentially:
-
-> Open the Windows Powershell 5 app, installing it if necessary.
->
-> Install Scoop, the package manager for Windows, by pasting the following commands into Powershell and pressing the Enter ↵ key:
-
-```
-Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
-iwr -useb get.scoop.sh | iex
-```
-
-> Press Y and enter if asked Do you want to change the execution policy?.
->
-> Install Hugo and its dependencies:
-
-```
-scoop install git go nodejs
-scoop install hugo-extended@0.110.0
-```
-
-Note: The most recent version of Hugo is incompatible with this version of Wowchemy (which has moved to Hugo Blox), but Hugo version 110.0 is confirmed to be functional, it is recommended to install this version.
+1. Install [Git for Windows](https://git-scm.com/download/win) and [Go](https://go.dev/dl/) if they are not already available. You do **not** need to install Hugo globally. This repository includes a preview script that downloads and uses its own isolated copy of Hugo Extended 0.110.0—the version known to work with this legacy Wowchemy site. It will not interfere with Hugo versions used by other websites.
 
 ## Running the live server
 
-So far, so good. Next, in Windows PowerShell, there are two commands you need to kickstart your live website preview. First, you have to change the working directory to where you cloned your fork. This might look like this:
+So far, so good. Next, in Windows PowerShell, there are two commands you need to kickstart your live website preview. First, change the working directory to the repository you cloned from your account. This might look like this:
 
 ```
 cd "D:\github\starter-academic"
 ```
 
-Second, you have to run the following code to run the hugo server that will preview your site:
+Second, run the repository’s preview script:
 
 ```
-hugo server
+.\preview.ps1
 ```
 
-Then, open your browser to the following URL to browse your site:
+The script downloads the correct Hugo version on its first run, starts the live preview, and opens it in your browser. Changes refresh automatically. Press `Ctrl+C` when you want to stop the preview.
+
+The local address will usually be:
 
 ```
 http://localhost:1313/
@@ -120,5 +102,5 @@ Some tips:
 
 # Saying thank you
 
-If you forked my site and enjoy it, consider [sponsoring me](https://github.com/sponsors/rempsyc) and [Geo Cushen](https://github.com/sponsors/gcushen), the creator of Wowchemy.
+If you used this site as a template and enjoy it, consider [sponsoring me](https://github.com/sponsors/rempsyc) and [Geo Cushen](https://github.com/sponsors/gcushen), the creator of Wowchemy.
 
