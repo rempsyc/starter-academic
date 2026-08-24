@@ -1,0 +1,71 @@
+/* ── VS Code + Claude Workshop Slides ─────────────────────────────────────
+   Custom CSS overrides for the Quarto RevealJS presentation.
+   ───────────────────────────────────────────────────────────────────────── */
+
+/* Accent colour: NYU Purple */
+:root {
+  --nyu-purple: #57068C;
+  --nyu-light:  #f8f4fc;
+}
+
+/* Progress bar & slide number */
+.reveal .progress span { background: var(--nyu-purple); }
+.reveal .slide-number   { color: var(--nyu-purple); font-weight: 600; }
+
+/* Section title text on coloured background */
+.reveal h1 { font-weight: 700; letter-spacing: -0.5px; }
+.reveal h2 { font-weight: 600; }
+
+/* Allow tall slides to scroll instead of clipping content */
+.reveal .slides section {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.reveal .slides section > div {
+  max-height: 100%;
+}
+
+/* Code blocks: allow scrolling, tighten font size */
+.reveal pre code {
+  max-height: 420px;
+  overflow-y: auto;
+  font-size: 0.82em;
+  line-height: 1.55;
+}
+
+/* Inline code */
+.reveal code:not(pre code) {
+  background: #f0eaf8;
+  color: #57068C;
+  padding: 0.12em 0.35em;
+  border-radius: 3px;
+  font-size: 0.88em;
+}
+
+/* Tables */
+.reveal table {
+  font-size: 0.88em;
+  border-collapse: collapse;
+  width: 100%;
+}
+.reveal table th {
+  background: var(--nyu-purple);
+  color: white;
+  padding: 0.4em 0.7em;
+}
+.reveal table td { padding: 0.35em 0.7em; }
+.reveal table tr:nth-child(even) td { background: #f5f0fa; }
+
+/* Callout boxes: tighten size inside slides */
+.reveal .callout { font-size: 0.88em; margin-top: 0.8em; }
+.reveal .callout-title { font-size: 0.95em; }
+
+/* Footer */
+.reveal .footer { font-size: 0.72em; color: #999; }
+
+/* Tab panel labels */
+.reveal .panel-tabset .nav-link.active {
+  color: var(--nyu-purple);
+  border-bottom-color: var(--nyu-purple);
+}
