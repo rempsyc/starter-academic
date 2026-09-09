@@ -18,13 +18,13 @@
   url = "publications"
   weight = 30
 
-[[main]]
-  name = "Garden"
-  url = "https://rempsyc.github.io/research-ideas/"
-  weight = 75
+# [[main]]
+#   name = "Garden"
+#   url = "https://rempsyc.github.io/research-ideas/"
+#   weight = 75
 
 [[main]]
-  name = "SAGE Lab"
+  name = "Lab"
   url = "https://labosage.com/"
   weight = 77
   target = "_blank"
@@ -64,7 +64,7 @@
   url = "contact"
   weight = 80
   
- [[main]]
-  name = "Donate"
-  url = "donate"
-  weight = 90
+# [[main]]
+#   name = "Donate"
+#   url = "donate"
+#   weight = 90
