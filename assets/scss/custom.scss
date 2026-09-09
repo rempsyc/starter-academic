@@ -10,11 +10,17 @@
  *  Home Hero Widget
  **************************************************/
 
+.home-section.home-intro {
+  padding: 0;
+}
+
 .home-hero {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 30vh;
+  // Match the theme's header; svh keeps mobile browser controls from covering the hero.
+  min-height: calc(100vh - 70px);
+  min-height: calc(100svh - 70px);
   padding: 2rem 1rem;
   text-align: center;
 }
@@ -27,4 +33,22 @@
 .home-hero p {
   font-size: clamp(1rem, calc(0.9rem + 0.5vw), 1.4rem);
   margin-bottom: 0;
+}
+
+.home-about-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  margin-top: 1.25rem;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.9rem;
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+@media (max-width: 991.98px) {
+  .home-hero {
+    min-height: calc(100vh - 50px);
+    min-height: calc(100svh - 50px);
+  }
 }

@@ -1,6 +1,8 @@
 ---
 widget: blank
 headless: true
+advanced:
+  css_class: home-intro
 design:
   # Choose how many columns the section has. Valid values: 1 or 2.
   columns: '1'
@@ -11,5 +13,6 @@ design:
     <h1>RÉMI THÉRIAULT, Ph.D.</h1>
     <p>Assistant Professor of Psychology, University of Quebec in Rimouski (UQAR)</p>
     <p><em>Contemplating identity, prosociality, and how we do science</em></p>
+    <a class="home-about-link" href="bio/">About me</a>
   </div>
 </div>
