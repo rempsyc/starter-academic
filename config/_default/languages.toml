@@ -11,10 +11,10 @@
   languageCode = "fr"
   contentDir = "content/fr"
   [fr.params]
-    email = "remi.theriault à nyu.edu"
-    phone = "Trois-trois-deux 400 6781"
-    address = {street = "6 Washington Place", city = "New York", region = "New York", postcode = "10003", country = "États-Unis", country_code = "US"}
-    directions = "Bureau 535 (5e étage), Meyer Hall. Prenez l'ascenseur jusqu'au 5e étage, tournez à droite, mon bureau sera à votre droite."
+    email = "remi_theriault à uqar.ca"
+    phone = "418 723-1986, extension 1110"
+    address = {street = "207A rue Notre-Dame Est", city = "Rimouski", region = "Québec", postcode = "G5L 2A4", country = "Canada", country_code = "CA"}
+    directions = "Bureau U-1053 (1er étage), pavillon U. Entrez par l'accès côté rue Notre-Dame, tournez immédiatement à gauche, puis encore à gauche; mon bureau se trouvera sur votre droite."
 
 # Uncomment the lines below to configure your website in a second language.
 #[zh]
