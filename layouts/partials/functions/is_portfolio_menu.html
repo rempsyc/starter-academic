@@ -1,0 +1,6 @@
+{{- $isPortfolio := false -}}
+{{- with .File -}}
+  {{- $folder := path.Base (strings.TrimSuffix "/" (replace .Dir "\\" "/")) -}}
+  {{- $isPortfolio = in (slice "news" "blog" "media" "tutorials") $folder -}}
+{{- end -}}
+{{- return $isPortfolio -}}

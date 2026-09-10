@@ -34,6 +34,8 @@
     {{ end }}
 
     {{/* Maps JS. */}}
+    {{/* These portfolio pages contain no map; avoid its requests and load delay. */}}
+    {{ if not (partial "functions/is_portfolio_menu" .) }}
     {{ $map_provider := lower site.Params.map.provider }}
     {{ if eq $map_provider "google" }}
       <script async defer src="https://maps.googleapis.com/maps/api/js?key={{ site.Params.map.api_key }}&loading=async"></script>
@@ -42,6 +44,7 @@
       {{ end }}
     {{ else if (in (slice "mapnik" "mapbox") $map_provider) | and ($scr.Get "use_cdn") }}
       {{ printf "<script src=\"%s\" integrity=\"%s\" crossorigin=\"anonymous\"></script>" (printf $js.leaflet.url $js.leaflet.version) $js.leaflet.sri | safeHTML }}
+    {{ end }}
     {{ end }}
 
     {{/* Load hash anchors for documentation pages. */}}

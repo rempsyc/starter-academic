@@ -1,0 +1,27 @@
+{{/* Compatible with Hugo 0.80: WebP is generated offline, never by Hugo. */}}
+{{- $resource := .resource -}}
+{{- $legacy := $resource.Resize (printf "%dx" .width) -}}
+{{- $maxWidth := .width -}}
+{{- if lt $resource.Width $maxWidth }}{{ $maxWidth = $resource.Width }}{{ end -}}
+{{- $smallWidth := 320 -}}
+{{- if lt $maxWidth $smallWidth }}{{ $smallWidth = $maxWidth }}{{ end -}}
+{{- $fallbacks := slice -}}
+{{- range (slice $smallWidth $maxWidth | uniq) -}}
+  {{- $image := $resource.Resize (printf "%dx q85" .) -}}
+  {{- $fallbacks = $fallbacks | append (printf "%s %dw" $image.RelPermalink $image.Width) -}}
+{{- end -}}
+{{- $webp := slice -}}
+{{- with index site.Data.portfolio_images.images (sha256 $resource.Content) -}}
+  {{- range .variants -}}
+    {{- $webp = $webp | append (printf "%s %dw" (.url | relURL) .width) -}}
+  {{- end -}}
+{{- end -}}
+<picture>
+  {{- if $webp }}
+  <source type="image/webp" srcset="{{ delimit $webp ", " }}" sizes="{{ .sizes }}">
+  {{- end }}
+  <img src="{{ $legacy.RelPermalink }}" srcset="{{ delimit $fallbacks ", " }}" sizes="{{ .sizes }}"
+       width="{{ $legacy.Width }}" height="{{ $legacy.Height }}" style="width: {{ $legacy.Width }}px;"
+       alt="{{ .item.Params.image.alt_text | default .item.Title }}"{{ with .class }} class="{{ . }}"{{ end }}
+       loading="{{ if lt .index .eagerCount }}eager{{ else }}lazy{{ end }}" decoding="async">
+</picture>

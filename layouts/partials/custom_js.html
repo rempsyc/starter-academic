@@ -4,7 +4,10 @@
 {{/* This partial is included in `themes/academic/layouts/partials/site_js.html`. */}}
 
 {{/* Altmetric badges */}}
+{{/* Portfolio menus have no citation badges. Keep them on publication pages. */}}
+{{ if not (partial "functions/is_portfolio_menu" .) }}
 <script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
 
 {{/* Dimension badges */}}
 <script async src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
+{{ end }}
