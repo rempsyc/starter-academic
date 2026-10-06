@@ -628,6 +628,16 @@ url = "media/portfolio/d51bd2c3c707eee1-550-q88-b604d379c838.webp"
 width = 550
 height = 329
 
+[images."da2d094671277819a138cbc232fb04efb3282cd50036aea95688219f4186cc83"]
+[[images."da2d094671277819a138cbc232fb04efb3282cd50036aea95688219f4186cc83".variants]]
+url = "media/portfolio/da2d094671277819-320-q88-d694d7470ae2.webp"
+width = 320
+height = 213
+[[images."da2d094671277819a138cbc232fb04efb3282cd50036aea95688219f4186cc83".variants]]
+url = "media/portfolio/da2d094671277819-550-q88-bc183bdea849.webp"
+width = 550
+height = 367
+
 [images."db123c1a403c5df4a4bfbe373bf70318e9305b92f4fc06038ff5a5bf547cc3d3"]
 [[images."db123c1a403c5df4a4bfbe373bf70318e9305b92f4fc06038ff5a5bf547cc3d3".variants]]
 url = "media/portfolio/db123c1a403c5df4-320-q88-f378047da7f3.webp"
