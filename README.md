@@ -3,6 +3,16 @@
 
 This site was built using (and adapting) the Academic Template for [Hugo](https://github.com/gohugoio/hugo). The Hugo **Academic Resumé Template** empowers you to create your job-winning online resumé and showcase your academic publications. [**Wowchemy**](https://wowchemy.com) makes it easy to create a beautiful website for free. Edit your site in Markdown, Jupyter, or RStudio (via Blogdown), generate it with Hugo, and deploy with GitHub or Netlify. Customize anything on your site with widgets, themes, and language packs.
 
+## Maintaining this site
+
+Human-readable maintenance guides live at the repository root; executable tools live in `scripts/`.
+
+- [Portfolio image protocol](PORTFOLIO-IMAGES.md) — follow this whenever adding or replacing images for News, Blog, Media, or R tutorials. It explains how to generate small, shared thumbnails for both languages.
+- [Cleanup and improvement plan](CLEANUP-PLAN.md) — maintenance tasks and decisions.
+- [Agent instructions](AGENTS.md) — repository rules for coding agents.
+
+To preview the site, run `.\preview.ps1` from the repository root. It uses the project-local Hugo version compatible with this site; see “Running the live server” below.
+
 # So, you want to use my site as a template? Go ahead! But read this...
 
 I encourage anyone to use this site as a starting point for their own academic website. Keeping the site acknowledgement footer is encouraged, but not mandatory.
