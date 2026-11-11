@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="1600" height="1040" viewBox="250 120 2000 1300" role="img" aria-labelledby="title desc" xml:lang="en">
   <title id="title">UQAR — office U-1053</title>
-  <desc id="desc">Approximate visitor map, not to scale. Enter from rue Notre-Dame, immediately turn left, go through the door into the vestibule, then turn left again into the office corridor. Office U-1053 is on your right. The entire route is on the same level.</desc>
+  <desc id="desc">Approximate visitor map, not to scale. Enter from rue Notre-Dame, immediately turn left, go through the door into the vestibule, then turn left again into the office corridor. Office U-1053 is on your right, near the beginning of the longer corridor. The entire route is on the same level.</desc>
   <defs>
     <pattern id="hatch" width="10" height="10" patternUnits="userSpaceOnUse">
       <path d="M-2 2L2 -2M0 10L10 0M8 12L12 8" stroke="#d4d4d4" stroke-width="1" />
@@ -34,7 +34,12 @@
     <path d="M1100 448V650L1330 755" fill="none" stroke="white" stroke-width="57" stroke-linejoin="round" />
     <path d="M1068 451L1132 449" stroke="white" stroke-width="10" />
     <path d="M1069 449V420M1069 420Q1099 420 1099 449" fill="none" stroke="#555" stroke-width="2" />
-    <g id="office-plan" transform="matrix(.24 .24 -.24 .24 1516 305)">
+    <g id="corridor-continuation">
+      <path d="M1330 755L1700 385" fill="none" stroke="#777" stroke-width="35" />
+      <path d="M1330 755L1700 385" fill="none" stroke="white" stroke-width="32" />
+      <path d="M1675 387L1680 399L1692 404L1697 416 M1682 380L1687 392L1699 397L1704 409" fill="none" stroke="#777" stroke-width="2" />
+    </g>
+    <g id="office-plan" transform="matrix(.18 .18 -.18 .18 1469.5 417.5)">
       <path class="room" d="M235 170H490V394H235Z M235 402H490V615H235Z M235 625H490V825H235Z M235 835H490V1020H235Z M235 1030H490V1255H235Z M615 170H875V355H615Z M615 365H875V535H615Z M615 885H875V1055H615Z M650 1065H875V1255H650Z M650 1265H1030V1510H650Z" />
       <rect x="615" y="548" width="260" height="170" fill="#d7f0e9" />
       <rect x="615" y="548" width="260" height="170" fill="none" stroke="#168269" stroke-width="4" />
@@ -50,16 +55,16 @@
     <path d="M1250 683L1276 695M1276 695Q1265 721 1238 711" fill="none" stroke="#555" stroke-width="2" />
   </g>
   <g id="green-route" inkscape:groupmode="layer" inkscape:label="Itinéraire vert — modifiable">
-    <path d="M850 320L1100 400V650L1330 755L1499 586L1517 604" fill="none" stroke="white" stroke-width="15" stroke-linejoin="round" />
-    <path d="M850 320L1100 400V650L1330 755L1499 586L1517 604" fill="none" stroke="#24932c" stroke-width="8" stroke-linejoin="round" stroke-dasharray="5 4" marker-end="url(#arrow)" />
-    <g transform="matrix(.24 .24 -.24 .24 1516 305)">
+    <path d="M850 320L1100 400V650L1330 755L1456.9 628.1L1468.6 639.8" fill="none" stroke="white" stroke-width="15" stroke-linejoin="round" />
+    <path d="M850 320L1100 400V650L1330 755L1456.9 628.1L1468.6 639.8" fill="none" stroke="#24932c" stroke-width="8" stroke-linejoin="round" stroke-dasharray="5 4" marker-end="url(#arrow)" />
+    <g transform="matrix(.18 .18 -.18 .18 1469.5 417.5)">
       <rect x="625" y="554" width="242" height="156" fill="#7dd05a" fill-opacity=".6" stroke="#24932c" stroke-width="8" />
     </g>
   </g>
   <g id="labels">
     <path class="leader" d="M960 397L1084 442" />
     <text x="810" y="378" font-size="36" font-weight="bold">Entrance</text>
-    <path class="leader" d="M1543 645L1720 760L1875 825" />
+    <path class="leader" d="M1489.7 665.5L1720 760L1875 825" />
     <text x="1890" y="855" font-size="48" font-weight="bold">U-1053</text>
     <text x="650" y="1390" font-size="24" fill="#555">Schematic · Not to scale</text>
   </g>

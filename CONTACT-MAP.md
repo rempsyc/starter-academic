@@ -29,6 +29,13 @@ other occupants' names and the private original are not included. This is a
 schematic visitor map, not a measured floor plan or emergency evacuation plan.
 Distances and the entrance connection remain approximate.
 
+The corridor PDF covers only the first offices, not the entire wing. An
+owner-supplied exterior photo identifies U-1053 near the beginning of the longer
+corridor. The map therefore scales the partial office plan within the building
+outline and shows a schematic continuation beyond it, without inventing the
+remaining room layout. The photo establishes relative placement, not measured
+dimensions; keep those dimensions approximate until verified on site.
+
 Written directions live in `config/_default/params.toml` (English) and
 `config/_default/languages.toml` (French). Keep them aligned with the maps:
 Notre-Dame entrance, immediate left, door into the vestibule, second left into the
