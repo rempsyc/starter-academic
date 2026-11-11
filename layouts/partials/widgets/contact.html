@@ -135,6 +135,14 @@
 
   </ul>
 
+  {{ with $st.Params.content.office_map }}
+  <p>
+    <a href="{{ . | safeURL }}">
+      <img src="{{ . | safeURL }}" alt="{{ $st.Params.content.office_map_alt }}" width="1600" height="1040">
+    </a>
+  </p>
+  {{ end }}
+
   {{ if and site.Params.map.provider $data.coordinates.latitude }}
   <div class="d-none">
     <input id="map-provider" value="{{ lower site.Params.map.provider }}">

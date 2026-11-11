@@ -8,6 +8,7 @@ This site was built using (and adapting) the Academic Template for [Hugo](https:
 Human-readable maintenance guides live at the repository root; executable tools live in `scripts/`.
 
 - [Portfolio image protocol](PORTFOLIO-IMAGES.md) — follow this whenever adding or replacing images for News, Blog, Media, or R tutorials. It explains how to generate small, shared thumbnails for both languages.
+- [Contact maps](CONTACT-MAP.md) — edit and check the bilingual UQAR office maps and walking directions.
 - [Cleanup and improvement plan](CLEANUP-PLAN.md) — maintenance tasks and decisions.
 - [Agent instructions](AGENTS.md) — repository rules for coding agents.
 

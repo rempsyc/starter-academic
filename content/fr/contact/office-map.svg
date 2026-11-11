@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="1600" height="1040" viewBox="250 120 2000 1300" role="img" aria-labelledby="title desc" xml:lang="fr">
+  <title id="title">UQAR — bureau U-1053</title>
+  <desc id="desc">Plan d’orientation approximatif, non à l’échelle. Entrez du côté de la rue Notre-Dame, tournez immédiatement à gauche, franchissez la porte du vestibule, puis tournez encore à gauche dans le corridor des bureaux. Le bureau U-1053 est sur votre droite. Tout le trajet se fait au même niveau.</desc>
+  <defs>
+    <pattern id="hatch" width="10" height="10" patternUnits="userSpaceOnUse">
+      <path d="M-2 2L2 -2M0 10L10 0M8 12L12 8" stroke="#d4d4d4" stroke-width="1" />
+    </pattern>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="3.6" markerHeight="3.6" orient="auto">
+      <path d="M0 0L10 5L0 10Z" fill="#24932c" />
+    </marker>
+  </defs>
+  <style>
+ text{font-family:Arial,sans-serif;fill:#151515}
+ .outline{fill:url(#hatch);stroke:#171717;stroke-width:4;stroke-linejoin:round}
+ .leader{fill:none;stroke:#333;stroke-width:2}
+ .wall{fill:none;stroke:#222;stroke-width:6;stroke-linecap:square;stroke-linejoin:round}
+ .door{fill:none;stroke:#777;stroke-width:2}
+ .room{fill:#ededed}
+ #office-plan rect{fill:#ededed;stroke:#333}
+ .badge{fill:#fff;stroke:#111;stroke-width:2}
+ .badge-number{font-size:23px;font-weight:bold;text-anchor:middle;dominant-baseline:central}
+</style>
+  <rect x="250" y="120" width="2000" height="1300" fill="white" />
+  <g id="base-map" inkscape:groupmode="layer" inkscape:label="Fond noir et blanc">
+    <g id="street" transform="translate(-200 -70)">
+      <path d="M590 780L1100 270" fill="none" stroke="#ddd" stroke-width="95" />
+      <path d="M550 740L1060 230M625 815L1135 305" fill="none" stroke="#333" stroke-width="2" />
+      <text x="725" y="660" transform="rotate(-45 725 660)" font-size="30" font-weight="bold">Rue Notre-Dame Est</text>
+    </g>
+    <path class="outline" d="M740 554L840 457L1269 445L1274 643L1304 663L1499 455L1547 407L1499 355L1628 223L1887 481L1975 391L2133 551L1927 764L1884 796L1831 744L1860 707L1662 511L1401 774L1424 797L1351 865L1304 818L1078 942L1043 881L880 1054L715 924L715 847L748 847Z" />
+    <path class="outline" d="M1043 881L1397 1204L1267 1333L1120 1210L1071 1260L752 1111L880 1054Z" />
+    <path d="M1100 448V650L1330 755" fill="none" stroke="#222" stroke-width="65" stroke-linejoin="round" />
+    <path d="M1100 448V650L1330 755" fill="none" stroke="white" stroke-width="57" stroke-linejoin="round" />
+    <path d="M1068 451L1132 449" stroke="white" stroke-width="10" />
+    <path d="M1069 449V420M1069 420Q1099 420 1099 449" fill="none" stroke="#555" stroke-width="2" />
+    <g id="office-plan" transform="matrix(.24 .24 -.24 .24 1516 305)">
+      <path class="room" d="M235 170H490V394H235Z M235 402H490V615H235Z M235 625H490V825H235Z M235 835H490V1020H235Z M235 1030H490V1255H235Z M615 170H875V355H615Z M615 365H875V535H615Z M615 885H875V1055H615Z M650 1065H875V1255H650Z M650 1265H1030V1510H650Z" />
+      <rect x="615" y="548" width="260" height="170" fill="#d7f0e9" />
+      <rect x="615" y="548" width="260" height="170" fill="none" stroke="#168269" stroke-width="4" />
+      <rect x="615" y="730" width="260" height="140" fill="#eef2f5" />
+      <path class="wall" d="M235 90V1280 M235 1370V1510H520 M595 1510H1030V1265H875V90 M490 90V195 M615 90V195" />
+      <path class="wall" d="M235 170H490 M490 260V402H235 M490 402V445 M490 515V625H235 M490 625V650 M490 720V835H235 M490 835V860 M490 930V1030H235 M490 1030V1070 M490 1140V1265H235" />
+      <path class="wall" d="M615 170H875 M615 260V365H875 M615 365V400 M615 470V548H875 M615 548V580 M615 650V730H875 M615 730V815 M615 870H875 M615 885H875 M615 885V920 M615 990V1065H875 M650 1065V1100 M650 1170V1265H875" />
+      <path class="door" d="M490 260H420 M490 260A65 65 0 0 1 425 195 M490 515H420 M490 515A65 65 0 0 1 425 450 M490 720H420 M490 720A65 65 0 0 1 425 655 M490 930H420 M490 930A65 65 0 0 1 425 865 M490 1140H420 M490 1140A65 65 0 0 1 425 1075 M615 260H685 M615 260A65 65 0 0 0 680 195 M615 470H685 M615 470A65 65 0 0 0 680 405 M615 650H685 M615 650A65 65 0 0 0 680 585 M615 990H685 M615 990A65 65 0 0 0 680 925 M650 1170H720 M650 1170A65 65 0 0 0 715 1105" />
+      <path class="wall" d="M235 1370H490 M490 1265H530 M600 1265H650V1415 M650 1485V1510 M650 1265H1030" />
+      <path class="door" d="M600 1265V1335 M600 1335A70 70 0 0 1 530 1265 M595 1510V1440 M595 1440A75 75 0 0 0 520 1510 M650 1485H580 M580 1485A70 70 0 0 1 650 1415" />
+    </g>
+    <path d="M1250 683L1224 739" stroke="#222" stroke-width="5" />
+    <path d="M1250 683L1276 695M1276 695Q1265 721 1238 711" fill="none" stroke="#555" stroke-width="2" />
+  </g>
+  <g id="green-route" inkscape:groupmode="layer" inkscape:label="Itinéraire vert — modifiable">
+    <path d="M850 320L1100 400V650L1330 755L1499 586L1517 604" fill="none" stroke="white" stroke-width="15" stroke-linejoin="round" />
+    <path d="M850 320L1100 400V650L1330 755L1499 586L1517 604" fill="none" stroke="#24932c" stroke-width="8" stroke-linejoin="round" stroke-dasharray="5 4" marker-end="url(#arrow)" />
+    <g transform="matrix(.24 .24 -.24 .24 1516 305)">
+      <rect x="625" y="554" width="242" height="156" fill="#7dd05a" fill-opacity=".6" stroke="#24932c" stroke-width="8" />
+    </g>
+  </g>
+  <g id="labels">
+    <path class="leader" d="M960 397L1084 442" />
+    <text x="810" y="378" font-size="36" font-weight="bold">Entrée</text>
+    <path class="leader" d="M1543 645L1720 760L1875 825" />
+    <text x="1890" y="855" font-size="48" font-weight="bold">U-1053</text>
+    <text x="650" y="1390" font-size="24" fill="#555">Schéma · Non à l’échelle</text>
+  </g>
+</svg>

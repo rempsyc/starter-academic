@@ -10,9 +10,11 @@ headless: true
 weight: 130
 
 title: Contact
-subtitle: "![Meyer](Meyer.jpg)"
+subtitle: ""
 
 content:
+  office_map: "office-map.svg"
+  office_map_alt: "Plan vers le bureau U-1053 à l’UQAR : entrez du côté de la rue Notre-Dame, tournez à gauche, franchissez la porte du vestibule, puis tournez encore à gauche ; le bureau est à droite, au même niveau."
   # Automatically link email and phone or display as text?
   autolink: false
   

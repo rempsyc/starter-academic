@@ -100,7 +100,7 @@ address = {street = "207A rue Notre-Dame Est", city = "Rimouski", region = "Qué
 coordinates = {latitude = "48.45252468422547", longitude = "-68.51461061835042"}
 
 # Directions for visitors to locate you.
-directions = "Office U-1053 (1st floor), Pavilion U. Enter through the main street on Notre-Dame, immediately turn left, left again, my office will be to your right."
+directions = "Office U-1053 (1st floor), Pavilion U. Enter from rue Notre-Dame and immediately turn left. Go through the door into the vestibule, then turn left again into the office corridor. My office is on your right. The entire route is on the same level."
 
 # Office hours
 # A list of your office hours. To remove, set to an empty list `[]`.

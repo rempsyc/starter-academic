@@ -10,9 +10,11 @@ headless: true
 weight: 130
 
 title: Contact
-subtitle: "![Meyer](Meyer.jpg)"
+subtitle: ""
 
 content:
+  office_map: "office-map.svg"
+  office_map_alt: "Map to office U-1053 at UQAR: enter from rue Notre-Dame, turn left, go through the vestibule door, then turn left again; the office is on your right, on the same level."
   # Automatically link email and phone or display as text?
   autolink: false
   
