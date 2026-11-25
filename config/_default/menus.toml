@@ -50,14 +50,11 @@
   url = "tutorials"
   weight = 60
   
-# Link to a PDF of your resume/CV from the menu.
-# To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
+# The navbar opens absolute HTTP(S) links in a new tab.
  [[main]]
     name = "CV"
-    url = "cv.pdf"
+    url = "https://remi-theriault.com/cv.pdf"
     weight = 70
-    target = "_blank"
-    rel = "noopener"
     
  [[main]]
   name = "Contact"
