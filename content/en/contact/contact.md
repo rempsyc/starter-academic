@@ -14,7 +14,7 @@ subtitle: ""
 
 content:
   office_map: "office-map.svg"
-  office_map_alt: "Map to office U-1053 at UQAR: enter from rue Notre-Dame, turn left, go through the vestibule door, then turn left again; the office is on your right, on the same level."
+  office_map_alt: "Map to office U-1053 at UQAR from the Notre-Dame entrance. The green line shows the route through the entrance vestibule, along the hallway to the landing, and left into the office corridor."
   # Automatically link email and phone or display as text?
   autolink: false
   

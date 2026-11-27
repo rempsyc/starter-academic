@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="1600" height="1040" viewBox="250 120 2000 1300" role="img" aria-labelledby="title desc" xml:lang="en">
   <title id="title">UQAR — office U-1053</title>
-  <desc id="desc">Approximate visitor map, not to scale. Enter from rue Notre-Dame, immediately turn left, go through the door into the vestibule, then turn left again into the office corridor. Office U-1053 is on your right, near the beginning of the longer corridor. The entire route is on the same level.</desc>
+  <desc id="desc">Approximate visitor map, not to scale. Enter from rue Notre-Dame through both sets of doors and turn left immediately after the inner doors. Follow the hall through the door into the small landing, then take the door on the left into the office corridor. Office U-1053 is on your right, near the beginning of the longer corridor. The entire route is on the same level.</desc>
   <defs>
     <pattern id="hatch" width="10" height="10" patternUnits="userSpaceOnUse">
       <path d="M-2 2L2 -2M0 10L10 0M8 12L12 8" stroke="#d4d4d4" stroke-width="1" />
@@ -30,16 +30,21 @@
     </g>
     <path class="outline" d="M740 554L840 457L1269 445L1274 643L1304 663L1499 455L1547 407L1499 355L1628 223L1887 481L1975 391L2133 551L1927 764L1884 796L1831 744L1860 707L1662 511L1401 774L1424 797L1351 865L1304 818L1078 942L1043 881L880 1054L715 924L715 847L748 847Z" />
     <path class="outline" d="M1043 881L1397 1204L1267 1333L1120 1210L1071 1260L752 1111L880 1054Z" />
-    <path d="M1100 448V650L1330 755" fill="none" stroke="#222" stroke-width="65" stroke-linejoin="round" />
-    <path d="M1100 448V650L1330 755" fill="none" stroke="white" stroke-width="57" stroke-linejoin="round" />
-    <path d="M1068 451L1132 449" stroke="white" stroke-width="10" />
-    <path d="M1069 449V420M1069 420Q1099 420 1099 449" fill="none" stroke="#555" stroke-width="2" />
+    <g id="entrance-and-approach">
+      <!-- Two door thresholds enclose the shallow entrance vestibule. -->
+      <path d="M1100 450V510L1295 719" fill="none" stroke="#222" stroke-width="65" stroke-linejoin="round" />
+      <path d="M1100 450V510L1295 719" fill="none" stroke="white" stroke-width="57" stroke-linejoin="round" />
+      <path d="M1072 451L1128 449" stroke="white" stroke-width="9" />
+      <path class="door" d="M1072 450V432Q1090 432 1090 450 M1128 450V432Q1110 432 1110 450 M1072 480V462Q1090 462 1090 480 M1128 480V462Q1110 462 1110 480" />
+      <path d="M1072 450H1128 M1072 480H1128" stroke="#777" stroke-width="2" stroke-dasharray="5 4" />
+    </g>
     <g id="corridor-continuation">
       <path d="M1330 755L1700 385" fill="none" stroke="#777" stroke-width="35" />
       <path d="M1330 755L1700 385" fill="none" stroke="white" stroke-width="32" />
       <path d="M1675 387L1680 399L1692 404L1697 416 M1682 380L1687 392L1699 397L1704 409" fill="none" stroke="#777" stroke-width="2" />
     </g>
     <g id="office-plan" transform="matrix(.18 .18 -.18 .18 1469.5 417.5)">
+      <path d="M235 1265H650V1510H235Z" fill="white" />
       <path class="room" d="M235 170H490V394H235Z M235 402H490V615H235Z M235 625H490V825H235Z M235 835H490V1020H235Z M235 1030H490V1255H235Z M615 170H875V355H615Z M615 365H875V535H615Z M615 885H875V1055H615Z M650 1065H875V1255H650Z M650 1265H1030V1510H650Z" />
       <rect x="615" y="548" width="260" height="170" fill="#d7f0e9" />
       <rect x="615" y="548" width="260" height="170" fill="none" stroke="#168269" stroke-width="4" />
@@ -50,13 +55,14 @@
       <path class="door" d="M490 260H420 M490 260A65 65 0 0 1 425 195 M490 515H420 M490 515A65 65 0 0 1 425 450 M490 720H420 M490 720A65 65 0 0 1 425 655 M490 930H420 M490 930A65 65 0 0 1 425 865 M490 1140H420 M490 1140A65 65 0 0 1 425 1075 M615 260H685 M615 260A65 65 0 0 0 680 195 M615 470H685 M615 470A65 65 0 0 0 680 405 M615 650H685 M615 650A65 65 0 0 0 680 585 M615 990H685 M615 990A65 65 0 0 0 680 925 M650 1170H720 M650 1170A65 65 0 0 0 715 1105" />
       <path class="wall" d="M235 1370H490 M490 1265H530 M600 1265H650V1415 M650 1485V1510 M650 1265H1030" />
       <path class="door" d="M600 1265V1335 M600 1335A70 70 0 0 1 530 1265 M595 1510V1440 M595 1440A75 75 0 0 0 520 1510 M650 1485H580 M580 1485A70 70 0 0 1 650 1415" />
+      <!-- Landing door from the approach, and the short railing beside the route. -->
+      <path class="door" d="M235 1370H325A90 90 0 0 0 235 1280 M350 1360H480" />
+      <path d="M755 1375H950V1480H755Z M785 1375V1480 M815 1375V1480 M845 1375V1480 M875 1375V1480 M905 1375V1480 M935 1375V1480" class="door" />
     </g>
-    <path d="M1250 683L1224 739" stroke="#222" stroke-width="5" />
-    <path d="M1250 683L1276 695M1276 695Q1265 721 1238 711" fill="none" stroke="#555" stroke-width="2" />
   </g>
   <g id="green-route" inkscape:groupmode="layer" inkscape:label="Itinéraire vert — modifiable">
-    <path d="M850 320L1100 400V650L1330 755L1456.9 628.1L1468.6 639.8" fill="none" stroke="white" stroke-width="15" stroke-linejoin="round" />
-    <path d="M850 320L1100 400V650L1330 755L1456.9 628.1L1468.6 639.8" fill="none" stroke="#24932c" stroke-width="8" stroke-linejoin="round" stroke-dasharray="5 4" marker-end="url(#arrow)" />
+    <path d="M850 320L1100 400V510L1273.3 698.3L1330 755L1456.9 628.1L1468.6 639.8" fill="none" stroke="white" stroke-width="15" stroke-linejoin="round" />
+    <path d="M850 320L1100 400V510L1273.3 698.3L1330 755L1456.9 628.1L1468.6 639.8" fill="none" stroke="#24932c" stroke-width="8" stroke-linejoin="round" stroke-dasharray="5 4" marker-end="url(#arrow)" />
     <g transform="matrix(.18 .18 -.18 .18 1469.5 417.5)">
       <rect x="625" y="554" width="242" height="156" fill="#7dd05a" fill-opacity=".6" stroke="#24932c" stroke-width="8" />
     </g>

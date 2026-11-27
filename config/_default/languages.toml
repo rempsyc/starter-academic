@@ -14,7 +14,7 @@
     email = "remi_theriault à uqar.ca"
     phone = "418 723-1986, extension 1110"
     address = {street = "207A rue Notre-Dame Est", city = "Rimouski", region = "Québec", postcode = "G5L 2A4", country = "Canada", country_code = "CA"}
-    directions = "Bureau U-1053 (1er étage), pavillon U. Entrez du côté de la rue Notre-Dame et tournez immédiatement à gauche. Franchissez la porte du vestibule, puis tournez encore à gauche dans le corridor des bureaux. Mon bureau est sur votre droite. Tout le trajet se fait au même niveau."
+    directions = "Bureau U-1053 (1er étage), pavillon U. Entrez du côté de la rue Notre-Dame, franchissez les deux séries de portes et tournez immédiatement à gauche. Suivez le couloir jusqu’à la porte qui mène au petit palier avec une rampe. Prenez la porte à gauche vers le corridor des bureaux. Mon bureau est sur votre droite, au même niveau."
 
 # Uncomment the lines below to configure your website in a second language.
 #[zh]

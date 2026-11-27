@@ -38,8 +38,10 @@ dimensions; keep those dimensions approximate until verified on site.
 
 Written directions live in `config/_default/params.toml` (English) and
 `config/_default/languages.toml` (French). Keep them aligned with the maps:
-Notre-Dame entrance, immediate left, door into the vestibule, second left into the
-office corridor, U-1053 on the right. The route has no stairs or level changes.
+Notre-Dame entrance, both sets of vestibule doors, immediate left after the inner
+doors, door into the small landing, then the door on the left into the office
+corridor, with U-1053 on the right. The route stays on the same storey. Walkthrough
+photos establish this sequence. The lengths of the two halls are approximate.
 
 ## Checking changes
 

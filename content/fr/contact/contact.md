@@ -14,7 +14,7 @@ subtitle: ""
 
 content:
   office_map: "office-map.svg"
-  office_map_alt: "Plan vers le bureau U-1053 à l’UQAR : entrez du côté de la rue Notre-Dame, tournez à gauche, franchissez la porte du vestibule, puis tournez encore à gauche ; le bureau est à droite, au même niveau."
+  office_map_alt: "Plan vers le bureau U-1053 à l’UQAR depuis l’entrée Notre-Dame. Le tracé vert traverse le vestibule d’entrée, suit le couloir jusqu’au palier, puis tourne à gauche dans le corridor des bureaux."
   # Automatically link email and phone or display as text?
   autolink: false
   
